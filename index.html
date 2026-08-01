@@ -522,10 +522,22 @@ body.lang-fa .course-price{font-family:var(--font-fa);font-weight:700}
   var(--cream)}
 .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 40px}
 .svc-item{
-  display:flex;align-items:center;gap:18px;
+  display:flex;flex-direction:column;gap:15px;
   padding:20px 22px;border:1px solid var(--line);border-radius:16px;
-  background:var(--paper);cursor:pointer;transition:all .35s;position:relative;overflow:hidden;
+  background:var(--paper);transition:all .35s;position:relative;overflow:hidden;
 }
+.svc-top{display:flex;align-items:center;gap:16px}
+.svc-actions{display:flex;gap:9px}
+.svc-btn{
+  flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:10px 12px;border-radius:11px;font-size:13px;font-weight:500;
+  font-family:var(--font-fa);cursor:pointer;transition:all .28s;border:1px solid transparent;
+}
+.svc-btn svg{width:15px;height:15px;flex-shrink:0}
+.svc-btn-book{background:var(--sage-deep);color:var(--cream)}
+.svc-btn-book:hover{background:var(--sage);transform:translateY(-2px);box-shadow:0 8px 18px -8px rgba(95,107,66,.7)}
+.svc-btn-gal{background:transparent;color:var(--sage-deep);border-color:rgba(95,107,66,.32)}
+.svc-btn-gal:hover{background:rgba(95,107,66,.09);border-color:var(--sage);transform:translateY(-2px)}
 .svc-item::before{
   content:"";position:absolute;top:0;bottom:0;width:3px;
   background:linear-gradient(180deg,#D14A6E,#8E4FB0,#4E6FC0,#3FA3AE,#5FB877,#C9B45E);
@@ -541,7 +553,6 @@ body.lang-fa .svc-num{font-family:var(--font-fa)}
 .svc-info h4{font-size:18px;font-weight:600;color:var(--ink);margin-bottom:3px}
 .svc-info p{font-size:12.5px;color:var(--muted);font-weight:300;line-height:1.6}
 .svc-arrow{width:19px;height:19px;color:var(--gold);opacity:0;transition:all .3s;flex-shrink:0}
-.svc-item:hover .svc-arrow{opacity:1}
 body.lang-fa .svc-item:hover .svc-arrow{transform:translateX(-4px)}
 body.lang-en .svc-item:hover .svc-arrow,body.lang-tr .svc-item:hover .svc-arrow{transform:translateX(4px)}
 
@@ -594,6 +605,7 @@ body.lang-en .product-tag,body.lang-tr .product-tag{left:12px}
 .product-body .pdesc{font-size:12.5px;color:var(--muted);margin-bottom:16px;flex:1;font-weight:300}
 .product-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
 .product-price{font-family:var(--font-display);font-size:16px;color:var(--ink)}
+.product-price.soon{font-family:var(--font-fa);font-size:13px;font-weight:500;color:var(--sage-deep);background:rgba(95,107,66,.09);padding:4px 11px;border-radius:20px;display:inline-block}
 body.lang-fa .product-price{font-family:var(--font-fa);font-weight:700}
 .add-btn{display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:var(--sage-deep);color:var(--cream);transition:all .3s;flex-shrink:0}
 .add-btn:hover{background:var(--gold);color:var(--ink);transform:scale(1.08)}
@@ -603,6 +615,92 @@ body.lang-fa .product-price{font-family:var(--font-fa);font-weight:700}
 /* ================= CART DRAWER ================= */
 .overlay{position:fixed;inset:0;background:rgba(22,21,15,.5);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:all .4s;z-index:200}
 .overlay.open{opacity:1;visibility:visible}
+
+/* ============= GALLERY MODAL ============= */
+.gal-overlay{
+  position:fixed;inset:0;background:rgba(22,21,15,.6);
+  backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+  opacity:0;visibility:hidden;transition:all .35s;z-index:210;
+}
+.gal-overlay.open{opacity:1;visibility:visible}
+.gal-modal{
+  position:fixed;left:50%;top:50%;
+  transform:translate(-50%,-46%) scale(.97);
+  width:min(94vw,760px);max-height:88vh;
+  background:var(--paper);border-radius:24px;z-index:211;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(22,21,15,.55);
+  opacity:0;visibility:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);
+}
+.gal-modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.gal-head{
+  display:flex;align-items:center;gap:12px;
+  padding:18px 22px;border-bottom:1px solid var(--line);
+  background:var(--cream);flex-shrink:0;
+}
+.gal-head h3{flex:1;text-align:center;font-family:var(--font-fa);font-size:18px;font-weight:700;color:var(--ink);margin:0}
+.gal-back{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 14px;border-radius:10px;background:var(--cream-warm);
+  font-size:13px;font-weight:500;font-family:var(--font-fa);color:var(--ink);
+  transition:all .28s;flex-shrink:0;
+}
+.gal-back:hover{background:var(--gold);}
+.gal-back svg{width:16px;height:16px}
+body.lang-fa .gal-back svg{transform:scaleX(-1)}
+.gal-close{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  background:var(--cream-warm);display:flex;align-items:center;justify-content:center;
+  color:var(--ink);transition:all .3s;
+}
+.gal-close:hover{background:var(--gold);transform:rotate(90deg)}
+.gal-close svg{width:17px;height:17px}
+.gal-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  padding:20px 22px 24px;overflow-y:auto;flex:1;
+}
+.gal-cell{
+  aspect-ratio:1;border-radius:12px;overflow:hidden;
+  background:var(--cream-warm);cursor:pointer;position:relative;
+  transition:transform .3s, box-shadow .3s;
+}
+.gal-cell img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal-cell:hover{transform:translateY(-3px);box-shadow:0 12px 26px -12px rgba(22,21,15,.4)}
+.gal-cell:hover img{transform:scale(1.06)}
+/* خانه‌های خالی: کاملاً نامرئی (همرنگ پس‌زمینه) */
+.gal-cell.empty{background:transparent;cursor:default;pointer-events:none}
+.gal-cell.empty:hover{transform:none;box-shadow:none}
+.gal-empty{
+  display:none;text-align:center;padding:26px 22px 32px;
+  font-size:14px;color:var(--muted);font-weight:300;
+}
+.gal-empty.show{display:block}
+
+/* ============= LIGHTBOX ============= */
+.lb-overlay{
+  position:fixed;inset:0;background:rgba(12,11,8,.94);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:all .3s;z-index:220;
+}
+.lb-overlay.open{opacity:1;visibility:visible}
+#lbImg{max-width:90vw;max-height:86vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb-close{
+  position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;
+  background:rgba(247,243,234,.14);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:2;
+}
+.lb-close:hover{background:rgba(247,243,234,.3);transform:rotate(90deg)}
+.lb-close svg{width:20px;height:20px}
+.lb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(247,243,234,.14);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:2;
+}
+.lb-nav:hover{background:rgba(247,243,234,.3)}
+.lb-nav svg{width:22px;height:22px}
+.lb-prev{left:18px}
+.lb-next{right:18px}
 
 /* ============= CONTACT PICKER ============= */
 .picker-overlay{
@@ -911,7 +1009,8 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   .menu-foot .mf-ig svg{width:15px;height:15px}
 
   .menu-toggle{display:flex}
-  .nav-right .cart-btn span{display:none}
+  .nav-right .cart-btn span:not(.cart-count){display:none}
+  .nav-right .cart-btn .cart-count{display:flex}
   .cart-btn{padding:11px 13px}
   .pillars-grid{grid-template-columns:1fr}
   .pillar{border-inline-end:none;border-bottom:1px solid rgba(247,243,234,.12)}
@@ -1313,6 +1412,41 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   <div class="picker-options" id="pickerOptions"></div>
 </div>
 
+<!-- ============= GALLERY MODAL ============= -->
+<div class="gal-overlay" id="galOverlay" onclick="closeGallery()"></div>
+<div class="gal-modal" id="galModal" role="dialog" aria-modal="true">
+  <div class="gal-head">
+    <button class="gal-back" onclick="closeGallery()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span><span data-lang="fa">برگشت</span><span data-lang="tr">Geri</span><span data-lang="en">Back</span></span>
+    </button>
+    <h3 id="galTitle"></h3>
+    <button class="gal-close" onclick="closeGallery()" aria-label="بستن">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="gal-grid" id="galGrid"></div>
+  <p class="gal-empty" id="galEmpty">
+    <span data-lang="fa">به‌زودی نمونه‌کارهای این بخش اضافه می‌شود.</span>
+    <span data-lang="tr">Bu bölümün örnekleri yakında eklenecek.</span>
+    <span data-lang="en">Samples for this section are coming soon.</span>
+  </p>
+</div>
+
+<!-- ============= LIGHTBOX ============= -->
+<div class="lb-overlay" id="lbOverlay" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="بستن">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" onclick="event.stopPropagation();lbStep(-1)" aria-label="قبلی">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="" onclick="event.stopPropagation()">
+  <button class="lb-nav lb-next" onclick="event.stopPropagation();lbStep(1)" aria-label="بعدی">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
 <!-- ================= CONTACT ================= -->
 <section id="contact">
   <div class="wrap contact-grid">
@@ -1337,8 +1471,8 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
 
     <div class="contact-form reveal">
       <h3><span data-lang="fa">درخواست نوبت / ثبت‌نام</span><span data-lang="tr">Randevu / Kayıt</span><span data-lang="en">Request / Enroll</span></h3>
-      <p><span data-lang="fa">فرم را پر کنید، به‌زودی با شما تماس می‌گیریم.</span><span data-lang="tr">Formu doldurun, en kısa sürede sizinle iletişime geçeceğiz.</span><span data-lang="en">Fill the form and we'll get back to you shortly.</span></p>
-      <form id="contactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
+      <p><span data-lang="fa">فرم را پر کنید و راه ارتباطی دلخواه‌تان را انتخاب کنید — پیام آماده برایتان ساخته می‌شود.</span><span data-lang="tr">Formu doldurun ve tercih ettiğiniz iletişim yolunu seçin.</span><span data-lang="en">Fill the form and pick your preferred channel — a ready message will be prepared.</span></p>
+      <form id="contactForm" onsubmit="submitContactForm(event)">
         <div class="form-row">
           <label><span data-lang="fa">نام و نام خانوادگی</span><span data-lang="tr">Ad Soyad</span><span data-lang="en">Full Name</span></label>
           <input type="text" name="name" required>
@@ -1350,15 +1484,15 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <div class="form-row">
           <label><span data-lang="fa">موضوع درخواست</span><span data-lang="tr">Konu</span><span data-lang="en">Subject</span></label>
           <select name="subject">
-            <option data-lang="fa" value="رزرو نوبت خدمات">رزرو نوبت خدمات</option>
-            <option data-lang="fa" value="ثبت‌نام دوره آموزشی">ثبت‌نام دوره آموزشی</option>
-            <option data-lang="fa" value="مشاوره محصولات">مشاوره محصولات</option>
-            <option data-lang="tr" value="Hizmet Randevusu">Hizmet Randevusu</option>
-            <option data-lang="tr" value="Kurs Kaydı">Kurs Kaydı</option>
-            <option data-lang="tr" value="Ürün Danışmanlığı">Ürün Danışmanlığı</option>
-            <option data-lang="en" value="Service Booking">Service Booking</option>
-            <option data-lang="en" value="Course Enrollment">Course Enrollment</option>
-            <option data-lang="en" value="Product Consultation">Product Consultation</option>
+            <option data-lang="fa" value="service|رزرو نوبت خدمات">رزرو نوبت خدمات</option>
+            <option data-lang="fa" value="education|ثبت‌نام دوره آموزشی">ثبت‌نام دوره آموزشی</option>
+            <option data-lang="fa" value="service|مشاوره محصولات">مشاوره محصولات</option>
+            <option data-lang="tr" value="service|Hizmet Randevusu">Hizmet Randevusu</option>
+            <option data-lang="tr" value="education|Kurs Kaydı">Kurs Kaydı</option>
+            <option data-lang="tr" value="service|Ürün Danışmanlığı">Ürün Danışmanlığı</option>
+            <option data-lang="en" value="service|Service Booking">Service Booking</option>
+            <option data-lang="en" value="education|Course Enrollment">Course Enrollment</option>
+            <option data-lang="en" value="service|Product Consultation">Product Consultation</option>
           </select>
         </div>
         <div class="form-row">
@@ -1504,19 +1638,19 @@ const BULLETIN = [
 ];
 
 const SERVICES = [
-  { title:{fa:"عروس",tr:"Gelin",en:"Bridal"}, desc:{fa:"پکیج کامل روز عروسی، از میکاپ تا شینیون",tr:"Tam düğün günü paketi",en:"Complete wedding-day package"} },
-  { title:{fa:"رنگ و لایت",tr:"Renk & Röfle",en:"Color & Highlights"}, desc:{fa:"جدیدترین تکنیک‌های بالیاژ و آمبره",tr:"En yeni balyaj ve ombre teknikleri",en:"Latest balayage & ombré techniques"} },
-  { title:{fa:"احیا و کراتین و اسکالپ",tr:"Bakım, Keratin & Scalp",en:"Repair, Keratin & Scalp"}, desc:{fa:"درمان تخصصی مو و پوست سر",tr:"Uzman saç ve saç derisi bakımı",en:"Specialist hair & scalp treatment"} },
-  { title:{fa:"کوتاهی",tr:"Saç Kesimi",en:"Haircut"}, desc:{fa:"فرم و مدل متناسب با چهره شما",tr:"Yüzünüze uygun kesim ve şekil",en:"Cut and shape to suit your face"} },
-  { title:{fa:"میکاپ",tr:"Makyaj",en:"Makeup"}, desc:{fa:"میکاپ روز، مجلسی و حرفه‌ای",tr:"Gündüz, davet ve profesyonel makyaj",en:"Day, evening & professional looks"} },
-  { title:{fa:"شینیون",tr:"Topuz",en:"Updo"}, desc:{fa:"آرایش مو برای هر مناسبت",tr:"Her etkinlik için saç tasarımı",en:"Hair styling for any occasion"} },
-  { title:{fa:"بافت مو",tr:"Saç Örgüsü",en:"Hair Braiding"}, desc:{fa:"بافت‌های مدرن و کلاسیک",tr:"Modern ve klasik örgüler",en:"Modern and classic braids"} },
-  { title:{fa:"ناخن",tr:"Tırnak",en:"Nails"}, desc:{fa:"کاشت، ژلیش و طراحی ناخن",tr:"Protez, kalıcı oje ve tasarım",en:"Extensions, gel polish & nail art"} },
-  { title:{fa:"پدیکور و کف‌سابی",tr:"Pedikür & Topuk Bakımı",en:"Pedicure & Foot Care"}, desc:{fa:"مراقبت کامل و بهداشتی از پا",tr:"Tam ve hijyenik ayak bakımı",en:"Complete, hygienic foot care"} },
-  { title:{fa:"مژه",tr:"Kirpik",en:"Lashes"}, desc:{fa:"اکستنشن و لیفت مژه",tr:"Kirpik ekleme ve lifting",en:"Lash extensions & lift"} },
-  { title:{fa:"آرایش دائم",tr:"Kalıcı Makyaj",en:"Permanent Makeup"}, desc:{fa:"میکروبلیدینگ ابرو، خط لب و چشم",tr:"Kaş microblading, dudak ve göz",en:"Brow microblading, lip & eyeliner"} },
-  { title:{fa:"تتو بدن",tr:"Vücut Dövmesi",en:"Body Tattoo"}, desc:{fa:"طراحی و اجرای تخصصی تتو",tr:"Uzman dövme tasarımı ve uygulaması",en:"Specialist tattoo design & work"} },
-  { title:{fa:"اصلاح صورت و ابرو",tr:"Yüz & Kaş Şekillendirme",en:"Face & Brow Grooming"}, desc:{fa:"فرم‌دهی ابرو و پاک‌سازی صورت",tr:"Kaş şekillendirme ve yüz temizliği",en:"Brow shaping & facial grooming"} },
+  { title:{fa:"عروس",tr:"Gelin",en:"Bridal"}, desc:{fa:"پکیج کامل روز عروسی، از میکاپ تا شینیون",tr:"Tam düğün günü paketi",en:"Complete wedding-day package"} , img:"arus" },
+  { title:{fa:"رنگ و لایت",tr:"Renk & Röfle",en:"Color & Highlights"}, desc:{fa:"جدیدترین تکنیک‌های بالیاژ و آمبره",tr:"En yeni balyaj ve ombre teknikleri",en:"Latest balayage & ombré techniques"} , img:"rang" },
+  { title:{fa:"احیا و کراتین و اسکالپ",tr:"Bakım, Keratin & Scalp",en:"Repair, Keratin & Scalp"}, desc:{fa:"درمان تخصصی مو و پوست سر",tr:"Uzman saç ve saç derisi bakımı",en:"Specialist hair & scalp treatment"} , img:"keratin" },
+  { title:{fa:"کوتاهی",tr:"Saç Kesimi",en:"Haircut"}, desc:{fa:"فرم و مدل متناسب با چهره شما",tr:"Yüzünüze uygun kesim ve şekil",en:"Cut and shape to suit your face"} , img:"kutahi" },
+  { title:{fa:"میکاپ",tr:"Makyaj",en:"Makeup"}, desc:{fa:"میکاپ روز، مجلسی و حرفه‌ای",tr:"Gündüz, davet ve profesyonel makyaj",en:"Day, evening & professional looks"} , img:"mikap" },
+  { title:{fa:"شینیون",tr:"Topuz",en:"Updo"}, desc:{fa:"آرایش مو برای هر مناسبت",tr:"Her etkinlik için saç tasarımı",en:"Hair styling for any occasion"} , img:"shinion" },
+  { title:{fa:"بافت مو",tr:"Saç Örgüsü",en:"Hair Braiding"}, desc:{fa:"بافت‌های مدرن و کلاسیک",tr:"Modern ve klasik örgüler",en:"Modern and classic braids"} , img:"baft" },
+  { title:{fa:"ناخن",tr:"Tırnak",en:"Nails"}, desc:{fa:"کاشت، ژلیش و طراحی ناخن",tr:"Protez, kalıcı oje ve tasarım",en:"Extensions, gel polish & nail art"} , img:"nakhon" },
+  { title:{fa:"پدیکور و کف‌سابی",tr:"Pedikür & Topuk Bakımı",en:"Pedicure & Foot Care"}, desc:{fa:"مراقبت کامل و بهداشتی از پا",tr:"Tam ve hijyenik ayak bakımı",en:"Complete, hygienic foot care"} , img:"pedikur" },
+  { title:{fa:"مژه",tr:"Kirpik",en:"Lashes"}, desc:{fa:"اکستنشن و لیفت مژه",tr:"Kirpik ekleme ve lifting",en:"Lash extensions & lift"} , img:"mozhe" },
+  { title:{fa:"آرایش دائم",tr:"Kalıcı Makyaj",en:"Permanent Makeup"}, desc:{fa:"میکروبلیدینگ ابرو، خط لب و چشم",tr:"Kaş microblading, dudak ve göz",en:"Brow microblading, lip & eyeliner"} , img:"daem" },
+  { title:{fa:"تتو بدن",tr:"Vücut Dövmesi",en:"Body Tattoo"}, desc:{fa:"طراحی و اجرای تخصصی تتو",tr:"Uzman dövme tasarımı ve uygulaması",en:"Specialist tattoo design & work"} , img:"tatoo" },
+  { title:{fa:"اصلاح صورت و ابرو",tr:"Yüz & Kaş Şekillendirme",en:"Face & Brow Grooming"}, desc:{fa:"فرم‌دهی ابرو و پاک‌سازی صورت",tr:"Kaş şekillendirme ve yüz temizliği",en:"Brow shaping & facial grooming"} , img:"eslah" },
 ];
 
 const PRODUCTS = [
@@ -1622,10 +1756,21 @@ function renderBulletin(){
 
 function renderServices(){
   document.getElementById('svcList').innerHTML = SERVICES.map((s,i)=>`
-    <div class="svc-item" onclick="openContactPicker('service')">
-      <span class="svc-num">${String(i+1).padStart(2,'0')}</span>
-      <div class="svc-info"><h4>${s.title[lang]}</h4><p>${s.desc[lang]}</p></div>
-      <svg class="svc-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    <div class="svc-item">
+      <div class="svc-top">
+        <span class="svc-num">${String(i+1).padStart(2,'0')}</span>
+        <div class="svc-info"><h4>${s.title[lang]}</h4><p>${s.desc[lang]}</p></div>
+      </div>
+      <div class="svc-actions">
+        <button class="svc-btn svc-btn-book" onclick="bookService('${encodeURIComponent(s.title[lang])}')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>${lang==='fa'?'رزرو و تماس':lang==='tr'?'Randevu':'Book'}</span>
+        </button>
+        <button class="svc-btn svc-btn-gal" onclick="openGallery(${i})">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+          <span>${lang==='fa'?'نمونه‌کارها':lang==='tr'?'Galeri':'Gallery'}</span>
+        </button>
+      </div>
     </div>`).join('');
 }
 
@@ -1647,7 +1792,7 @@ function renderProducts(){
         <h4>${p.name[lang]}</h4>
         <p class="pdesc">${p.desc[lang]}</p>
         <div class="product-foot">
-          <span class="product-price">${p.price[lang]} ${CONFIG.currency[lang]}</span>
+          <span class="product-price soon">${lang==="fa"?"بزودی":lang==="tr"?"Yakında":"Coming soon"}</span>
           <button class="add-btn" onclick='addToCart("${id}")' title="+"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
         </div>
       </div>
@@ -1705,14 +1850,14 @@ function updateCart(){
       const p = findProduct(id);
       return `<div class="cart-line">
         <img class="cart-line-img" src="${p.img}" alt="">
-        <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${p.price[lang]} ${CONFIG.currency[lang]}</div></div>
+        <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${lang==="fa"?"بزودی":lang==="tr"?"Yakında":"Coming soon"}</div></div>
         <div class="cart-qty"><button onclick="changeQty('${id}',-1)">−</button><span>${lang==="fa"?q.toLocaleString('fa-IR'):q}</span><button onclick="changeQty('${id}',1)">+</button></div>
         <button class="cart-line-remove" onclick="removeItem('${id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg></button>
       </div>`;
     }).join('');
     document.getElementById('checkoutBtn').disabled = false;
   }
-  document.getElementById('cartTotal').textContent = `${fmtPrice(cartTotalNum())} ${CONFIG.currency[lang]}`;
+  document.getElementById('cartTotal').textContent = lang==='fa'?'بزودی':lang==='tr'?'Yakında':'Coming soon';
 }
 
 function checkout(){
@@ -1720,9 +1865,9 @@ function checkout(){
   let msg = T.waHeader[lang] + "\n\n";
   Object.entries(cart).forEach(([id,q])=>{
     const p = findProduct(id);
-    msg += `• ${p.name[lang]} × ${q} — ${p.price[lang]} ${CONFIG.currency[lang]}\n`;
+    msg += `• ${p.name[lang]} × ${q}\n`;
   });
-  msg += `\n${T.waTotal[lang]}: ${fmtPrice(cartTotalNum())} ${CONFIG.currency[lang]}`;
+  msg += {fa:"\nلطفاً قیمت و نحوه ارسال را اعلام کنید. ممنون 🌿",tr:"\nFiyat ve kargo bilgisi verir misiniz?",en:"\nCould you share pricing and shipping details?"}[lang];
   // محصولات → خدمات (شماره خدمات) با انتخاب کانال
   openContactPicker('service', msg);
 }
@@ -1830,6 +1975,105 @@ function buyVideo(i){
                en:`Hello Razmehr 🌿\nI'd like to get the "${t}" video lesson.`}[lang];
   openContactPicker('education', msg);
 }
+/* ═══════════════════════════════════════════════════════════
+   GALLERY — نمونه‌کارهای هر خدمت
+   برای هر خدمت ۱۰ جای عکس رزرو شده است:
+   img/<کد>1.jpg تا img/<کد>10.jpg
+   عکسی که وجود نداشته باشد، خانه‌اش کاملاً نامرئی می‌شود.
+   کدها: arus, rang, keratin, kutahi, mikap, shinion, baft,
+         nakhon, pedikur, mozhe, daem, tatoo, eslah
+   ═══════════════════════════════════════════════════════════ */
+const GAL_SLOTS = 10;
+let lbList = [], lbIndex = 0;
+
+function openGallery(i){
+  const s = SERVICES[i];
+  document.getElementById('galTitle').textContent = s.title[lang];
+  const grid = document.getElementById('galGrid');
+  const empty = document.getElementById('galEmpty');
+  empty.classList.remove('show');
+
+  let html = '';
+  for(let n=1; n<=GAL_SLOTS; n++){
+    const src = `img/${s.img}${n}.jpg`;
+    html += `<div class="gal-cell" data-src="${src}">
+      <img src="${src}" alt="${s.title[lang]} ${n}" loading="lazy"
+           onerror="this.parentElement.classList.add('empty'); this.remove(); galCheckEmpty();"
+           onclick="openLightbox('${src}')">
+    </div>`;
+  }
+  grid.innerHTML = html;
+
+  document.getElementById('galOverlay').classList.add('open');
+  document.getElementById('galModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(galCheckEmpty, 900);
+}
+
+/* اگر هیچ عکسی موجود نبود، پیام «به‌زودی» نشان بده */
+function galCheckEmpty(){
+  const grid = document.getElementById('galGrid');
+  if(!grid) return;
+  const alive = grid.querySelectorAll('.gal-cell:not(.empty)').length;
+  document.getElementById('galEmpty').classList.toggle('show', alive === 0);
+}
+
+function closeGallery(){
+  document.getElementById('galOverlay').classList.remove('open');
+  document.getElementById('galModal').classList.remove('open');
+  if(!document.getElementById('lbOverlay').classList.contains('open')) document.body.style.overflow = '';
+}
+
+/* ── نمایش بزرگ عکس (لایت‌باکس) ── */
+function openLightbox(src){
+  const cells = Array.from(document.querySelectorAll('#galGrid .gal-cell:not(.empty)'));
+  lbList = cells.map(c=>c.dataset.src);
+  lbIndex = Math.max(0, lbList.indexOf(src));
+  document.getElementById('lbImg').src = src;
+  document.getElementById('lbOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function lbStep(dir){
+  if(!lbList.length) return;
+  lbIndex = (lbIndex + dir + lbList.length) % lbList.length;
+  document.getElementById('lbImg').src = lbList[lbIndex];
+}
+function closeLightbox(){
+  document.getElementById('lbOverlay').classList.remove('open');
+  if(document.getElementById('galModal').classList.contains('open')){
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+}
+
+/* فرم تماس → پنجره انتخاب راه ارتباطی با پیام آماده
+   بر اساس «موضوع درخواست»، خودکار به شماره درست (آموزش/خدمات) وصل می‌شود */
+function submitContactForm(e){
+  e.preventDefault();
+  const f = e.target;
+  const name = (f.name_field || f.querySelector('[name="name"]')).value.trim();
+  const phone = f.querySelector('[name="phone"]').value.trim();
+  const subjRaw = f.querySelector('[name="subject"]').value;
+  const note = f.querySelector('[name="message"]').value.trim();
+
+  // مقدار select به شکل "service|رزرو نوبت خدمات" است
+  const parts = subjRaw.split('|');
+  const kind = parts.length > 1 ? parts[0] : 'service';
+  const subject = parts.length > 1 ? parts[1] : subjRaw;
+
+  const L = {
+    fa: {greet:"سلام رازمهر عزیز 🌿", nm:"نام", ph:"شماره تماس", sb:"موضوع", ms:"توضیحات"},
+    tr: {greet:"Merhaba Razmehr 🌿", nm:"Ad", ph:"Telefon", sb:"Konu", ms:"Mesaj"},
+    en: {greet:"Hello Razmehr 🌿", nm:"Name", ph:"Phone", sb:"Subject", ms:"Message"}
+  }[lang];
+
+  let msg = `${L.greet}\n\n${L.nm}: ${name}\n${L.ph}: ${phone}\n${L.sb}: ${subject}`;
+  if(note) msg += `\n${L.ms}: ${note}`;
+
+  openContactPicker(kind, msg);
+}
+
 function bookService(title){
   const t = decodeURIComponent(title);
   const msg = {fa:`سلام رازمهر عزیز 🌿\nمی‌خواهم برای «${t}» نوبت رزرو کنم.`,
@@ -1925,7 +2169,17 @@ document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 // close mobile menu when an in-page link is tapped (external links stay open)
 document.querySelectorAll('.nav-links > a[href^="#"]').forEach(a=>a.addEventListener('click',closeMenu));
 // close on Escape
-document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closeMenu(); closeCart(); closeContactPicker(); } });
+document.addEventListener('keydown', e=>{
+  if(e.key==='Escape'){
+    if(document.getElementById('lbOverlay').classList.contains('open')){ closeLightbox(); return; }
+    if(document.getElementById('galModal').classList.contains('open')){ closeGallery(); return; }
+    closeMenu(); closeCart(); closeContactPicker();
+  }
+  if(document.getElementById('lbOverlay').classList.contains('open')){
+    if(e.key==='ArrowRight') lbStep(1);
+    if(e.key==='ArrowLeft') lbStep(-1);
+  }
+});
 </script>
 
 </body>
