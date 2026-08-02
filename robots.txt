@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://razmehrbeauty.com/sitemap.xml
