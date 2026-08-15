@@ -717,6 +717,100 @@ body.lang-en .lc-list li::before,body.lang-tr .lc-list li::before{left:0}
   .lc-d{font-size:28px}
 }
 
+
+/* ============= PRODUCT DETAIL MODAL ============= */
+.pinfo-btn{
+  display:flex;align-items:center;justify-content:center;gap:7px;width:100%;
+  margin:10px 0 12px;padding:9px 12px;border-radius:11px;
+  border:1px solid rgba(95,107,66,.3);background:transparent;color:var(--sage-deep);
+  font-family:var(--font-fa);font-size:12.5px;font-weight:500;cursor:pointer;transition:all .28s;
+}
+.pinfo-btn svg{width:15px;height:15px;flex-shrink:0}
+.pinfo-btn:hover{background:rgba(95,107,66,.09);border-color:var(--sage);transform:translateY(-1px)}
+.pd-overlay{
+  position:fixed;inset:0;background:rgba(22,21,15,.6);
+  backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+  opacity:0;visibility:hidden;transition:all .35s;z-index:212;
+}
+.pd-overlay.open{opacity:1;visibility:visible}
+.pd-modal{
+  position:fixed;left:50%;top:50%;transform:translate(-50%,-46%) scale(.97);
+  width:min(94vw,620px);max-height:90vh;background:var(--paper);
+  border-radius:24px;z-index:213;display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(22,21,15,.55);
+  opacity:0;visibility:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);
+}
+.pd-modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.pd-head{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 18px;border-bottom:1px solid var(--line);background:var(--cream);flex-shrink:0;
+}
+.pd-back{
+  display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:10px;
+  background:var(--cream-warm);font-size:13px;font-weight:500;font-family:var(--font-fa);
+  color:var(--ink);transition:all .28s;
+}
+.pd-back:hover{background:var(--gold)}
+.pd-back svg{width:16px;height:16px}
+body.lang-fa .pd-back svg{transform:scaleX(-1)}
+.pd-close{
+  width:36px;height:36px;border-radius:50%;background:var(--cream-warm);
+  display:flex;align-items:center;justify-content:center;color:var(--ink);transition:all .3s;
+}
+.pd-close:hover{background:var(--gold);transform:rotate(90deg)}
+.pd-close svg{width:17px;height:17px}
+.pd-scroll{overflow-y:auto;flex:1}
+.pd-hero{background:var(--cream);display:flex;align-items:center;justify-content:center;padding:22px}
+.pd-hero img{width:min(230px,60%);border-radius:16px}
+.pd-main{padding:24px 26px 28px}
+.pd-cat{
+  display:inline-block;font-size:11.5px;padding:4px 12px;border-radius:20px;
+  background:rgba(95,107,66,.11);color:var(--sage-deep);font-weight:600;margin-bottom:9px;
+}
+.pd-main h3{font-family:var(--font-fa);font-size:22px;font-weight:800;color:var(--ink);margin-bottom:12px;line-height:1.5}
+.pd-intro{font-size:14.5px;color:var(--ink);line-height:1.95;font-weight:300;margin-bottom:22px}
+.pd-sec{margin-bottom:22px}
+.pd-sec h4{
+  display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;
+  color:var(--sage-deep);margin-bottom:13px;
+}
+.pd-sec h4 svg{width:17px;height:17px;flex-shrink:0}
+.pd-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.pd-list li{position:relative;padding-inline-start:22px;font-size:14px;line-height:1.8;color:var(--ink)}
+.pd-list li::before{content:"";position:absolute;top:9px;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#d9b96a)}
+body.lang-fa .pd-list li::before{right:0}
+body.lang-en .pd-list li::before,body.lang-tr .pd-list li::before{left:0}
+.pd-steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:11px}
+.pd-steps li{
+  position:relative;padding-inline-start:36px;font-size:14px;line-height:1.8;color:var(--ink);
+  counter-increment:s;min-height:26px;
+}
+.pd-steps li::before{
+  content:counter(s);position:absolute;top:0;width:26px;height:26px;border-radius:50%;
+  background:var(--sage-deep);color:var(--cream);display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:700;font-family:var(--font-fa);
+}
+body.lang-fa .pd-steps li::before{right:0}
+body.lang-en .pd-steps li::before,body.lang-tr .pd-steps li::before{left:0}
+.pd-note{
+  display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:13px;
+  background:rgba(194,163,94,.11);border:1px solid rgba(194,163,94,.3);
+  font-size:12.8px;color:#7a6533;line-height:1.75;margin-bottom:22px;
+}
+.pd-note svg{width:17px;height:17px;flex-shrink:0;margin-top:2px}
+.pd-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:20px;border-top:1px solid var(--line);
+}
+.pd-price{font-family:var(--font-fa);font-size:23px;font-weight:800;color:var(--sage-deep)}
+.pd-price small{font-size:13px;font-weight:500}
+.pd-add{white-space:nowrap;font-size:14px;padding:13px 26px}
+@media(max-width:560px){
+  .pd-main{padding:20px 20px 24px}
+  .pd-foot{flex-direction:column;align-items:stretch;text-align:center}
+  .pd-add{width:100%}
+}
+
 /* ============= GALLERY MODAL ============= */
 .gal-overlay{
   position:fixed;inset:0;background:rgba(22,21,15,.6);
@@ -1614,6 +1708,21 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   <div class="picker-options" id="pickerOptions"></div>
 </div>
 
+<!-- ============= PRODUCT DETAIL MODAL ============= -->
+<div class="pd-overlay" id="pdOverlay" onclick="closeProduct()"></div>
+<div class="pd-modal" id="pdModal" role="dialog" aria-modal="true">
+  <div class="pd-head">
+    <button class="pd-back" onclick="closeProduct()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span>برگشت</span>
+    </button>
+    <button class="pd-close" onclick="closeProduct()" aria-label="بستن">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="pd-scroll" id="pdBody"></div>
+</div>
+
 <!-- ============= GALLERY MODAL ============= -->
 <div class="gal-overlay" id="galOverlay" onclick="closeGallery()"></div>
 <div class="gal-modal" id="galModal" role="dialog" aria-modal="true">
@@ -1881,6 +1990,157 @@ const T = {
   waTotal:{fa:"مجموع",tr:"Toplam",en:"Total"},
 };
 
+
+/* ═══════════════════════════════════════════════════════════
+   DETAILS — توضیحات کامل هر محصول (کلید = نام فایل عکس)
+   برای افزودن محصول جدید، فقط یک بلوک مثل زیر اضافه کنید.
+   ═══════════════════════════════════════════════════════════ */
+const DETAILS = {
+ "volum": {
+   intro:"ولومایزر یک مکمل حرفه‌ای رنگ است که پیش از رنگ‌کاری به ترکیب رنگ افزوده می‌شود و کیفیت، شفافیت و ماندگاری نتیجه را بالا می‌برد.",
+   points:[
+     "کاهش اثر تحریک‌کننده آمونیاک روی پوست سر",
+     "افزایش شفافیت و عمق رنگ (Clarifier)",
+     "تقویت‌کننده و یکنواخت‌کننده نتیجه رنگ (Enhancer)",
+     "خاصیت ضدالتهابی و ملایم‌تر کردن فرآیند رنگ"
+   ],
+   usage:[
+     "پیش از شروع، تست حساسیت روی پوست انجام دهید.",
+     "مقدار توصیه‌شده کارخانه را به ترکیب رنگ و اکسیدان اضافه کنید.",
+     "کاملاً یکدست هم بزنید تا مخلوط همگن شود.",
+     "رنگ را طبق روال همیشگی اعمال کرده و زمان انتظار را رعایت کنید."
+   ],
+   note:"محصول سالنی — نسبت ترکیب را طبق دستور روی بسته‌بندی تنظیم کنید."
+ },
+ "esprey": {
+   intro:"اسپری چندمنظوره موراها یک مراقبت بدون آبکشی است که پس از شستشو یا پیش از حرارت‌دهی روی مو استفاده می‌شود و چند نیاز مو را همزمان پوشش می‌دهد.",
+   points:[
+     "محافظت شدید در برابر حرارت سشوار و اتو",
+     "ضد وز و کنترل موخوره",
+     "بازکردن گره و آسان‌کردن شانه‌زنی",
+     "افزایش نرمی، درخشندگی و لطافت"
+   ],
+   usage:[
+     "بطری را خوب تکان دهید.",
+     "روی موی نمدار (یا خشک برای رفع وز) از فاصله ۲۰ سانتی اسپری کنید.",
+     "بیشتر روی طول و نوک مو بزنید؛ از ریشه فاصله بگیرید.",
+     "شانه بزنید تا یکنواخت پخش شود. نیازی به آبکشی نیست."
+   ],
+   note:"برای استفاده روزمره مناسب است."
+ },
+ "freeze": {
+   intro:"فریز از سری محصولات حرفه‌ای MK، برای مراقبت و بهبود حالت‌پذیری مو در سالن استفاده می‌شود.",
+   points:[
+     "بهبود بافت و حالت‌پذیری مو",
+     "کمک به کنترل وز و نرمی سطح مو",
+     "مناسب استفاده حرفه‌ای در سالن"
+   ],
+   usage:[
+     "بطری را تکان داده و مقدار لازم را برداشته.",
+     "روی موی شسته و نمدار به‌طور یکنواخت توزیع کنید.",
+     "طبق دستور کارخانه زمان اثرگذاری را رعایت کنید."
+   ],
+   note:"روش دقیق مصرف را مطابق دستورالعمل روی بسته‌بندی انجام دهید."
+ },
+ "plex": {
+   intro:"پلکس موراها یک بوستر پودری تقویت پیوندهای مو (Bond Builder) است که هنگام خدمات شیمیایی مثل رنگ، دکلره و صافی به مواد اضافه می‌شود تا از ساختار مو محافظت کند.",
+   points:[
+     "محافظت از پیوندهای دی‌سولفیدی مو حین خدمات شیمیایی",
+     "کاهش شکنندگی و آسیب پس از دکلره و رنگ",
+     "کمک به حفظ استحکام و کشسانی تار مو",
+     "بهبود کیفیت نهایی خدمات صافی"
+   ],
+   usage:[
+     "مقدار توصیه‌شده پودر را به ترکیب رنگ، دکلره یا ماده صافی اضافه کنید.",
+     "تا حل شدن کامل هم بزنید.",
+     "خدمت را طبق روال معمول انجام دهید.",
+     "پس از پایان کار، مو را با شامپوی مناسب بشویید."
+   ],
+   note:"محصول سالنی — وزن ۵۰ گرم. نسبت مصرف طبق دستور کارخانه."
+ },
+ "lpp": {
+   intro:"ماسک LPP & PPT زکابر یک محصول بسترساز حرفه‌ای است. LPP (لیپید-پروتئین) و PPT (پلی‌پپتید) با نفوذ به ساقه مو، کورتکس و کوتیکل آسیب‌دیده را ترمیم می‌کنند و مو را برای تراپی‌های شیمیایی آماده می‌سازند.",
+   points:[
+     "ترمیم همزمان کورتکس (بخش داخلی) و کوتیکل (لایه محافظ)",
+     "بسترسازی پیش از کراتین، بوتاکس و ریباندینگ",
+     "مناسب موهای رنگ‌شده، دکلره و پرمانت‌شده",
+     "کمک به کاهش ریزش ناشی از شکنندگی تار مو"
+   ],
+   usage:[
+     "مو را با شامپو بشویید و حدود ۷۰٪ نم آن را با حوله بگیرید.",
+     "ماسک را به‌طور یکنواخت روی طول مو ماساژ دهید.",
+     "مو را با کلاه پلاستیکی بپوشانید و ۳۰ تا ۴۵ دقیقه صبر کنید.",
+     "با آب ولرم آبکشی کنید."
+   ],
+   note:"یک تا دو بار در هفته. حجم ۵۰۰ میل. برای موهای بسیار آسیب‌دیده، پیش از تراپی‌های شیمیایی استفاده شود."
+ },
+ "botax": {
+   intro:"ماسک بوتاکس مو زکابر با کلاژن و پروتئین، یک درمان ترمیمی عمقی است. برخلاف کراتین، ساختار شیمیایی مو را تغییر نمی‌دهد؛ بلکه با پر کردن شکاف‌های ساقه مو، سطح مو را صاف و یکدست می‌کند — بازسازی است، نه تغییر ساختار.",
+   points:[
+     "پر کردن فضاهای خالی ساقه مو با پروتئین و آمینواسید",
+     "ضد وز، افزایش درخشندگی و صافی اپتیکال",
+     "تقویت و ضخیم‌تر نشان دادن تار مو، کاهش موخوره",
+     "مناسب موهای خشک، دکلره، رنگ‌شده و آسیب‌دیده",
+     "فاقد فرمالدهید — ساختار طبیعی فر مو را دائمی تغییر نمی‌دهد"
+   ],
+   usage:[
+     "مو را با شامپوی پاک‌کننده عمقی بشویید (بدون نرم‌کننده) و نم آن را بگیرید.",
+     "مو را بخش‌بندی کنید و ماسک را از حدود ۱ سانتی ریشه تا نوک، تار به تار توزیع کنید.",
+     "با کلاه حرارتی بپوشانید؛ ۲۰ تا ۴۰ دقیقه بماند (حرارت ملایم سشوار اثر را بیشتر می‌کند).",
+     "با آب ولرم آبکشی کرده و سپس کاملاً سشوار بکشید."
+   ],
+   note:"حجم ۵۰۰ میل. ماندگاری معمول ۲ تا ۶ هفته بسته به نوع مو و مراقبت. برای حفظ نتیجه، از شامپوی بدون سولفات استفاده کنید و حرارت‌دهی را محدود نگه دارید."
+ },
+ "shampo": {
+   intro:"شامپو ضد ریزش زکابر با کراتین و کلاژن، ضمن پاک‌سازی ملایم، محیط مناسبی برای تقویت ریشه و کاهش ریزش ناشی از شکنندگی فراهم می‌کند.",
+   points:[
+     "بدون سولفات — ملایم برای پوست سر و موی رنگ‌شده",
+     "کراتین و کلاژن برای تقویت ساختار تار مو",
+     "کمک به کاهش ریزش ناشی از شکستگی و ضعف مو",
+     "مناسب استفاده پس از کراتین و بوتاکس"
+   ],
+   usage:[
+     "مو را خیس کرده و مقدار مناسب شامپو بردارید.",
+     "پوست سر را ۱ تا ۲ دقیقه با نوک انگشتان ماساژ دهید.",
+     "کامل آبکشی کنید؛ در صورت نیاز تکرار کنید.",
+     "برای نتیجه بهتر، پس از آن از ماسک یا نرم‌کننده استفاده کنید."
+   ],
+   note:"ریزش مو علل مختلفی دارد؛ در صورت ریزش شدید یا ناگهانی، با پزشک متخصص مشورت کنید."
+ },
+ "coktail": {
+   intro:"هیر کوکتل زکابر یک پودر ترمیم و احیای پیشرفته است که به ماسک، نرم‌کننده یا مواد تراپی افزوده می‌شود و قدرت بازسازی آن‌ها را چند برابر می‌کند.",
+   points:[
+     "بوستر ترمیم برای افزودن به ماسک و تراپی‌ها",
+     "احیای موهای شدیداً آسیب‌دیده",
+     "قابل ترکیب با انواع محصولات مراقبتی",
+     "فرمول فعال‌شده پیشرفته"
+   ],
+   usage:[
+     "مقدار توصیه‌شده پودر را با ماسک یا ماده تراپی مخلوط کنید.",
+     "تا یکدست شدن کامل هم بزنید.",
+     "روی موی شسته و نمدار توزیع کنید.",
+     "زمان اثرگذاری را رعایت کرده، سپس آبکشی کنید."
+   ],
+   note:"وزن ۵۰ گرم. نسبت ترکیب طبق دستور کارخانه."
+ },
+ "koster": {
+   intro:"اسپری دوفاز کستر انرژی یک نرم‌کننده بدون آبکشی است. دو فاز آبی و روغنی آن هنگام تکان دادن ترکیب می‌شوند و همزمان آبرسانی و نرمی ایجاد می‌کنند.",
+   points:[
+     "بدون آبکشی — سریع و مناسب استفاده روزانه",
+     "باز کردن آسان گره‌ها بدون سنگین کردن مو",
+     "آبرسانی و نرمی همزمان با فاز دوگانه",
+     "افزایش درخشندگی و کنترل وز"
+   ],
+   usage:[
+     "بطری را تا ترکیب شدن دو فاز خوب تکان دهید.",
+     "روی موی نمدار و شسته، بیشتر روی طول و نوک اسپری کنید.",
+     "با شانه دندانه‌درشت مو را باز کنید.",
+     "نیازی به آبکشی نیست؛ مو را طبق معمول حالت دهید."
+   ],
+   note:"حجم ۲۵۰ میل. مناسب همه انواع مو."
+ }
+};
+
 const FILTERS = [
   { key:"all", label:T.all },
   { key:"hair", label:{fa:"مراقبت مو",tr:"Saç Bakımı",en:"Hair Care"} },
@@ -1931,6 +2191,10 @@ function renderProducts(){
         <div class="product-cat">${p.cat[lang]}</div>
         <h4>${p.name[lang]}</h4>
         <p class="pdesc">${p.desc[lang]}</p>
+        <button class="pinfo-btn" onclick="openProduct('${p.img.split('/').pop().replace('.jpg','')}')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/></svg>
+          <span>${lang==='fa'?'توضیحات و روش مصرف':lang==='tr'?'Detay & Kullanım':'Details & Usage'}</span>
+        </button>
         <div class="product-foot">
           <span class="product-price">${p.price[lang]} ${CONFIG.currency[lang]}</span>
           <button class="add-btn" onclick='addToCart("${id}")' title="+"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
@@ -2115,6 +2379,47 @@ function buyVideo(i){
                en:`Hello Razmehr 🌿\nI'd like to get the "${t}" video lesson.`}[lang];
   openContactPicker('education', msg);
 }
+/* ═══ PRODUCT DETAIL — پنجره توضیحات محصول ═══ */
+function openProduct(key){
+  const p = PRODUCTS.find(x=>x.img.split('/').pop().replace('.jpg','')===key);
+  const d = DETAILS[key];
+  if(!p) return;
+  const id = p.name.en.replace(/\s/g,'_');
+  let h = `
+    <div class="pd-hero"><img src="${p.img}" alt="${p.name[lang]}"></div>
+    <div class="pd-main">
+      <div class="pd-cat">${p.cat[lang]}</div>
+      <h3>${p.name[lang]}</h3>`;
+  if(d){
+    h += `<p class="pd-intro">${d.intro}</p>`;
+    if(d.points && d.points.length){
+      h += `<div class="pd-sec"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>ویژگی‌ها و خواص</h4><ul class="pd-list">`;
+      d.points.forEach(x=>h+=`<li>${x}</li>`); h+=`</ul></div>`;
+    }
+    if(d.usage && d.usage.length){
+      h += `<div class="pd-sec"><h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>روش مصرف</h4><ol class="pd-steps">`;
+      d.usage.forEach(x=>h+=`<li>${x}</li>`); h+=`</ol></div>`;
+    }
+    if(d.note) h += `<div class="pd-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M12 16v-5M12 8h.01"/></svg><span>${d.note}</span></div>`;
+  }
+  h += `
+      <div class="pd-foot">
+        <span class="pd-price">${p.price[lang]} <small>${CONFIG.currency[lang]}</small></span>
+        <button class="btn btn-primary pd-add" onclick='addToCart("${id}");closeProduct();'>افزودن به سبد خرید</button>
+      </div>
+    </div>`;
+  document.getElementById('pdBody').innerHTML = h;
+  document.getElementById('pdBody').scrollTop = 0;
+  document.getElementById('pdOverlay').classList.add('open');
+  document.getElementById('pdModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeProduct(){
+  document.getElementById('pdOverlay').classList.remove('open');
+  document.getElementById('pdModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+
 /* ═══════════════════════════════════════════════════════════
    GALLERY — نمونه‌کارهای هر خدمت
    برای هر خدمت ۱۰ جای عکس رزرو شده است:
@@ -2312,6 +2617,7 @@ document.querySelectorAll('.nav-links > a[href^="#"]').forEach(a=>a.addEventList
 document.addEventListener('keydown', e=>{
   if(e.key==='Escape'){
     if(document.getElementById('lbOverlay').classList.contains('open')){ closeLightbox(); return; }
+    if(document.getElementById('pdModal').classList.contains('open')){ closeProduct(); return; }
     if(document.getElementById('galModal').classList.contains('open')){ closeGallery(); return; }
     closeMenu(); closeCart(); closeContactPicker();
   }
