@@ -629,6 +629,94 @@ body.lang-fa .product-price{font-family:var(--font-fa);font-weight:700}
 .overlay{position:fixed;inset:0;background:rgba(22,21,15,.5);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:all .4s;z-index:200}
 .overlay.open{opacity:1;visibility:visible}
 
+
+/* ============= LIVE COURSE CARD ============= */
+.live-course{
+  position:relative;background:var(--paper);border-radius:26px;overflow:hidden;
+  border:1px solid var(--line);box-shadow:0 24px 60px -30px rgba(22,21,15,.4);margin-bottom:20px;
+}
+.lc-ribbon{
+  position:absolute;top:20px;display:inline-flex;align-items:center;gap:8px;
+  padding:8px 18px;border-radius:30px;font-size:12.5px;font-weight:600;
+  background:linear-gradient(135deg,#5FB877,#4a9c60);color:#fff;z-index:3;
+  box-shadow:0 8px 20px -8px rgba(95,184,119,.8);
+}
+body.lang-fa .lc-ribbon{left:20px}
+body.lang-en .lc-ribbon,body.lang-tr .lc-ribbon{right:20px}
+.lc-ribbon .pulse{width:8px;height:8px;border-radius:50%;background:#fff;animation:pls 1.6s infinite}
+@keyframes pls{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
+
+.lc-head{
+  display:flex;align-items:center;gap:28px;padding:36px 38px 28px;flex-wrap:wrap;
+  background:linear-gradient(125deg,var(--sage-deep),var(--sage) 70%,#8fa06a);color:var(--cream);
+}
+.lc-date{
+  flex-shrink:0;text-align:center;background:rgba(247,243,234,.14);
+  border:1px solid rgba(247,243,234,.28);border-radius:18px;padding:16px 22px;backdrop-filter:blur(6px);
+}
+.lc-d{font-family:var(--font-fa);font-size:34px;font-weight:800;line-height:1}
+.lc-m{font-size:13px;opacity:.9;margin-top:2px}
+.lc-sep{height:1px;background:rgba(247,243,234,.3);margin:10px 0}
+.lc-title{flex:1;min-width:260px}
+.lc-tag{
+  display:inline-block;font-size:12px;padding:5px 14px;border-radius:20px;
+  background:rgba(247,243,234,.18);margin-bottom:10px;letter-spacing:.02em;
+}
+.lc-title h3{font-family:var(--font-fa);font-size:clamp(22px,3vw,30px);font-weight:800;margin-bottom:8px;color:var(--cream)}
+.lc-title p{font-size:14.5px;opacity:.92;font-weight:300;line-height:1.75}
+
+.lc-body{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:32px 38px}
+.lc-col h4{
+  display:flex;align-items:center;gap:9px;font-size:16px;font-weight:700;
+  color:var(--sage-deep);margin-bottom:16px;
+}
+.lc-col h4 svg{width:19px;height:19px;flex-shrink:0}
+.lc-list{list-style:none;display:flex;flex-direction:column;gap:11px}
+.lc-list li{
+  position:relative;padding-inline-start:24px;font-size:14.5px;color:var(--ink);line-height:1.7;
+}
+.lc-list li::before{
+  content:"";position:absolute;top:9px;width:8px;height:8px;border-radius:50%;
+  background:linear-gradient(135deg,var(--gold),#d9b96a);
+}
+body.lang-fa .lc-list li::before{right:0}
+body.lang-en .lc-list li::before,body.lang-tr .lc-list li::before{left:0}
+.lc-check li::before{
+  content:"✓";background:none;font-size:14px;color:#4a9c60;font-weight:800;
+  width:auto;height:auto;top:2px;
+}
+.lc-note{font-size:15px;font-weight:600;color:var(--ink);margin-bottom:12px}
+.lc-sub{font-size:13px;color:var(--muted);font-weight:300;margin-top:12px;line-height:1.7}
+.lc-facts{margin-top:20px;display:flex;flex-direction:column;gap:9px}
+.lc-facts>div{
+  display:flex;justify-content:space-between;gap:12px;align-items:center;
+  padding:11px 16px;border-radius:12px;background:var(--cream);border:1px solid var(--line);
+}
+.lf-k{font-size:12.5px;color:var(--muted)}
+.lf-v{font-size:13.5px;font-weight:600;color:var(--ink)}
+
+.lc-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  padding:26px 38px 32px;border-top:1px solid var(--line);background:var(--cream);
+}
+.lc-price{display:flex;flex-direction:column;gap:3px}
+.lc-old{font-size:16px;color:var(--muted);text-decoration:line-through;text-decoration-color:#c0554f;text-decoration-thickness:2px}
+.lc-new{font-family:var(--font-fa);font-size:30px;font-weight:800;color:var(--sage-deep);line-height:1.1}
+.lc-new small{font-size:15px;font-weight:500}
+.lc-off{font-size:12px;color:#b0893c;font-weight:600;margin-top:3px}
+.lc-btn{display:inline-flex;align-items:center;gap:10px;white-space:nowrap;font-size:15px;padding:15px 30px}
+.lc-btn svg{width:18px;height:18px}
+
+@media(max-width:860px){
+  .lc-body{grid-template-columns:1fr;gap:26px;padding:26px 24px}
+  .lc-head{padding:30px 24px 24px;gap:18px}
+  .lc-foot{padding:22px 24px 26px;flex-direction:column;align-items:stretch;text-align:center}
+  .lc-price{align-items:center}
+  .lc-btn{justify-content:center;width:100%}
+  .lc-date{padding:12px 18px}
+  .lc-d{font-size:28px}
+}
+
 /* ============= GALLERY MODAL ============= */
 .gal-overlay{
   position:fixed;inset:0;background:rgba(22,21,15,.6);
@@ -1387,41 +1475,70 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
     <div class="sec-head reveal">
       <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">آکادمی رازمهر</span><span data-lang="tr">Razmehr Akademi</span><span data-lang="en">Razmehr Academy</span></div>
       <h2><span data-lang="fa">مرکز <em>آموزش</em></span><span data-lang="tr">Eğitim <em>Merkezi</em></span><span data-lang="en">Training <em>Center</em></span></h2>
-      <p><span data-lang="fa">هنر زیبایی را حرفه‌ای بیاموزید — از دوره‌های حضوری تا ویدیوهای آموزشی، همه با مدرک معتبر.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — yüz yüze kurslardan video eğitimlere, hepsi sertifikalı.</span><span data-lang="en">Master the art of beauty — from in-person courses to video lessons, all certified.</span></p>
+      <p><span data-lang="fa">هنر زیبایی را حرفه‌ای بیاموزید — دوره‌های تخصصی حضوری زیر نظر استاد فاطمه زارع، با پشتیبانی بلندمدت.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — uzman yüz yüze kurslar, uzun süreli destekle.</span><span data-lang="en">Master the art of beauty — specialist in-person courses with long-term support.</span></p>
     </div>
 
-    <!-- 🎯 NEXT COURSE BANNER -->
-    <div class="next-banner reveal">
-      <div class="next-banner-info">
-        <span class="next-banner-tag"><span class="pulse"></span><span data-lang="fa">دوره‌ی پیشِ‌رو</span><span data-lang="tr">Yaklaşan Kurs</span><span data-lang="en">Upcoming Course</span></span>
-        <h3><span data-lang="fa">سمینار تخصصی رنگ و لایت — دوره‌ی جامع</span><span data-lang="tr">Uzman Renk & Röfle Semineri</span><span data-lang="en">Advanced Color & Highlights Seminar</span></h3>
-        <div class="next-banner-meta">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span data-lang="fa">۸ تیر ۱۴۰۴</span><span data-lang="tr">29 Haziran 2025</span><span data-lang="en">June 29, 2025</span></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span data-lang="fa">۳ روز فشرده</span><span data-lang="tr">3 gün yoğun</span><span data-lang="en">3 intensive days</span></div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg><span data-lang="fa">ظرفیت محدود</span><span data-lang="tr">Sınırlı kontenjan</span><span data-lang="en">Limited seats</span></div>
+    <!-- 🎯 دوره حضوری پیشِ‌رو -->
+    <div class="live-course reveal">
+      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
+
+      <div class="lc-head">
+        <div class="lc-date">
+          <div class="lc-d">۳۱</div>
+          <div class="lc-m">مرداد</div>
+          <div class="lc-sep"></div>
+          <div class="lc-d">۰۱</div>
+          <div class="lc-m">شهریور</div>
+        </div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره تخصصی حضوری · ۱۴۰۵</span>
+          <h3>مسترکلاس رنگ و لایت پیشرفته</h3>
+          <p>دو روز فشرده با استاد فاطمه زارع — یک روز تئوری، یک روز عملی و کار روی مدل.</p>
         </div>
       </div>
-      <div class="next-banner-cta">
-        <button class="btn" onclick="enrollCourse('سمینار رنگ و لایت - دوره جامع')"><span data-lang="fa">رزرو جایگاه</span><span data-lang="tr">Yer Ayırt</span><span data-lang="en">Reserve Seat</span></button>
-        <span class="next-countdown"><span data-lang="fa">برای ثبت‌نام پیام دهید</span><span data-lang="tr">Kayıt için mesaj gönderin</span><span data-lang="en">Message us to enroll</span></span>
+
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>سرفصل‌های آموزشی</h4>
+          <ul class="lc-list">
+            <li>تسلط بر ۴ مدل لایت مدرن</li>
+            <li>تکنیک‌های پیشرفته CNC و Hand Touch</li>
+            <li>متد پاک کردن موهای مشکی پرکلاغی (بدون آسیب)</li>
+            <li>متد جدید پلاتینه کردن در کمترین زمان</li>
+            <li>هوشمندسازی رنگ‌ساژها و رقص رنگ مو</li>
+            <li>فرمولاسیون و ترکیبات رنگی سال ۲۰۲۶</li>
+            <li>اسید تراپی هوشمند (با ماندگاری ۳ ماهه)</li>
+          </ul>
+        </div>
+
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>پشتیبانی ویژه</h4>
+          <p class="lc-note">ما شما را تنها نمی‌گذاریم!</p>
+          <ul class="lc-list lc-check">
+            <li>۳ ماه پشتیبانی مستقیم با خود استاد</li>
+            <li>۳ ماه پشتیبانی با منتور حرفه‌ای</li>
+          </ul>
+          <p class="lc-sub">امکان آوردن مدل برای رفع اشکال، حین دوره و بعد از آن فراهم است.</p>
+
+          <div class="lc-facts">
+            <div><span class="lf-k">ساختار</span><span class="lf-v">۱ روز تئوری + ۱ روز عملی</span></div>
+            <div><span class="lf-k">مدت</span><span class="lf-v">دوره ۲ روزه</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lc-foot">
+        <div class="lc-price">
+          <span class="lc-old">۷٬۰۰۰٬۰۰۰ تومان</span>
+          <span class="lc-new">۴٬۸۰۰٬۰۰۰ <small>تومان</small></span>
+          <span class="lc-off">ویژه ثبت‌نام زودهنگام</span>
+        </div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('مسترکلاس رنگ و لایت پیشرفته - ۳۱ مرداد و ۱ شهریور')">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+          ثبت‌نام و رزرو جایگاه
+        </button>
       </div>
     </div>
-
-    <!-- 📋 BULLETIN: in-person courses -->
-    <div class="edu-subhead reveal">
-      <div class="en-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg></div>
-      <h3><span data-lang="fa">تقویم دوره‌های حضوری</span><span data-lang="tr">Yüz Yüze Kurs Takvimi</span><span data-lang="en">In-Person Course Calendar</span></h3>
-      <span class="en-line"></span>
-    </div>
-    <div class="bulletin reveal" id="bulletinList"></div>
-
-    <!-- 🎬 VIDEO COURSES SHOP -->
-    <div class="edu-subhead reveal">
-      <div class="en-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-      <h3><span data-lang="fa">ویدیوهای آموزشی</span><span data-lang="tr">Video Eğitimler</span><span data-lang="en">Video Lessons</span></h3>
-      <span class="en-line"></span>
-    </div>
-    <div class="course-grid" id="courseGrid"></div>
   </div>
 </section>
 
@@ -1674,53 +1791,9 @@ const CONFIG = {
    DATA — دوره‌ها، خدمات، محصولات (سه‌زبانه)
    قیمت‌ها نمونه هستند؛ به‌راحتی همین‌جا ویرایش کنید
    ========================================================= */
-const COURSES = [
-  { img:"img/vidrang.jpg",
-    level:{fa:"تخصصی",tr:"Uzman",en:"Advanced"}, price:{fa:"۲٬۹۰۰٬۰۰۰",tr:"2.900.000",en:"2,900,000"},
-    dur:{fa:"۶ ساعت",tr:"6 saat",en:"6 hours"}, lessons:{fa:"۲۴ جلسه",tr:"24 ders",en:"24 lessons"},
-    title:{fa:"رنگ و لایت حرفه‌ای",tr:"Profesyonel Renk & Röfle",en:"Professional Color & Highlights"},
-    desc:{fa:"تئوری رنگ، ترکیب دکلره، تکنیک‌های بالیاژ و آمبره از پایه تا پیشرفته.",tr:"Renk teorisi, açıcı karışımı, balyaj ve ombre teknikleri.",en:"Color theory, bleach mixing, balayage and ombré from basics to advanced."},
-    buyUrl:"" },
-  { img:"img/vidkeratin.jpg",
-    level:{fa:"تخصصی",tr:"Uzman",en:"Advanced"}, price:{fa:"۲٬۴۰۰٬۰۰۰",tr:"2.400.000",en:"2,400,000"},
-    dur:{fa:"۴ ساعت",tr:"4 saat",en:"4 hours"}, lessons:{fa:"۱۸ جلسه",tr:"18 ders",en:"18 lessons"},
-    title:{fa:"کراتین و احیای مو",tr:"Keratin & Saç Bakımı",en:"Keratin & Hair Repair"},
-    desc:{fa:"صافی، کراتینه، بوتاکس مو و پروتکل‌های ایمن کار با مواد شیمیایی.",tr:"Düzleştirme, keratin, saç botoksu ve güvenli kimyasal protokolleri.",en:"Straightening, keratin, hair botox and safe chemical protocols."},
-    buyUrl:"" },
-  { img:"img/vidmikap.jpg",
-    level:{fa:"مقدماتی تا پیشرفته",tr:"Tüm Seviyeler",en:"All Levels"}, price:{fa:"۳٬۲۰۰٬۰۰۰",tr:"3.200.000",en:"3,200,000"},
-    dur:{fa:"۸ ساعت",tr:"8 saat",en:"8 hours"}, lessons:{fa:"۳۰ جلسه",tr:"30 ders",en:"30 lessons"},
-    title:{fa:"میکاپ حرفه‌ای و عروس",tr:"Profesyonel & Gelin Makyajı",en:"Pro & Bridal Makeup"},
-    desc:{fa:"گریم پایه، میکاپ روز و مجلسی، تخصص میکاپ عروس و کار با نور.",tr:"Temel makyaj, gündüz ve gece, gelin makyajı uzmanlığı.",en:"Foundation, day and evening looks, bridal specialization."},
-    buyUrl:"" },
-  { img:"img/vidtatoo.jpg",
-    level:{fa:"تخصصی",tr:"Uzman",en:"Advanced"}, price:{fa:"۲٬۶۰۰٬۰۰۰",tr:"2.600.000",en:"2,600,000"},
-    dur:{fa:"۵ ساعت",tr:"5 saat",en:"5 hours"}, lessons:{fa:"۲۰ جلسه",tr:"20 ders",en:"20 lessons"},
-    title:{fa:"هیر تتو (Hair Tattoo)",tr:"Hair Tattoo",en:"Hair Tattoo"},
-    desc:{fa:"تکنیک تخصصی هیر تتو، طراحی خط رویش و تراکم مو — از پستهای پرطرفدار رازمهر.",tr:"Uzman hair tattoo tekniği, saç çizgisi tasarımı.",en:"Specialist hair tattoo technique, hairline design and density."},
-    buyUrl:"" },
-];
 
-/* ======= BULLETIN — دوره‌های حضوری =======
-   status: 'open' (ثبت‌نام باز) | 'soon' (به‌زودی) | 'full' (تکمیل) */
-const BULLETIN = [
-  { day:{fa:"۰۸",tr:"29",en:"29"}, month:{fa:"تیر",tr:"Haz",en:"Jun"},
-    title:{fa:"سمینار جامع رنگ و لایت",tr:"Kapsamlı Renk & Röfle Semineri",en:"Comprehensive Color & Highlights"},
-    info:{fa:"۳ روز فشرده · مدرک معتبر · ظرفیت محدود",tr:"3 gün · Sertifikalı · Sınırlı",en:"3 days · Certified · Limited"},
-    status:"open" },
-  { day:{fa:"۱۵",tr:"15",en:"15"}, month:{fa:"مرداد",tr:"Ağu",en:"Aug"},
-    title:{fa:"دوره تخصصی کراتین و احیا",tr:"Uzman Keratin Kursu",en:"Advanced Keratin Course"},
-    info:{fa:"۲ روز · کار عملی روی مدل",tr:"2 gün · Model üzerinde uygulama",en:"2 days · Hands-on practice"},
-    status:"open" },
-  { day:{fa:"۰۲",tr:"02",en:"02"}, month:{fa:"شهریور",tr:"Eyl",en:"Sep"},
-    title:{fa:"میکاپ عروس حرفه‌ای",tr:"Profesyonel Gelin Makyajı",en:"Professional Bridal Makeup"},
-    info:{fa:"۴ روز · از پایه تا پیشرفته",tr:"4 gün · Temelden ileri",en:"4 days · Basic to advanced"},
-    status:"soon" },
-  { day:{fa:"۲۰",tr:"20",en:"20"}, month:{fa:"خرداد",tr:"Haz",en:"Jun"},
-    title:{fa:"ورکشاپ هیر تتو",tr:"Hair Tattoo Atölyesi",en:"Hair Tattoo Workshop"},
-    info:{fa:"۱ روز · برگزار شد",tr:"1 gün · Tamamlandı",en:"1 day · Completed"},
-    status:"full" },
-];
+
+
 
 const SERVICES = [
   { title:{fa:"عروس",tr:"Gelin",en:"Bridal"}, desc:{fa:"پکیج کامل روز عروسی، از میکاپ تا شینیون",tr:"Tam düğün günü paketi",en:"Complete wedding-day package"} , img:"arus" },
@@ -1762,6 +1835,35 @@ const PRODUCTS = [
     name:{fa:"پلکس موراها — احیا مو",tr:"Moraha Plex",en:"Moraha Smart Plex"},
     desc:{fa:"تقویت‌کننده حرفه‌ای پیوندهای مو، ۵۰ گرم",tr:"Profesyonel saç bağı güçlendirici, 50 g",en:"Pro hair bond booster, 50 g"},
     price:{fa:"۳٬۲۰۰٬۰۰۰",tr:"3.200.000",en:"3,200,000"}, priceN:3200000 },
+  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:null,
+    img:"img/lpp.jpg",
+    name:{fa:"ماسک مو LPP & PPT زکابر",tr:"Zekaber LPP & PPT Maske",en:"Zekaber LPP & PPT Mask"},
+    desc:{fa:"ترمیم کورتکس و کوتیکل، مخصوص موی رنگ‌شده، ۵۰۰ میل",tr:"Korteks ve kütikül onarımı, 500 ml",en:"Cortex & cuticle repair, 500 ml"},
+    price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
+
+  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"پرفروش",tr:"Çok Satan",en:"Bestseller"},
+    img:"img/botax.jpg",
+    name:{fa:"ماسک بوتاکس مو زکابر",tr:"Zekaber Saç Botoks Maskesi",en:"Zekaber Hair Botox Mask"},
+    desc:{fa:"کلاژن و پروتئین، ضد وز و صاف‌کننده، ۵۰۰ میل",tr:"Kolajen ve protein, anti-frizz, 500 ml",en:"Collagen & protein, anti-frizz, 500 ml"},
+    price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
+
+  { cat:{fa:"شامپو",tr:"Şampuan",en:"Shampoo"}, catKey:"shampoo", tag:null,
+    img:"img/shampo.jpg",
+    name:{fa:"شامپو ضد ریزش زکابر",tr:"Zekaber Dökülme Karşıtı Şampuan",en:"Zekaber Anti-Hair Loss Shampoo"},
+    desc:{fa:"کراتین و کلاژن، تقویت و رشد مجدد مو، بدون سولفات",tr:"Keratin ve kolajen, sülfatsız",en:"Keratin & collagen, sulfate-free"},
+    price:{fa:"۱٬۲۵۰٬۰۰۰",tr:"1.250.000",en:"1,250,000"}, priceN:1250000 },
+
+  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"حرفه‌ای",tr:"Profesyonel",en:"Pro"},
+    img:"img/coktail.jpg",
+    name:{fa:"هیر کوکتل زکابر",tr:"Zekaber Hair Cocktail",en:"Zekaber Hair Cocktail"},
+    desc:{fa:"پودر ترمیم و احیای پیشرفته مو، ۵۰ گرم",tr:"Gelişmiş onarım ve canlandırma pudrası, 50 g",en:"Advanced repair & revival powder, 50 g"},
+    price:{fa:"۱٬۸۰۰٬۰۰۰",tr:"1.800.000",en:"1,800,000"}, priceN:1800000 },
+
+  { cat:{fa:"مراقبت مو",tr:"Saç Bakımı",en:"Hair Care"}, catKey:"hair", tag:null,
+    img:"img/koster.jpg",
+    name:{fa:"اسپری دوفاز کستر انرژی",tr:"Koster Energy İki Fazlı Sprey",en:"Koster Energy Two-Phase Spray"},
+    desc:{fa:"نرم‌کننده دوفاز بدون آبکشی، ۲۵۰ میل",tr:"Durulanmayan iki fazlı bakım, 250 ml",en:"Leave-in two-phase conditioner, 250 ml"},
+    price:{fa:"۳٬۲۰۰٬۰۰۰",tr:"3.200.000",en:"3,200,000"}, priceN:3200000 },
 ];
 
 /* =========================================================
@@ -1784,50 +1886,13 @@ const FILTERS = [
   { key:"hair", label:{fa:"مراقبت مو",tr:"Saç Bakımı",en:"Hair Care"} },
   { key:"repair", label:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"} },
   { key:"color", label:{fa:"مکمل رنگ",tr:"Renk Takviyesi",en:"Color Supplement"} },
+  { key:"shampoo", label:{fa:"شامپو",tr:"Şampuan",en:"Shampoo"} },
 ];
 
 /* =========================================================
    RENDER
    ========================================================= */
-function renderCourses(){
-  document.getElementById('courseGrid').innerHTML = COURSES.map((c,i)=>`
-    <article class="course-card">
-      <div class="course-img">
-        <img src="${c.img}" alt="${c.title[lang]}" loading="lazy">
-        <span class="video-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>${lang==='fa'?'ویدیو آموزشی':lang==='tr'?'Video':'Video'}</span>
-        <span class="course-level">${c.level[lang]}</span>
-        <div class="course-play"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
-      </div>
-      <div class="course-body">
-        <h3>${c.title[lang]}</h3>
-        <p>${c.desc[lang]}</p>
-        <div class="course-meta">
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>${c.dur[lang]}</div>
-          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>${c.lessons[lang]}</div>
-        </div>
-        <div class="course-foot">
-          <span class="course-cta-label"><span data-lang="fa">دوره ویدیویی</span><span data-lang="tr">Video Kursu</span><span data-lang="en">Video Course</span></span>
-          <button class="btn-sm" onclick="buyVideo(${i})">${lang==='fa'?'اطلاعات و ثبت‌نام':lang==='tr'?'Bilgi & Kayıt':'Info & Enroll'}</button>
-        </div>
-      </div>
-    </article>`).join('');
-}
 
-function renderBulletin(){
-  const statusTxt = {
-    open:{fa:"ثبت‌نام باز",tr:"Kayıt Açık",en:"Open"},
-    soon:{fa:"به‌زودی",tr:"Yakında",en:"Soon"},
-    full:{fa:"تکمیل",tr:"Doldu",en:"Full"}
-  };
-  const btnTxt = {fa:"ثبت‌نام",tr:"Kayıt",en:"Enroll"};
-  document.getElementById('bulletinList').innerHTML = BULLETIN.map(b=>`
-    <div class="bulletin-row" ${b.status!=='full'?`onclick="enrollCourse('${encodeURIComponent(b.title[lang])}')"`:''}>
-      <div class="bull-date"><div class="d">${b.day[lang]}</div><div class="m">${b.month[lang]}</div></div>
-      <div class="bull-info"><h4>${b.title[lang]}</h4><p>${b.info[lang]}</p></div>
-      <span class="bull-status ${b.status}">${statusTxt[b.status][lang]}</span>
-      <div class="bull-cta"><button ${b.status==='full'?'disabled':''} onclick="event.stopPropagation();enrollCourse('${encodeURIComponent(b.title[lang])}')">${b.status==='full'?statusTxt.full[lang]:btnTxt[lang]}</button></div>
-    </div>`).join('');
-}
 
 function renderServices(){
   document.getElementById('svcList').innerHTML = SERVICES.map((s,i)=>`
@@ -2040,7 +2105,7 @@ function enrollCourse(title){
 /* خرید ویدیوی آموزشی: اگر buyUrl پر باشد (لینک ویدم) مستقیم می‌رود،
    وگرنه پنجره انتخاب راه ارتباطی آموزش باز می‌شود. */
 function buyVideo(i){
-  const c = COURSES[i];
+  const c = (typeof COURSES!=="undefined"&&COURSES[i])||null; if(!c){openContactPicker("education");return;}
   if(c.buyUrl && c.buyUrl.trim()!==""){
     window.open(c.buyUrl, '_blank'); return;
   }
@@ -2197,7 +2262,7 @@ function setLang(l){
   document.documentElement.dir = (l==="fa") ? "rtl" : "ltr";
   ['fa','tr','en'].forEach(x=>document.getElementById('lang-'+x).classList.toggle('active', x===l));
   // re-render dynamic content in new language
-  renderCourses(); renderBulletin(); renderServices(); renderFilters(); renderProducts(); updateCart();
+  renderServices(); renderFilters(); renderProducts(); updateCart();
   // reset filter active state visually handled by renderFilters
   currentFilter = "all";
   closeMenu();
@@ -2238,7 +2303,7 @@ const io = new IntersectionObserver((entries)=>{
    INIT
    ========================================================= */
 document.getElementById('year').textContent = new Date().getFullYear();
-renderCourses(); renderBulletin(); renderServices(); renderFilters(); renderProducts(); updateCart();
+renderServices(); renderFilters(); renderProducts(); updateCart();
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 // close mobile menu when an in-page link is tapped (external links stay open)
