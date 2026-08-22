@@ -416,6 +416,40 @@ body.lang-en .country-chip,body.lang-tr .country-chip{padding:6px 8px 6px 14px}
   radial-gradient(ellipse 55% 45% at 10% 70%, rgba(142,79,176,.10), transparent 60%),
   var(--paper)}
 
+/* direct entry to the online academy */
+.academy-entry{
+  display:inline-flex;align-items:center;gap:13px;margin-top:24px;
+  padding:12px 16px 12px 13px;border-radius:18px;
+  background:linear-gradient(135deg,var(--ink),var(--sage-deep));color:var(--cream);
+  border:1px solid rgba(194,163,94,.38);
+  box-shadow:0 14px 34px -18px rgba(22,21,15,.75);
+  text-align:start;transition:transform .3s,box-shadow .3s,background .3s;
+}
+body.lang-en .academy-entry,body.lang-tr .academy-entry{padding:12px 13px 12px 16px}
+.academy-entry:hover{
+  transform:translateY(-3px);
+  background:linear-gradient(135deg,var(--sage-deep),var(--sage));
+  box-shadow:0 20px 42px -20px rgba(95,107,66,.9);
+}
+.academy-entry-icon{
+  width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  flex-shrink:0;background:rgba(194,163,94,.17);color:var(--gold-soft);
+}
+.academy-entry-icon svg{width:23px;height:23px}
+.academy-entry-copy{display:flex;flex-direction:column;line-height:1.45}
+.academy-entry-copy strong{font-size:14.5px;font-weight:700;color:var(--cream)}
+.academy-entry-copy small{font-size:11.5px;color:rgba(247,243,234,.72);font-weight:300;margin-top:2px}
+.academy-entry-arrow{width:19px;height:19px;color:var(--gold-soft);flex-shrink:0;transition:transform .3s}
+.academy-entry:hover .academy-entry-arrow{transform:translateX(-3px)}
+body.lang-fa .academy-entry-arrow{transform:scaleX(-1)}
+body.lang-fa .academy-entry:hover .academy-entry-arrow{transform:translateX(-3px) scaleX(-1)}
+body.lang-en .academy-entry:hover .academy-entry-arrow,
+body.lang-tr .academy-entry:hover .academy-entry-arrow{transform:translateX(3px)}
+@media(max-width:560px){
+  .academy-entry{width:100%;max-width:390px;justify-content:flex-start;padding:12px 14px}
+  .academy-entry-copy{flex:1}
+}
+
 /* --- next-course banner --- */
 .next-banner{
   position:relative;overflow:hidden;
@@ -1570,6 +1604,14 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">آکادمی رازمهر</span><span data-lang="tr">Razmehr Akademi</span><span data-lang="en">Razmehr Academy</span></div>
       <h2><span data-lang="fa">مرکز <em>آموزش</em></span><span data-lang="tr">Eğitim <em>Merkezi</em></span><span data-lang="en">Training <em>Center</em></span></h2>
       <p><span data-lang="fa">هنر زیبایی را حرفه‌ای بیاموزید — دوره‌های تخصصی حضوری زیر نظر استاد فاطمه زارع، با پشتیبانی بلندمدت.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — uzman yüz yüze kurslar, uzun süreli destekle.</span><span data-lang="en">Master the art of beauty — specialist in-person courses with long-term support.</span></p>
+      <a class="academy-entry" href="https://academy.razmehrbeauty.com/" aria-label="ورود به آکادمی آنلاین رازمهر">
+        <span class="academy-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5L12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></span>
+        <span class="academy-entry-copy">
+          <strong data-lang="fa">ورود به آکادمی آنلاین رازمهر</strong><strong data-lang="tr">Razmehr Online Akademi'ye Gir</strong><strong data-lang="en">Enter Razmehr Online Academy</strong>
+          <small data-lang="fa">مشاهده دوره‌ها و پنل آموزشی</small><small data-lang="tr">Kursları ve eğitim panelini görüntüle</small><small data-lang="en">View courses and your learning portal</small>
+        </span>
+        <svg class="academy-entry-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
     </div>
 
     <!-- 🎯 دوره حضوری پیشِ‌رو -->
