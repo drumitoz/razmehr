@@ -652,8 +652,18 @@ body.lang-en .svc-cta-banner::before,body.lang-tr .svc-cta-banner::before{right:
 }
 .product-card:hover::before{transform:scaleX(1)}
 .product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px -20px rgba(78,111,192,.3);border-color:transparent}
-.product-img{aspect-ratio:1;position:relative;overflow:hidden;background:linear-gradient(150deg,var(--cream-warm),#e2d9c4);display:flex;align-items:center;justify-content:center}
-.product-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.product-img{
+  aspect-ratio:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;
+  padding:15px;background:
+    radial-gradient(circle at 18% 18%,rgba(255,255,255,.88) 0 8%,transparent 30%),
+    linear-gradient(145deg,#f8f1e6 0%,#eadcc7 58%,#d9c49f 100%);
+}
+.product-img::before{content:"";position:absolute;width:68%;height:68%;border:1px solid rgba(194,163,94,.34);border-radius:50%;top:8%;right:-22%;pointer-events:none}
+.product-img::after{content:"";position:absolute;width:72px;height:72px;border-radius:50%;left:-25px;bottom:-24px;background:rgba(255,255,255,.36);box-shadow:0 0 0 12px rgba(255,255,255,.12);pointer-events:none}
+.product-img img{
+  width:100%;height:100%;object-fit:contain;position:relative;z-index:1;border-radius:12px;
+  background:#fff;box-shadow:0 18px 32px -22px rgba(54,40,22,.72);transition:transform .5s;
+}
 .product-card:hover .product-img img{transform:scale(1.05)}
 .product-tag{position:absolute;top:12px;font-size:10px;font-weight:600;padding:5px 11px;border-radius:24px;letter-spacing:.5px;text-transform:uppercase;background:var(--gold);color:var(--ink)}
 body.lang-fa .product-tag{right:12px}
@@ -670,6 +680,9 @@ body.lang-fa .product-price{font-family:var(--font-fa);font-weight:700}
 .add-btn:hover{background:var(--gold);color:var(--ink);transform:scale(1.08)}
 .add-btn svg{width:19px;height:19px}
 .add-btn.added{background:var(--gold);color:var(--ink)}
+.shop-more{display:flex;justify-content:center;margin-top:34px}
+.shop-more .btn{display:inline-flex;align-items:center;gap:9px}
+.shop-more svg{width:18px;height:18px}
 
 /* ================= GLOBAL SEARCH ================= */
 .search-overlay{
@@ -1909,6 +1922,12 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
     </div>
     <div class="shop-filter" id="shopFilter"></div>
     <div class="product-grid" id="productGrid"></div>
+    <div class="shop-more reveal">
+      <a class="btn btn-primary" href="shop.html">
+        <span data-lang="fa">مشاهده همه محصولات</span><span data-lang="tr">Tüm ürünleri gör</span><span data-lang="en">View all products</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -2115,6 +2134,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
 <!-- toast -->
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg"></span></div>
 
+<script src="products.js"></script>
 <script>
 /* =========================================================
    RAZMEHR — CONFIGURATION
@@ -2176,70 +2196,15 @@ const SERVICES = [
   { title:{fa:"اصلاح صورت و ابرو",tr:"Yüz & Kaş Şekillendirme",en:"Face & Brow Grooming"}, desc:{fa:"فرم‌دهی ابرو و پاک‌سازی صورت",tr:"Kaş şekillendirme ve yüz temizliği",en:"Brow shaping & facial grooming"} , img:"eslah" },
 ];
 
-/* تصویر شاخص کارت خدمات؛ تا زمان رسیدن عکس اختصاصی بعضی لاین‌ها،
-   نزدیک‌ترین تصویر واقعی موجود از آرشیو رازمهر نمایش داده می‌شود. */
+/* تصویر شاخص کارت خدمات؛ برای لاین‌های بدون نمونه‌کار واقعی،
+   گل مینیمال رازمهر نمایش داده می‌شود تا عکس نامرتبط استفاده نشود. */
 const SERVICE_THUMBS = {
-  arus:"img/arus1.jpg", rang:"img/rang1.jpg", keratin:"img/keratin1.jpg",
-  kutahi:"img/kutahi1.jpg", mikap:"img/mikap1.jpg", shinion:"img/shinion1.jpg",
-  baft:"img/baft1.jpg", nakhon:"img/nakhon1.jpg", pedikur:"img/bagh.jpg",
-  mozhe:"img/mikap2.jpg", daem:"img/vidtatoo.jpg", tatoo:"img/vidtatoo.jpg",
-  eslah:"img/mikap3.jpg"
+  arus:"img/arus2.jpg", rang:"img/rang6.jpg", keratin:"img/keratin1.jpg",
+  kutahi:"img/kutahi2.jpg", mikap:"img/mikap4.jpg", shinion:"img/shinion1.jpg",
+  baft:"img/baft1.jpg", nakhon:"img/nakhon6.jpg", pedikur:"img/service-flower.webp",
+  mozhe:"img/service-flower.webp", daem:"img/service-flower.webp", tatoo:"img/service-flower.webp",
+  eslah:"img/service-flower.webp"
 };
-
-const PRODUCTS = [
-  { cat:{fa:"مکمل رنگ",tr:"Renk Takviyesi",en:"Color Supplement"}, catKey:"color", tag:{fa:"ویژه",tr:"Özel",en:"Featured"},
-    img:"img/volum.jpg",
-    name:{fa:"ولومایزر",tr:"VoluM@izer",en:"VoluM@izer"},
-    desc:{fa:"مکمل افزایش حجم و شفافیت رنگ مو، بدون آمونیاک",tr:"Saç rengi hacim ve parlaklık takviyesi",en:"Hair color volume & clarity booster"},
-    price:{fa:"۵٬۷۰۰٬۰۰۰",tr:"5.700.000",en:"5,700,000"}, priceN:5700000 },
-
-  { cat:{fa:"مراقبت مو",tr:"Saç Bakımı",en:"Hair Care"}, catKey:"hair", tag:{fa:"پرفروش",tr:"Çok Satan",en:"Bestseller"},
-    img:"img/esprey.jpg",
-    name:{fa:"اسپری ۲۰ کاره موراها",tr:"Moraha 20in1 Sprey",en:"Moraha 20in1 Spray"},
-    desc:{fa:"محافظت شدید، ضد وز و ضد گره در یک اسپری",tr:"Yoğun koruma, anti-frizz ve düğüm önleyici",en:"Intense protection, anti-frizz & anti-knot"},
-    price:{fa:"۳٬۸۰۰٬۰۰۰",tr:"3.800.000",en:"3,800,000"}, priceN:3800000 },
-
-  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:null,
-    img:"img/freeze.jpg",
-    name:{fa:"فریز — احیا مو",tr:"Freeze — Saç Onarımı",en:"Freeze — Hair Repair"},
-    desc:{fa:"احیای عمقی و بازسازی موهای آسیب‌دیده",tr:"Derin onarım ve yıpranmış saç bakımı",en:"Deep repair for damaged hair"},
-    price:{fa:"۷٬۲۰۰٬۰۰۰",tr:"7.200.000",en:"7,200,000"}, priceN:7200000 },
-
-  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"حرفه‌ای",tr:"Profesyonel",en:"Pro"},
-    img:"img/plex.jpg",
-    name:{fa:"پلکس موراها — احیا مو",tr:"Moraha Plex",en:"Moraha Smart Plex"},
-    desc:{fa:"تقویت‌کننده حرفه‌ای پیوندهای مو، ۵۰ گرم",tr:"Profesyonel saç bağı güçlendirici, 50 g",en:"Pro hair bond booster, 50 g"},
-    price:{fa:"۳٬۲۰۰٬۰۰۰",tr:"3.200.000",en:"3,200,000"}, priceN:3200000 },
-  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:null,
-    img:"img/lpp.jpg",
-    name:{fa:"ماسک مو LPP & PPT زکابر",tr:"Zekaber LPP & PPT Maske",en:"Zekaber LPP & PPT Mask"},
-    desc:{fa:"ترمیم کورتکس و کوتیکل، مخصوص موی رنگ‌شده، ۵۰۰ میل",tr:"Korteks ve kütikül onarımı, 500 ml",en:"Cortex & cuticle repair, 500 ml"},
-    price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
-
-  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"پرفروش",tr:"Çok Satan",en:"Bestseller"},
-    img:"img/botax.jpg",
-    name:{fa:"ماسک بوتاکس مو زکابر",tr:"Zekaber Saç Botoks Maskesi",en:"Zekaber Hair Botox Mask"},
-    desc:{fa:"کلاژن و پروتئین، ضد وز و صاف‌کننده، ۵۰۰ میل",tr:"Kolajen ve protein, anti-frizz, 500 ml",en:"Collagen & protein, anti-frizz, 500 ml"},
-    price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
-
-  { cat:{fa:"شامپو",tr:"Şampuan",en:"Shampoo"}, catKey:"shampoo", tag:null,
-    img:"img/shampo.jpg",
-    name:{fa:"شامپو ضد ریزش زکابر",tr:"Zekaber Dökülme Karşıtı Şampuan",en:"Zekaber Anti-Hair Loss Shampoo"},
-    desc:{fa:"کراتین و کلاژن، تقویت و رشد مجدد مو، بدون سولفات",tr:"Keratin ve kolajen, sülfatsız",en:"Keratin & collagen, sulfate-free"},
-    price:{fa:"۱٬۲۵۰٬۰۰۰",tr:"1.250.000",en:"1,250,000"}, priceN:1250000 },
-
-  { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"حرفه‌ای",tr:"Profesyonel",en:"Pro"},
-    img:"img/coktail.jpg",
-    name:{fa:"هیر کوکتل زکابر",tr:"Zekaber Hair Cocktail",en:"Zekaber Hair Cocktail"},
-    desc:{fa:"پودر ترمیم و احیای پیشرفته مو، ۵۰ گرم",tr:"Gelişmiş onarım ve canlandırma pudrası, 50 g",en:"Advanced repair & revival powder, 50 g"},
-    price:{fa:"۱٬۸۰۰٬۰۰۰",tr:"1.800.000",en:"1,800,000"}, priceN:1800000 },
-
-  { cat:{fa:"مراقبت مو",tr:"Saç Bakımı",en:"Hair Care"}, catKey:"hair", tag:null,
-    img:"img/koster.jpg",
-    name:{fa:"اسپری دوفاز کستر انرژی",tr:"Koster Energy İki Fazlı Sprey",en:"Koster Energy Two-Phase Spray"},
-    desc:{fa:"نرم‌کننده دوفاز بدون آبکشی، ۲۵۰ میل",tr:"Durulanmayan iki fazlı bakım, 250 ml",en:"Leave-in two-phase conditioner, 250 ml"},
-    price:{fa:"۳٬۲۰۰٬۰۰۰",tr:"3.200.000",en:"3,200,000"}, priceN:3200000 },
-];
 
 /* =========================================================
    STATE + I18N
@@ -2372,7 +2337,7 @@ function renderServices(){
   document.getElementById('svcList').innerHTML = SERVICES.map((s,i)=>`
     <div class="svc-item">
       <div class="svc-top">
-        <img class="svc-thumb" src="${SERVICE_THUMBS[s.img] || 'img/bagh.jpg'}" alt="${s.title[lang]}" loading="lazy">
+        <img class="svc-thumb" src="${SERVICE_THUMBS[s.img] || 'img/service-flower.webp'}" alt="${s.title[lang]}" loading="lazy">
         <span class="svc-num">${String(i+1).padStart(2,'0')}</span>
         <div class="svc-info"><h4>${s.title[lang]}</h4><p>${s.desc[lang]}</p></div>
       </div>
@@ -2396,7 +2361,8 @@ function renderFilters(){
 
 let currentFilter = "all";
 function renderProducts(){
-  const list = currentFilter==="all" ? PRODUCTS : PRODUCTS.filter(p=>p.catKey===currentFilter);
+  const source = currentFilter==="all" ? PRODUCTS : PRODUCTS.filter(p=>p.catKey===currentFilter);
+  const list = source.slice(0,4);
   document.getElementById('productGrid').innerHTML = list.map(p=>{
     const id = p.name.en.replace(/\s/g,'_');
     return `
@@ -2460,7 +2426,7 @@ function normalizeSearchText(value){
     .replace(/[\u064B-\u065F\u0670]/g,'').replace(/\s+/g,' ').trim();
 }
 function getSiteSearchEntries(){
-  const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/bagh.jpg',title:s.title,desc:s.desc}));
+  const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/service-flower.webp',title:s.title,desc:s.desc}));
   const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
   return [...services,...products,...SEARCH_SECTIONS];
 }
