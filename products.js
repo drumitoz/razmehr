@@ -30,7 +30,7 @@ const PRODUCTS = [
     price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
 
   { cat:{fa:"احیا مو",tr:"Saç Onarımı",en:"Hair Repair"}, catKey:"repair", tag:{fa:"پرفروش",tr:"Çok Satan",en:"Bestseller"},
-    img:"img/botax.jpg", name:{fa:"ماسک بوتاکس مو زکابر",tr:"Zekaber Saç Botoks Maskesi",en:"Zekaber Hair Botox Mask"},
+    img:"img/botax-original.jpg", name:{fa:"ماسک بوتاکس مو زکابر",tr:"Zekaber Saç Botoks Maskesi",en:"Zekaber Hair Botox Mask"},
     desc:{fa:"کلاژن و پروتئین، ضد وز و صاف‌کننده، ۵۰۰ میل",tr:"Kolajen ve protein, anti-frizz, 500 ml",en:"Collagen & protein, anti-frizz, 500 ml"},
     price:{fa:"۲٬۵۵۰٬۰۰۰",tr:"2.550.000",en:"2,550,000"}, priceN:2550000 },
 
