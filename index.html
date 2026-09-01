@@ -656,15 +656,14 @@ body.lang-en .svc-cta-banner::before,body.lang-tr .svc-cta-banner::before{right:
 .product-card:hover{transform:translateY(-6px);box-shadow:0 20px 50px -20px rgba(78,111,192,.3);border-color:transparent}
 .product-img{
   aspect-ratio:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;
-  padding:15px;background:
-    radial-gradient(circle at 18% 18%,rgba(255,255,255,.88) 0 8%,transparent 30%),
-    linear-gradient(145deg,#f8f1e6 0%,#eadcc7 58%,#d9c49f 100%);
+  width:100%;padding:0;border:0;cursor:pointer;isolation:isolate;
+  background:#eee2cf url('img/product-bg-a.webp') center/cover no-repeat;
 }
-.product-img::before{content:"";position:absolute;width:68%;height:68%;border:1px solid rgba(194,163,94,.34);border-radius:50%;top:8%;right:-22%;pointer-events:none}
-.product-img::after{content:"";position:absolute;width:72px;height:72px;border-radius:50%;left:-25px;bottom:-24px;background:rgba(255,255,255,.36);box-shadow:0 0 0 12px rgba(255,255,255,.12);pointer-events:none}
+.product-card:nth-child(even) .product-img{background-image:url('img/product-bg-b.webp')}
+.product-img::before,.product-img::after{display:none}
 .product-img img{
-  width:100%;height:100%;object-fit:contain;position:relative;z-index:1;
-  background:transparent;filter:drop-shadow(0 16px 16px rgba(54,40,22,.18));transition:transform .5s;
+  width:100%;height:100%;object-fit:cover;position:relative;z-index:1;
+  background:#fff;mix-blend-mode:multiply;filter:none;transition:transform .5s;
 }
 .product-card:hover .product-img img{transform:scale(1.05)}
 .product-tag{position:absolute;z-index:3;top:12px;font-size:10px;font-weight:600;padding:5px 11px;border-radius:24px;letter-spacing:.5px;text-transform:uppercase;background:var(--gold);color:var(--ink)}
@@ -2371,7 +2370,7 @@ function renderProducts(){
     const id = p.name.en.replace(/\s/g,'_');
     return `
     <article class="product-card">
-      <div class="product-img"><img src="${p.displayImg || p.img}" alt="${p.name[lang]}" loading="lazy">${p.tag?`<span class="product-tag">${p.tag[lang]}</span>`:''}</div>
+      <button type="button" class="product-img" onclick="openProduct('${p.img.split('/').pop().replace('.jpg','')}')" aria-label="${lang==='fa'?'مشاهده جزئیات':lang==='tr'?'Detayları gör':'View details'} — ${p.name[lang]}"><img src="${p.img}" alt="${p.name[lang]}" loading="lazy">${p.tag?`<span class="product-tag">${p.tag[lang]}</span>`:''}</button>
       <div class="product-body">
         <div class="product-cat">${p.cat[lang]}</div>
         <h4>${p.name[lang]}</h4>
@@ -2431,7 +2430,7 @@ function normalizeSearchText(value){
 }
 function getSiteSearchEntries(){
   const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/service-flower.webp',title:s.title,desc:s.desc}));
-  const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.displayImg || p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
+  const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
   return [...services,...products,...SEARCH_SECTIONS];
 }
 function updateSearchCopy(){
@@ -2531,7 +2530,7 @@ function updateCart(){
     items.innerHTML = entries.map(([id,q])=>{
       const p = findProduct(id);
       return `<div class="cart-line">
-        <img class="cart-line-img" src="${p.displayImg || p.img}" alt="">
+        <img class="cart-line-img" src="${p.img}" alt="">
         <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${p.price[lang]} ${CONFIG.currency[lang]}</div></div>
         <div class="cart-qty"><button onclick="changeQty('${id}',-1)">−</button><span>${lang==="fa"?q.toLocaleString('fa-IR'):q}</span><button onclick="changeQty('${id}',1)">+</button></div>
         <button class="cart-line-remove" onclick="removeItem('${id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg></button>

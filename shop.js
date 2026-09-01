@@ -4,6 +4,7 @@ const SHOP_FILTERS = [
 let activeFilter = "all";
 let query = "";
 let cart = JSON.parse(localStorage.getItem("razmehr-shop-cart") || "[]");
+let activeDetailId = null;
 const toman = new Intl.NumberFormat("fa-IR");
 const $ = id => document.getElementById(id);
 
@@ -24,10 +25,11 @@ function renderProducts(){
   const list = visibleProducts();
   $("resultMeta").textContent = `${toman.format(list.length)} محصول`;
   $("grid").innerHTML = list.length ? list.map(product => `<article class="card">
-    <div class="photo"><img src="${product.displayImg || product.img}" alt="${product.name.fa}" loading="lazy">${product.tag?`<span class="tag">${product.tag.fa}</span>`:""}</div>
-    <div class="body"><div class="cat">${product.cat.fa}</div><h2>${product.name.fa}</h2><p class="desc">${product.desc.fa}</p><div class="foot"><span class="price">${product.price.fa} تومان</span><button class="add" data-id="${productKey(product)}" aria-label="افزودن ${product.name.fa} به سبد">+</button></div></div>
+    <button type="button" class="photo" data-open="${productKey(product)}" aria-label="مشاهده توضیحات ${product.name.fa}"><img src="${product.img}" alt="${product.name.fa}" loading="lazy">${product.tag?`<span class="tag">${product.tag.fa}</span>`:""}</button>
+    <div class="body"><div class="cat">${product.cat.fa}</div><h2>${product.name.fa}</h2><p class="desc">${product.desc.fa}</p><button type="button" class="detail-btn" data-open="${productKey(product)}">توضیحات محصول</button><div class="foot"><span class="price">${product.price.fa} تومان</span><button class="add" data-id="${productKey(product)}" aria-label="افزودن ${product.name.fa} به سبد">+</button></div></div>
   </article>`).join("") : `<div class="empty">محصولی با این عبارت پیدا نشد.</div>`;
   document.querySelectorAll(".add").forEach(button => button.addEventListener("click",()=>addToCart(button.dataset.id)));
+  document.querySelectorAll("[data-open]").forEach(button => button.addEventListener("click",()=>openProductDetails(button.dataset.open)));
 }
 function addToCart(id){
   const row = cart.find(item=>item.id===id);
@@ -42,13 +44,26 @@ function renderCart(){
   let total=0;
   $("cartItems").innerHTML = cart.length ? cart.map(item=>{
     const product=PRODUCTS.find(p=>productKey(p)===item.id);if(!product)return "";total+=product.priceN*item.qty;
-    return `<div class="cart-row"><img src="${product.displayImg || product.img}" alt=""><div><h3>${product.name.fa}</h3><small>${toman.format(item.qty)} × ${product.price.fa}</small></div><button class="remove" data-id="${item.id}">حذف</button></div>`;
+    return `<div class="cart-row"><img src="${product.img}" alt=""><div><h3>${product.name.fa}</h3><small>${toman.format(item.qty)} × ${product.price.fa}</small></div><button class="remove" data-id="${item.id}">حذف</button></div>`;
   }).join("") : `<div class="empty">سبد خرید شما خالی است.</div>`;
   $("total").textContent=`${toman.format(total)} تومان`;
   document.querySelectorAll(".remove").forEach(button=>button.addEventListener("click",()=>removeFromCart(button.dataset.id)));
 }
 function openCart(){$("overlay").classList.add("open");$("drawer").classList.add("open")}
 function closeCart(){$("overlay").classList.remove("open");$("drawer").classList.remove("open")}
+function openProductDetails(id){
+  const product=PRODUCTS.find(item=>productKey(item)===id);if(!product)return;
+  activeDetailId=id;
+  $("pdImage").src=product.img;$("pdImage").alt=product.name.fa;
+  $("pdCat").textContent=product.cat.fa;$("pdTitle").textContent=product.name.fa;
+  $("pdDesc").textContent=product.desc.fa;$("pdPrice").textContent=`${product.price.fa} تومان`;
+  $("productDetailOverlay").classList.add("open");$("productDetailModal").classList.add("open");
+  document.body.style.overflow="hidden";
+}
+function closeProductDetails(){
+  activeDetailId=null;$("productDetailOverlay").classList.remove("open");$("productDetailModal").classList.remove("open");
+  document.body.style.overflow="";
+}
 function checkout(){
   if(!cart.length){showToast("سبد خرید خالی است");return}
   const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${p.name.fa} — ${item.qty} عدد`}).join("\n");
@@ -60,4 +75,7 @@ function showToast(message="به سبد خرید اضافه شد"){$("toast").te
 
 $("search").addEventListener("input",event=>{query=normalize(event.target.value);renderProducts()});
 $("cartOpen").addEventListener("click",openCart);$("close").addEventListener("click",closeCart);$("overlay").addEventListener("click",closeCart);$("checkout").addEventListener("click",checkout);
+$("pdClose").addEventListener("click",closeProductDetails);$("productDetailOverlay").addEventListener("click",closeProductDetails);
+$("pdAdd").addEventListener("click",()=>{if(activeDetailId){addToCart(activeDetailId);closeProductDetails()}});
+document.addEventListener("keydown",event=>{if(event.key==="Escape")closeProductDetails()});
 $("year").textContent=new Date().getFullYear();renderFilters();renderProducts();renderCart();
