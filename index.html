@@ -133,6 +133,14 @@ body.lang-fa .brand-sub{letter-spacing:1px;font-size:10px}
 .nav-links a:hover::after{transform:scaleX(1)}
 
 .nav-right{display:flex;align-items:center;gap:18px}
+.search-btn{
+  display:flex;align-items:center;justify-content:center;gap:7px;
+  min-height:42px;padding:9px 15px;border:1px solid rgba(95,107,66,.24);
+  border-radius:40px;background:rgba(247,243,234,.72);color:var(--sage-deep);
+  font-size:12.5px;font-weight:500;transition:all .3s;
+}
+.search-btn:hover{background:var(--cream);border-color:var(--sage);transform:translateY(-2px)}
+.search-btn svg{width:18px;height:18px;flex-shrink:0}
 /* language switch — hidden for now; re-enable when translations are finalized */
 .lang-switch{display:none}
 .lang-switch button{font-size:12px;padding:5px 12px;border-radius:40px;color:var(--muted);transition:all .25s;font-weight:500;letter-spacing:.5px}
@@ -574,6 +582,10 @@ body.lang-fa .course-price{font-family:var(--font-fa);font-weight:700}
   background:var(--paper);transition:all .35s;position:relative;overflow:hidden;
 }
 .svc-top{display:flex;align-items:center;gap:16px}
+.svc-thumb{
+  width:72px;height:72px;border-radius:13px;object-fit:cover;flex-shrink:0;
+  background:var(--cream-warm);border:1px solid rgba(95,107,66,.12);
+}
 .svc-actions{display:flex;gap:9px}
 .svc-btn{
   flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;
@@ -658,6 +670,55 @@ body.lang-fa .product-price{font-family:var(--font-fa);font-weight:700}
 .add-btn:hover{background:var(--gold);color:var(--ink);transform:scale(1.08)}
 .add-btn svg{width:19px;height:19px}
 .add-btn.added{background:var(--gold);color:var(--ink)}
+
+/* ================= GLOBAL SEARCH ================= */
+.search-overlay{
+  position:fixed;inset:0;background:rgba(22,21,15,.58);backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);opacity:0;visibility:hidden;transition:all .3s;z-index:230;
+}
+.search-overlay.open{opacity:1;visibility:visible}
+.search-modal{
+  position:fixed;left:50%;top:12vh;transform:translate(-50%,-18px) scale(.98);
+  width:min(92vw,720px);max-height:76vh;background:var(--paper);border-radius:24px;
+  box-shadow:0 30px 80px -20px rgba(22,21,15,.6);z-index:231;overflow:hidden;
+  opacity:0;visibility:hidden;transition:all .35s cubic-bezier(.16,1,.3,1);
+  display:flex;flex-direction:column;
+}
+.search-modal.open{opacity:1;visibility:visible;transform:translate(-50%,0) scale(1)}
+.search-head{display:flex;align-items:center;gap:12px;padding:17px 18px;border-bottom:1px solid var(--line);background:var(--cream)}
+.search-field{position:relative;display:flex;align-items:center;flex:1}
+.search-field>svg{position:absolute;width:20px;height:20px;color:var(--sage-deep);pointer-events:none}
+body.lang-fa .search-field>svg{right:15px}
+body.lang-en .search-field>svg,body.lang-tr .search-field>svg{left:15px}
+.search-input{
+  width:100%;height:48px;border:1px solid rgba(95,107,66,.26);border-radius:15px;
+  background:var(--paper);color:var(--ink);font-family:inherit;font-size:15px;outline:none;
+  transition:all .25s;
+}
+body.lang-fa .search-input{padding:0 48px 0 16px}
+body.lang-en .search-input,body.lang-tr .search-input{padding:0 16px 0 48px}
+.search-input:focus{border-color:var(--sage);box-shadow:0 0 0 4px rgba(95,107,66,.09)}
+.search-close{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--cream-warm);color:var(--ink);flex-shrink:0;transition:all .25s}
+.search-close:hover{background:var(--gold);transform:rotate(90deg)}
+.search-close svg{width:18px;height:18px}
+.search-meta{padding:14px 22px 8px;color:var(--muted);font-size:12.5px}
+.search-results{padding:8px 14px 18px;overflow-y:auto;display:flex;flex-direction:column;gap:7px}
+.search-result{
+  display:grid;grid-template-columns:58px minmax(0,1fr) 30px;gap:13px;align-items:center;
+  width:100%;padding:10px;border-radius:15px;text-align:inherit;transition:all .25s;color:var(--ink);
+}
+body.lang-fa .search-result{grid-template-columns:30px minmax(0,1fr) 58px}
+.search-result:hover,.search-result:focus-visible{background:var(--cream-warm);outline:none}
+.search-result-img{width:58px;height:58px;border-radius:12px;object-fit:cover;background:var(--cream-warm);grid-column:1}
+body.lang-fa .search-result-img{grid-column:3}
+.search-result-copy{min-width:0;grid-column:2}
+.search-result-type{display:block;color:var(--sage-deep);font-size:10.5px;font-weight:600;margin-bottom:4px}
+.search-result-title{display:block;font-size:14.5px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.search-result-desc{display:block;color:var(--muted);font-size:12px;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.search-result-arrow{width:18px;height:18px;color:var(--gold);grid-column:3;grid-row:1}
+body.lang-fa .search-result-arrow{grid-column:1;transform:scaleX(-1)}
+.search-empty{text-align:center;padding:36px 20px;color:var(--muted);font-size:14px;line-height:1.9}
+.search-hint{padding:11px 22px 15px;border-top:1px solid var(--line);background:var(--cream);color:var(--muted);font-size:11.5px}
 
 /* ================= CART DRAWER ================= */
 .overlay{position:fixed;inset:0;background:rgba(22,21,15,.5);backdrop-filter:blur(3px);opacity:0;visibility:hidden;transition:all .4s;z-index:200}
@@ -1245,6 +1306,9 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   .menu-foot .mf-ig svg{width:15px;height:15px}
 
   .menu-toggle{display:flex}
+  .nav-right{gap:8px}
+  .search-btn{width:42px;height:42px;min-height:42px;padding:0}
+  .search-btn .search-label{display:none}
   .nav-right .cart-btn span:not(.cart-count){display:none}
   .nav-right .cart-btn .cart-count{display:flex}
   .cart-btn{padding:11px 13px}
@@ -1257,6 +1321,44 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   .wrap{padding:0 20px}
   section{padding:70px 0}
   .brand-sub{display:none}
+}
+@media(max-width:560px){
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .product-body{padding:12px}
+  .product-cat{font-size:9.5px;letter-spacing:.3px;margin-bottom:5px}
+  .product-body h4{font-size:13.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:41px}
+  .product-body .pdesc{display:none}
+  .product-tag{top:8px;padding:4px 8px;font-size:8.5px}
+  body.lang-fa .product-tag{right:8px}
+  body.lang-en .product-tag,body.lang-tr .product-tag{left:8px}
+  .pinfo-btn{margin:7px 0 9px;padding:7px 6px;font-size:10.5px;gap:4px}
+  .pinfo-btn svg{width:13px;height:13px}
+  .product-foot{gap:6px;align-items:flex-end}
+  .product-price{font-size:12.5px;line-height:1.5}
+  .add-btn{width:34px;height:34px}
+  .add-btn svg{width:16px;height:16px}
+  .shop-filter{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;margin-inline:-20px;padding:0 20px 8px;margin-bottom:28px;scrollbar-width:none}
+  .shop-filter::-webkit-scrollbar{display:none}
+  .filter-btn{white-space:nowrap;padding:8px 15px;font-size:12px}
+  .svc-item{padding:14px;gap:12px}
+  .svc-top{gap:11px}
+  .svc-thumb{width:62px;height:62px;border-radius:11px}
+  .svc-num{width:22px;font-size:13px}
+  .svc-info h4{font-size:15px}
+  .svc-info p{font-size:11.5px}
+  .svc-btn{padding:9px 7px;font-size:11.5px;gap:5px}
+  .search-modal{top:8vh;width:94vw;max-height:84vh;border-radius:20px}
+  .search-head{padding:13px}
+  .search-input{height:46px;font-size:14px}
+  .search-meta{padding:12px 16px 6px}
+  .search-results{padding:7px 8px 14px}
+  .search-hint{display:none}
+}
+@media(max-width:400px){
+  .brand-logo{width:36px;height:36px}
+  .brand-name{font-size:18px;letter-spacing:2px}
+  .nav{gap:10px}
+  .product-grid{gap:9px}
 }
 </style>
 
@@ -1401,6 +1503,10 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <button onclick="setLang('tr')" id="lang-tr">TR</button>
         <button onclick="setLang('en')" id="lang-en">EN</button>
       </div>
+      <button class="search-btn" onclick="openSiteSearch()" aria-label="جست‌وجو در سایت">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <span class="search-label" data-lang="fa">جست‌وجو</span><span class="search-label" data-lang="tr">Ara</span><span class="search-label" data-lang="en">Search</span>
+      </button>
       <button class="cart-btn" onclick="openCart()">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
         <span data-lang="fa">سبد</span><span data-lang="tr">Sepet</span><span data-lang="en">Cart</span>
@@ -1805,6 +1911,21 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   </div>
 </section>
 
+<!-- ================= GLOBAL SITE SEARCH ================= -->
+<div class="search-overlay" id="searchOverlay" onclick="closeSiteSearch()"></div>
+<section class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+  <div class="search-head">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input class="search-input" id="siteSearchInput" type="search" autocomplete="off" oninput="renderSiteSearch(this.value)" aria-label="جست‌وجو در سایت">
+    </div>
+    <button class="search-close" onclick="closeSiteSearch()" aria-label="بستن جست‌وجو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  </div>
+  <h2 class="search-meta" id="searchTitle">جست‌وجو در خدمات، محصولات و دوره‌ها</h2>
+  <div class="search-results" id="siteSearchResults"></div>
+  <div class="search-hint" id="searchHint">برای بازکردن سریع جست‌وجو از Ctrl + K استفاده کنید.</div>
+</section>
+
 <!-- ================= CART DRAWER ================= -->
 <div class="overlay" id="overlay" onclick="closeCart()"></div>
 <aside class="cart-drawer" id="cartDrawer">
@@ -2054,6 +2175,16 @@ const SERVICES = [
   { title:{fa:"اصلاح صورت و ابرو",tr:"Yüz & Kaş Şekillendirme",en:"Face & Brow Grooming"}, desc:{fa:"فرم‌دهی ابرو و پاک‌سازی صورت",tr:"Kaş şekillendirme ve yüz temizliği",en:"Brow shaping & facial grooming"} , img:"eslah" },
 ];
 
+/* تصویر شاخص کارت خدمات؛ تا زمان رسیدن عکس اختصاصی بعضی لاین‌ها،
+   نزدیک‌ترین تصویر واقعی موجود از آرشیو رازمهر نمایش داده می‌شود. */
+const SERVICE_THUMBS = {
+  arus:"img/arus1.jpg", rang:"img/rang1.jpg", keratin:"img/keratin1.jpg",
+  kutahi:"img/kutahi1.jpg", mikap:"img/mikap1.jpg", shinion:"img/shinion1.jpg",
+  baft:"img/baft1.jpg", nakhon:"img/nakhon1.jpg", pedikur:"img/bagh.jpg",
+  mozhe:"img/mikap2.jpg", daem:"img/vidtatoo.jpg", tatoo:"img/vidtatoo.jpg",
+  eslah:"img/mikap3.jpg"
+};
+
 const PRODUCTS = [
   { cat:{fa:"مکمل رنگ",tr:"Renk Takviyesi",en:"Color Supplement"}, catKey:"color", tag:{fa:"ویژه",tr:"Özel",en:"Featured"},
     img:"img/volum.jpg",
@@ -2240,6 +2371,7 @@ function renderServices(){
   document.getElementById('svcList').innerHTML = SERVICES.map((s,i)=>`
     <div class="svc-item">
       <div class="svc-top">
+        <img class="svc-thumb" src="${SERVICE_THUMBS[s.img] || 'img/bagh.jpg'}" alt="${s.title[lang]}" loading="lazy">
         <span class="svc-num">${String(i+1).padStart(2,'0')}</span>
         <div class="svc-info"><h4>${s.title[lang]}</h4><p>${s.desc[lang]}</p></div>
       </div>
@@ -2291,6 +2423,91 @@ function filterProducts(key, btn){
   document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   renderProducts();
+}
+
+/* =========================================================
+   GLOBAL SITE SEARCH — خدمات، محصولات، دوره‌ها و بخش‌های اصلی
+   ========================================================= */
+const SEARCH_COPY = {
+  placeholder:{fa:"دنبال چه چیزی هستید؟",tr:"Ne arıyorsunuz?",en:"What are you looking for?"},
+  intro:{fa:"جست‌وجو در خدمات، محصولات و دوره‌ها",tr:"Hizmet, ürün ve kurslarda ara",en:"Search services, products and courses"},
+  popular:{fa:"پیشنهادهای پرکاربرد",tr:"Popüler öneriler",en:"Popular suggestions"},
+  results:{fa:"نتیجه",tr:"sonuç",en:"results"},
+  empty:{fa:"چیزی با این عبارت پیدا نشد. نام خدمت، محصول یا دوره را کوتاه‌تر بنویسید.",tr:"Bu aramayla eşleşen bir sonuç bulunamadı.",en:"No matching service, product, or course was found."},
+  hint:{fa:"برای بازکردن سریع جست‌وجو از Ctrl + K استفاده کنید.",tr:"Aramayı hızlı açmak için Ctrl + K kullanın.",en:"Use Ctrl + K to open search quickly."},
+  type:{
+    service:{fa:"خدمت",tr:"Hizmet",en:"Service"},
+    product:{fa:"محصول",tr:"Ürün",en:"Product"},
+    course:{fa:"دوره آموزشی",tr:"Kurs",en:"Course"},
+    section:{fa:"بخش سایت",tr:"Site bölümü",en:"Site section"}
+  }
+};
+
+const SEARCH_SECTIONS = [
+  {kind:"section",key:"home",img:"img/bagh.jpg",title:{fa:"عمارت زیبایی رازمهر",tr:"Razmehr Güzellik Konağı",en:"Razmehr Beauty Garden"},desc:{fa:"سالن، آکادمی، خدمات و فروشگاه رازمهر در یزد",tr:"Yazd'da salon, akademi ve mağaza",en:"Salon, academy, services and shop in Yazd"}},
+  {kind:"course",key:"courses",img:"img/vidrang.jpg",title:{fa:"دوره مدرسی رنگ و لایت",tr:"Renk ve Röfle Eğitmenlik Kursu",en:"Color & Highlights Instructor Course"},desc:{fa:"دوره حضوری، ثبت‌نام و ورود به آکادمی آنلاین",tr:"Yüz yüze eğitim ve online akademi",en:"In-person training and online academy"}},
+  {kind:"course",key:"courses",img:"img/vidkeratin.jpg",title:{fa:"آموزش صفر تا صد رنگ و لایت",tr:"Baştan Sona Renk ve Röfle",en:"Complete Color & Highlights Training"},desc:{fa:"دوره تخصصی حضوری با پشتیبانی",tr:"Destekli uzmanlık eğitimi",en:"Specialist in-person course with support"}},
+  {kind:"section",key:"services",img:"img/arus1.jpg",title:{fa:"خدمات تخصصی سالن",tr:"Uzman Salon Hizmetleri",en:"Specialist Salon Services"},desc:{fa:"عروس، رنگ و لایت، کراتین، کوتاهی، ناخن و سایر خدمات",tr:"Gelin, renk, keratin, kesim, tırnak ve diğer hizmetler",en:"Bridal, color, keratin, haircut, nails and more"}},
+  {kind:"section",key:"shop",img:"img/volum.jpg",title:{fa:"فروشگاه محصولات حرفه‌ای",tr:"Profesyonel Ürünler Mağazası",en:"Professional Product Shop"},desc:{fa:"محصولات مراقبت، احیا، رنگ و شامپو",tr:"Bakım, onarım, renk ve şampuan ürünleri",en:"Care, repair, color and shampoo products"}},
+  {kind:"section",key:"master",img:"img/ostad.jpg",title:{fa:"استاد فاطمه زارع",tr:"Usta Fateme Zare",en:"Master Fateme Zare"},desc:{fa:"بنیان‌گذار رازمهر و بانوی رنگ ایران",tr:"Razmehr kurucusu",en:"Founder of Razmehr"}},
+  {kind:"section",key:"contact",img:"img/bagh.jpg",title:{fa:"رزرو، ثبت‌نام و تماس",tr:"Randevu, Kayıt ve İletişim",en:"Booking, Enrollment & Contact"},desc:{fa:"واتساپ، اینستاگرام، شماره تماس و فرم درخواست",tr:"WhatsApp, Instagram ve iletişim formu",en:"WhatsApp, Instagram, phone and request form"}}
+];
+
+function allLangText(obj){ return Object.values(obj || {}).join(' '); }
+function normalizeSearchText(value){
+  return String(value || '').toLowerCase().replace(/ي/g,'ی').replace(/ك/g,'ک')
+    .replace(/[\u064B-\u065F\u0670]/g,'').replace(/\s+/g,' ').trim();
+}
+function getSiteSearchEntries(){
+  const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/bagh.jpg',title:s.title,desc:s.desc}));
+  const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
+  return [...services,...products,...SEARCH_SECTIONS];
+}
+function updateSearchCopy(){
+  const input = document.getElementById('siteSearchInput');
+  if(!input) return;
+  input.placeholder = SEARCH_COPY.placeholder[lang];
+  document.getElementById('searchHint').textContent = SEARCH_COPY.hint[lang];
+}
+function renderSiteSearch(value=''){
+  const q = normalizeSearchText(value);
+  const all = getSiteSearchEntries();
+  const matches = q ? all.filter(entry=>normalizeSearchText(`${allLangText(entry.title)} ${allLangText(entry.desc)}`).includes(q)) : all.slice(0,8);
+  document.getElementById('searchTitle').textContent = q ? `${matches.length.toLocaleString(lang==='fa'?'fa-IR':'en-US')} ${SEARCH_COPY.results[lang]}` : SEARCH_COPY.popular[lang];
+  const target = document.getElementById('siteSearchResults');
+  if(!matches.length){ target.innerHTML = `<div class="search-empty">${SEARCH_COPY.empty[lang]}</div>`; return; }
+  target.innerHTML = matches.map(entry=>`
+    <button type="button" class="search-result" onclick="selectSiteSearch('${entry.kind}','${entry.key}')">
+      <img class="search-result-img" src="${entry.img}" alt="" loading="lazy">
+      <span class="search-result-copy">
+        <span class="search-result-type">${SEARCH_COPY.type[entry.kind][lang]}</span>
+        <span class="search-result-title">${entry.title[lang]}</span>
+        <span class="search-result-desc">${entry.desc[lang]}</span>
+      </span>
+      <svg class="search-result-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </button>`).join('');
+}
+function openSiteSearch(){
+  updateSearchCopy();
+  const input = document.getElementById('siteSearchInput');
+  input.value = '';
+  renderSiteSearch('');
+  document.getElementById('searchOverlay').classList.add('open');
+  document.getElementById('searchModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  setTimeout(()=>input.focus(),180);
+}
+function closeSiteSearch(){
+  document.getElementById('searchOverlay').classList.remove('open');
+  document.getElementById('searchModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+function selectSiteSearch(kind,key){
+  closeSiteSearch();
+  if(kind==='service'){ setTimeout(()=>openGallery(Number(key)),120); return; }
+  if(kind==='product'){ setTimeout(()=>openProduct(key),120); return; }
+  const section = document.getElementById(key);
+  if(section) setTimeout(()=>section.scrollIntoView({behavior:'smooth',block:'start'}),120);
 }
 
 /* =========================================================
@@ -2645,7 +2862,7 @@ function setLang(l){
   document.documentElement.dir = (l==="fa") ? "rtl" : "ltr";
   ['fa','tr','en'].forEach(x=>document.getElementById('lang-'+x).classList.toggle('active', x===l));
   // re-render dynamic content in new language
-  renderServices(); renderFilters(); renderProducts(); updateCart();
+  renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
   // reset filter active state visually handled by renderFilters
   currentFilter = "all";
   closeMenu();
@@ -2686,14 +2903,21 @@ const io = new IntersectionObserver((entries)=>{
    INIT
    ========================================================= */
 document.getElementById('year').textContent = new Date().getFullYear();
-renderServices(); renderFilters(); renderProducts(); updateCart();
+renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 // close mobile menu when an in-page link is tapped (external links stay open)
 document.querySelectorAll('.nav-links > a[href^="#"]').forEach(a=>a.addEventListener('click',closeMenu));
 // close on Escape
 document.addEventListener('keydown', e=>{
+  if((e.ctrlKey || e.metaKey) && e.key.toLowerCase()==='k'){
+    e.preventDefault();
+    if(document.getElementById('searchModal').classList.contains('open')) closeSiteSearch();
+    else openSiteSearch();
+    return;
+  }
   if(e.key==='Escape'){
+    if(document.getElementById('searchModal').classList.contains('open')){ closeSiteSearch(); return; }
     if(document.getElementById('lbOverlay').classList.contains('open')){ closeLightbox(); return; }
     if(document.getElementById('pdModal').classList.contains('open')){ closeProduct(); return; }
     if(document.getElementById('galModal').classList.contains('open')){ closeGallery(); return; }
