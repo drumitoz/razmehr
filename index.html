@@ -657,11 +657,11 @@ body.lang-en .svc-cta-banner::before,body.lang-tr .svc-cta-banner::before{right:
 .product-img{
   aspect-ratio:1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;
   width:100%;padding:0;border:0;cursor:pointer;isolation:isolate;
-  background:#eee2cf;
+  background:#fff;
 }
 .product-img::before,.product-img::after{display:none}
 .product-img img{
-  width:100%;height:100%;object-fit:cover;position:relative;z-index:1;
+  width:100%;height:100%;object-fit:contain;position:relative;z-index:1;
   background:transparent;mix-blend-mode:normal;filter:none;transition:transform .5s;
 }
 .product-card:hover .product-img img{transform:scale(1.05)}
@@ -2136,7 +2136,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
 <!-- toast -->
 <div class="toast" id="toast"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg><span id="toastMsg"></span></div>
 
-<script src="products.js?v=scene2"></script>
+<script src="products.js?v=original3"></script>
 <script>
 /* =========================================================
    RAZMEHR — CONFIGURATION
@@ -2369,7 +2369,7 @@ function renderProducts(){
     const id = p.name.en.replace(/\s/g,'_');
     return `
     <article class="product-card">
-      <button type="button" class="product-img" onclick="openProduct('${p.img.split('/').pop().replace('.jpg','')}')" aria-label="${lang==='fa'?'مشاهده جزئیات':lang==='tr'?'Detayları gör':'View details'} — ${p.name[lang]}"><img src="${p.displayImg || p.img}" alt="${p.name[lang]}" loading="lazy">${p.tag?`<span class="product-tag">${p.tag[lang]}</span>`:''}</button>
+      <button type="button" class="product-img" onclick="openProduct('${p.img.split('/').pop().replace('.jpg','')}')" aria-label="${lang==='fa'?'مشاهده جزئیات':lang==='tr'?'Detayları gör':'View details'} — ${p.name[lang]}"><img src="${p.img}" alt="${p.name[lang]}" loading="lazy">${p.tag?`<span class="product-tag">${p.tag[lang]}</span>`:''}</button>
       <div class="product-body">
         <div class="product-cat">${p.cat[lang]}</div>
         <h4>${p.name[lang]}</h4>
@@ -2429,7 +2429,7 @@ function normalizeSearchText(value){
 }
 function getSiteSearchEntries(){
   const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/service-flower.webp',title:s.title,desc:s.desc}));
-  const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.displayImg || p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
+  const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
   return [...services,...products,...SEARCH_SECTIONS];
 }
 function updateSearchCopy(){
@@ -2529,7 +2529,7 @@ function updateCart(){
     items.innerHTML = entries.map(([id,q])=>{
       const p = findProduct(id);
       return `<div class="cart-line">
-        <img class="cart-line-img" src="${p.displayImg || p.img}" alt="">
+        <img class="cart-line-img" src="${p.img}" alt="">
         <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${p.price[lang]} ${CONFIG.currency[lang]}</div></div>
         <div class="cart-qty"><button onclick="changeQty('${id}',-1)">−</button><span>${lang==="fa"?q.toLocaleString('fa-IR'):q}</span><button onclick="changeQty('${id}',1)">+</button></div>
         <button class="cart-line-remove" onclick="removeItem('${id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg></button>
@@ -2662,7 +2662,7 @@ function openProduct(key){
   if(!p) return;
   const id = p.name.en.replace(/\s/g,'_');
   let h = `
-    <div class="pd-hero"><img src="${p.displayImg || p.img}" alt="${p.name[lang]}"></div>
+    <div class="pd-hero"><img src="${p.img}" alt="${p.name[lang]}"></div>
     <div class="pd-main">
       <div class="pd-cat">${p.cat[lang]}</div>
       <h3>${p.name[lang]}</h3>`;
