@@ -24,7 +24,7 @@ function renderProducts(){
   const list = visibleProducts();
   $("resultMeta").textContent = `${toman.format(list.length)} محصول`;
   $("grid").innerHTML = list.length ? list.map(product => `<article class="card">
-    <div class="photo"><img src="${product.img}" alt="${product.name.fa}" loading="lazy">${product.tag?`<span class="tag">${product.tag.fa}</span>`:""}</div>
+    <div class="photo"><img src="${product.displayImg || product.img}" alt="${product.name.fa}" loading="lazy">${product.tag?`<span class="tag">${product.tag.fa}</span>`:""}</div>
     <div class="body"><div class="cat">${product.cat.fa}</div><h2>${product.name.fa}</h2><p class="desc">${product.desc.fa}</p><div class="foot"><span class="price">${product.price.fa} تومان</span><button class="add" data-id="${productKey(product)}" aria-label="افزودن ${product.name.fa} به سبد">+</button></div></div>
   </article>`).join("") : `<div class="empty">محصولی با این عبارت پیدا نشد.</div>`;
   document.querySelectorAll(".add").forEach(button => button.addEventListener("click",()=>addToCart(button.dataset.id)));
@@ -42,7 +42,7 @@ function renderCart(){
   let total=0;
   $("cartItems").innerHTML = cart.length ? cart.map(item=>{
     const product=PRODUCTS.find(p=>productKey(p)===item.id);if(!product)return "";total+=product.priceN*item.qty;
-    return `<div class="cart-row"><img src="${product.img}" alt=""><div><h3>${product.name.fa}</h3><small>${toman.format(item.qty)} × ${product.price.fa}</small></div><button class="remove" data-id="${item.id}">حذف</button></div>`;
+    return `<div class="cart-row"><img src="${product.displayImg || product.img}" alt=""><div><h3>${product.name.fa}</h3><small>${toman.format(item.qty)} × ${product.price.fa}</small></div><button class="remove" data-id="${item.id}">حذف</button></div>`;
   }).join("") : `<div class="empty">سبد خرید شما خالی است.</div>`;
   $("total").textContent=`${toman.format(total)} تومان`;
   document.querySelectorAll(".remove").forEach(button=>button.addEventListener("click",()=>removeFromCart(button.dataset.id)));
