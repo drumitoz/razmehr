@@ -68,7 +68,7 @@ function checkout(){
   if(!cart.length){showToast("سبد خرید خالی است");return}
   const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${p.name.fa} — ${item.qty} عدد`}).join("\n");
   const message=encodeURIComponent(`سلام، برای سفارش محصولات رازمهر پیام می‌دهم:\n${rows}`);
-  window.open(`https://wa.me/989923777056?text=${message}`,"_blank","noopener");
+  window.open(`https://wa.me/989367737214?text=${message}`,"_blank","noopener");
 }
 let toastTimer;
 function showToast(message="به سبد خرید اضافه شد"){$("toast").textContent=message;$("toast").classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>$("toast").classList.remove("show"),1800)}
