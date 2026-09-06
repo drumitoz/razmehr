@@ -741,38 +741,62 @@ body.lang-fa .search-result-arrow{grid-column:1;transform:scaleX(-1)}
 
 /* ============= LIVE COURSE CARD ============= */
 .live-course{
-  position:relative;background:var(--paper);border-radius:26px;overflow:hidden;
-  border:1px solid var(--line);box-shadow:0 24px 60px -30px rgba(22,21,15,.4);margin-bottom:20px;
+  position:relative;background:var(--paper);border-radius:20px;overflow:hidden;
+  border:1px solid rgba(22,21,15,.14);box-shadow:0 14px 36px -26px rgba(22,21,15,.46);margin-bottom:14px;
+  transition:transform .3s ease,box-shadow .3s ease,border-color .3s ease;
 }
+.live-course:hover{transform:translateY(-2px);box-shadow:0 22px 46px -28px rgba(22,21,15,.58)}
+.live-course[open]{box-shadow:0 24px 54px -28px rgba(22,21,15,.52)}
+.live-course>summary{list-style:none;cursor:pointer}
+.live-course>summary::-webkit-details-marker{display:none}
+.live-course>summary:focus-visible{outline:3px solid rgba(194,163,94,.62);outline-offset:-3px}
+.live-course--online{border-color:rgba(117,84,111,.42)}
+.live-course--in-person{border-color:rgba(95,107,66,.32)}
 .lc-ribbon{
-  position:absolute;top:20px;display:inline-flex;align-items:center;gap:8px;
-  padding:8px 18px;border-radius:30px;font-size:12.5px;font-weight:600;
-  background:linear-gradient(135deg,#5FB877,#4a9c60);color:#fff;z-index:3;
-  box-shadow:0 8px 20px -8px rgba(95,184,119,.8);
+  display:inline-flex;align-items:center;gap:7px;padding:6px 11px;border-radius:30px;
+  font-size:11.5px;font-weight:600;background:rgba(247,243,234,.16);color:#fff;
+  border:1px solid rgba(247,243,234,.26);white-space:nowrap;
 }
-body.lang-fa .lc-ribbon{left:20px}
-body.lang-en .lc-ribbon,body.lang-tr .lc-ribbon{right:20px}
 .lc-ribbon .pulse{width:8px;height:8px;border-radius:50%;background:#fff;animation:pls 1.6s infinite}
 @keyframes pls{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.8)}}
 
 .lc-head{
-  display:flex;align-items:center;gap:28px;padding:36px 38px 28px;flex-wrap:wrap;
-  background:linear-gradient(125deg,var(--sage-deep),var(--sage) 70%,#8fa06a);color:var(--cream);
+  display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:20px;
+  padding:19px 22px;color:var(--cream);min-height:112px;
+  background:linear-gradient(125deg,#53603b,var(--sage) 72%,#9aa874);
 }
+.live-course--online .lc-head{background:linear-gradient(125deg,#594356,#79576f 62%,#9b7182)}
 .lc-date{
-  flex-shrink:0;text-align:center;background:rgba(247,243,234,.14);
-  border:1px solid rgba(247,243,234,.28);border-radius:18px;padding:16px 22px;backdrop-filter:blur(6px);
+  width:82px;min-height:72px;flex-shrink:0;text-align:center;background:rgba(247,243,234,.14);
+  border:1px solid rgba(247,243,234,.28);border-radius:15px;padding:11px 10px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;backdrop-filter:blur(6px);
 }
-.lc-d{font-family:var(--font-fa);font-size:34px;font-weight:800;line-height:1}
-.lc-m{font-size:13px;opacity:.9;margin-top:2px}
+.lc-d{font-family:var(--font-fa);font-size:25px;font-weight:800;line-height:1.15}
+.live-course--online .lc-d{font-size:18px}
+.lc-m{font-size:11px;opacity:.9;margin-top:3px}
 .lc-sep{height:1px;background:rgba(247,243,234,.3);margin:10px 0}
-.lc-title{flex:1;min-width:260px}
+.lc-title{min-width:0}
 .lc-tag{
-  display:inline-block;font-size:12px;padding:5px 14px;border-radius:20px;
-  background:rgba(247,243,234,.18);margin-bottom:10px;letter-spacing:.02em;
+  display:inline-block;font-size:10.5px;padding:3px 10px;border-radius:20px;
+  background:rgba(247,243,234,.16);margin-bottom:5px;letter-spacing:.02em;
 }
-.lc-title h3{font-family:var(--font-fa);font-size:clamp(22px,3vw,30px);font-weight:800;margin-bottom:8px;color:var(--cream)}
-.lc-title p{font-size:14.5px;opacity:.92;font-weight:300;line-height:1.75}
+.lc-title h3{font-family:var(--font-fa);font-size:clamp(17px,2vw,21px);font-weight:800;margin-bottom:3px;color:var(--cream);line-height:1.5}
+.lc-title p{font-size:12.5px;opacity:.88;font-weight:300;line-height:1.65;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lc-summary-side{display:flex;align-items:center;gap:10px}
+.lc-toggle{
+  width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  background:rgba(247,243,234,.14);border:1px solid rgba(247,243,234,.27);color:#fff;flex-shrink:0;
+}
+.lc-toggle svg{width:17px;height:17px;transition:transform .3s ease}
+.live-course[open] .lc-toggle svg{transform:rotate(180deg)}
+.lc-buyers{
+  display:inline-flex;align-items:center;gap:6px;margin-top:8px;padding:5px 10px;border-radius:30px;
+  background:rgba(247,243,234,.14);border:1px solid rgba(247,243,234,.2);font-size:11.5px;font-weight:500;color:#fff;
+}
+.lc-buyers svg{width:14px;height:14px;flex-shrink:0}
+.live-course--online .lc-col h4,.live-course--online .lc-new{color:#79576f}
+.live-course--online .lc-btn{background:#79576f}
+.live-course--online .lc-btn:hover{background:#594356}
 
 .lc-body{display:grid;grid-template-columns:1fr 1fr;gap:34px;padding:32px 38px}
 .lc-col h4{
@@ -818,18 +842,26 @@ body.lang-en .lc-list li::before,body.lang-tr .lc-list li::before{left:0}
 
 @media(max-width:860px){
   .lc-body{grid-template-columns:1fr;gap:26px;padding:26px 24px}
-  .lc-head{padding:30px 24px 24px;gap:18px}
+  .lc-head{padding:17px 18px;gap:15px;min-height:104px}
   .lc-foot{padding:22px 24px 26px;flex-direction:column;align-items:stretch;text-align:center}
   .lc-price{align-items:center}
   .lc-btn{justify-content:center;width:100%}
-  .lc-date{padding:12px 18px}
-  .lc-d{font-size:28px}
+  .lc-date{width:74px;min-height:68px;padding:9px}
+  .lc-d{font-size:23px}
 }
 
 @media(max-width:560px){
-  .lc-ribbon{top:14px;gap:5px;padding:5px 10px;font-size:10.5px}
-  body.lang-fa .lc-ribbon{left:12px}
-  body.lang-en .lc-ribbon,body.lang-tr .lc-ribbon{right:12px}
+  .live-course{border-radius:17px;margin-bottom:11px}
+  .lc-head{grid-template-columns:auto minmax(0,1fr) auto;padding:13px;gap:11px;min-height:92px}
+  .lc-date{width:58px;min-height:60px;border-radius:12px;padding:7px 5px}
+  .lc-d{font-size:20px}.live-course--online .lc-d{font-size:14px}.lc-m{font-size:9px}
+  .lc-tag{font-size:9px;padding:2px 7px;margin-bottom:4px}
+  .lc-title h3{font-size:15px;line-height:1.5;margin-bottom:2px}
+  .lc-title p{font-size:11px;line-height:1.5}
+  .lc-summary-side{gap:0}
+  .lc-ribbon{display:none}
+  .lc-toggle{width:30px;height:30px}
+  .lc-buyers{font-size:10px;margin-top:6px;padding:4px 8px}
   .lc-ribbon .pulse{width:6px;height:6px}
 }
 
@@ -1743,17 +1775,54 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       </a>
     </div>
 
-    <!-- تقویم آموزش‌های حضوری -->
-    <div class="live-course reveal">
-      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
-      <div class="lc-head">
+    <!-- دوره آنلاین در ابتدای فهرست -->
+    <details class="live-course live-course--online reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">آنلاین</div><div class="lc-m">دسترسی آموزشی</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره تخصصی آنلاین</span>
+          <h3>دوره کاشت رنگ</h3>
+          <p>آموزش کاربردی رنگساژ کم‌مصرف و تکنیک فولیاژ، به‌صورت آنلاین.</p>
+          <span class="lc-buyers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>۲۱ نفر خریداری کرده‌اند</span>
+        </div>
+        <span class="lc-summary-side">
+          <span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span>
+          <span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+        </span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2 2 0 016.5 2z"/></svg>مباحث دوره</h4>
+          <ul class="lc-list lc-check">
+            <li>چگونه با ۱ تا ۵ گرم رنگ، کل موها را رنگساژ کنیم</li>
+            <li>تکنیک فولیاژ</li>
+          </ul>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">نحوه برگزاری</span><span class="lf-v">آنلاین</span></div>
+            <div><span class="lf-k">موضوع دوره</span><span class="lf-v">رنگساژ و فولیاژ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۲٬۲۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('دوره آنلاین کاشت رنگ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام دوره آنلاین</button>
+      </div>
+    </details>
+
+    <!-- آموزش‌های حضوری -->
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
         <div class="lc-date"><div class="lc-d">۰۴</div><div class="lc-m">مهر</div></div>
         <div class="lc-title">
           <span class="lc-tag">دوره مدرسی حضوری · ۱۴۰۵</span>
           <h3>مدرسی رنگ و لایت با تدریس استاد زارع</h3>
           <p>دوره جامع تربیت مدرس رنگ و لایت، به‌صورت حضوری و همراه با یک سال پشتیبانی.</p>
         </div>
-      </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
       <div class="lc-body">
         <div class="lc-col">
           <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های کلاس</h4>
@@ -1780,18 +1849,18 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <div class="lc-price"><span class="lc-new">۹۶٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
         <button class="btn btn-primary lc-btn" onclick="enrollCourse('مدرسی رنگ و لایت با تدریس استاد زارع - شروع ۴ مهرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
       </div>
-    </div>
+    </details>
 
-    <div class="live-course reveal">
-      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
-      <div class="lc-head">
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
         <div class="lc-date"><div class="lc-d">۱۲</div><div class="lc-m">مهر</div></div>
         <div class="lc-title">
           <span class="lc-tag">دوره مدرسی حضوری · ۱۴۰۵</span>
           <h3>مدرسی احیا، درمان و کراتین با تدریس استاد زارع</h3>
           <p>دوره جامع تربیت مدرس احیا، درمان و کراتین، به‌صورت حضوری و همراه با یک سال پشتیبانی.</p>
         </div>
-      </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
       <div class="lc-body">
         <div class="lc-col">
           <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های کلاس</h4>
@@ -1818,18 +1887,18 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <div class="lc-price"><span class="lc-new">۴۸٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
         <button class="btn btn-primary lc-btn" onclick="enrollCourse('مدرسی احیا، درمان و کراتین با تدریس استاد زارع - شروع ۱۲ مهرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
       </div>
-    </div>
+    </details>
 
-    <div class="live-course reveal">
-      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
-      <div class="lc-head">
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
         <div class="lc-date"><div class="lc-d">۰۱–۰۳</div><div class="lc-m">آذر</div></div>
         <div class="lc-title">
           <span class="lc-tag">دوره تخصصی حضوری · ۱۴۰۵</span>
           <h3>آموزش صفر تا صد کراتین، احیا و درمان</h3>
           <p>دوره فشرده حضوری با تدریس استاد زارع، همراه با یک هفته کارورزی.</p>
         </div>
-      </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
       <div class="lc-body">
         <div class="lc-col">
           <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی کلاس</h4>
@@ -1851,18 +1920,18 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <div class="lc-price"><span class="lc-new">۱۵٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
         <button class="btn btn-primary lc-btn" onclick="enrollCourse('آموزش صفر تا صد کراتین، احیا و درمان - ۱ تا ۳ آذرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
       </div>
-    </div>
+    </details>
 
-    <div class="live-course reveal">
-      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
-      <div class="lc-head">
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
         <div class="lc-date"><div class="lc-d">۰۲</div><div class="lc-m">آبان</div></div>
         <div class="lc-title">
           <span class="lc-tag">دوره تخصصی حضوری · ۱۴۰۵</span>
           <h3>آموزش صفر تا صد رنگ و لایت</h3>
           <p>دوره جامع حضوری با تدریس استاد زارع، همراه با دو هفته کارورزی.</p>
         </div>
-      </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
       <div class="lc-body">
         <div class="lc-col">
           <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های دوره</h4>
@@ -1888,39 +1957,8 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <div class="lc-price"><span class="lc-new">۲۸٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
         <button class="btn btn-primary lc-btn" onclick="enrollCourse('آموزش صفر تا صد رنگ و لایت - ۲ آبان‌ماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
       </div>
-    </div>
+    </details>
 
-    <div class="live-course reveal">
-      <div class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></div>
-      <div class="lc-head">
-        <div class="lc-date"><div class="lc-d">آنلاین</div><div class="lc-m">دسترسی آموزشی</div></div>
-        <div class="lc-title">
-          <span class="lc-tag">دوره تخصصی آنلاین</span>
-          <h3>دوره کاشت رنگ</h3>
-          <p>آموزش کاربردی رنگساژ کم‌مصرف و تکنیک فولیاژ، به‌صورت آنلاین.</p>
-        </div>
-      </div>
-      <div class="lc-body">
-        <div class="lc-col">
-          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>مباحث دوره</h4>
-          <ul class="lc-list lc-check">
-            <li>چگونه با ۱ تا ۵ گرم رنگ، کل موها را رنگساژ کنیم</li>
-            <li>تکنیک فولیاژ</li>
-          </ul>
-        </div>
-        <div class="lc-col">
-          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
-          <div class="lc-facts">
-            <div><span class="lf-k">نحوه برگزاری</span><span class="lf-v">آنلاین</span></div>
-            <div><span class="lf-k">موضوع دوره</span><span class="lf-v">رنگساژ و فولیاژ</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="lc-foot">
-        <div class="lc-price"><span class="lc-new">۲٬۲۰۰٬۰۰۰ <small>تومان</small></span></div>
-        <button class="btn btn-primary lc-btn" onclick="enrollCourse('دوره آنلاین کاشت رنگ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام دوره آنلاین</button>
-      </div>
-    </div>
   </div>
 </section>
 
