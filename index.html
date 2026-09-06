@@ -29,6 +29,7 @@
 <link rel="canonical" href="https://razmehrbeauty.com">
 <link rel="icon" type="image/png" href="img/logo.png">
 <link rel="apple-touch-icon" href="img/logo.png">
+<script src="feature-flags.js"></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +55,7 @@
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
+.feature-beauty-news-off [data-feature="beauty-news"]{display:none!important}
 html{scroll-behavior:smooth}
 body{
   font-family:var(--font-fa);
@@ -124,7 +126,7 @@ header.scrolled::after{height:3px;opacity:.9}
 .brand-sub{font-size:9px;letter-spacing:2px;color:var(--muted);text-transform:uppercase}
 body.lang-fa .brand-sub{letter-spacing:1px;font-size:10px}
 
-.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links{display:flex;align-items:center;gap:24px}
 /* mobile-menu-only elements — hidden on desktop, revealed in the 720px block */
 .menu-close,.menu-foot{display:none}
 .nav-links a{font-size:14px;color:var(--ink);opacity:.8;transition:opacity .25s;position:relative;font-weight:400}
@@ -466,6 +468,43 @@ body.lang-tr .academy-entry:hover .academy-entry-arrow{transform:translateX(3px)
   .academy-entry{width:100%;max-width:390px;justify-content:flex-start;padding:12px 14px}
   .academy-entry-copy{flex:1}
 }
+
+/* ================= BEAUTY NEWS — isolated feature ================= */
+.beauty-news-home{
+  background:#171812;color:var(--cream);overflow:hidden;
+  border-block:1px solid rgba(194,163,94,.2);
+}
+.beauty-news-home::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(circle at 12% 20%,rgba(126,139,87,.28),transparent 33%),radial-gradient(circle at 88% 85%,rgba(194,163,94,.16),transparent 30%);
+}
+.bn-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:36px}
+.bn-head .sec-eyebrow{color:var(--gold-soft)}
+.bn-head h2{font-family:var(--font-fa);font-size:clamp(34px,5vw,58px);font-weight:700;line-height:1.2;margin-top:10px}
+.bn-head h2 em{font-family:var(--font-serif);font-weight:500;color:var(--gold);font-size:1.12em}
+.bn-head p{max-width:560px;color:rgba(247,243,234,.66);font-size:15px;margin-top:13px}
+.bn-all{
+  flex-shrink:0;display:inline-flex;align-items:center;gap:9px;padding:11px 18px;
+  border:1px solid rgba(194,163,94,.45);border-radius:40px;color:var(--gold-soft);
+  font-size:13px;font-weight:600;transition:.3s;
+}
+.bn-all:hover{background:var(--gold);color:var(--ink);transform:translateY(-2px)}
+.bn-all svg{width:17px;height:17px;transform:scaleX(-1)}
+.bn-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:18px}
+.bn-card{position:relative;min-height:350px;border-radius:22px;overflow:hidden;background:#292a21;box-shadow:0 22px 48px -28px #000;isolation:isolate}
+.bn-card:first-child{min-height:420px}
+.bn-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s ease}
+.bn-card:hover img{transform:scale(1.055)}
+.bn-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,8,6,.04) 18%,rgba(8,8,6,.9) 100%);z-index:1}
+.bn-card-copy{position:absolute;z-index:2;inset:auto 0 0;padding:25px}
+.bn-tag{display:inline-flex;padding:5px 10px;border-radius:30px;background:var(--gold);color:#171812;font-size:11px;font-weight:700;margin-bottom:12px}
+.bn-card h3{font-size:clamp(18px,2vw,25px);line-height:1.55;font-weight:700;margin-bottom:8px}
+.bn-card p{font-size:13px;line-height:1.8;color:rgba(247,243,234,.72);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.bn-meta{display:flex;gap:12px;align-items:center;color:rgba(247,243,234,.54);font-size:11.5px;margin-top:12px}
+.bn-live{display:inline-flex;align-items:center;gap:6px;color:#cbd69f}
+.bn-live::before{content:"";width:6px;height:6px;border-radius:50%;background:#aeca63;box-shadow:0 0 0 4px rgba(174,202,99,.12)}
+@media(max-width:900px){.bn-grid{grid-template-columns:1fr 1fr}.bn-card:first-child{grid-column:1/-1;min-height:400px}}
+@media(max-width:620px){.bn-head{align-items:flex-start;flex-direction:column}.bn-all{align-self:stretch;justify-content:center}.bn-grid{grid-template-columns:1fr}.bn-card:first-child{grid-column:auto;min-height:390px}.bn-card{min-height:330px}.bn-card-copy{padding:21px}.bn-head h2{font-size:36px}}
 
 /* --- next-course banner --- */
 .next-banner{
@@ -1539,6 +1578,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       </button>
       <a href="#master" data-lang="fa">استاد</a><a href="#master" data-lang="tr">Usta</a><a href="#master" data-lang="en">Master</a>
       <a href="#courses" data-lang="fa">آموزش</a><a href="#courses" data-lang="tr">Eğitim</a><a href="#courses" data-lang="en">Courses</a>
+      <a href="beauty-news.html" data-feature="beauty-news" data-lang="fa">بیوتی نیوز</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="tr">Beauty News</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="en">Beauty News</a>
       <a href="#services" data-lang="fa">خدمات</a><a href="#services" data-lang="tr">Hizmetler</a><a href="#services" data-lang="en">Services</a>
       <a href="#shop" data-lang="fa">فروشگاه</a><a href="#shop" data-lang="tr">Mağaza</a><a href="#shop" data-lang="en">Shop</a>
       <a href="#contact" data-lang="fa">تماس</a><a href="#contact" data-lang="tr">İletişim</a><a href="#contact" data-lang="en">Contact</a>
@@ -1972,6 +2012,49 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   </div>
 </section>
 
+<!-- ================= BEAUTY NEWS (isolated feature) ================= -->
+<section class="beauty-news-home" id="beauty-news" data-feature="beauty-news" aria-labelledby="beauty-news-title">
+  <div class="wrap">
+    <div class="bn-head reveal">
+      <div>
+        <div class="sec-eyebrow"><span class="dot"></span><span>مجله تازه‌های زیبایی رازمهر</span></div>
+        <h2 id="beauty-news-title">Beauty <em>News</em></h2>
+        <p>تازه‌ترین خبرهای مد، زیبایی، فرش قرمز و سلبریتی‌ها؛ تألیف‌شده به فارسی با نگاه تخصصی رازمهر.</p>
+      </div>
+      <a class="bn-all" href="beauty-news.html">همه خبرها را بخوانید <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="bn-grid">
+      <a class="bn-card reveal" href="beauty-news.html#venice-beauty">
+        <img src="img/mikap4.jpg" alt="تصویر آرشیوی آرایش و زیبایی رازمهر" loading="lazy">
+        <div class="bn-card-copy">
+          <span class="bn-tag">فرش قرمز</span>
+          <h3>درخشش مو و آرایش در جشنواره ونیز ۲۰۲۶</h3>
+          <p>از موهای بلند و موج‌دار ماریون کوتیار تا زیبایی مینیمال کندال جنر؛ مهم‌ترین امضاهای زیبایی ونیز را بررسی کردیم.</p>
+          <div class="bn-meta"><span class="bn-live">تازه</span><span>۱۳ شهریور ۱۴۰۵</span></div>
+        </div>
+      </a>
+      <a class="bn-card reveal" href="beauty-news.html#autumn-hair">
+        <img src="img/rang5.jpg" alt="تصویر آرشیوی رنگ مو رازمهر" loading="lazy">
+        <div class="bn-card-copy">
+          <span class="bn-tag">ترند مو</span>
+          <h3>رنگ‌های عمیق و موج‌های رمانتیک؛ نقشه مو برای پاییز ۲۰۲۶</h3>
+          <p>پاییز امسال از هایلایت‌های شلوغ فاصله می‌گیرد و به رنگ‌های غنی و فرم‌های نرم نزدیک می‌شود.</p>
+          <div class="bn-meta"><span>۱۲ شهریور ۱۴۰۵</span><span>۵ دقیقه مطالعه</span></div>
+        </div>
+      </a>
+      <a class="bn-card reveal" href="beauty-news.html#phoebe-bridgers">
+        <img src="img/arus4.jpg" alt="تصویر آرشیوی استایل و زیبایی رازمهر" loading="lazy">
+        <div class="bn-card-copy">
+          <span class="bn-tag">سلبریتی</span>
+          <h3>استایل بی‌پرده فیبی بریجرز در ونیز خبرساز شد</h3>
+          <p>حضور متفاوت خواننده آمریکایی بحث قدیمی استانداردهای زیبایی روی فرش قرمز را دوباره زنده کرد.</p>
+          <div class="bn-meta"><span class="bn-live">امروز</span><span>۱۵ شهریور ۱۴۰۵</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= SERVICES ================= -->
 <section id="services">
   <div class="wrap">
@@ -2187,6 +2270,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       <div class="footer-col">
         <h5><span data-lang="fa">دسترسی سریع</span><span data-lang="tr">Hızlı Erişim</span><span data-lang="en">Quick Links</span></h5>
         <a href="#courses" data-lang="fa">دوره‌های آموزشی</a><a href="#courses" data-lang="tr">Eğitimler</a><a href="#courses" data-lang="en">Courses</a>
+        <a href="beauty-news.html" data-feature="beauty-news" data-lang="fa">بیوتی نیوز</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="tr">Beauty News</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="en">Beauty News</a>
         <a href="#services" data-lang="fa">خدمات سالن</a><a href="#services" data-lang="tr">Hizmetler</a><a href="#services" data-lang="en">Services</a>
         <a href="#shop" data-lang="fa">فروشگاه</a><a href="#shop" data-lang="tr">Mağaza</a><a href="#shop" data-lang="en">Shop</a>
         <a href="#contact" data-lang="fa">تماس با ما</a><a href="#contact" data-lang="tr">İletişim</a><a href="#contact" data-lang="en">Contact</a>
@@ -2493,6 +2577,7 @@ const SEARCH_COPY = {
 
 const SEARCH_SECTIONS = [
   {kind:"section",key:"home",img:"img/bagh.jpg",title:{fa:"عمارت زیبایی رازمهر",tr:"Razmehr Güzellik Konağı",en:"Razmehr Beauty Garden"},desc:{fa:"سالن، آکادمی، خدمات و فروشگاه رازمهر در یزد",tr:"Yazd'da salon, akademi ve mağaza",en:"Salon, academy, services and shop in Yazd"}},
+  {kind:"section",key:"beauty-news",url:"beauty-news.html",feature:"beautyNews",img:"img/mikap4.jpg",title:{fa:"بیوتی نیوز رازمهر",tr:"Razmehr Beauty News",en:"Razmehr Beauty News"},desc:{fa:"خبرهای مد، زیبایی، ترندهای مو و سلبریتی‌ها",tr:"Moda, güzellik, saç trendleri ve ünlü haberleri",en:"Fashion, beauty, hair trends and celebrity news"}},
   {kind:"course",key:"courses",img:"img/vidrang.jpg",title:{fa:"دوره مدرسی رنگ و لایت",tr:"Renk ve Röfle Eğitmenlik Kursu",en:"Color & Highlights Instructor Course"},desc:{fa:"دوره حضوری، ثبت‌نام و ورود به آکادمی آنلاین",tr:"Yüz yüze eğitim ve online akademi",en:"In-person training and online academy"}},
   {kind:"course",key:"courses",img:"img/vidkeratin.jpg",title:{fa:"آموزش صفر تا صد رنگ و لایت",tr:"Baştan Sona Renk ve Röfle",en:"Complete Color & Highlights Training"},desc:{fa:"دوره تخصصی حضوری با پشتیبانی",tr:"Destekli uzmanlık eğitimi",en:"Specialist in-person course with support"}},
   {kind:"course",key:"courses",img:"img/vidrang.jpg",title:{fa:"دوره آنلاین کاشت رنگ",tr:"Çevrim İçi Renk Eğitimi",en:"Online Color Placement Course"},desc:{fa:"رنگساژ کل مو با ۱ تا ۵ گرم رنگ و آموزش تکنیک فولیاژ",tr:"Az miktarda ürünle tonlama ve folyo tekniği",en:"Low-product hair toning and foilyage technique"}},
@@ -2510,7 +2595,8 @@ function normalizeSearchText(value){
 function getSiteSearchEntries(){
   const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/service-flower.webp',title:s.title,desc:s.desc}));
   const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
-  return [...services,...products,...SEARCH_SECTIONS];
+  const sections = SEARCH_SECTIONS.filter(entry=>!entry.feature || (window.RAZMEHR_FEATURES && window.RAZMEHR_FEATURES[entry.feature]));
+  return [...services,...products,...sections];
 }
 function updateSearchCopy(){
   const input = document.getElementById('siteSearchInput');
@@ -2553,6 +2639,8 @@ function closeSiteSearch(){
 }
 function selectSiteSearch(kind,key){
   closeSiteSearch();
+  const direct = SEARCH_SECTIONS.find(entry=>entry.key===key && entry.url);
+  if(direct){ window.location.href=direct.url; return; }
   if(kind==='service'){
     const card = document.getElementById(`service-${key}`);
     if(card) setTimeout(()=>{
