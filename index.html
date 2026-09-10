@@ -344,13 +344,20 @@ body.lang-fa .sec-head h2 em{font-style:normal;font-family:var(--font-fa);color:
 /* pillars strip */
 .pillars{background:var(--ink);color:var(--cream);padding:0}
 .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr)}
-.pillar{padding:52px 40px;text-align:center;border-inline-end:1px solid rgba(247,243,234,.12);transition:background .4s}
+.pillar{position:relative;display:block;padding:52px 40px;text-align:center;color:inherit;border-inline-end:1px solid rgba(247,243,234,.12);overflow:hidden;transition:background .4s,transform .4s,box-shadow .4s}
 .pillar:last-child{border-inline-end:none}
-.pillar:hover{background:rgba(194,163,94,.08)}
+.pillar::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 20%,rgba(194,163,94,.18),transparent 48%);opacity:0;transform:scale(.8);transition:opacity .45s,transform .55s;pointer-events:none}
+.pillar:hover,.pillar:focus-visible{background:rgba(194,163,94,.09);transform:translateY(-5px);box-shadow:0 22px 42px rgba(0,0,0,.2);z-index:1}
+.pillar:hover::before,.pillar:focus-visible::before{opacity:1;transform:scale(1)}
+.pillar:focus-visible{outline:2px solid var(--gold-soft);outline-offset:-4px}
 .pillar-ico{width:52px;height:52px;margin:0 auto 20px;color:var(--gold)}
+.pillar-ico{transition:transform .4s,color .4s,filter .4s}
+.pillar:hover .pillar-ico,.pillar:focus-visible .pillar-ico{transform:translateY(-7px) scale(1.08);color:#E2CB98;filter:drop-shadow(0 7px 13px rgba(194,163,94,.35))}
 .pillar h3{font-family:var(--font-display);font-size:24px;margin-bottom:12px;color:var(--cream);letter-spacing:1px;font-weight:400}
 body.lang-fa .pillar h3{font-family:var(--font-fa);font-weight:600;letter-spacing:0}
 .pillar p{font-size:14px;color:rgba(247,243,234,.7);line-height:1.8;font-weight:300}
+.pillar-link{position:relative;display:inline-flex;align-items:center;gap:7px;margin-top:17px;color:var(--gold-soft);font-size:12.5px;font-weight:600;opacity:.78;transition:opacity .3s,gap .3s}
+.pillar:hover .pillar-link,.pillar:focus-visible .pillar-link{opacity:1;gap:11px}
 
 /* ================= MASTER / ABOUT ================= */
 #master{background:
@@ -437,8 +444,11 @@ body.lang-en .country-chip,body.lang-tr .country-chip{padding:6px 8px 6px 14px}
     0 0 0 1px rgba(188,105,180,.3),
     0 0 18px rgba(188,105,180,.42),
     0 16px 38px -18px rgba(33,26,36,.92);
-  text-align:start;transition:transform .3s,box-shadow .3s,background .3s,border-color .3s;
+  position:relative;isolation:isolate;overflow:hidden;text-align:start;
+  animation:academyFloat 3.2s ease-in-out infinite;
+  transition:transform .3s,box-shadow .3s,background .3s,border-color .3s;
 }
+.academy-entry::before{content:"";position:absolute;z-index:-1;inset:-45% auto -45% -28%;width:25%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.32),transparent);transform:skewX(-18deg);animation:academyShine 3.8s ease-in-out infinite}
 body.lang-en .academy-entry,body.lang-tr .academy-entry{padding:12px 13px 12px 16px}
 .academy-entry:hover{
   transform:translateY(-3px);
@@ -455,6 +465,7 @@ body.lang-en .academy-entry,body.lang-tr .academy-entry{padding:12px 13px 12px 1
   flex-shrink:0;background:rgba(194,163,94,.2);color:#E2CB98;
   border:1px solid rgba(226,203,152,.24);
 }
+.academy-entry-icon{animation:academyIcon 2.2s ease-in-out infinite}
 .academy-entry-icon svg{width:23px;height:23px}
 .academy-entry-copy{display:flex;flex-direction:column;line-height:1.45}
 .academy-entry-copy strong{font-size:14.5px;font-weight:700;color:var(--cream)}
@@ -465,6 +476,28 @@ body.lang-fa .academy-entry-arrow{transform:scaleX(-1)}
 body.lang-fa .academy-entry:hover .academy-entry-arrow{transform:translateX(-3px) scaleX(-1)}
 body.lang-en .academy-entry:hover .academy-entry-arrow,
 body.lang-tr .academy-entry:hover .academy-entry-arrow{transform:translateX(3px)}
+@keyframes academyFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+@keyframes academyIcon{0%,100%{transform:scale(1);box-shadow:0 0 0 0 rgba(226,203,152,.12)}50%{transform:scale(1.08);box-shadow:0 0 0 8px rgba(226,203,152,0)}}
+@keyframes academyShine{0%,55%{left:-30%;opacity:0}68%{opacity:1}86%,100%{left:120%;opacity:0}}
+.academy-entry:hover{animation:none}
+
+/* opening course announcement */
+.welcome-banner{position:fixed;inset:0;z-index:1300;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(15,14,11,.7);backdrop-filter:blur(9px);opacity:0;visibility:hidden;transition:opacity .35s,visibility .35s}
+.welcome-banner.open{opacity:1;visibility:visible}
+.welcome-card{position:relative;width:min(620px,100%);padding:38px 34px 32px;border:1px solid rgba(226,203,152,.7);border-radius:28px;overflow:hidden;background:radial-gradient(circle at 12% 8%,rgba(209,74,110,.22),transparent 35%),radial-gradient(circle at 90% 100%,rgba(194,163,94,.22),transparent 36%),linear-gradient(145deg,#171512,#292118);color:var(--cream);text-align:center;box-shadow:0 30px 90px rgba(0,0,0,.52);transform:translateY(24px) scale(.96);transition:transform .45s cubic-bezier(.2,.85,.3,1)}
+.welcome-banner.open .welcome-card{transform:translateY(0) scale(1)}
+.welcome-card::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.08) 50%,transparent 65%);animation:welcomeGlow 5s linear infinite}
+.welcome-close{position:absolute;top:14px;left:14px;width:38px;height:38px;border:1px solid rgba(247,243,234,.18);border-radius:50%;background:rgba(255,255,255,.07);color:var(--cream);font-size:24px;line-height:1;cursor:pointer;transition:.25s}
+.welcome-close:hover{background:rgba(255,255,255,.14);transform:rotate(7deg)}
+.welcome-kicker{display:inline-flex;margin-bottom:13px;padding:6px 13px;border-radius:30px;background:rgba(194,163,94,.13);color:var(--gold-soft);font-size:12px;font-weight:600}
+.welcome-card h2{font-family:var(--font-fa);font-size:clamp(27px,5vw,40px);line-height:1.35;margin-bottom:12px}
+.welcome-card h2 em{font-style:normal;color:#E2CB98}
+.welcome-card p{max-width:470px;margin:0 auto 23px;color:rgba(247,243,234,.78);font-size:15px;line-height:1.9}
+.welcome-action{position:relative;display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:11px 24px;border-radius:30px;background:linear-gradient(135deg,#C2A35E,#E2CB98);color:#171512;font-weight:800;box-shadow:0 12px 28px rgba(194,163,94,.24);transition:transform .3s,box-shadow .3s}
+.welcome-action:hover{transform:translateY(-3px);box-shadow:0 17px 34px rgba(194,163,94,.38)}
+@keyframes welcomeGlow{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@media(max-width:560px){.welcome-card{padding:35px 20px 25px;border-radius:23px}.welcome-card p{font-size:14px}.welcome-action{width:100%}}
+@media(prefers-reduced-motion:reduce){.academy-entry,.academy-entry-icon,.academy-entry::before,.welcome-card::before{animation:none}.pillar,.pillar-ico,.welcome-card{transition:none}}
 @media(max-width:560px){
   .academy-entry{width:100%;max-width:390px;justify-content:flex-start;padding:12px 14px}
   .academy-entry-copy{flex:1}
@@ -1685,7 +1718,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
 <!-- ================= PILLARS ================= -->
 <section class="pillars">
   <div class="pillars-grid">
-    <div class="pillar reveal">
+    <a class="pillar reveal" href="#courses" aria-label="مشاهده دوره‌های آموزشی رازمهر">
       <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
       <h3><span data-lang="fa">آموزش</span><span data-lang="tr">Eğitim</span><span data-lang="en">Education</span></h3>
       <p>
@@ -1693,8 +1726,9 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <span data-lang="tr">Renk, röfle, keratin ve makyajda sertifikalı uzman kurslar; deneyimli eğitmenler eşliğinde.</span>
         <span data-lang="en">Certified specialist courses in color, highlights, keratin and makeup, led by expert instructors.</span>
       </p>
-    </div>
-    <div class="pillar reveal">
+      <span class="pillar-link"><span data-lang="fa">مشاهده دوره‌ها</span><span data-lang="tr">Kursları gör</span><span data-lang="en">View courses</span><span aria-hidden="true">←</span></span>
+    </a>
+    <a class="pillar reveal" href="#services" aria-label="مشاهده خدمات تخصصی رازمهر">
       <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V22h4V9.4c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/><circle cx="12" cy="6" r="1"/></svg>
       <h3><span data-lang="fa">خدمات</span><span data-lang="tr">Hizmetler</span><span data-lang="en">Services</span></h3>
       <p>
@@ -1702,8 +1736,9 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <span data-lang="tr">Orijinal ürünlerle uzman saç, renk, keratin ve gelin makyajı hizmetleri.</span>
         <span data-lang="en">Expert hair, color, keratin and bridal makeup services with authentic premium products.</span>
       </p>
-    </div>
-    <div class="pillar reveal">
+      <span class="pillar-link"><span data-lang="fa">مشاهده خدمات</span><span data-lang="tr">Hizmetleri gör</span><span data-lang="en">View services</span><span aria-hidden="true">←</span></span>
+    </a>
+    <a class="pillar reveal" href="#shop" aria-label="مشاهده فروشگاه رازمهر">
       <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 01-8 0"/></svg>
       <h3><span data-lang="fa">فروشگاه</span><span data-lang="tr">Mağaza</span><span data-lang="en">Boutique</span></h3>
       <p>
@@ -1711,7 +1746,8 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <span data-lang="tr">Razmehr uzmanlarınca seçilmiş profesyonel saç ve cilt bakım ürünleri.</span>
         <span data-lang="en">Professional hair and skin care products, curated and approved by Razmehr experts.</span>
       </p>
-    </div>
+      <span class="pillar-link"><span data-lang="fa">مشاهده محصولات</span><span data-lang="tr">Ürünleri gör</span><span data-lang="en">View products</span><span aria-hidden="true">←</span></span>
+    </a>
   </div>
 </section>
 
@@ -2099,6 +2135,16 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
 
 <!-- ================= GLOBAL SITE SEARCH ================= -->
 <div class="search-overlay" id="searchOverlay" onclick="closeSiteSearch()"></div>
+<div class="welcome-banner" id="welcomeBanner" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle" aria-describedby="welcomeText">
+  <div class="welcome-card">
+    <button class="welcome-close" type="button" onclick="closeWelcomeBanner()" aria-label="بستن بنر">×</button>
+    <span class="welcome-kicker" data-lang="fa">آکادمی تخصصی رازمهر</span><span class="welcome-kicker" data-lang="tr">Razmehr Uzmanlık Akademisi</span><span class="welcome-kicker" data-lang="en">Razmehr Specialist Academy</span>
+    <h2 id="welcomeTitle"><span data-lang="fa">هنر زیبایی را <em>حرفه‌ای</em> بیاموزید</span><span data-lang="tr">Güzellik sanatını <em>profesyonelce</em> öğrenin</span><span data-lang="en">Master the art of beauty <em>professionally</em></span></h2>
+    <p id="welcomeText"><span data-lang="fa">دوره‌های تخصصی رنگ، لایت و کراتین زیر نظر استاد فاطمه زارع؛ دوره مناسب خودتان را در سایت رازمهر ببینید.</span><span data-lang="tr">Fateme Zare eğitmenliğinde uzman renk, röfle ve keratin kurslarını keşfedin.</span><span data-lang="en">Explore specialist color, highlights and keratin courses led by Fateme Zare.</span></p>
+    <a class="welcome-action" href="#courses" onclick="closeWelcomeBanner()"><span data-lang="fa">مشاهده دوره‌های آموزشی</span><span data-lang="tr">Kursları görüntüle</span><span data-lang="en">Explore courses</span><span aria-hidden="true">←</span></a>
+  </div>
+</div>
+
 <section class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
   <div class="search-head">
     <div class="search-field">
@@ -2996,6 +3042,21 @@ function closeMenu(){
   document.body.style.overflow = '';
 }
 
+function openWelcomeBanner(){
+  const banner=document.getElementById('welcomeBanner');
+  if(!banner) return;
+  banner.classList.add('open');
+  document.body.style.overflow='hidden';
+  setTimeout(()=>banner.querySelector('.welcome-close')?.focus(),350);
+}
+function closeWelcomeBanner(){
+  const banner=document.getElementById('welcomeBanner');
+  if(!banner) return;
+  banner.classList.remove('open');
+  document.body.style.overflow='';
+  try{localStorage.setItem('razmehrWelcomeClosedAt',String(Date.now()))}catch(e){}
+}
+
 /* =========================================================
    LANGUAGE
    ========================================================= */
@@ -3052,6 +3113,12 @@ document.getElementById('year').textContent = new Date().getFullYear();
 renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
+try{
+  const lastClosed=Number(localStorage.getItem('razmehrWelcomeClosedAt')||0);
+  if(Date.now()-lastClosed>7*24*60*60*1000) setTimeout(openWelcomeBanner,900);
+}catch(e){setTimeout(openWelcomeBanner,900)}
+document.getElementById('welcomeBanner')?.addEventListener('click',e=>{if(e.target===e.currentTarget) closeWelcomeBanner()});
+
 // close mobile menu when an in-page link is tapped (external links stay open)
 document.querySelectorAll('.nav-links > a[href^="#"]').forEach(a=>a.addEventListener('click',closeMenu));
 // close on Escape
@@ -3063,6 +3130,7 @@ document.addEventListener('keydown', e=>{
     return;
   }
   if(e.key==='Escape'){
+    if(document.getElementById('welcomeBanner')?.classList.contains('open')){ closeWelcomeBanner(); return; }
     if(document.getElementById('searchModal').classList.contains('open')){ closeSiteSearch(); return; }
     if(document.getElementById('lbOverlay').classList.contains('open')){ closeLightbox(); return; }
     if(document.getElementById('pdModal').classList.contains('open')){ closeProduct(); return; }
