@@ -100,7 +100,12 @@
 
   const init = () => {
     const homeGrid = document.querySelector('.beauty-news-home .bn-grid');
-    if (homeGrid) homeGrid.innerHTML = stories.map((story) => cardMarkup(story, 'bn-card reveal')).join('');
+    if (homeGrid) {
+      homeGrid.innerHTML = stories.map((story) => cardMarkup(story, 'bn-card reveal')).join('');
+      requestAnimationFrame(() => {
+        homeGrid.querySelectorAll('.reveal').forEach((card) => card.classList.add('in'));
+      });
+    }
 
     const freshMount = document.getElementById('freshNewsMount');
     if (freshMount) freshMount.innerHTML = `
