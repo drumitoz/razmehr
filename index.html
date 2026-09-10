@@ -134,6 +134,13 @@ body.lang-fa .brand-sub{letter-spacing:1px;font-size:10px}
 .nav-links a:hover{opacity:1}
 .nav-links a::after{content:"";position:absolute;bottom:-5px;right:0;left:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .3s}
 .nav-links a:hover::after{transform:scaleX(1)}
+@media(min-width:721px){
+  .nav-links{gap:7px;padding:6px;border:1px solid rgba(194,163,94,.2);border-radius:18px;background:rgba(255,255,255,.28);box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 8px 24px -20px rgba(22,21,15,.7);backdrop-filter:blur(8px)}
+  .nav-links a{min-width:66px;padding:7px 13px;border:1px solid rgba(126,139,87,.14);border-radius:12px;text-align:center;background:rgba(247,243,234,.34);opacity:.86;transition:color .3s,background .3s,border-color .3s,transform .3s,box-shadow .3s}
+  .nav-links a::after{right:20%;left:20%;bottom:3px;height:2px;border-radius:3px;background:linear-gradient(90deg,var(--sage),var(--gold))}
+  .nav-links a:hover,.nav-links a:focus-visible{color:var(--sage-deep);opacity:1;background:rgba(255,255,255,.72);border-color:rgba(194,163,94,.55);transform:translateY(-2px);box-shadow:0 7px 16px -10px rgba(22,21,15,.6)}
+  .nav-links a:focus-visible{outline:2px solid rgba(194,163,94,.5);outline-offset:2px}
+}
 
 .nav-right{display:flex;align-items:center;gap:18px}
 .search-btn{
@@ -3054,7 +3061,6 @@ function closeWelcomeBanner(){
   if(!banner) return;
   banner.classList.remove('open');
   document.body.style.overflow='';
-  try{localStorage.setItem('razmehrWelcomeClosedAt',String(Date.now()))}catch(e){}
 }
 
 /* =========================================================
@@ -3113,10 +3119,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-try{
-  const lastClosed=Number(localStorage.getItem('razmehrWelcomeClosedAt')||0);
-  if(Date.now()-lastClosed>7*24*60*60*1000) setTimeout(openWelcomeBanner,900);
-}catch(e){setTimeout(openWelcomeBanner,900)}
+setTimeout(openWelcomeBanner,900);
 document.getElementById('welcomeBanner')?.addEventListener('click',e=>{if(e.target===e.currentTarget) closeWelcomeBanner()});
 
 // close mobile menu when an in-page link is tapped (external links stay open)
