@@ -1,9 +1,10 @@
 /*
  * کلیدهای مستقل امکانات سایت رازمهر
- * برای خارج‌کردن کامل بیوتی نیوز از نمایش عمومی، مقدار beautyNews را false کنید.
+ * برای خارج‌کردن کامل هر قابلیت از نمایش عمومی، مقدار همان کلید را false کنید.
  */
 window.RAZMEHR_FEATURES = Object.freeze({
-  beautyNews: false
+  beautyNews: false,
+  birthdayTheme: true
 });
 
 document.documentElement.classList.toggle(

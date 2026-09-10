@@ -1,0 +1,139 @@
+/*
+ * تم موقت تولد رازمهر
+ * این فایل فقط زمانی اثر دارد که birthdayTheme در feature-flags.js روشن باشد.
+ * همه اجزا تزئینی، مستقل از محتوای سایت و بدون دریافت کلیک هستند.
+ */
+.rz-birthday{
+  position:fixed;
+  inset:0;
+  z-index:1400;
+  overflow:hidden;
+  pointer-events:none;
+  contain:layout style;
+  font-family:'Vazirmatn',sans-serif;
+}
+
+.rz-birthday__wish{
+  position:absolute;
+  top:88px;
+  left:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  width:max-content;
+  max-width:calc(100vw - 32px);
+  min-height:48px;
+  padding:10px 18px;
+  border:1px solid rgba(194,163,94,.72);
+  border-radius:999px;
+  background:linear-gradient(135deg,rgba(255,255,255,.96),rgba(247,243,234,.94));
+  color:#5F6B42;
+  box-shadow:0 13px 34px -14px rgba(22,21,15,.5),0 0 0 5px rgba(255,255,255,.3);
+  opacity:0;
+  transform:translate(-50%,-18px) scale(.92);
+  animation:rzBirthdayWishIn .8s .3s cubic-bezier(.16,1,.3,1) forwards,
+            rzBirthdayWishGlow 2.8s 1.2s ease-in-out infinite;
+  transition:opacity .7s ease,transform .7s ease,box-shadow .7s ease;
+  white-space:nowrap;
+}
+.rz-birthday__wish strong{
+  font-size:15px;
+  line-height:1.4;
+  font-weight:800;
+  letter-spacing:.2px;
+}
+.rz-birthday__wish-icon{font-size:23px;line-height:1}
+.rz-birthday__wish-sparkle{font-size:18px;line-height:1;animation:rzBirthdayTwinkle 1.35s ease-in-out infinite}
+.rz-birthday__wish.is-calm{
+  opacity:.9;
+  transform:translate(-50%,0) scale(.92);
+  box-shadow:0 10px 25px -17px rgba(22,21,15,.5),0 0 0 3px rgba(255,255,255,.24);
+}
+
+.rz-birthday__sticker{
+  position:absolute;
+  display:grid;
+  place-items:center;
+  width:58px;
+  height:58px;
+  border:2px solid rgba(255,255,255,.9);
+  border-radius:19px;
+  background:rgba(255,255,255,.82);
+  box-shadow:0 14px 32px -14px rgba(22,21,15,.52),inset 0 0 0 1px rgba(194,163,94,.28);
+  font-family:Apple Color Emoji,Segoe UI Emoji,Noto Color Emoji,sans-serif;
+  font-size:34px;
+  line-height:1;
+  opacity:0;
+  animation:rzBirthdayStickerIn .72s var(--rz-sticker-delay,.55s) cubic-bezier(.16,1,.3,1) forwards,
+            rzBirthdayStickerFloat var(--rz-float-duration,4s) calc(var(--rz-sticker-delay,.55s) + .75s) ease-in-out infinite;
+}
+.rz-birthday__sticker--cake{top:23%;right:24px;--rz-sticker-rotate:7deg;--rz-sticker-delay:.48s;--rz-float-duration:4.4s}
+.rz-birthday__sticker--party{right:34px;bottom:112px;--rz-sticker-rotate:-8deg;--rz-sticker-delay:.8s;--rz-float-duration:3.8s}
+.rz-birthday__sticker--sparkler{top:49%;left:24px;--rz-sticker-rotate:-6deg;--rz-sticker-delay:.66s;--rz-float-duration:4.7s}
+.rz-birthday__sticker--balloon{top:25%;left:30px;--rz-sticker-rotate:8deg;--rz-sticker-delay:.95s;--rz-float-duration:5s}
+.rz-birthday__sticker--stars{right:25px;top:57%;--rz-sticker-rotate:5deg;--rz-sticker-delay:1.08s;--rz-float-duration:4.2s}
+
+.rz-birthday__confetti{position:absolute;inset:0;overflow:hidden}
+.rz-birthday__confetti-piece{
+  position:absolute;
+  top:-22px;
+  left:var(--rz-x);
+  width:var(--rz-size);
+  height:calc(var(--rz-size) * 1.7);
+  border-radius:2px;
+  background:var(--rz-color);
+  box-shadow:0 1px 2px rgba(22,21,15,.12);
+  animation:rzBirthdayConfetti var(--rz-duration) var(--rz-delay) cubic-bezier(.24,.68,.45,.98) both;
+}
+.rz-birthday__confetti-piece--round{height:var(--rz-size);border-radius:50%}
+.rz-birthday__confetti-piece--ribbon{width:calc(var(--rz-size) * .65);height:calc(var(--rz-size) * 2.3);border-radius:50% 2px}
+
+@keyframes rzBirthdayWishIn{
+  to{opacity:1;transform:translate(-50%,0) scale(1)}
+}
+@keyframes rzBirthdayWishGlow{
+  0%,100%{box-shadow:0 13px 34px -14px rgba(22,21,15,.5),0 0 0 5px rgba(255,255,255,.3)}
+  50%{box-shadow:0 16px 40px -13px rgba(194,163,94,.72),0 0 0 8px rgba(194,163,94,.1)}
+}
+@keyframes rzBirthdayTwinkle{
+  0%,100%{transform:scale(.9) rotate(-7deg);opacity:.72}
+  50%{transform:scale(1.2) rotate(7deg);opacity:1}
+}
+@keyframes rzBirthdayStickerIn{
+  from{opacity:0;transform:translateY(16px) scale(.65) rotate(calc(var(--rz-sticker-rotate) - 8deg))}
+  to{opacity:1;transform:translateY(0) scale(1) rotate(var(--rz-sticker-rotate))}
+}
+@keyframes rzBirthdayStickerFloat{
+  0%,100%{transform:translateY(0) rotate(var(--rz-sticker-rotate))}
+  50%{transform:translateY(-9px) rotate(calc(var(--rz-sticker-rotate) + 4deg))}
+}
+@keyframes rzBirthdayConfetti{
+  0%{opacity:0;transform:translate3d(0,-3vh,0) rotate(0)}
+  9%{opacity:1}
+  88%{opacity:.95}
+  100%{opacity:0;transform:translate3d(var(--rz-drift),108vh,0) rotate(var(--rz-spin))}
+}
+
+@media(max-width:720px){
+  .rz-birthday__wish{top:82px;min-height:44px;padding:9px 15px;gap:7px}
+  .rz-birthday__wish strong{font-size:14px}
+  .rz-birthday__wish-icon{font-size:21px}
+  .rz-birthday__sticker{width:47px;height:47px;border-radius:15px;font-size:28px}
+  .rz-birthday__sticker--cake{top:158px;right:9px}
+  .rz-birthday__sticker--party{right:10px;bottom:92px}
+  .rz-birthday__sticker--sparkler{top:48%;left:9px}
+  .rz-birthday__sticker--balloon,.rz-birthday__sticker--stars{display:none}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .rz-birthday__confetti{display:none}
+  .rz-birthday__wish,
+  .rz-birthday__wish-sparkle,
+  .rz-birthday__sticker{
+    animation:none;
+    transition:none;
+  }
+  .rz-birthday__wish{opacity:1;transform:translate(-50%,0)}
+  .rz-birthday__sticker{opacity:1;transform:rotate(var(--rz-sticker-rotate))}
+}
