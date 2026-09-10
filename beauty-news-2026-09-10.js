@@ -6,14 +6,14 @@
       id: 'florence-pugh-long-hair',
       category: 'trend celebrity redcarpet',
       tag: 'ترند مو',
-      title: 'فلورنس پیو با موهای بسیار بلند، موج تازه کوتاهی‌های پاییزی را به چالش کشید',
-      shortTitle: 'فلورنس پیو برخلاف موج باب، موهای بلند را انتخاب کرد',
+      title: 'دم‌اسبی بافت‌دار فلورنس پیو؛ وقتی فرم و اکسسوری جای کوتاهی تازه را می‌گیرند',
+      shortTitle: 'دم‌اسبی بافت‌دار فلورنس پیو، ظاهر پاییزی متفاوتی ساخت',
       summary: 'دم‌اسبی بافت‌دار و مدل خیسِ مجسمه‌ای؛ دو ظاهر متفاوت که نشان داد موی بلند هنوز می‌تواند شخصیت اصلی استایل باشد.',
       date: '۱۸ شهریور ۱۴۰۵',
       readTime: '۴ دقیقه مطالعه',
-      image: 'https://assets.vogue.com/photos/6aa121cc09ba1c7ace32caad/master/w_2560%2Cc_limit/2294146878',
-      alt: 'فلورنس پیو با موهای بلند و دم‌اسبی بافت‌دار در ونیز ۲۰۲۶',
-      credit: 'فلورنس پیو (Florence Pugh) در ونیز · Getty Images / Vogue',
+      image: 'img/beauty-news/florence-pugh-hair.webp',
+      alt: 'نمای نزدیک دم‌اسبی بافت‌دار و روسری موی فلورنس پیو در ونیز ۲۰۲۶',
+      credit: 'ویرایش کادر رازمهر از عکس فلورنس پیو (Florence Pugh) · Getty Images / Vogue',
       deck: 'در فصلی که مدل‌های باب و کوتاهی‌های تا روی ترقوه دوباره همه‌جا دیده می‌شوند، فلورنس پیو (Florence Pugh) در جشنواره فیلم ونیز (Venice Film Festival) مسیر متفاوتی انتخاب کرد.',
       paragraphs: [
         'فلورنس پیو روز ۸ سپتامبر با موهایی تقریباً تا کمر وارد ونیز شد. ظاهر نخست او یک دم‌اسبی بلند و بافت‌دار بود که با روسری چاپی بسته شده بود؛ جزئیاتی ساده که استایل مشکی مکس مارا (Max Mara) را از حالت کاملاً رسمی خارج می‌کرد.',
@@ -32,9 +32,9 @@
       summary: 'ترکیب آبی، زرد، نارنجی، صورتی و زیتونی روی ناخن‌های بادامی؛ مدلی بازیگوش که رنگ‌های گرم پاییز را هم وارد قاب می‌کند.',
       date: '۱۸ شهریور ۱۴۰۵',
       readTime: '۳ دقیقه مطالعه',
-      image: 'https://media.allure.com/photos/6aa1606953d2323bb9499573/16%3A9/w_2560%2Cc_limit/dua%2520lipa%2520french%2520manicure%2520colorful.jpg',
-      alt: 'مانیکور فرنچ چندرنگ دوا لیپا با رنگ‌های تابستانی و پاییزی',
-      credit: 'دوا لیپا (Dua Lipa) با فرنچ چندرنگ · Getty Images / Allure',
+      image: 'img/beauty-news/dua-lipa-colorful-french-illustration.webp',
+      alt: 'تصویرسازی نزدیک از مانیکور فرنچ چندرنگ با رنگ‌های تابستانی و پاییزی',
+      credit: 'تصویرسازی رازمهر بر اساس گزارش مانیکور دوا لیپا (Dua Lipa) در Allure',
       deck: 'دوا لیپا (Dua Lipa) در تازه‌ترین تصاویر تعطیلاتش، نسخه‌ای نامتقارن و چندرنگ از فرنچ کلاسیک را نشان داد که دقیقاً مناسب روزهای گذار از تابستان به پاییز است.',
       paragraphs: [
         'ناخن‌ها فرم بادامی و طول متوسط رو به بلند دارند، اما نقطه جذاب طرح در این است که هیچ دو انگشتی دقیقاً یک ترکیب ندارند. آبی آکوایی با زرد پاستلی، نارنجی با قرمز، صورتی روشن با زرد و ترکیب زیتونی و آبی کنار هم قرار گرفته‌اند.',
@@ -118,7 +118,7 @@
     if (articlesMount) articlesMount.innerHTML = stories.map(articleMarkup).join('');
 
     const ticker = document.querySelector('.ticker-row');
-    if (ticker) ticker.innerHTML = `<span class="ticker-label">خبر داغ</span><span>فلورنس پیو برخلاف موج باب، موهای بلند را انتخاب کرد</span><i></i><span>فرنچ چندرنگ دوا لیپا خبرساز شد</span><i></i><span>رالف لورن بهار ۲۰۲۷ را رونمایی کرد</span>`;
+    if (ticker) ticker.innerHTML = `<span class="ticker-label">خبر داغ</span><span>دم‌اسبی بافت‌دار فلورنس پیو خبرساز شد</span><i></i><span>فرنچ چندرنگ دوا لیپا خبرساز شد</span><i></i><span>رالف لورن بهار ۲۰۲۷ را رونمایی کرد</span>`;
 
     const issue = document.querySelector('.issue');
     if (issue) issue.innerHTML = '<span>شماره این هفته</span><strong>۱۹ شهریور ۱۴۰۵</strong><span>به‌روزرسانی: ۱۹ شهریور</span>';
