@@ -3,7 +3,7 @@
  * برای خارج‌کردن کامل هر قابلیت از نمایش عمومی، مقدار همان کلید را false کنید.
  */
 window.RAZMEHR_FEATURES = Object.freeze({
-  beautyNews: false,
+  beautyNews: true,
   birthdayTheme: true
 });
 
