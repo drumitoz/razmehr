@@ -12,6 +12,7 @@
   contain:layout style;
   font-family:'Vazirmatn',sans-serif;
 }
+.rz-birthday.is-ending{opacity:0;transition:opacity .45s ease}
 
 .rz-birthday__wish{
   position:absolute;
@@ -130,7 +131,8 @@
   .rz-birthday__confetti{display:none}
   .rz-birthday__wish,
   .rz-birthday__wish-sparkle,
-  .rz-birthday__sticker{
+  .rz-birthday__sticker,
+  .rz-birthday.is-ending{
     animation:none;
     transition:none;
   }

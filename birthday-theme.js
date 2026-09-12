@@ -2,7 +2,17 @@
   'use strict';
 
   const features = window.RAZMEHR_FEATURES || {};
-  if(!features.birthdayTheme || document.querySelector('[data-rz-birthday-theme]')) return;
+  const endAt = features.birthdayThemeEndsAt
+    ? Date.parse(features.birthdayThemeEndsAt)
+    : null;
+  const hasValidEnd = Number.isFinite(endAt);
+
+  if(
+    !features.birthdayTheme ||
+    (features.birthdayThemeEndsAt && !hasValidEnd) ||
+    (hasValidEnd && Date.now() >= endAt) ||
+    document.querySelector('[data-rz-birthday-theme]')
+  ) return;
 
   const mountTheme = () => {
     if(!document.body || document.querySelector('[data-rz-birthday-theme]')) return;
@@ -44,6 +54,14 @@
 
     document.body.classList.add('birthday-theme-on');
     document.body.appendChild(host);
+
+    if(hasValidEnd){
+      window.setTimeout(() => {
+        host.classList.add('is-ending');
+        document.body.classList.remove('birthday-theme-on');
+        window.setTimeout(() => host.remove(), 500);
+      }, Math.max(0, endAt - Date.now()));
+    }
 
     window.setTimeout(() => host.querySelector('.rz-birthday__wish')?.classList.add('is-calm'), 7500);
     window.setTimeout(() => confetti?.remove(), 7200);
