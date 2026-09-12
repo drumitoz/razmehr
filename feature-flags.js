@@ -4,8 +4,7 @@
  */
 window.RAZMEHR_FEATURES = Object.freeze({
   beautyNews: true,
-  birthdayTheme: true,
-  birthdayThemeEndsAt: '2026-09-13T11:00:00+03:30'
+  birthdayTheme: false
 });
 
 document.documentElement.classList.toggle(
