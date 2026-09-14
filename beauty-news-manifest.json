@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "version": "2026-09-14a",
+  "files": [
+    "beauty-news-2026-09-12.js",
+    "beauty-news-2026-09-10.js"
+  ],
+  "homeStoryIds": [
+    "nyfw-beauty-spring-2027",
+    "baby-bangs-fall-2026",
+    "anne-hathaway-red-lips-nails"
+  ],
+  "latestStoryIds": [
+    "nyfw-beauty-spring-2027",
+    "baby-bangs-fall-2026",
+    "anne-hathaway-red-lips-nails"
+  ],
+  "latestLabel": "منتخب ۲۱ شهریور ۱۴۰۵",
+  "ticker": [
+    "ترندهای زیبایی نیویورک از راه رسیدند",
+    "چتری‌های خیلی کوتاه دوباره بحث‌برانگیز شدند",
+    "آن هاتاوی قرمز کلاسیک را برگرداند"
+  ],
+  "issue": {
+    "label": "شماره این هفته",
+    "date": "۲۱ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۱ شهریور"
+  }
+}

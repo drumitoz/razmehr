@@ -67,63 +67,9 @@
     }
   ];
 
-  const sourceMarkup = (sources) => sources.map((source) =>
-    `<a href="${source.url}" target="_blank" rel="noopener noreferrer">${source.name}</a>`
-  ).join('<span>،</span>');
 
-  const cardMarkup = (story, className = 'latest-card') => `
-    <a class="${className} filterable" data-category="${story.category}" href="beauty-news.html#${story.id}">
-      <img src="${story.image}" alt="${story.alt}" loading="lazy" referrerpolicy="no-referrer">
-      <div class="${className === 'bn-card reveal' ? 'bn-card-copy' : 'latest-copy'}">
-        <span class="${className === 'bn-card reveal' ? 'bn-tag' : 'tag'}">${story.tag}</span>
-        <h3>${story.shortTitle}</h3>
-        <p>${story.summary}</p>
-        <div class="${className === 'bn-card reveal' ? 'bn-meta' : 'latest-meta'}"><span class="${className === 'bn-card reveal' ? 'bn-live' : ''}">تازه</span><span>${story.date}</span></div>
-      </div>
-    </a>`;
-
-  const articleMarkup = (story) => `
-    <article class="article filterable" id="${story.id}" data-category="${story.category}">
-      <aside class="article-aside">
-        <img src="${story.image}" alt="${story.alt}" loading="lazy" referrerpolicy="no-referrer">
-        <div class="archive-note">${story.credit}</div>
-      </aside>
-      <div class="article-body">
-        <div class="article-kicker">${story.tag} · ${story.date}</div>
-        <h2>${story.title}</h2>
-        <p class="article-deck">${story.deck}</p>
-        ${story.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}
-        <div class="analysis"><strong>نگاه رازمهر</strong>${story.insight}</div>
-        <div class="source"><span>${story.sources.length > 1 ? 'منابع گزارش:' : 'منبع گزارش:'}</span>${sourceMarkup(story.sources)}</div>
-      </div>
-    </article>`;
-
-  const init = () => {
-    const homeGrid = document.querySelector('.beauty-news-home .bn-grid');
-    if (homeGrid) {
-      homeGrid.innerHTML = stories.map((story) => cardMarkup(story, 'bn-card reveal')).join('');
-      requestAnimationFrame(() => {
-        homeGrid.querySelectorAll('.reveal').forEach((card) => card.classList.add('in'));
-      });
-    }
-
-    const freshMount = document.getElementById('freshNewsMount');
-    if (freshMount) freshMount.innerHTML = `
-      <div class="section-title"><h2>تازه‌ترین خبرها</h2><span>منتخب ۱۸ شهریور ۱۴۰۵</span></div>
-      <section class="latest-grid" aria-label="تازه‌ترین خبرهای بیوتی نیوز">
-        ${stories.map((story) => cardMarkup(story)).join('')}
-      </section>`;
-
-    const articlesMount = document.getElementById('freshArticlesMount');
-    if (articlesMount) articlesMount.innerHTML = stories.map(articleMarkup).join('');
-
-    const ticker = document.querySelector('.ticker-row');
-    if (ticker) ticker.innerHTML = `<span class="ticker-label">خبر داغ</span><span>دم‌اسبی بافت‌دار فلورنس پیو خبرساز شد</span><i></i><span>فرنچ چندرنگ دوا لیپا خبرساز شد</span><i></i><span>رالف لورن بهار ۲۰۲۷ را رونمایی کرد</span>`;
-
-    const issue = document.querySelector('.issue');
-    if (issue) issue.innerHTML = '<span>شماره این هفته</span><strong>۱۹ شهریور ۱۴۰۵</strong><span>به‌روزرسانی: ۱۹ شهریور</span>';
-  };
-
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
-  else init();
+  const registry = window.RAZMEHR_BEAUTY_NEWS = window.RAZMEHR_BEAUTY_NEWS || {};
+  if (!Array.isArray(registry.batches)) registry.batches = [];
+  registry.batches = registry.batches.filter((batch) => batch.file !== 'beauty-news-2026-09-10.js');
+  registry.batches.push({ file: 'beauty-news-2026-09-10.js', stories });
 })();
