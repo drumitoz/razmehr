@@ -29,7 +29,7 @@
 <link rel="canonical" href="https://razmehrbeauty.com">
 <link rel="icon" type="image/png" href="img/logo.png">
 <link rel="apple-touch-icon" href="img/logo.png">
-<script src="feature-flags.js?v=20260914-on"></script>
+<script src="feature-flags.js?v=20260914-banner-off"></script>
 <link rel="stylesheet" href="birthday-theme.css?v=20260912b">
 <script src="birthday-theme.js?v=20260912b" defer></script>
 <script src="beauty-news-2026-09-10.js?v=20260910b" defer></script>
@@ -3122,7 +3122,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
 renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-setTimeout(openWelcomeBanner,900);
+if(window.RAZMEHR_FEATURES?.entryBanner){
+  setTimeout(openWelcomeBanner,900);
+}
 document.getElementById('welcomeBanner')?.addEventListener('click',e=>{if(e.target===e.currentTarget) closeWelcomeBanner()});
 
 // close mobile menu when an in-page link is tapped (external links stay open)

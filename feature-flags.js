@@ -4,7 +4,8 @@
  */
 window.RAZMEHR_FEATURES = Object.freeze({
   beautyNews: true,
-  birthdayTheme: false
+  birthdayTheme: false,
+  entryBanner: false
 });
 
 document.documentElement.classList.toggle(
