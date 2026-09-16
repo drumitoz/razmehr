@@ -1,30 +1,31 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-15a",
+  "version": "2026-09-16a",
   "files": [
+    "beauty-news-2026-09-16.js",
     "beauty-news-2026-09-15.js",
     "beauty-news-2026-09-12.js",
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "nyfw-low-ponytail-spring-2027",
     "emmys-2026-small-beauty-details",
-    "nyfw-beauty-spring-2027",
     "anne-hathaway-red-lips-nails"
   ],
   "latestStoryIds": [
+    "nyfw-low-ponytail-spring-2027",
     "emmys-2026-small-beauty-details",
-    "nyfw-beauty-spring-2027",
     "anne-hathaway-red-lips-nails"
   ],
-  "latestLabel": "منتخب ۲۴ شهریور ۱۴۰۵",
+  "latestLabel": "منتخب ۲۵ شهریور ۱۴۰۵",
   "ticker": [
+    "دم‌اسبی پایین و آزاد، ترند تازه نیویورک شد",
     "امی ۲۰۲۶ جزئیات کوچک را به تیتر بزرگ تبدیل کرد",
-    "ترندهای زیبایی نیویورک از راه رسیدند",
     "آن هاتاوی قرمز کلاسیک را برگرداند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۴ شهریور ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۴ شهریور"
+    "date": "۲۵ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۵ شهریور"
   }
 }
