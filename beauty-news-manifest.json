@@ -1,31 +1,32 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-16a",
+  "version": "2026-09-17a",
   "files": [
+    "beauty-news-2026-09-17.js",
     "beauty-news-2026-09-16.js",
     "beauty-news-2026-09-15.js",
     "beauty-news-2026-09-12.js",
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "allure-best-beauty-2026-nails",
     "nyfw-low-ponytail-spring-2027",
-    "emmys-2026-small-beauty-details",
-    "anne-hathaway-red-lips-nails"
+    "emmys-2026-small-beauty-details"
   ],
   "latestStoryIds": [
+    "allure-best-beauty-2026-nails",
     "nyfw-low-ponytail-spring-2027",
-    "emmys-2026-small-beauty-details",
-    "anne-hathaway-red-lips-nails"
+    "emmys-2026-small-beauty-details"
   ],
-  "latestLabel": "منتخب ۲۵ شهریور ۱۴۰۵",
+  "latestLabel": "منتخب ۲۶ شهریور ۱۴۰۵",
   "ticker": [
+    "برندگان ناخن Allure ۲۰۲۶ معرفی شدند",
     "دم‌اسبی پایین و آزاد، ترند تازه نیویورک شد",
-    "امی ۲۰۲۶ جزئیات کوچک را به تیتر بزرگ تبدیل کرد",
-    "آن هاتاوی قرمز کلاسیک را برگرداند"
+    "امی ۲۰۲۶ جزئیات کوچک را به تیتر بزرگ تبدیل کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۵ شهریور ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۵ شهریور"
+    "date": "۲۶ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۶ شهریور"
   }
 }
