@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 53375)
-Total output lines: 3241
-
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -1014,7 +1011,1308 @@ body.lang-fa .pd-back svg{transform:scaleX(-1)}
 .pd-main{padding:24px 26px 28px}
 .pd-cat{
   display:inline-block;font-size:11.5px;padding:4px 12px;border-radius:20px;
-  background:rgba(95,107,66,.11);color:var…23375 tokens truncated…></label>
+  background:rgba(95,107,66,.11);color:var(--sage-deep);font-weight:600;margin-bottom:9px;
+}
+.pd-main h3{font-family:var(--font-fa);font-size:22px;font-weight:800;color:var(--ink);margin-bottom:12px;line-height:1.5}
+.pd-intro{font-size:14.5px;color:var(--ink);line-height:1.95;font-weight:300;margin-bottom:22px}
+.pd-sec{margin-bottom:22px}
+.pd-sec h4{
+  display:flex;align-items:center;gap:8px;font-size:15px;font-weight:700;
+  color:var(--sage-deep);margin-bottom:13px;
+}
+.pd-sec h4 svg{width:17px;height:17px;flex-shrink:0}
+.pd-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.pd-list li{position:relative;padding-inline-start:22px;font-size:14px;line-height:1.8;color:var(--ink)}
+.pd-list li::before{content:"";position:absolute;top:9px;width:7px;height:7px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#d9b96a)}
+body.lang-fa .pd-list li::before{right:0}
+body.lang-en .pd-list li::before,body.lang-tr .pd-list li::before{left:0}
+.pd-steps{list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:11px}
+.pd-steps li{
+  position:relative;padding-inline-start:36px;font-size:14px;line-height:1.8;color:var(--ink);
+  counter-increment:s;min-height:26px;
+}
+.pd-steps li::before{
+  content:counter(s);position:absolute;top:0;width:26px;height:26px;border-radius:50%;
+  background:var(--sage-deep);color:var(--cream);display:flex;align-items:center;justify-content:center;
+  font-size:12.5px;font-weight:700;font-family:var(--font-fa);
+}
+body.lang-fa .pd-steps li::before{right:0}
+body.lang-en .pd-steps li::before,body.lang-tr .pd-steps li::before{left:0}
+.pd-note{
+  display:flex;gap:10px;align-items:flex-start;padding:14px 16px;border-radius:13px;
+  background:rgba(194,163,94,.11);border:1px solid rgba(194,163,94,.3);
+  font-size:12.8px;color:#7a6533;line-height:1.75;margin-bottom:22px;
+}
+.pd-note svg{width:17px;height:17px;flex-shrink:0;margin-top:2px}
+.pd-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  padding-top:20px;border-top:1px solid var(--line);
+}
+.pd-price{font-family:var(--font-fa);font-size:23px;font-weight:800;color:var(--sage-deep)}
+.pd-price small{font-size:13px;font-weight:500}
+.pd-add{white-space:nowrap;font-size:14px;padding:13px 26px}
+@media(max-width:560px){
+  .pd-main{padding:20px 20px 24px}
+  .pd-foot{flex-direction:column;align-items:stretch;text-align:center}
+  .pd-add{width:100%}
+}
+
+/* ============= GALLERY MODAL ============= */
+.gal-overlay{
+  position:fixed;inset:0;background:rgba(22,21,15,.6);
+  backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px);
+  opacity:0;visibility:hidden;transition:all .35s;z-index:210;
+}
+.gal-overlay.open{opacity:1;visibility:visible}
+.gal-modal{
+  position:fixed;left:50%;top:50%;
+  transform:translate(-50%,-46%) scale(.97);
+  width:min(94vw,760px);max-height:88vh;
+  background:var(--paper);border-radius:24px;z-index:211;
+  display:flex;flex-direction:column;overflow:hidden;
+  box-shadow:0 30px 80px -20px rgba(22,21,15,.55);
+  opacity:0;visibility:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);
+}
+.gal-modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.gal-head{
+  display:flex;align-items:center;gap:12px;
+  padding:18px 22px;border-bottom:1px solid var(--line);
+  background:var(--cream);flex-shrink:0;
+}
+.gal-head h3{flex:1;text-align:center;font-family:var(--font-fa);font-size:18px;font-weight:700;color:var(--ink);margin:0}
+.gal-back{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:8px 14px;border-radius:10px;background:var(--cream-warm);
+  font-size:13px;font-weight:500;font-family:var(--font-fa);color:var(--ink);
+  transition:all .28s;flex-shrink:0;
+}
+.gal-back:hover{background:var(--gold);}
+.gal-back svg{width:16px;height:16px}
+body.lang-fa .gal-back svg{transform:scaleX(-1)}
+.gal-close{
+  width:36px;height:36px;border-radius:50%;flex-shrink:0;
+  background:var(--cream-warm);display:flex;align-items:center;justify-content:center;
+  color:var(--ink);transition:all .3s;
+}
+.gal-close:hover{background:var(--gold);transform:rotate(90deg)}
+.gal-close svg{width:17px;height:17px}
+.gal-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+  padding:20px 22px 24px;overflow-y:auto;flex:1;
+}
+.gal-cell{
+  aspect-ratio:1;border-radius:12px;overflow:hidden;
+  background:var(--cream-warm);cursor:pointer;position:relative;
+  transition:transform .3s, box-shadow .3s;
+}
+.gal-cell img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal-cell:hover{transform:translateY(-3px);box-shadow:0 12px 26px -12px rgba(22,21,15,.4)}
+.gal-cell:hover img{transform:scale(1.06)}
+/* خانه‌های خالی: کاملاً نامرئی (همرنگ پس‌زمینه) */
+.gal-cell.empty{background:transparent;cursor:default;pointer-events:none}
+.gal-cell.empty:hover{transform:none;box-shadow:none}
+.gal-empty{
+  display:none;text-align:center;padding:26px 22px 32px;
+  font-size:14px;color:var(--muted);font-weight:300;
+}
+.gal-empty.show{display:block}
+
+/* ============= LIGHTBOX ============= */
+.lb-overlay{
+  position:fixed;inset:0;background:rgba(12,11,8,.94);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:all .3s;z-index:220;
+}
+.lb-overlay.open{opacity:1;visibility:visible}
+#lbImg{max-width:90vw;max-height:86vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+.lb-close{
+  position:absolute;top:20px;right:20px;width:44px;height:44px;border-radius:50%;
+  background:rgba(247,243,234,.14);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:2;
+}
+.lb-close:hover{background:rgba(247,243,234,.3);transform:rotate(90deg)}
+.lb-close svg{width:20px;height:20px}
+.lb-nav{
+  position:absolute;top:50%;transform:translateY(-50%);
+  width:46px;height:46px;border-radius:50%;
+  background:rgba(247,243,234,.14);color:var(--cream);
+  display:flex;align-items:center;justify-content:center;transition:all .3s;z-index:2;
+}
+.lb-nav:hover{background:rgba(247,243,234,.3)}
+.lb-nav svg{width:22px;height:22px}
+.lb-prev{left:18px}
+.lb-next{right:18px}
+
+/* ============= CONTACT PICKER ============= */
+.picker-overlay{
+  position:fixed;inset:0;background:rgba(22,21,15,.55);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  opacity:0;visibility:hidden;transition:all .35s;z-index:200;
+}
+.picker-overlay.open{opacity:1;visibility:visible}
+.picker-modal{
+  position:fixed;left:50%;top:50%;
+  transform:translate(-50%,-46%) scale(.96);
+  width:min(92vw,440px);max-height:88vh;overflow-y:auto;
+  background:var(--paper);border-radius:26px;z-index:201;
+  padding:38px 30px 30px;box-shadow:0 30px 80px -20px rgba(22,21,15,.5);
+  opacity:0;visibility:hidden;transition:all .4s cubic-bezier(.16,1,.3,1);
+}
+.picker-modal.open{opacity:1;visibility:visible;transform:translate(-50%,-50%) scale(1)}
+.picker-close{
+  position:absolute;top:18px;width:38px;height:38px;border-radius:50%;
+  background:var(--cream-warm);display:flex;align-items:center;justify-content:center;
+  color:var(--ink);transition:all .3s;
+}
+body.lang-fa .picker-close{left:18px}
+body.lang-en .picker-close,body.lang-tr .picker-close{right:18px}
+.picker-close:hover{background:var(--gold);transform:rotate(90deg)}
+.picker-close svg{width:18px;height:18px}
+.picker-head{text-align:center;margin-bottom:26px}
+.picker-icon{
+  width:60px;height:60px;border-radius:18px;margin:0 auto 16px;
+  display:flex;align-items:center;justify-content:center;color:#fff;
+  background:linear-gradient(135deg,var(--sage-deep),var(--sage));
+  box-shadow:0 10px 26px -10px rgba(95,107,66,.7);
+}
+.picker-icon svg{width:28px;height:28px}
+.picker-head h3{font-family:var(--font-fa);font-size:22px;font-weight:700;color:var(--ink);margin-bottom:6px}
+.picker-head p{font-size:13.5px;color:var(--muted);font-weight:300}
+.picker-options{display:flex;flex-direction:column;gap:11px}
+.pick-opt{
+  display:flex;align-items:center;gap:15px;
+  padding:15px 18px;border-radius:15px;
+  border:1px solid var(--line);background:var(--cream);
+  transition:all .3s;cursor:pointer;text-align:start;width:100%;
+}
+.pick-opt:hover{transform:translateY(-2px);box-shadow:0 12px 28px -14px rgba(22,21,15,.35);border-color:transparent}
+.pick-ico{
+  width:44px;height:44px;border-radius:12px;flex-shrink:0;
+  display:flex;align-items:center;justify-content:center;color:#fff;
+}
+.pick-ico svg{width:22px;height:22px}
+.pick-wa .pick-ico{background:#25D366}
+.pick-call .pick-ico{background:linear-gradient(135deg,#4E6FC0,#3E8ABF)}
+.pick-sms .pick-ico{background:linear-gradient(135deg,#C2A35E,#B08F45)}
+.pick-bale .pick-ico{background:#1FA0FF}
+.pick-eitaa .pick-ico{background:linear-gradient(135deg,#FF7A00,#F5920A)}
+.pick-txt{flex:1;min-width:0}
+.pick-txt h4{font-size:15.5px;font-weight:600;color:var(--ink);margin-bottom:2px}
+.pick-txt p{font-size:12px;color:var(--muted);font-weight:300;direction:ltr}
+body.lang-fa .pick-txt p{text-align:right}
+.pick-arrow{width:18px;height:18px;color:var(--muted);flex-shrink:0;opacity:.5;transition:all .3s}
+.pick-opt:hover .pick-arrow{opacity:1;color:var(--sage-deep)}
+body.lang-fa .pick-opt .pick-arrow{transform:scaleX(-1)}
+
+.cart-drawer{
+  position:fixed;top:0;bottom:0;width:420px;max-width:90vw;
+  background:var(--paper);z-index:201;
+  display:flex;flex-direction:column;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1);
+  box-shadow:var(--shadow);
+}
+body.lang-fa .cart-drawer{left:0;transform:translateX(-100%)}
+body.lang-en .cart-drawer,body.lang-tr .cart-drawer{right:0;transform:translateX(100%)}
+.cart-drawer.open{transform:translateX(0)!important}
+.cart-header{padding:26px 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+.cart-header h3{font-family:var(--font-display);font-size:22px;color:var(--ink);letter-spacing:1px;font-weight:400}
+body.lang-fa .cart-header h3{font-family:var(--font-fa);font-weight:600;letter-spacing:0}
+.cart-close{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--ink);transition:all .3s}
+.cart-close:hover{background:var(--cream-warm)}
+.cart-close svg{width:20px;height:20px}
+.cart-items{flex:1;overflow-y:auto;padding:20px 28px}
+.cart-empty{text-align:center;padding:60px 20px;color:var(--muted)}
+.cart-empty svg{width:56px;height:56px;margin:0 auto 18px;opacity:.4}
+.cart-empty p{font-size:15px;font-weight:300}
+.cart-line{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
+.cart-line-img{width:60px;height:60px;border-radius:12px;object-fit:cover;background:var(--cream-warm);flex-shrink:0}
+.cart-line-info{flex:1;min-width:0}
+.cart-line-info h5{font-size:14px;font-weight:600;color:var(--ink);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cart-line-info .clp{font-size:13px;color:var(--sage-deep);font-weight:500}
+.cart-qty{display:flex;align-items:center;gap:10px;background:var(--cream);border-radius:30px;padding:4px}
+.cart-qty button{width:26px;height:26px;border-radius:50%;background:var(--paper);color:var(--ink);font-size:16px;display:flex;align-items:center;justify-content:center;transition:all .2s;line-height:1}
+.cart-qty button:hover{background:var(--sage-deep);color:var(--cream)}
+.cart-qty span{font-size:14px;font-weight:600;min-width:18px;text-align:center}
+.cart-line-remove{color:var(--muted);width:20px;height:20px;transition:color .2s;flex-shrink:0}
+.cart-line-remove:hover{color:#b5502f}
+.cart-footer{padding:24px 28px;border-top:1px solid var(--line);background:var(--cream)}
+.cart-total{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px}
+.cart-total .tl{font-size:15px;color:var(--muted);font-weight:400}
+.cart-total .tv{font-family:var(--font-display);font-size:26px;color:var(--ink)}
+body.lang-fa .cart-total .tv{font-family:var(--font-fa);font-weight:700}
+.cart-note{font-size:12px;color:var(--muted);margin-bottom:18px;line-height:1.7;font-weight:300}
+.checkout-btn{width:100%;padding:16px;border-radius:44px;background:#25D366;color:#fff;font-size:15px;font-weight:600;display:flex;align-items:center;justify-content:center;gap:10px;transition:all .3s}
+.checkout-btn:hover{background:#1eb955;transform:translateY(-2px);box-shadow:0 10px 30px -12px rgba(37,211,102,.6)}
+.checkout-btn svg{width:22px;height:22px}
+.checkout-btn:disabled{background:var(--muted);cursor:not-allowed;transform:none;box-shadow:none;opacity:.6}
+
+/* ================= CONTACT / CTA ================= */
+#contact{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+#contact::before{content:"";position:absolute;top:-100px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(194,163,94,.14),transparent 70%)}
+#contact::after{content:"";position:absolute;bottom:-120px;width:460px;height:460px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(142,79,176,.16),transparent 70%)}
+body.lang-fa #contact::before{left:-100px}
+body.lang-fa #contact::after{right:-120px}
+body.lang-en #contact::before,body.lang-tr #contact::before{right:-100px}
+body.lang-en #contact::after,body.lang-tr #contact::after{left:-120px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:2}
+.contact-info h2{font-family:var(--font-display);font-size:clamp(30px,4vw,44px);margin-bottom:20px;line-height:1.2;font-weight:400}
+body.lang-fa .contact-info h2{font-family:var(--font-fa);font-weight:700}
+.contact-info h2 em{font-style:italic;color:var(--gold);font-family:var(--font-serif);font-weight:500}
+body.lang-fa .contact-info h2 em{font-style:normal;font-family:var(--font-fa)}
+.contact-info>p{font-size:16px;color:rgba(247,243,234,.75);margin-bottom:34px;line-height:1.9;font-weight:300;max-width:440px}
+.contact-methods{display:flex;flex-direction:column;gap:18px}
+.cmethod{display:flex;align-items:center;gap:16px}
+.cmethod-ico{width:48px;height:48px;border-radius:14px;background:rgba(247,243,234,.08);display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0;transition:all .3s}
+.cmethod:hover .cmethod-ico{background:var(--gold);color:var(--ink)}
+.cmethod svg{width:22px;height:22px}
+.cmethod .cm-lbl{font-size:12px;color:rgba(247,243,234,.55);letter-spacing:.5px}
+.cmethod .cm-val{font-size:16px;color:var(--cream);font-weight:400}
+
+.contact-form{background:var(--paper);border-radius:24px;padding:36px;box-shadow:var(--shadow)}
+.contact-form h3{font-family:var(--font-display);font-size:22px;color:var(--ink);margin-bottom:6px;letter-spacing:1px;font-weight:400}
+body.lang-fa .contact-form h3{font-family:var(--font-fa);font-weight:600;letter-spacing:0}
+.contact-form>p{font-size:13.5px;color:var(--muted);margin-bottom:24px;font-weight:300}
+.form-row{margin-bottom:16px}
+.form-row label{display:block;font-size:12.5px;color:var(--ink);margin-bottom:7px;font-weight:500}
+.form-row input,.form-row select,.form-row textarea{
+  width:100%;padding:13px 16px;border:1px solid var(--line);border-radius:12px;
+  font-family:inherit;font-size:14px;color:var(--ink);background:var(--cream);
+  transition:all .3s;font-weight:300;
+}
+.form-row input:focus,.form-row select:focus,.form-row textarea:focus{outline:none;border-color:var(--sage);box-shadow:0 0 0 3px rgba(126,139,87,.12)}
+.form-row textarea{resize:vertical;min-height:90px}
+.form-submit{width:100%;padding:15px;border-radius:44px;background:var(--ink);color:var(--cream);font-size:15px;font-weight:500;transition:all .3s;margin-top:6px}
+.form-submit:hover{background:var(--sage-deep);transform:translateY(-2px)}
+
+/* ================= FOOTER ================= */
+footer{background:#0F0E0A;color:rgba(247,243,234,.6);padding:60px 0 30px}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(247,243,234,.1)}
+.footer-brand{max-width:320px}
+.footer-brand .brand{margin-bottom:18px}
+.footer-brand .brand-name,.footer-brand .brand svg{color:var(--cream)}
+.footer-brand p{font-size:14px;line-height:1.9;font-weight:300}
+.footer-col h5{font-family:var(--font-display);font-size:15px;color:var(--cream);margin-bottom:18px;letter-spacing:1.5px;text-transform:uppercase}
+body.lang-fa .footer-col h5{font-family:var(--font-fa);font-weight:600;letter-spacing:0;text-transform:none;font-size:16px}
+.footer-col a{display:block;font-size:14px;margin-bottom:12px;transition:color .3s;font-weight:300}
+.footer-col a:hover{color:var(--gold)}
+.footer-social{display:flex;gap:12px;margin-top:18px}
+.footer-social a{width:40px;height:40px;border-radius:50%;border:1px solid rgba(247,243,234,.2);display:flex;align-items:center;justify-content:center;color:rgba(247,243,234,.7);transition:all .3s}
+.footer-social a:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+.footer-social svg{width:18px;height:18px}
+.footer-bottom{padding-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:12.5px;font-weight:300}
+.footer-bottom .made{font-family:var(--font-serif);font-style:italic;color:var(--gold);opacity:.7}
+.footer-bottom .made a{color:inherit;border-bottom:1px solid rgba(194,163,94,.38);transition:color .25s,border-color .25s,opacity .25s}
+.footer-bottom .made a:hover,.footer-bottom .made a:focus-visible{color:var(--cream);border-color:var(--gold);opacity:1}
+body.lang-fa .footer-bottom .made{font-family:var(--font-fa);font-style:normal}
+
+/* toast */
+.toast{position:fixed;bottom:30px;background:var(--ink);color:var(--cream);padding:15px 26px;border-radius:44px;font-size:14px;font-weight:500;box-shadow:var(--shadow);z-index:300;opacity:0;transform:translateY(20px);transition:all .4s;display:flex;align-items:center;gap:10px}
+body.lang-fa .toast{right:30px}
+body.lang-en .toast,body.lang-tr .toast{left:30px}
+.toast.show{opacity:1;transform:translateY(0)}
+.toast svg{width:20px;height:20px;color:var(--gold)}
+
+/* whatsapp float */
+.wa-float{position:fixed;bottom:30px;width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px -8px rgba(37,211,102,.6);z-index:90;transition:all .3s;animation:wafloat 3s ease-in-out infinite}
+body.lang-fa .wa-float{left:30px}
+body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
+.wa-float:hover{transform:scale(1.1)}
+.wa-float svg{width:32px;height:32px;color:#fff}
+@keyframes wafloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:translateY(0)}
+
+/* ================= RESPONSIVE ================= */
+@media(max-width:960px){
+  /* on narrow screens the hair panel sits behind the text — pull it back
+     and lay a soft cream veil over it so the copy stays fully legible */
+  .hero-rainbow{
+    width:100%;
+    opacity:.5;
+    -webkit-mask-image:linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.35) 60%, transparent 92%);
+    mask-image:linear-gradient(180deg, #000 0%, #000 30%, rgba(0,0,0,.35) 60%, transparent 92%);
+  }
+  .hero-rainbow::before{opacity:.5}
+  .hero-rainbow::after{display:none}
+  /* readable scrim behind hero copy */
+  .hero::after{
+    content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+    background:linear-gradient(180deg,
+      rgba(247,243,234,.30) 0%,
+      rgba(247,243,234,.72) 34%,
+      rgba(247,243,234,.94) 55%,
+      var(--cream) 78%);
+  }
+  .hero-content{position:relative;z-index:3}
+  .hero-grid{grid-template-columns:1fr;gap:40px}
+  .hero-visual{max-width:400px;margin:0 auto;order:-1;position:relative;z-index:3}
+  .hero-stats{gap:24px}
+  .svc-grid{grid-template-columns:1fr}
+  .svc-cta-banner{padding:28px 24px;text-align:center;flex-direction:column}
+  .master-grid{grid-template-columns:1fr;gap:44px}
+  .master-visual{max-width:380px;margin:0 auto}
+  .contact-grid{grid-template-columns:1fr;gap:40px}
+  .footer-top{grid-template-columns:1fr 1fr}
+  .footer-brand{grid-column:1/-1}
+}
+@media(max-width:720px){
+  /* ===== immersive mobile menu ===== */
+  .nav-links{
+    position:fixed;top:0;bottom:0;height:100vh;height:100dvh;
+    width:min(86vw,340px);
+    flex-direction:column;align-items:flex-start;
+    justify-content:center;padding:80px 36px 40px;gap:0;
+    transition:transform .55s cubic-bezier(.16,1,.3,1);
+    box-shadow:0 0 80px rgba(22,21,15,.5);z-index:150;
+    background:
+      linear-gradient(165deg, rgba(22,21,15,.90) 0%, rgba(40,36,25,.86) 45%, rgba(95,107,66,.88) 100%),
+      url("img/menubg.jpg");
+    background-size:cover;
+    background-position:center;
+    overflow-y:auto;
+  }
+  /* rainbow edge on the menu */
+  .nav-links::before{
+    content:"";position:absolute;top:0;bottom:0;width:4px;
+    background:linear-gradient(180deg,#D14A6E,#8E4FB0,#4E6FC0,#3FA3AE,#5FB877,#C9B45E);
+  }
+  body.lang-fa .nav-links::before{left:0}
+  body.lang-en .nav-links::before,body.lang-tr .nav-links::before{right:0}
+
+  body.lang-fa .nav-links{left:0;transform:translateX(-101%)}
+  body.lang-en .nav-links,body.lang-tr .nav-links{right:0;transform:translateX(101%)}
+  .nav-links.open{transform:translateX(0)!important}
+
+  /* menu links — staggered entrance */
+  /* only the active-language links show — respect the global lang rule */
+  .nav-links a{
+    font-size:21px;color:var(--cream);font-weight:500;
+    width:100%;padding:17px 0;
+    border-bottom:1px solid rgba(247,243,234,.13);
+    opacity:0;transform:translateY(14px);
+    transition:opacity .5s ease, transform .5s ease, padding-inline-start .3s ease;
+    align-items:center;gap:13px;
+  }
+  .nav-links a[data-lang]{display:none}
+  body.lang-fa .nav-links a[data-lang="fa"],
+  body.lang-tr .nav-links a[data-lang="tr"],
+  body.lang-en .nav-links a[data-lang="en"]{display:flex}
+  .nav-links a::after{display:none}
+  .nav-links.open a{opacity:1;transform:translateY(0)}
+  .nav-links.open a:nth-of-type(3n+1){transition-delay:.14s}
+  .nav-links.open a:nth-of-type(3n+2){transition-delay:.14s}
+  .nav-links.open a:nth-of-type(3n+3){transition-delay:.14s}
+  .nav-links a:active{padding-inline-start:10px}
+  /* small rainbow dot before each link */
+  .nav-links a::before{
+    content:"";width:7px;height:7px;border-radius:50%;flex-shrink:0;
+    background:var(--gold);transition:all .3s;
+  }
+  .nav-links a:nth-of-type(1)::before{background:#D14A6E}
+  .nav-links a:nth-of-type(2)::before{background:#8E4FB0}
+  .nav-links a:nth-of-type(3)::before{background:#4E6FC0}
+  .nav-links a:nth-of-type(4)::before{background:#3FA3AE}
+  .nav-links a:nth-of-type(5)::before{background:#C9B45E}
+
+  /* close button inside the menu */
+  .menu-close{
+    display:flex;
+    position:absolute;top:24px;
+    width:44px;height:44px;border-radius:50%;
+    background:rgba(247,243,234,.12);
+    border:1px solid rgba(247,243,234,.25);
+    display:flex;align-items:center;justify-content:center;
+    color:var(--cream);transition:all .3s;z-index:5;
+  }
+  body.lang-fa .menu-close{right:26px}
+  body.lang-en .menu-close,body.lang-tr .menu-close{left:26px}
+  .menu-close:hover,.menu-close:active{background:var(--gold);color:var(--ink);transform:rotate(90deg)}
+  .menu-close svg{width:20px;height:20px}
+
+  /* menu footer: logo + whatsapp CTA */
+  .menu-foot{
+    display:block;
+    position:absolute;bottom:34px;left:36px;right:36px;
+    opacity:0;transform:translateY(10px);
+    transition:all .5s ease .44s;
+  }
+  .nav-links.open .menu-foot{opacity:1;transform:translateY(0)}
+  .menu-foot .mf-wa{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    background:#25D366;color:#fff;padding:13px;border-radius:40px;
+    font-size:14.5px;font-weight:600;
+  }
+  .menu-foot .mf-wa svg{width:19px;height:19px}
+  .menu-foot .mf-ig{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    margin-top:11px;color:rgba(247,243,234,.6);font-size:12.5px;
+  }
+  .menu-foot .mf-ig svg{width:15px;height:15px}
+
+  .menu-toggle{display:flex}
+  .nav-right{gap:8px}
+  .search-btn{width:42px;height:42px;min-height:42px;padding:0}
+  .search-btn .search-label{display:none}
+  .nav-right .cart-btn span:not(.cart-count){display:none}
+  .nav-right .cart-btn .cart-count{display:flex}
+  .cart-btn{padding:11px 13px}
+  .pillars-grid{grid-template-columns:1fr}
+  .pillar{border-inline-end:none;border-bottom:1px solid rgba(247,243,234,.12)}
+  .pillar:last-child{border-bottom:none}
+  .hero-stats{flex-wrap:wrap}
+  .footer-top{grid-template-columns:1fr}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .wrap{padding:0 20px}
+  section{padding:70px 0}
+  .brand-sub{display:none}
+}
+@media(max-width:560px){
+  .nav-right .search-btn span.search-label{display:none!important}
+  .nav-right .search-btn{width:42px;min-width:42px;padding:0}
+  .product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .product-body{padding:12px}
+  .product-cat{font-size:9.5px;letter-spacing:.3px;margin-bottom:5px}
+  .product-body h4{font-size:13.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:41px}
+  .product-body .pdesc{display:none}
+  .product-tag{top:8px;padding:4px 8px;font-size:8.5px}
+  body.lang-fa .product-tag{right:8px}
+  body.lang-en .product-tag,body.lang-tr .product-tag{left:8px}
+  .pinfo-btn{margin:7px 0 9px;padding:7px 6px;font-size:10.5px;gap:4px}
+  .pinfo-btn svg{width:13px;height:13px}
+  .product-foot{gap:6px;align-items:flex-end}
+  .product-price{font-size:12.5px;line-height:1.5}
+  .add-btn{width:34px;height:34px}
+  .add-btn svg{width:16px;height:16px}
+  .shop-filter{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;margin-inline:-20px;padding:0 20px 8px;margin-bottom:28px;scrollbar-width:none}
+  .shop-filter::-webkit-scrollbar{display:none}
+  .filter-btn{white-space:nowrap;padding:8px 15px;font-size:12px}
+  .svc-item{padding:14px;gap:12px}
+  .svc-top{gap:11px}
+  .svc-thumb-slider{width:62px;height:62px;border-radius:11px}
+  .svc-num{width:22px;font-size:13px}
+  .svc-info h4{font-size:15px}
+  .svc-info p{font-size:11.5px}
+  .svc-btn{padding:9px 7px;font-size:11.5px;gap:5px}
+  .search-modal{top:8vh;width:94vw;max-height:84vh;border-radius:20px}
+  .search-head{padding:13px}
+  .search-input{height:46px;font-size:14px}
+  .search-meta{padding:12px 16px 6px}
+  .search-results{padding:7px 8px 14px}
+  .search-hint{display:none}
+}
+@media(max-width:400px){
+  .brand-logo{width:36px;height:36px}
+  .brand-name{font-size:18px;letter-spacing:2px}
+  .nav{gap:10px}
+  .product-grid{gap:9px}
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "عمارت زیبایی رازمهر",
+  "alternateName": "آکادمی رازمهر",
+  "description": "سالن و آکادمی تخصصی زیبایی در یزد — اولین باغ زیبایی در کشور. آموزش حرفه‌ای رنگ و لایت، کراتین، میکاپ و آرایش دائم زیر نظر استاد فاطمه زارع.",
+  "url": "https://razmehrbeauty.com",
+  "logo": "https://razmehrbeauty.com/img/logo.png",
+  "image": "https://razmehrbeauty.com/img/bagh.jpg",
+  "telephone": "+989367737214",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "بلوار دانشجو، کوچه ۴۱، باغ عمارت زیبایی رازمهر",
+    "addressLocality": "یزد",
+    "addressRegion": "یزد",
+    "addressCountry": "IR"
+  },
+  "sameAs": [
+    "https://www.instagram.com/razmehracademy"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "استاد فاطمه زارع",
+    "jobTitle": "مدرس بین‌المللی رنگ مو",
+    "description": "بانوی رنگ ایران، با بیش از ۳۰ سال تجربه و تدریس بین‌المللی"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],
+    "opens": "09:00",
+    "closes": "20:00"
+  }],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات سالن رازمهر",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"آرایش و خدمات عروس"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"رنگ و لایت مو"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"احیا، کراتین و اسکالپ"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"کوتاهی مو"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"میکاپ"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"شینیون"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"بافت مو"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"خدمات ناخن"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"پدیکور و کف‌سابی"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"اکستنشن و لیفت مژه"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"آرایش دائم و میکروبلیدینگ"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"تتو بدن"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"اصلاح صورت و فرم ابرو"}}
+    ]
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "آکادمی زیبایی رازمهر",
+  "description": "آکادمی تخصصی آموزش زیبایی در یزد — دوره‌های حضوری و ویدیویی رنگ و لایت، کراتین، میکاپ و آرایش دائم.",
+  "url": "https://razmehrbeauty.com/#courses",
+  "logo": "https://razmehrbeauty.com/img/logo.png",
+  "telephone": "+989367737214",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "یزد",
+    "addressCountry": "IR"
+  }
+}
+</script>
+</head>
+<body class="lang-fa">
+
+<!-- ============ SVG LOGO SYMBOL (reusable) ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="razmehr-mark" viewBox="0 0 100 100">
+  <!-- woman's profile silhouette with hair forming R + olive branch -->
+  <g fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- face profile -->
+    <path d="M42 20 C33 22 27 30 27 40 C27 46 29 50 30 54 C31 57 29 59 27 60 C25 61 26 64 29 65 L34 66 C35 71 38 75 44 76"/>
+    <!-- hair sweep forming R bowl -->
+    <path d="M42 20 C52 19 60 25 62 34 C63 40 60 45 54 46 C60 47 63 52 62 58"/>
+    <path d="M54 46 C58 52 61 58 64 66" />
+    <!-- brow/eye hint -->
+    <path d="M33 40 L38 40" stroke-width="2"/>
+  </g>
+  <!-- olive branch -->
+  <g fill="currentColor">
+    <path d="M30 82 C40 78 55 78 70 82" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="38" cy="79" rx="3.4" ry="1.8" transform="rotate(-28 38 79)"/>
+    <ellipse cx="50" cy="77.5" rx="3.4" ry="1.8" transform="rotate(-8 50 77.5)"/>
+    <ellipse cx="62" cy="79" rx="3.4" ry="1.8" transform="rotate(16 62 79)"/>
+  </g>
+</symbol>
+</defs>
+</svg>
+
+<!-- ================= HEADER ================= -->
+<header id="header">
+  <div class="wrap nav">
+    <a href="#home" class="brand">
+      <img src="img/logo.png" alt="RAZMEHR" class="brand-logo">
+      <div class="brand-txt">
+        <div class="brand-name">RAZMEHR</div>
+        <div class="brand-sub">
+          <span data-lang="fa">سالن و آکادمی زیبایی</span>
+          <span data-lang="tr">Güzellik Salonu & Akademi</span>
+          <span data-lang="en">Beauty Salon & Academy</span>
+        </div>
+      </div>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="menu-close" onclick="closeMenu()" aria-label="بستن منو">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <a href="#master" data-lang="fa">استاد</a><a href="#master" data-lang="tr">Usta</a><a href="#master" data-lang="en">Master</a>
+      <a href="#courses" data-lang="fa">آموزش</a><a href="#courses" data-lang="tr">Eğitim</a><a href="#courses" data-lang="en">Courses</a>
+      <a href="beauty-news.html" data-feature="beauty-news" data-lang="fa">بیوتی نیوز</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="tr">Beauty News</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="en">Beauty News</a>
+      <a href="#services" data-lang="fa">خدمات</a><a href="#services" data-lang="tr">Hizmetler</a><a href="#services" data-lang="en">Services</a>
+      <a href="#shop" data-lang="fa">فروشگاه</a><a href="#shop" data-lang="tr">Mağaza</a><a href="#shop" data-lang="en">Shop</a>
+      <a href="#contact" data-lang="fa">تماس</a><a href="#contact" data-lang="tr">İletişim</a><a href="#contact" data-lang="en">Contact</a>
+      <div class="menu-foot">
+        <a href="https://wa.me/989367737214" target="_blank" class="mf-wa">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2z"/></svg>
+          <span data-lang="fa">رزرو نوبت در واتساپ</span><span data-lang="tr">WhatsApp'tan Randevu</span><span data-lang="en">Book on WhatsApp</span>
+        </a>
+        <a href="https://www.instagram.com/razmehracademy" target="_blank" class="mf-ig">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @razmehracademy
+        </a>
+      </div>
+    </nav>
+
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button onclick="setLang('fa')" id="lang-fa" class="active">FA</button>
+        <button onclick="setLang('tr')" id="lang-tr">TR</button>
+        <button onclick="setLang('en')" id="lang-en">EN</button>
+      </div>
+      <button class="search-btn" onclick="openSiteSearch()" aria-label="جست‌وجو در سایت">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <span class="search-label" data-lang="fa">جست‌وجو</span><span class="search-label" data-lang="tr">Ara</span><span class="search-label" data-lang="en">Search</span>
+      </button>
+      <button class="cart-btn" onclick="openCart()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+        <span data-lang="fa">سبد</span><span data-lang="tr">Sepet</span><span data-lang="en">Cart</span>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-rainbow"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-content reveal">
+      <div class="hero-eyebrow">
+        <span class="line"></span>
+        <span data-lang="fa">اولین باغِ زیبایی در کشور</span>
+        <span data-lang="tr">Ülkenin İlk Güzellik Bahçesi</span>
+        <span data-lang="en">The Country's First Beauty Garden</span>
+      </div>
+      <h1>
+        <span data-lang="fa">جایی که هنر زیبایی<br><em>سخن می‌گوید</em></span>
+        <span data-lang="tr">Güzellik sanatının<br><em>çiçek açtığı</em> yer</span>
+        <span data-lang="en">Where the art of beauty<br><em>blossoms</em></span>
+      </h1>
+      <p class="hero-tag">
+        <span data-lang="fa">رنگ · لایت · کراتین · آموزش تخصصی</span>
+        <span data-lang="tr">Renk · Röfle · Keratin · Profesyonel Eğitim</span>
+        <span data-lang="en">Color · Highlights · Keratin · Pro Training</span>
+      </p>
+      <p class="lead">
+        <span data-lang="fa">عمارت رازمهر علاوه بر سالن زیبایی، یک آکادمی حرفه‌ای است — برگزارکننده‌ی بزرگ‌ترین سمینارهای رنگ و لایت در سراسر کشور. اینجا هم زیبا می‌شوید و هم هنر زیبایی را از استادانِ کار می‌آموزید، با بالاترین استاندارد بهداشت و کیفیت.</span>
+        <span data-lang="tr">Razmehr sadece bir salon değil, profesyonel bir akademidir — bölgenin en büyük renk ve röfle seminerlerinin düzenleyicisi. Burada hem güzelleşir hem de güzellik sanatını ustalardan öğrenirsiniz.</span>
+        <span data-lang="en">Razmehr is more than a salon — it's a professional academy, host to the region's largest color and highlight seminars. Here you're cared for and you learn the craft from masters, at the highest standard.</span>
+      </p>
+      <div class="hero-cta">
+        <a href="#courses" class="btn btn-primary">
+          <span data-lang="fa">دوره‌های آموزشی</span><span data-lang="tr">Eğitim Programları</span><span data-lang="en">Explore Courses</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" class="arrow-ltr"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          <span data-lang="fa">رزرو نوبت</span><span data-lang="tr">Randevu Al</span><span data-lang="en">Book a Visit</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="num" data-lang="fa">۱۰٬۰۰۰+</div><div class="num" data-lang="tr">10.000+</div><div class="num" data-lang="en">10,000+</div>
+          <div class="lbl"><span data-lang="fa">هنرجوی موفق</span><span data-lang="tr">Başarılı Öğrenci</span><span data-lang="en">Graduates</span></div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" data-lang="fa">۲۱هزار+</div><div class="num" data-lang="tr">21B+</div><div class="num" data-lang="en">21K+</div>
+          <div class="lbl"><span data-lang="fa">دنبال‌کننده</span><span data-lang="tr">Takipçi</span><span data-lang="en">Followers</span></div>
+        </div>
+        <div class="hero-stat">
+          <div class="num" data-lang="fa">۱۰۰٪</div><div class="num" data-lang="tr">%100</div><div class="num" data-lang="en">100%</div>
+          <div class="lbl"><span data-lang="fa">استاندارد بهداشت</span><span data-lang="tr">Hijyen Standardı</span><span data-lang="en">Hygiene</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal">
+      <svg class="hero-branch" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 80 C40 60 55 40 75 20" stroke-linecap="round"/><ellipse cx="35" cy="62" rx="5" ry="2.5" transform="rotate(-40 35 62)" fill="currentColor" stroke="none"/><ellipse cx="48" cy="50" rx="5" ry="2.5" transform="rotate(-40 48 50)" fill="currentColor" stroke="none"/><ellipse cx="61" cy="38" rx="5" ry="2.5" transform="rotate(-40 61 38)" fill="currentColor" stroke="none"/></svg>
+      <div class="hero-frame">
+        <img src="img/bagh.jpg" alt="Razmehr salon">
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21l2.3-7.1-6-4.5h7.6z"/></svg>
+        <div>
+          <div class="bt"><span data-lang="fa">کیفیت لاکچری</span><span data-lang="tr">Lüks Kalite</span><span data-lang="en">Luxury Quality</span></div>
+          <div class="bs"><span data-lang="fa">استاندارد آکادمیک</span><span data-lang="tr">Akademik Standart</span><span data-lang="en">Academic Standard</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PILLARS ================= -->
+<section class="pillars">
+  <div class="pillars-grid">
+    <a class="pillar reveal" href="#courses" aria-label="مشاهده دوره‌های آموزشی رازمهر">
+      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+      <h3><span data-lang="fa">آموزش</span><span data-lang="tr">Eğitim</span><span data-lang="en">Education</span></h3>
+      <p>
+        <span data-lang="fa">دوره‌های تخصصی و مدرک‌دار در رنگ، لایت، کراتین و میکاپ، زیر نظر استادانِ مجرب.</span>
+        <span data-lang="tr">Renk, röfle, keratin ve makyajda sertifikalı uzman kurslar; deneyimli eğitmenler eşliğinde.</span>
+        <span data-lang="en">Certified specialist courses in color, highlights, keratin and makeup, led by expert instructors.</span>
+      </p>
+      <span class="pillar-link"><span data-lang="fa">مشاهده دوره‌ها</span><span data-lang="tr">Kursları gör</span><span data-lang="en">View courses</span><span aria-hidden="true">←</span></span>
+    </a>
+    <a class="pillar reveal" href="#services" aria-label="مشاهده خدمات تخصصی رازمهر">
+      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V22h4V9.4c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/><circle cx="12" cy="6" r="1"/></svg>
+      <h3><span data-lang="fa">خدمات</span><span data-lang="tr">Hizmetler</span><span data-lang="en">Services</span></h3>
+      <p>
+        <span data-lang="fa">خدمات تخصصی مو، رنگ، کراتین و میکاپ عروس با محصولات اصل و بالاترین کیفیت.</span>
+        <span data-lang="tr">Orijinal ürünlerle uzman saç, renk, keratin ve gelin makyajı hizmetleri.</span>
+        <span data-lang="en">Expert hair, color, keratin and bridal makeup services with authentic premium products.</span>
+      </p>
+      <span class="pillar-link"><span data-lang="fa">مشاهده خدمات</span><span data-lang="tr">Hizmetleri gör</span><span data-lang="en">View services</span><span aria-hidden="true">←</span></span>
+    </a>
+    <a class="pillar reveal" href="#shop" aria-label="مشاهده فروشگاه رازمهر">
+      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 01-8 0"/></svg>
+      <h3><span data-lang="fa">فروشگاه</span><span data-lang="tr">Mağaza</span><span data-lang="en">Boutique</span></h3>
+      <p>
+        <span data-lang="fa">محصولات حرفه‌ای مراقبت از مو و پوست، منتخب و تأییدشده توسط متخصصان رازمهر.</span>
+        <span data-lang="tr">Razmehr uzmanlarınca seçilmiş profesyonel saç ve cilt bakım ürünleri.</span>
+        <span data-lang="en">Professional hair and skin care products, curated and approved by Razmehr experts.</span>
+      </p>
+      <span class="pillar-link"><span data-lang="fa">مشاهده محصولات</span><span data-lang="tr">Ürünleri gör</span><span data-lang="en">View products</span><span aria-hidden="true">←</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- ================= MASTER / ABOUT ================= -->
+<section id="master">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">بنیان‌گذار رازمهر</span><span data-lang="tr">Razmehr Kurucusu</span><span data-lang="en">Founder of Razmehr</span></div>
+      <h2><span data-lang="fa">بانوی <em>رنگ</em> ایران</span><span data-lang="tr">İran'ın <em>Renk</em> Hanımı</span><span data-lang="en">Iran's <em>Lady of Color</em></span></h2>
+    </div>
+
+    <div class="master-grid">
+      <div class="master-visual reveal">
+        <div class="master-photo">
+          <img src="img/ostad.jpg" alt="استاد فاطمه زارع">
+        </div>
+        <div class="master-title-badge">
+          <div class="mt"><span data-lang="fa">۳۰ سال</span><span data-lang="tr">30 Yıl</span><span data-lang="en">30 Years</span></div>
+          <div class="ms"><span data-lang="fa">تدریس و خدمات</span><span data-lang="tr">Eğitim & Hizmet</span><span data-lang="en">Teaching & Practice</span></div>
+        </div>
+      </div>
+
+      <div class="master-info reveal">
+        <h3 class="master-name"><span data-lang="fa">استاد فاطمه زارع</span><span data-lang="tr">Usta Fateme Zare</span><span data-lang="en">Master Fateme Zare</span></h3>
+        <p class="master-role"><span data-lang="fa">مدرس بین‌المللی رنگ و لایت، احیا و کراتین</span><span data-lang="tr">Uluslararası Renk, Röfle, Bakım & Keratin Eğitmeni</span><span data-lang="en">International Instructor — Color, Highlights, Repair & Keratin</span></p>
+
+        <p class="master-lede">
+          <span data-lang="fa">ملقب به «بانوی رنگ ایران» — با سی سال تجربه‌ی آموزشی و خدماتی، مدرس دانشگاه در رشته‌های شیمی مواد و روان‌شناسی رنگ، و محقق در حوزه‌ی لاین رنگ، شناخت مو و مواد کاربردی. مدرس متد میلاژ در ایران — علمی‌ترین متد روز دنیا.</span>
+          <span data-lang="tr">"İran'ın Renk Hanımı" olarak anılır — otuz yıllık eğitim ve hizmet tecrübesiyle, malzeme kimyası ve renk psikolojisi alanlarında üniversite öğretim üyesi, saç ve uygulama malzemeleri alanında araştırmacı.</span>
+          <span data-lang="en">Known as "Iran's Lady of Color" — thirty years of teaching and practice, a university lecturer in materials chemistry and color psychology, and a researcher in color lines, hair science and professional products.</span>
+        </p>
+
+        <div class="cred-grid">
+          <div class="cred cred-1">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">تدریس بین‌المللی</span><span data-lang="tr">Uluslararası Eğitim</span><span data-lang="en">International Teaching</span></h5>
+              <p><span data-lang="fa">آموزش در ایتالیا، ترکیه، امارات، هند، گرجستان و عمان</span><span data-lang="tr">İtalya, Türkiye, BAE, Hindistan, Gürcistan ve Umman</span><span data-lang="en">Italy, Türkiye, UAE, India, Georgia and Oman</span></p>
+            </div>
+          </div>
+          <div class="cred cred-2">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">مدرس دانشگاه</span><span data-lang="tr">Üniversite Öğretim Üyesi</span><span data-lang="en">University Lecturer</span></h5>
+              <p><span data-lang="fa">شیمی مواد و روان‌شناسی رنگ</span><span data-lang="tr">Malzeme kimyası ve renk psikolojisi</span><span data-lang="en">Materials chemistry & color psychology</span></p>
+            </div>
+          </div>
+          <div class="cred cred-3">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">سمینار و ورکشاپ تخصصی</span><span data-lang="tr">Uzman Seminer & Atölye</span><span data-lang="en">Seminars & Workshops</span></h5>
+              <p><span data-lang="fa">برگزارکننده‌ی بزرگ‌ترین سمینارهای رنگ و لایت</span><span data-lang="tr">En büyük renk ve röfle seminerlerinin düzenleyicisi</span><span data-lang="en">Host of the largest color & highlight seminars</span></p>
+            </div>
+          </div>
+          <div class="cred cred-4">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">تاتوی مویی و کاشت رنگ</span><span data-lang="tr">Saç Tatuajı & Renk Ekimi</span><span data-lang="en">Hair Tattoo & Color Implant</span></h5>
+              <p><span data-lang="fa">مدرس در ایران و خاورمیانه</span><span data-lang="tr">İran ve Orta Doğu'da eğitmen</span><span data-lang="en">Instructor across Iran & the Middle East</span></p>
+            </div>
+          </div>
+          <div class="cred cred-5">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M9 11H5a2 2 0 00-2 2v7h6zM15 3H9v17h6zM21 8h-6v12h6z"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">متد میلاژ</span><span data-lang="tr">Milaj Metodu</span><span data-lang="en">Milaj Method</span></h5>
+              <p><span data-lang="fa">علمی‌ترین متد روز دنیا — مدرس در ایران</span><span data-lang="tr">Dünyanın en bilimsel güncel metodu</span><span data-lang="en">The world's most scientific current method</span></p>
+            </div>
+          </div>
+          <div class="cred cred-6">
+            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M10 2v7.5L5 20a2 2 0 002 2h10a2 2 0 002-2l-5-10.5V2"/><path d="M8.5 2h7"/></svg></div>
+            <div class="cred-txt">
+              <h5><span data-lang="fa">پژوهش و تحقیق</span><span data-lang="tr">Araştırma</span><span data-lang="en">Research</span></h5>
+              <p><span data-lang="fa">لاین رنگ، شناخت مو و مواد کاربردی</span><span data-lang="tr">Renk hattı, saç bilimi ve ürünler</span><span data-lang="en">Color lines, hair science & products</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <p style="font-size:13px;color:var(--muted);margin-bottom:10px;font-weight:500">
+            <span data-lang="fa">کشورهای محل تدریس:</span><span data-lang="tr">Eğitim verdiği ülkeler:</span><span data-lang="en">Countries taught in:</span>
+          </p>
+          <div class="countries">
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="1" height="2" x="0" fill="#009246"/><rect width="1" height="2" x="1" fill="#fff"/><rect width="1" height="2" x="2" fill="#CE2B37"/></svg></span><span data-lang="fa">ایتالیا</span><span data-lang="tr">İtalya</span><span data-lang="en">Italy</span></span>
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#E30A17"/><circle cx="1.05" cy="1" r="0.5" fill="#fff"/><circle cx="1.2" cy="1" r="0.4" fill="#E30A17"/><path d="M1.68 1 L1.86 0.9 L1.8 1.1 L1.93 0.95 L1.75 1.12 Z" fill="#fff" transform="translate(-0.02,0) scale(1.15) translate(-0.22,-0.15)"/></svg></span><span data-lang="fa">ترکیه</span><span data-lang="tr">Türkiye</span><span data-lang="en">Türkiye</span></span>
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" y="0" fill="#00732F"/><rect width="3" height="0.667" y="0.667" fill="#fff"/><rect width="3" height="0.666" y="1.334" fill="#000"/><rect width="0.75" height="2" fill="#FF0000"/></svg></span><span data-lang="fa">امارات</span><span data-lang="tr">BAE</span><span data-lang="en">UAE</span></span>
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" fill="#FF9933"/><rect width="3" height="0.667" y="0.667" fill="#fff"/><rect width="3" height="0.666" y="1.334" fill="#138808"/><circle cx="1.5" cy="1" r="0.26" fill="none" stroke="#000080" stroke-width="0.05"/><circle cx="1.5" cy="1" r="0.05" fill="#000080"/></svg></span><span data-lang="fa">هند</span><span data-lang="tr">Hindistan</span><span data-lang="en">India</span></span>
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect x="1.25" width="0.5" height="2" fill="#FF0000"/><rect y="0.75" width="3" height="0.5" fill="#FF0000"/><g fill="#FF0000"><rect x="0.45" y="0.25" width="0.28" height="0.09"/><rect x="0.545" y="0.155" width="0.09" height="0.28"/><rect x="2.27" y="0.25" width="0.28" height="0.09"/><rect x="2.365" y="0.155" width="0.09" height="0.28"/><rect x="0.45" y="1.66" width="0.28" height="0.09"/><rect x="0.545" y="1.565" width="0.09" height="0.28"/><rect x="2.27" y="1.66" width="0.28" height="0.09"/><rect x="2.365" y="1.565" width="0.09" height="0.28"/></g></svg></span><span data-lang="fa">گرجستان</span><span data-lang="tr">Gürcistan</span><span data-lang="en">Georgia</span></span>
+            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" y="0" fill="#fff"/><rect width="3" height="0.667" y="0.667" fill="#DB161B"/><rect width="3" height="0.666" y="1.334" fill="#008000"/><rect width="0.85" height="2" fill="#DB161B"/></svg></span><span data-lang="fa">عمان</span><span data-lang="tr">Umman</span><span data-lang="en">Oman</span></span>
+            <span class="country-chip chip-more"><span data-lang="fa">و کشورهای دیگر</span><span data-lang="tr">ve diğer ülkeler</span><span data-lang="en">and more</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION (unified) ================= -->
+<section id="courses">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">آکادمی رازمهر</span><span data-lang="tr">Razmehr Akademi</span><span data-lang="en">Razmehr Academy</span></div>
+      <h2><span data-lang="fa">مرکز <em>آموزش</em></span><span data-lang="tr">Eğitim <em>Merkezi</em></span><span data-lang="en">Training <em>Center</em></span></h2>
+      <p><span data-lang="fa">هنر زیبایی را حرفه‌ای بیاموزید — دوره‌های تخصصی حضوری و آنلاین زیر نظر استاد فاطمه زارع، با پشتیبانی بلندمدت.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — uzman yüz yüze ve çevrim içi kurslar, uzun süreli destekle.</span><span data-lang="en">Master the art of beauty — specialist in-person and online courses with long-term support.</span></p>
+      <a class="academy-entry" href="https://academy.razmehrbeauty.com/" aria-label="ورود به آکادمی آنلاین رازمهر">
+        <span class="academy-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5L12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></span>
+        <span class="academy-entry-copy">
+          <strong data-lang="fa">ورود به آکادمی آنلاین رازمهر</strong><strong data-lang="tr">Razmehr Online Akademi'ye Gir</strong><strong data-lang="en">Enter Razmehr Online Academy</strong>
+          <small data-lang="fa">مشاهده دوره‌ها و پنل آموزشی</small><small data-lang="tr">Kursları ve eğitim panelini görüntüle</small><small data-lang="en">View courses and your learning portal</small>
+        </span>
+        <svg class="academy-entry-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+
+    <!-- دوره آنلاین در ابتدای فهرست -->
+    <details class="live-course live-course--online reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">آنلاین</div><div class="lc-m">دسترسی آموزشی</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره تخصصی آنلاین</span>
+          <h3>دوره کاشت رنگ</h3>
+          <p>آموزش کاربردی رنگساژ کم‌مصرف و تکنیک فولیاژ، به‌صورت آنلاین.</p>
+          <span class="lc-buyers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>۱۴۲ نفر خریداری کرده‌اند</span>
+        </div>
+        <span class="lc-summary-side">
+          <span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span>
+          <span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+        </span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2 2 0 016.5 2z"/></svg>مباحث دوره</h4>
+          <ul class="lc-list lc-check">
+                        <li>چگونه با ۱ تا ۵ گرم رنگ، کل موها را رنگساژ کنیم</li>
+                        <li>تکنیک فولیاژ</li>
+                        <li>پانسمان کردن موها</li>
+                      </ul>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">نحوه برگزاری</span><span class="lf-v">آنلاین</span></div>
+            <div><span class="lf-k">موضوع دوره</span><span class="lf-v">رنگساژ و فولیاژ</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۲٬۲۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('دوره آنلاین کاشت رنگ')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام دوره آنلاین</button>
+      </div>
+    </details>
+
+    <!-- آموزش‌های حضوری -->
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">۰۴</div><div class="lc-m">مهر</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره مدرسی حضوری · ۱۴۰۵</span>
+          <h3>مدرسی رنگ و لایت با تدریس استاد زارع</h3>
+          <p>دوره جامع تربیت مدرس رنگ و لایت، به‌صورت حضوری و همراه با یک سال پشتیبانی.</p>
+        </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های کلاس</h4>
+          <ul class="lc-list lc-check">
+            <li>آموزش کلیه مباحث کاربرد مواد با متد میلاژ</li>
+            <li>امکان برگزاری سمینار، ورکشاپ و کلاس‌های تخصصی بعد از پایان دوره</li>
+            <li>نوشتن مباحث آموزشی</li>
+            <li>تولید محتوای آموزشی و جذب هنرجو</li>
+          </ul>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">شروع کلاس</span><span class="lf-v">۴ مهرماه</span></div>
+            <div><span class="lf-k">مدت دوره</span><span class="lf-v">۲ ماه</span></div>
+            <div><span class="lf-k">تعداد جلسات</span><span class="lf-v">۲۴ جلسه</span></div>
+            <div><span class="lf-k">ساعات آموزشی</span><span class="lf-v">۱۲۰ ساعت</span></div>
+            <div><span class="lf-k">مدارک</span><span class="lf-v">مربی‌گری، دانشگاهی و آکادمی رازمهر</span></div>
+            <div><span class="lf-k">پشتیبانی</span><span class="lf-v">۱ سال</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۹۶٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('مدرسی رنگ و لایت با تدریس استاد زارع - شروع ۴ مهرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
+      </div>
+    </details>
+
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">۱۲</div><div class="lc-m">مهر</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره مدرسی حضوری · ۱۴۰۵</span>
+          <h3>مدرسی احیا، درمان و کراتین با تدریس استاد زارع</h3>
+          <p>دوره جامع تربیت مدرس احیا، درمان و کراتین، به‌صورت حضوری و همراه با یک سال پشتیبانی.</p>
+        </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های کلاس</h4>
+          <ul class="lc-list lc-check">
+            <li>آموزش کلیه مباحث احیا، درمان و کراتین با به‌روزترین متدهای دنیا</li>
+            <li>امکان برگزاری سمینار، ورکشاپ و کلاس‌های تخصصی بعد از پایان دوره</li>
+            <li>نوشتن مباحث آموزشی</li>
+            <li>تولید محتوای آموزشی و جذب هنرجو</li>
+          </ul>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">شروع کلاس</span><span class="lf-v">۱۲ مهرماه</span></div>
+            <div><span class="lf-k">مدت دوره</span><span class="lf-v">۱ ماه</span></div>
+            <div><span class="lf-k">تعداد جلسات</span><span class="lf-v">۱۲ جلسه</span></div>
+            <div><span class="lf-k">ساعات آموزشی</span><span class="lf-v">۶۰ ساعت</span></div>
+            <div><span class="lf-k">مدارک</span><span class="lf-v">مربی‌گری، دانشگاهی و آکادمی رازمهر</span></div>
+            <div><span class="lf-k">پشتیبانی</span><span class="lf-v">۱ سال</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۴۸٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('مدرسی احیا، درمان و کراتین با تدریس استاد زارع - شروع ۱۲ مهرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
+      </div>
+    </details>
+
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">۰۱–۰۳</div><div class="lc-m">آذر</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره تخصصی حضوری · ۱۴۰۵</span>
+          <h3>آموزش صفر تا صد کراتین، احیا و درمان</h3>
+          <p>دوره فشرده حضوری با تدریس استاد زارع، همراه با یک هفته کارورزی.</p>
+        </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی کلاس</h4>
+          <ul class="lc-list lc-check"><li>بعد از پایان دوره یک کراتین‌کار حرفه‌ای هستید و می‌توانید وارد بازار کار شوید</li></ul>
+          <p class="lc-note">⭐ همراه با یک هفته کارورزی</p>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">زمان برگزاری</span><span class="lf-v">۱، ۲ و ۳ آذرماه</span></div>
+            <div><span class="lf-k">مدت دوره</span><span class="lf-v">۳ روز</span></div>
+            <div><span class="lf-k">ساعات آموزشی</span><span class="lf-v">۱۲ ساعت</span></div>
+            <div><span class="lf-k">مدارک</span><span class="lf-v">فنی‌وحرفه‌ای و آکادمی رازمهر</span></div>
+            <div><span class="lf-k">پشتیبانی</span><span class="lf-v">۶ ماه</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۱۵٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('آموزش صفر تا صد کراتین، احیا و درمان - ۱ تا ۳ آذرماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
+      </div>
+    </details>
+
+    <details class="live-course live-course--in-person reveal">
+      <summary class="lc-head">
+        <div class="lc-date"><div class="lc-d">۰۲</div><div class="lc-m">آبان</div></div>
+        <div class="lc-title">
+          <span class="lc-tag">دوره تخصصی حضوری · ۱۴۰۵</span>
+          <h3>آموزش صفر تا صد رنگ و لایت</h3>
+          <p>دوره جامع حضوری با تدریس استاد زارع، همراه با دو هفته کارورزی.</p>
+        </div>
+        <span class="lc-summary-side"><span class="lc-ribbon"><span class="pulse"></span><span>ثبت‌نام باز است</span></span><span class="lc-toggle" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span></span>
+      </summary>
+      <div class="lc-body">
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>ویژگی‌های دوره</h4>
+          <ul class="lc-list lc-check">
+            <li>آموزش کلیه متدهای رنگ و لایت</li>
+            <li>بعد از پایان دوره یک رنگ‌کار حرفه‌ای هستید و می‌توانید وارد بازار کار شوید</li>
+          </ul>
+          <p class="lc-note">⭐ همراه با دو هفته کارورزی</p>
+        </div>
+        <div class="lc-col">
+          <h4><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M20 6L9 17l-5-5"/></svg>مشخصات دوره</h4>
+          <div class="lc-facts">
+            <div><span class="lf-k">زمان برگزاری</span><span class="lf-v">۲ آبان‌ماه</span></div>
+            <div><span class="lf-k">مدت دوره</span><span class="lf-v">۲ هفته</span></div>
+            <div><span class="lf-k">تعداد جلسات</span><span class="lf-v">۱۴ جلسه</span></div>
+            <div><span class="lf-k">ساعات آموزشی</span><span class="lf-v">۵۶ ساعت</span></div>
+            <div><span class="lf-k">مدارک</span><span class="lf-v">فنی‌وحرفه‌ای و آکادمی رازمهر</span></div>
+            <div><span class="lf-k">پشتیبانی</span><span class="lf-v">۶ ماه</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="lc-foot">
+        <div class="lc-price"><span class="lc-new">۲۸٬۰۰۰٬۰۰۰ <small>تومان</small></span></div>
+        <button class="btn btn-primary lc-btn" onclick="enrollCourse('آموزش صفر تا صد رنگ و لایت - ۲ آبان‌ماه')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>ثبت‌نام و رزرو جایگاه</button>
+      </div>
+    </details>
+
+  </div>
+</section>
+
+<!-- ================= BEAUTY NEWS (isolated feature) ================= -->
+<section class="beauty-news-home" id="beauty-news" data-feature="beauty-news" aria-labelledby="beauty-news-title">
+  <div class="wrap">
+    <div class="bn-head reveal">
+      <div>
+        <div class="sec-eyebrow"><span class="dot"></span><span>مجله تازه‌های زیبایی رازمهر</span></div>
+        <h2 id="beauty-news-title">Beauty <em>News</em></h2>
+        <p>تازه‌ترین خبرهای مد، زیبایی، فرش قرمز و سلبریتی‌ها با نگاه تخصصی رازمهر.</p>
+      </div>
+      <a class="bn-all" href="beauty-news.html">همه خبرها را بخوانید <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+    <div class="bn-grid">
+      <a class="bn-card reveal" href="beauty-news.html#venice-beauty">
+        <img src="https://cdn.mos.cms.futurecdn.net/BxiYe3vGEJgfAQFVL47SSG.jpg" alt="ماریون کوتیار در جشنواره فیلم ونیز ۲۰۲۶" loading="lazy" referrerpolicy="no-referrer">
+        <div class="bn-card-copy">
+          <span class="bn-tag">فرش قرمز</span>
+          <h3>درخشش مو و آرایش در جشنواره ونیز ۲۰۲۶</h3>
+          <p>از موهای بلند و موج‌دار ماریون کوتیار تا زیبایی مینیمال کندال جنر؛ مهم‌ترین امضاهای زیبایی ونیز را بررسی کردیم.</p>
+          <div class="bn-meta"><span class="bn-live">تازه</span><span>۱۳ شهریور ۱۴۰۵</span></div>
+        </div>
+      </a>
+      <a class="bn-card reveal" href="beauty-news.html#autumn-hair">
+        <img src="https://www.instyle.com/thmb/NJ2Jept7Zhr0x2J8mtONB3qylEQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/fallhaircolors-f66da9c80e0442b4b56ebb2a15f81dfe.jpg" alt="رنگ موی قهوه‌ای گرم با هایلایت ظریف، از ترندهای پاییز ۲۰۲۶" loading="lazy" referrerpolicy="no-referrer">
+        <div class="bn-card-copy">
+          <span class="bn-tag">ترند مو</span>
+          <h3>رنگ‌های عمیق و موج‌های رمانتیک؛ نقشه مو برای پاییز ۲۰۲۶</h3>
+          <p>پاییز امسال از هایلایت‌های شلوغ فاصله می‌گیرد و به رنگ‌های غنی و فرم‌های نرم نزدیک می‌شود.</p>
+          <div class="bn-meta"><span>۱۲ شهریور ۱۴۰۵</span><span>۵ دقیقه مطالعه</span></div>
+        </div>
+      </a>
+      <a class="bn-card reveal" href="beauty-news.html#phoebe-bridgers">
+        <img src="https://assets.vogue.com/photos/6a9d95e9d0ecd51fb22eeb53/master/w_1600%2Cc_limit/2293648878" alt="فیبی بریجرز با کت‌ودامن رسمی در جشنواره فیلم ونیز ۲۰۲۶" loading="lazy" referrerpolicy="no-referrer">
+        <div class="bn-card-copy">
+          <span class="bn-tag">سلبریتی</span>
+          <h3>استایل بی‌پرده فیبی بریجرز در ونیز خبرساز شد</h3>
+          <p>حضور متفاوت خواننده آمریکایی بحث قدیمی استانداردهای زیبایی روی فرش قرمز را دوباره زنده کرد.</p>
+          <div class="bn-meta"><span class="bn-live">امروز</span><span>۱۵ شهریور ۱۴۰۵</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">سالن رازمهر</span><span data-lang="tr">Razmehr Salon</span><span data-lang="en">Razmehr Salon</span></div>
+      <h2><span data-lang="fa">خدمات <em>تخصصی</em></span><span data-lang="tr">Uzman <em>Hizmetler</em></span><span data-lang="en">Salon <em>Services</em></span></h2>
+      <p><span data-lang="fa">هر خدمت با محصولات اصل و رعایت کامل استانداردهای بهداشتی، زیر نظر متخصصان مجرب ارائه می‌شود.</span><span data-lang="tr">Her hizmet orijinal ürünlerle ve tam hijyen standardıyla sunulur.</span><span data-lang="en">Every service delivered with authentic products and full hygiene compliance.</span></p>
+    </div>
+    <div class="svc-grid" id="svcList"></div>
+    <div class="svc-cta-banner reveal">
+      <div class="svc-cta-text">
+        <h3><span data-lang="fa">برای رزرو نوبت یا مشاوره تماس بگیرید</span><span data-lang="tr">Randevu veya danışma için iletişime geçin</span><span data-lang="en">Contact us to book or consult</span></h3>
+        <p><span data-lang="fa">کارشناسان ما آماده‌ی پاسخ‌گویی و راهنمایی شما هستند.</span><span data-lang="tr">Uzmanlarımız size yardımcı olmaya hazır.</span><span data-lang="en">Our specialists are ready to help.</span></p>
+      </div>
+      <button class="btn btn-primary svc-cta-btn" onclick="openContactPicker('service')">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <span data-lang="fa">تماس و رزرو</span><span data-lang="tr">Ara & Randevu</span><span data-lang="en">Call & Book</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SHOP ================= -->
+<section id="shop">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">بوتیک رازمهر</span><span data-lang="tr">Razmehr Butik</span><span data-lang="en">Razmehr Boutique</span></div>
+      <h2><span data-lang="fa">محصولات <em>حرفه‌ای</em></span><span data-lang="tr">Profesyonel <em>Ürünler</em></span><span data-lang="en">Professional <em>Products</em></span></h2>
+      <p><span data-lang="fa">سفارش دهید، به سبد اضافه کنید و از طریق واتساپ نهایی کنید — ساده و سریع.</span><span data-lang="tr">Sipariş verin, sepete ekleyin ve WhatsApp üzerinden tamamlayın — hızlı ve kolay.</span><span data-lang="en">Add to cart and complete your order via WhatsApp — simple and fast.</span></p>
+    </div>
+    <div class="shop-filter" id="shopFilter"></div>
+    <div class="product-grid" id="productGrid"></div>
+    <div class="shop-more reveal">
+      <a class="btn btn-primary" href="shop.html">
+        <span data-lang="fa">مشاهده همه محصولات</span><span data-lang="tr">Tüm ürünleri gör</span><span data-lang="en">View all products</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GLOBAL SITE SEARCH ================= -->
+<div class="search-overlay" id="searchOverlay" onclick="closeSiteSearch()"></div>
+<div class="welcome-banner" id="welcomeBanner" role="dialog" aria-modal="true" aria-labelledby="welcomeTitle" aria-describedby="welcomeText">
+  <div class="welcome-card">
+    <button class="welcome-close" type="button" onclick="closeWelcomeBanner()" aria-label="بستن بنر">×</button>
+    <span class="welcome-kicker" data-lang="fa">آکادمی تخصصی رازمهر</span><span class="welcome-kicker" data-lang="tr">Razmehr Uzmanlık Akademisi</span><span class="welcome-kicker" data-lang="en">Razmehr Specialist Academy</span>
+    <h2 id="welcomeTitle"><span data-lang="fa">هنر زیبایی را <em>حرفه‌ای</em> بیاموزید</span><span data-lang="tr">Güzellik sanatını <em>profesyonelce</em> öğrenin</span><span data-lang="en">Master the art of beauty <em>professionally</em></span></h2>
+    <p id="welcomeText"><span data-lang="fa">دوره‌های تخصصی رنگ، لایت و کراتین زیر نظر استاد فاطمه زارع؛ دوره مناسب خودتان را در سایت رازمهر ببینید.</span><span data-lang="tr">Fateme Zare eğitmenliğinde uzman renk, röfle ve keratin kurslarını keşfedin.</span><span data-lang="en">Explore specialist color, highlights and keratin courses led by Fateme Zare.</span></p>
+    <a class="welcome-action" href="#courses" onclick="closeWelcomeBanner()"><span data-lang="fa">مشاهده دوره‌های آموزشی</span><span data-lang="tr">Kursları görüntüle</span><span data-lang="en">Explore courses</span><span aria-hidden="true">←</span></a>
+  </div>
+</div>
+
+<section class="search-modal" id="searchModal" role="dialog" aria-modal="true" aria-labelledby="searchTitle">
+  <div class="search-head">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input class="search-input" id="siteSearchInput" type="search" autocomplete="off" oninput="renderSiteSearch(this.value)" aria-label="جست‌وجو در سایت">
+    </div>
+    <button class="search-close" onclick="closeSiteSearch()" aria-label="بستن جست‌وجو"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  </div>
+  <h2 class="search-meta" id="searchTitle">جست‌وجو در خدمات، محصولات و دوره‌ها</h2>
+  <div class="search-results" id="siteSearchResults"></div>
+  <div class="search-hint" id="searchHint">برای بازکردن سریع جست‌وجو از Ctrl + K استفاده کنید.</div>
+</section>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="overlay" id="overlay" onclick="closeCart()"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3><span data-lang="fa">سبد خرید</span><span data-lang="tr">Sepetim</span><span data-lang="en">Your Cart</span></h3>
+    <button class="cart-close" onclick="closeCart()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <div class="cart-total">
+      <span class="tl"><span data-lang="fa">مجموع</span><span data-lang="tr">Toplam</span><span data-lang="en">Total</span></span>
+      <span class="tv" id="cartTotal">۰</span>
+    </div>
+    <p class="cart-note"><span data-lang="fa">سفارش شما به‌صورت پیام آماده به واتساپ سالن ارسال می‌شود و هماهنگی نهایی آنجا انجام می‌شود.</span><span data-lang="tr">Siparişiniz hazır bir mesaj olarak WhatsApp'a gönderilir; son onay orada yapılır.</span><span data-lang="en">Your order is sent as a ready message to our WhatsApp, where it's finalized.</span></p>
+    <button class="checkout-btn" id="checkoutBtn" onclick="checkout()">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.9.9-2.8-.2-.3A8 8 0 1112 20zm4.5-6c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.1-.3.2-.5.1-.7-.3-1.4-.7-2-1.4-.5-.5-.8-1.1-1.2-1.7-.1-.2 0-.4.1-.5l.4-.5c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4 0-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.7.7-.9 1.6-.6 2.6.3 1 .9 1.9 1.6 2.7.9 1.1 2 1.9 3.3 2.4 1.3.5 2.3.4 3.1.1.5-.2 1-.6 1.2-1 .1-.3.1-.6 0-.7-.1-.1-.2-.2-.4-.3z"/></svg>
+      <span data-lang="fa">تکمیل سفارش در واتساپ</span><span data-lang="tr">WhatsApp'ta Tamamla</span><span data-lang="en">Complete on WhatsApp</span>
+    </button>
+  </div>
+</aside>
+
+<!-- ============= CONTACT PICKER (choose channel) ============= -->
+<div class="picker-overlay" id="pickerOverlay" onclick="closeContactPicker()"></div>
+<div class="picker-modal" id="pickerModal" role="dialog" aria-modal="true">
+  <button class="picker-close" onclick="closeContactPicker()" aria-label="بستن">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="picker-head">
+    <div class="picker-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    </div>
+    <h3 id="pickerTitle"><span data-lang="fa">چطور در ارتباط باشیم؟</span><span data-lang="tr">Nasıl iletişim kuralım?</span><span data-lang="en">How shall we connect?</span></h3>
+    <p id="pickerSub"><span data-lang="fa">راه دلخواه‌تان را انتخاب کنید</span><span data-lang="tr">Tercih ettiğiniz yolu seçin</span><span data-lang="en">Choose your preferred way</span></p>
+  </div>
+  <div class="picker-options" id="pickerOptions"></div>
+</div>
+
+<!-- ============= PRODUCT DETAIL MODAL ============= -->
+<div class="pd-overlay" id="pdOverlay" onclick="closeProduct()"></div>
+<div class="pd-modal" id="pdModal" role="dialog" aria-modal="true">
+  <div class="pd-head">
+    <button class="pd-back" onclick="closeProduct()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span>برگشت</span>
+    </button>
+    <button class="pd-close" onclick="closeProduct()" aria-label="بستن">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="pd-scroll" id="pdBody"></div>
+</div>
+
+<!-- ============= GALLERY MODAL ============= -->
+<div class="gal-overlay" id="galOverlay" onclick="closeGallery()"></div>
+<div class="gal-modal" id="galModal" role="dialog" aria-modal="true">
+  <div class="gal-head">
+    <button class="gal-back" onclick="closeGallery()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+      <span><span data-lang="fa">برگشت</span><span data-lang="tr">Geri</span><span data-lang="en">Back</span></span>
+    </button>
+    <h3 id="galTitle"></h3>
+    <button class="gal-close" onclick="closeGallery()" aria-label="بستن">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="gal-grid" id="galGrid"></div>
+  <p class="gal-empty" id="galEmpty">
+    <span data-lang="fa">به‌زودی نمونه‌کارهای این بخش اضافه می‌شود.</span>
+    <span data-lang="tr">Bu bölümün örnekleri yakında eklenecek.</span>
+    <span data-lang="en">Samples for this section are coming soon.</span>
+  </p>
+</div>
+
+<!-- ============= LIGHTBOX ============= -->
+<div class="lb-overlay" id="lbOverlay" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()" aria-label="بستن">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <button class="lb-nav lb-prev" onclick="event.stopPropagation();lbStep(-1)" aria-label="قبلی">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lbImg" src="" alt="" onclick="event.stopPropagation()">
+  <button class="lb-nav lb-next" onclick="event.stopPropagation();lbStep(1)" aria-label="بعدی">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <h2><span data-lang="fa">بیایید <em>شروع</em> کنیم</span><span data-lang="tr">Hadi <em>Başlayalım</em></span><span data-lang="en">Let's <em>Begin</em></span></h2>
+      <p><span data-lang="fa">برای رزرو نوبت، ثبت‌نام در دوره‌ها یا مشاوره، از طریق راه‌های زیر با ما در ارتباط باشید. پاسخگوی شما هستیم.</span><span data-lang="tr">Randevu, kurs kaydı veya danışmanlık için aşağıdaki kanallardan bize ulaşın. Buradayız.</span><span data-lang="en">To book, enroll, or ask us anything, reach out through the channels below. We're here for you.</span></p>
+      <div class="contact-methods">
+        <a href="https://wa.me/989367737214" target="_blank" class="cmethod">
+          <div class="cmethod-ico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2z"/></svg></div>
+          <div><div class="cm-lbl"><span data-lang="fa">واتساپ</span><span data-lang="tr">WhatsApp</span><span data-lang="en">WhatsApp</span></div><div class="cm-val" style="direction:ltr">0936 773 7214</div></div>
+        </a>
+        <a href="https://www.instagram.com/razmehracademy" target="_blank" class="cmethod">
+          <div class="cmethod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></div>
+          <div><div class="cm-lbl"><span data-lang="fa">اینستاگرام</span><span data-lang="tr">Instagram</span><span data-lang="en">Instagram</span></div><div class="cm-val">@razmehracademy</div></div>
+        </a>
+        <div class="cmethod">
+          <div class="cmethod-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><div class="cm-lbl"><span data-lang="fa">آدرس</span><span data-lang="tr">Adres</span><span data-lang="en">Address</span></div><div class="cm-val"><span data-lang="fa">یزد، بلوار دانشجو، کوچه ۴۱، باغ عمارت زیبایی رازمهر</span><span data-lang="tr">Yazd, Daneşcu Bulvarı, 41. Sokak, Razmehr Güzellik Bahçesi</span><span data-lang="en">Yazd, Daneshjoo Blvd, Alley 41, Razmehr Beauty Garden</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form reveal">
+      <h3><span data-lang="fa">درخواست نوبت / ثبت‌نام</span><span data-lang="tr">Randevu / Kayıt</span><span data-lang="en">Request / Enroll</span></h3>
+      <p><span data-lang="fa">فرم را پر کنید و راه ارتباطی دلخواه‌تان را انتخاب کنید — پیام آماده برایتان ساخته می‌شود.</span><span data-lang="tr">Formu doldurun ve tercih ettiğiniz iletişim yolunu seçin.</span><span data-lang="en">Fill the form and pick your preferred channel — a ready message will be prepared.</span></p>
+      <form id="contactForm" onsubmit="submitContactForm(event)">
+        <div class="form-row">
+          <label><span data-lang="fa">نام و نام خانوادگی</span><span data-lang="tr">Ad Soyad</span><span data-lang="en">Full Name</span></label>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form-row">
+          <label><span data-lang="fa">شماره تماس</span><span data-lang="tr">Telefon</span><span data-lang="en">Phone</span></label>
+          <input type="tel" name="phone" required>
+        </div>
+        <div class="form-row">
+          <label><span data-lang="fa">موضوع درخواست</span><span data-lang="tr">Konu</span><span data-lang="en">Subject</span></label>
+          <select name="subject">
+            <option data-lang="fa" value="service|رزرو نوبت خدمات">رزرو نوبت خدمات</option>
+            <option data-lang="fa" value="education|ثبت‌نام دوره آموزشی">ثبت‌نام دوره آموزشی</option>
+            <option data-lang="fa" value="service|مشاوره محصولات">مشاوره محصولات</option>
+            <option data-lang="tr" value="service|Hizmet Randevusu">Hizmet Randevusu</option>
+            <option data-lang="tr" value="education|Kurs Kaydı">Kurs Kaydı</option>
+            <option data-lang="tr" value="service|Ürün Danışmanlığı">Ürün Danışmanlığı</option>
+            <option data-lang="en" value="service|Service Booking">Service Booking</option>
+            <option data-lang="en" value="education|Course Enrollment">Course Enrollment</option>
+            <option data-lang="en" value="service|Product Consultation">Product Consultation</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label><span data-lang="fa">توضیحات</span><span data-lang="tr">Mesaj</span><span data-lang="en">Message</span></label>
           <textarea name="message"></textarea>
         </div>
         <button type="submit" class="form-submit"><span data-lang="fa">ارسال درخواست</span><span data-lang="tr">Gönder</span><span data-lang="en">Send Request</span></button>
