@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-17a",
+  "version": "2026-09-18a",
   "files": [
+    "beauty-news-2026-09-18.js",
     "beauty-news-2026-09-17.js",
     "beauty-news-2026-09-16.js",
     "beauty-news-2026-09-15.js",
@@ -9,24 +10,24 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "allure-best-beauty-2026-nails",
-    "nyfw-low-ponytail-spring-2027",
-    "emmys-2026-small-beauty-details"
+    "nyfw-ss27-textured-hair-trends",
+    "selena-gomez-sixties-center-part-blowout",
+    "allure-best-beauty-2026-nails"
   ],
   "latestStoryIds": [
-    "allure-best-beauty-2026-nails",
-    "nyfw-low-ponytail-spring-2027",
-    "emmys-2026-small-beauty-details"
+    "nyfw-ss27-textured-hair-trends",
+    "selena-gomez-sixties-center-part-blowout",
+    "allure-best-beauty-2026-nails"
   ],
-  "latestLabel": "منتخب ۲۶ شهریور ۱۴۰۵",
+  "latestLabel": "منتخب ۲۷ شهریور ۱۴۰۵",
   "ticker": [
-    "برندگان ناخن Allure ۲۰۲۶ معرفی شدند",
-    "دم‌اسبی پایین و آزاد، ترند تازه نیویورک شد",
-    "امی ۲۰۲۶ جزئیات کوچک را به تیتر بزرگ تبدیل کرد"
+    "موهای پرحجم، کریمپ و گره‌های آزاد به نیویورک برگشتند",
+    "براشینگ دهه ۶۰ سلنا گومز خبرساز شد",
+    "برندگان ناخن Allure ۲۰۲۶ معرفی شدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۶ شهریور ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۶ شهریور"
+    "date": "۲۷ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۷ شهریور"
   }
 }
