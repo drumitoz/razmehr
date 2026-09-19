@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-18a",
+  "version": "2026-09-19a",
   "files": [
+    "beauty-news-2026-09-19.js",
     "beauty-news-2026-09-18.js",
     "beauty-news-2026-09-17.js",
     "beauty-news-2026-09-16.js",
@@ -10,24 +11,24 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "demi-moore-optical-illusion-micro-bob",
     "nyfw-ss27-textured-hair-trends",
-    "selena-gomez-sixties-center-part-blowout",
     "allure-best-beauty-2026-nails"
   ],
   "latestStoryIds": [
+    "demi-moore-optical-illusion-micro-bob",
     "nyfw-ss27-textured-hair-trends",
-    "selena-gomez-sixties-center-part-blowout",
     "allure-best-beauty-2026-nails"
   ],
-  "latestLabel": "منتخب ۲۷ شهریور ۱۴۰۵",
+  "latestLabel": "منتخب ۲۸ شهریور ۱۴۰۵",
   "ticker": [
+    "باب نمایشی دمی مور بدون کوتاهی واقعی خبرساز شد",
     "موهای پرحجم، کریمپ و گره‌های آزاد به نیویورک برگشتند",
-    "براشینگ دهه ۶۰ سلنا گومز خبرساز شد",
     "برندگان ناخن Allure ۲۰۲۶ معرفی شدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۷ شهریور ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۷ شهریور"
+    "date": "۲۸ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۸ شهریور"
   }
 }
