@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-20a",
+  "version": "2026-09-21a",
   "files": [
+    "beauty-news-2026-09-21.js",
     "beauty-news-2026-09-20.js",
     "beauty-news-2026-09-19.js",
     "beauty-news-2026-09-18.js",
@@ -12,24 +13,24 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "suki-waterhouse-silver-hair-tinsel",
     "alix-earle-bambi-bronde-hair",
-    "demi-moore-optical-illusion-micro-bob",
     "allure-best-beauty-2026-nails"
   ],
   "latestStoryIds": [
+    "suki-waterhouse-silver-hair-tinsel",
     "alix-earle-bambi-bronde-hair",
-    "demi-moore-optical-illusion-micro-bob",
     "allure-best-beauty-2026-nails"
   ],
-  "latestLabel": "منتخب ۲۹ شهریور ۱۴۰۵",
+  "latestLabel": "منتخب ۳۰ شهریور ۱۴۰۵",
   "ticker": [
+    "ریسه‌های نقره‌ای سوکی واترهاوس، درخشش را به مو برگرداند",
     "بمبی بروند الیکس ارل، مسیر تازه رنگ موی پاییزی شد",
-    "باب نمایشی دمی مور بدون کوتاهی واقعی خبرساز شد",
     "برندگان ناخن Allure ۲۰۲۶ معرفی شدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۹ شهریور ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۹ شهریور"
+    "date": "۳۰ شهریور ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۳۰ شهریور"
   }
 }
