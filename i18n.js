@@ -2,7 +2,7 @@
   'use strict';
 
   const STORAGE_KEY = 'razmehr-language';
-  const supported = new Set(['fa', 'en']);
+  const supported = new Set(['fa', 'en', 'tr', 'ar']);
   const originalText = new WeakMap();
   const originalAttributes = new WeakMap();
   const translatableAttributes = ['alt', 'aria-label', 'placeholder', 'title', 'content'];
@@ -10,7 +10,12 @@
   let applying = false;
 
   function dictionary() {
-    return window.RAZMEHR_TRANSLATIONS_EN || {};
+    const dictionaries = {
+      en: window.RAZMEHR_TRANSLATIONS_EN,
+      tr: window.RAZMEHR_TRANSLATIONS_TR,
+      ar: window.RAZMEHR_TRANSLATIONS_AR
+    };
+    return dictionaries[currentLanguage] || {};
   }
 
   function preserveWhitespace(source, translated) {
@@ -46,7 +51,7 @@
       originalAttributes.set(element, originals);
     }
     Object.entries(originals).forEach(([name, original]) => {
-      const translated = currentLanguage === 'en' ? dictionary()[original.trim()] : null;
+      const translated = currentLanguage !== 'fa' ? dictionary()[original.trim()] : null;
       const next = translated || original;
       if (element.getAttribute(name) !== next) element.setAttribute(name, next);
     });
@@ -86,10 +91,9 @@
   function setLanguage(language, options = {}) {
     currentLanguage = supported.has(language) ? language : 'fa';
     document.documentElement.lang = currentLanguage;
-    document.documentElement.dir = currentLanguage === 'fa' ? 'rtl' : 'ltr';
-    document.body?.classList.toggle('lang-fa', currentLanguage === 'fa');
-    document.body?.classList.toggle('lang-en', currentLanguage === 'en');
-    document.body?.classList.remove('lang-tr');
+    document.documentElement.dir = currentLanguage === 'fa' || currentLanguage === 'ar' ? 'rtl' : 'ltr';
+    document.body?.classList.remove('lang-fa', 'lang-en', 'lang-tr', 'lang-ar');
+    document.body?.classList.add(`lang-${currentLanguage}`);
     if (options.persist !== false) localStorage.setItem(STORAGE_KEY, currentLanguage);
     applyTo(document);
     updateLanguageControls();
@@ -132,7 +136,7 @@
       }
     });
     const observer = new MutationObserver((mutations) => {
-      if (applying || currentLanguage !== 'en') return;
+      if (applying || currentLanguage === 'fa') return;
       mutations.forEach((mutation) => mutation.addedNodes.forEach((node) => applyTo(node)));
     });
     observer.observe(document.documentElement, { childList: true, subtree: true });

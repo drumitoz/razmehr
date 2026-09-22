@@ -86,5 +86,23 @@ Object.assign(window.RAZMEHR_TRANSLATIONS_EN = window.RAZMEHR_TRANSLATIONS_EN ||
 
   "چتری‌های خیلی کوتاه؛ ترند جسور و بحث‌برانگیز پاییز": "Micro Bangs Are Fall’s Boldest—and Most Divisive—Hair Trend",
   "چتری‌های خیلی کوتاه برگشتند؛ ترندی جسور که نگهداری‌اش از ظاهرش سخت‌تر است": "Micro Bangs Are Back—and They’re More High-Maintenance Than They Look",
-  "آن هاتاوی قرمز کلاسیک را برگرداند؛ وقتی لب، مانیکور و پدیکور دقیقاً هم‌صدا می‌شوند": "Anne Hathaway Brings Back Classic Red With Perfectly Matched Lips, Manicure, and Pedicure"
+  "آن هاتاوی قرمز کلاسیک را برگرداند؛ وقتی لب، مانیکور و پدیکور دقیقاً هم‌صدا می‌شوند": "Anne Hathaway Brings Back Classic Red With Perfectly Matched Lips, Manicure, and Pedicure",
+
+  "سلبریتی · ۱۵ شهریور ۱۴۰۵": "Celebrity · September 6, 2026",
+  "فرش قرمز · ۱۳ شهریور ۱۴۰۵": "Red Carpet · September 4, 2026",
+  "مد جهانی · ۱۵ شهریور ۱۴۰۵": "Global Fashion · September 6, 2026",
+  "ترند ناخن · ۱۳ شهریور ۱۴۰۵": "Nail Trends · September 4, 2026",
+  "ترند مو و رنگ · ۱۲ شهریور ۱۴۰۵": "Hair & Color Trends · September 3, 2026",
+  "رویداد پیش‌رو · ۱۴ شهریور ۱۴۰۵": "Upcoming Event · September 5, 2026",
+  "۱۲ شهریور ۱۴۰۵ · ۴ دقیقه مطالعه": "September 3, 2026 · 4 min read",
+  "۱۳ شهریور ۱۴۰۵ · ۳ دقیقه مطالعه": "September 4, 2026 · 3 min read",
+  "۱۴ شهریور ۱۴۰۵ · ۵ دقیقه مطالعه": "September 5, 2026 · 5 min read",
+  "ترند مو و سلبریتی · ۱۲ شهریور ۱۴۰۵": "Hair & Celebrity Trends · September 3, 2026",
+  "۱۸ شهریور ۱۴۰۵": "September 9, 2026",
+  "۲۱ شهریور ۱۴۰۵": "September 12, 2026",
+  "۲۴ شهریور ۱۴۰۵": "September 15, 2026",
+  "۲۵ شهریور ۱۴۰۵": "September 16, 2026",
+  "۲۶ شهریور ۱۴۰۵": "September 17, 2026",
+  "۲۷ شهریور ۱۴۰۵": "September 18, 2026",
+  "۲۸ شهریور ۱۴۰۵": "September 19, 2026"
 });

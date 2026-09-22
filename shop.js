@@ -5,9 +5,15 @@ let activeFilter = "all";
 let query = "";
 let cart = JSON.parse(localStorage.getItem("razmehr-shop-cart") || "[]");
 let activeDetailId = null;
-let lang = localStorage.getItem("razmehr-language") === "en" ? "en" : "fa";
-const numberFormatter = () => new Intl.NumberFormat(lang === "en" ? "en-US" : "fa-IR");
-const copy = (fa,en) => lang === "en" ? en : fa;
+let activeLanguage = ["fa","en","tr","ar"].includes(localStorage.getItem("razmehr-language")) ? localStorage.getItem("razmehr-language") : "fa";
+let lang = activeLanguage === "en" ? "en" : "fa";
+const numberFormatter = () => new Intl.NumberFormat({fa:"fa-IR",en:"en-US",tr:"tr-TR",ar:"ar"}[activeLanguage] || "fa-IR");
+const copy = (fa,en) => {
+  if(activeLanguage === "fa") return fa;
+  if(activeLanguage === "en") return en;
+  const dictionary = activeLanguage === "tr" ? window.RAZMEHR_TRANSLATIONS_TR : window.RAZMEHR_TRANSLATIONS_AR;
+  return dictionary?.[fa] || fa;
+};
 const $ = id => document.getElementById(id);
 
 function normalize(value){return String(value||"").toLowerCase().replace(/ي/g,"ی").replace(/ك/g,"ک").replace(/\s+/g," ").trim()}
@@ -68,7 +74,7 @@ function closeProductDetails(){
 }
 function checkout(){
   if(!cart.length){showToast(copy("سبد خرید خالی است","Your cart is empty"));return}
-  const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${p.name[lang]} — ${item.qty} ${copy('عدد','item(s)')}`}).join("\n");
+  const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${copy(p.name.fa,p.name.en)} — ${item.qty} ${copy('عدد','item(s)')}`}).join("\n");
   const message=encodeURIComponent(copy(`سلام، برای سفارش محصولات رازمهر پیام می‌دهم:\n${rows}`,`Hello Razmehr, I'd like to order these products:\n${rows}`));
   window.open(`https://wa.me/989367737214?text=${message}`,"_blank","noopener");
 }
@@ -80,5 +86,5 @@ $("cartOpen").addEventListener("click",openCart);$("close").addEventListener("cl
 $("pdClose").addEventListener("click",closeProductDetails);$("productDetailOverlay").addEventListener("click",closeProductDetails);
 $("pdAdd").addEventListener("click",()=>{if(activeDetailId){addToCart(activeDetailId);closeProductDetails()}});
 document.addEventListener("keydown",event=>{if(event.key==="Escape")closeProductDetails()});
-document.addEventListener('razmehr:language-change',event=>{lang=event.detail?.language==='en'?'en':'fa';renderFilters();renderProducts();renderCart();if(activeDetailId)openProductDetails(activeDetailId)});
+document.addEventListener('razmehr:language-change',event=>{activeLanguage=["fa","en","tr","ar"].includes(event.detail?.language)?event.detail.language:"fa";lang=activeLanguage==='en'?'en':'fa';renderFilters();renderProducts();renderCart();if(activeDetailId)openProductDetails(activeDetailId)});
 $("year").textContent=new Date().getFullYear();renderFilters();renderProducts();renderCart();

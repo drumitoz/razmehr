@@ -28,9 +28,9 @@ Object.assign(window.RAZMEHR_TRANSLATIONS_EN = window.RAZMEHR_TRANSLATIONS_EN ||
   "تازه‌های بیشتر": "More updates",
   "خبرهای برگزیده": "Selected news",
   "شماره این هفته": "This week's issue",
-  "۱۲ شهریور ۱۴۰۵": "12 September 1405",
-  "۱۳ شهریور ۱۴۰۵": "13 September 1405",
-  "۱۵ شهریور ۱۴۰۵": "15 September 1405",
+  "۱۲ شهریور ۱۴۰۵": "September 3, 2026",
+  "۱۳ شهریور ۱۴۰۵": "September 4, 2026",
+  "۱۵ شهریور ۱۴۰۵": "September 6, 2026",
   "۶ دقیقه مطالعه": "6 minutes of study",
   "دسته‌بندی خبرها": "News classification",
   "بازگشت به رازمهر": "Return to Razmehr",
@@ -133,4 +133,3 @@ Object.assign(window.RAZMEHR_TRANSLATIONS_EN = window.RAZMEHR_TRANSLATIONS_EN ||
   "در ونیز، امل کلونی (Amal Clooney) با پیراهن تمشکی استلا مک‌کارتنی (Stella McCartney) و بهاویتا مانداوا (Bhavitha Mandava) با لباس پولک‌دوزی‌شده آبی شنل (Chanel)، بخش پرزرق‌وبرق هفته را ساختند. در پاریس، سلین دیون (Celine Dion) با کت ساتن ژیوانشی (Givenchy) و شلوار جین نشان داد که یک قطعه رسمی چطور می‌تواند با انتخابی روزمره متعادل شود. جنیفر لارنس (Jennifer Lawrence) نیز با ست دو تکه دیور (Dior)، نسخه تمیزتر و مینیمال‌تری از ورود به فصل تازه ارائه کرد.": "In Venice, Amal Clooney in a raspberry Stella McCartney shirt and Bhavitha Mandava in a blue sequined Chanel dress made the glamorous part of the week. In Paris, Celine Dion showed how a formal piece can be balanced with a casual choice in a Givenchy satin jacket and jeans. Jennifer Lawrence also presented a clean and minimal version of entering the new season with a Dior two-piece set.",
   "بیوتی نیوز رازمهر": "Razmehr Beauty News"
 });
-

@@ -11,7 +11,9 @@
 .language-option:hover,.language-option:focus-visible{background:rgba(126,139,87,.1);outline:none}
 .language-option.active{background:#5F6B42;color:#fff}
 .language-option small{font-size:10px;opacity:.72;letter-spacing:.6px}
-body.lang-en{direction:ltr;text-align:left}
-body.lang-en .language-popover{text-align:left}
+body.lang-en,body.lang-tr{direction:ltr;text-align:left}
+body.lang-fa,body.lang-ar{direction:rtl;text-align:right}
+body.lang-en .language-popover,body.lang-tr .language-popover{text-align:left}
+body.lang-fa .language-popover,body.lang-ar .language-popover{text-align:right}
 @media(max-width:720px){.language-trigger{min-width:46px;width:46px;padding:0;gap:3px}.language-trigger .globe{width:17px}.language-trigger [data-language-current]{font-size:10px}.language-trigger .chevron{display:none}.language-popover{inset-inline-start:auto;inset-inline-end:0;transform:translateY(-5px)}.language-menu.open .language-popover{transform:none}}
 @media(max-width:400px){.language-trigger{width:40px;min-width:40px;height:40px}.language-trigger .globe{display:none}.language-popover{min-width:145px}}
