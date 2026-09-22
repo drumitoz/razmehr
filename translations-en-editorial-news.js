@@ -1,0 +1,70 @@
+Object.assign(window.RAZMEHR_TRANSLATIONS_EN = window.RAZMEHR_TRANSLATIONS_EN || {}, {
+  "ترند مو": "Hair Trends",
+  "خبر ناخن": "Nail News",
+  "ترند ناخن": "Nail Trends",
+  "ترند زیبایی": "Beauty Trends",
+  "میکاپ و ناخن": "Makeup & Nails",
+  "مد جهانی": "Global Fashion",
+  "تازه": "New",
+  "امروز": "Today",
+  "۳ دقیقه مطالعه": "3 min read",
+  "۴ دقیقه مطالعه": "4 min read",
+  "۵ دقیقه مطالعه": "5 min read",
+  "۶ دقیقه مطالعه": "6 min read",
+
+  "دم‌اسبی بافت‌دار فلورنس پیو؛ وقتی فرم و اکسسوری جای کوتاهی تازه را می‌گیرند": "Florence Pugh’s Textured Ponytail Proves You Don’t Need a New Cut",
+  "دم‌اسبی بافت‌دار و مدل خیسِ مجسمه‌ای؛ دو ظاهر متفاوت که نشان داد موی بلند هنوز می‌تواند شخصیت اصلی استایل باشد.": "A textured ponytail and a sculptural wet look offered two distinct takes on long hair—and made it the focal point of each style.",
+  "دم‌اسبی بافت‌دار فلورنس پیو، ظاهر پاییزی متفاوتی ساخت": "Florence Pugh Gives the Textured Ponytail an Autumn Update",
+  "نمای نزدیک دم‌اسبی بافت‌دار و روسری موی فلورنس پیو در ونیز ۲۰۲۶": "Close-up of Florence Pugh’s textured ponytail and hair scarf in Venice, 2026",
+
+  "فرنچ چندرنگ دوا لیپا؛ مانیکوری که بین تابستان و پاییز ایستاده است": "Dua Lipa’s Multicolored French Manicure Bridges Summer and Fall",
+  "ترکیب آبی، زرد، نارنجی، صورتی و زیتونی روی ناخن‌های بادامی؛ مدلی بازیگوش که رنگ‌های گرم پاییز را هم وارد قاب می‌کند.": "Blue, yellow, orange, pink, and olive tips bring a playful mix of summer brightness and autumn warmth to almond-shaped nails.",
+  "فرنچ چندرنگ دوا لیپا، پایان تابستان را عقب انداخت": "Dua Lipa Keeps Summer Going With a Multicolored French Manicure",
+
+  "رالف لورن پیش از شروع رسمی هفته مد نیویورک، «رمانتیسم سرکش» را روی صحنه برد": "Ralph Lauren Opens New York Fashion Week With ‘Rebellious Romanticism’",
+  "کت‌وشلوارهای سفید، سرمه‌ای کلاسیک، جین‌های پردار و لباس‌های شب روان؛ نمایشی میان قدرت و لطافت.": "White tailoring, classic navy, feather-trimmed denim, and fluid eveningwear created a collection balanced between strength and softness.",
+  "رالف لورن فصل بهار ۲۰۲۷ را با «رمانتیسم سرکش» آغاز کرد": "Ralph Lauren Opens Spring 2027 With ‘Rebellious Romanticism’",
+
+  "جزئیات کوچک امی ۲۰۲۶ خبرساز شدند؛ از باب ایتالیایی تا فرنچ مشکی و درخشش صدفی": "The Emmy Awards’ Smallest Beauty Details Made the Biggest Impact",
+  "باب کوتاه با نوک‌های برگشته، فرنچ مشکی و لاک صدفی صورتی؛ فرش قرمز امی نشان داد یک جزئیات دقیق می‌تواند کل ظاهر را تعریف کند.": "A flipped Italian bob, black French tips, and pearlescent pink polish proved that one precise detail can define an entire red-carpet look.",
+  "امی ۲۰۲۶؛ وقتی جزئیات کوچک مو و ناخن دیده شدند": "Emmys 2026: The Hair and Nail Details Worth a Closer Look",
+
+  "دم‌اسبی پایین از حاشیه به مرکز آمد؛ مدل آزاد و کم‌فشار هفته مد نیویورک": "The Relaxed Low Ponytail Takes Center Stage at New York Fashion Week",
+  "از گره نامنظم کالت گایا تا مدل جمع‌شده با گیره در TWP؛ یک فرم ساده و آزاد، رقیب تازه شینیون‌های کاملاً صیقلی شده است.": "From Cult Gaia’s undone knot to TWP’s clipped-back style, the easy low ponytail is emerging as an alternative to ultra-sleek updos.",
+  "دم‌اسبی پایین و آزاد، ترند تازه هفته مد نیویورک شد": "The Relaxed Low Ponytail Is New York Fashion Week’s Latest Hair Trend",
+
+  "بهترین‌های ناخن ۲۰۲۶ از نگاه Allure؛ سرعت، دوام و جلوه‌های صدفی در مرکز توجه": "Allure’s Best Nail Products of 2026 Prioritize Speed, Wear, and Pearlescent Finishes",
+  "از لاک ۶۰ ثانیه‌ای و رنگ صدفی چندوجهی تا بیس‌کت، تاپ‌کت و ناخن‌های آماده؛ فهرست تازه Allure مسیرهای مهم بازار ناخن امسال را نشان می‌دهد.": "From 60-second polish and multidimensional pearl finishes to base coats, top coats, and press-ons, Allure’s latest list highlights the year’s defining nail trends.",
+  "برندگان ناخن Allure ۲۰۲۶ معرفی شدند": "Allure Reveals Its Best Nail Products of 2026",
+  "دستی با فرنچ قرمز براق که دسته‌ای موی بلوند را در پس‌زمینه مشکی گرفته است": "A glossy red French manicure holding a lock of blonde hair against a black background",
+
+  "پایان مینیمالیسم مو در نیویورک؛ کریمپ، گره و حجم برای بهار ۲۰۲۷": "New York Moves Beyond Hair Minimalism for Spring 2027",
+  "گزارش تازه ELLE از پشت‌صحنه هفته مد نیویورک نشان می‌دهد موهای کاملاً صاف و جمع‌شده جای خود را به کریمپ‌های حساب‌شده، گره‌های آزاد، آپدوهای رمانتیک و حجم بیشتر می‌دهند.": "ELLE’s backstage report from New York Fashion Week shows pin-straight, tightly pulled-back hair giving way to strategic crimping, loose knots, romantic updos, and fuller volume.",
+  "زیبایی هفته مد نیویورک از نوستالژی عبور کرد؛ موهای حجیم، لب وینیل و ناخن‌های عینکی": "New York Fashion Week Beauty Moves Past Nostalgia With Big Hair, Vinyl Lips, and Glass-Like Nails",
+
+  "سلنا گومز و بازگشت براشینگ دهه ۶۰؛ فرق وسط دقیق و نوک‌های برگشته": "Selena Gomez Revives the ’60s Blowout With a Precise Center Part",
+  "سلنا گومز با موهای بلند، فرق وسط کاملاً دقیق و نوک‌هایی که نرم به داخل برگشته‌اند، نسخه‌ای تمیز و امروزی از براشینگ دهه ۶۰ را به نمایش گذاشت.": "With long hair, a razor-sharp center part, and softly turned-under ends, Selena Gomez delivered a polished modern take on the 1960s blowout.",
+  "براشینگ دهه ۶۰ سلنا گومز خبرساز شد": "Selena Gomez’s ’60s-Inspired Blowout Makes a Comeback",
+  "Allure — براشینگ فرق وسط سلنا گومز": "Allure — Selena Gomez’s Center-Parted Blowout",
+
+  "باب کوتاه دمی مور؛ ظاهر تازه‌ای که احتمالاً بدون قیچی ساخته شد": "Demi Moore’s Short Bob May Have Been Created Without a Single Cut",
+  "دمی مور در نمایش تام براون با موهایی تا چانه دیده شد؛ گزارش‌های تازه می‌گویند این تغییر چشمگیر احتمالاً با جمع‌کردن و سنجاق‌زدن موی بلند ساخته شده، نه با کوتاهی دائمی.": "Demi Moore appeared at Thom Browne with a chin-length bob, but reports suggest the dramatic transformation was created by tucking and pinning her long hair rather than cutting it.",
+  "باب نمایشی دمی مور، بدون کوتاهی واقعی خبرساز شد": "Demi Moore’s Faux Bob Makes Headlines—No Haircut Required",
+  "InStyle — بررسی باب خطای دید دمی مور": "InStyle — A Closer Look at Demi Moore’s Illusion Bob",
+  "Harper’s Bazaar — باب نمایشی دمی مور در هفته مد نیویورک": "Harper’s Bazaar — Demi Moore’s Faux Bob at New York Fashion Week",
+
+  "«بمبی بروند» الیکس ارل؛ رنگی میان بلوند گرم و قهوه‌ای": "Alix Earle’s ‘Bambi Bronde’ Is the Perfect Blend of Warm Blonde and Brown",
+  "الیکس ارل بلوند روشن همیشگی خود را با یک بروند گرم و چندبعدی عوض کرده است؛ رنگی که با پایه قهوه‌ای متوسط و بازتاب‌های کاراملی و طلایی، تغییر فصل را بدون رفتن به قهوه‌ای یکدست نشان می‌دهد.": "Alix Earle has traded her signature bright blonde for a warm, multidimensional bronde with a medium-brown base and caramel-gold highlights—a seasonal shift that stops short of solid brunette.",
+  "بمبی بروند الیکس ارل، مسیر تازه رنگ موی پاییزی": "Alix Earle’s Bambi Bronde Sets a New Direction for Fall Color",
+  "People — تغییر رنگ موی الیکس ارل به بمبی بروند": "People — Alix Earle Debuts Bambi Bronde Hair",
+  "Cosmopolitan — تحلیل بمبی بروند به‌عنوان رنگ پاییزی": "Cosmopolitan — Why Bambi Bronde Works for Fall",
+
+  "ریسه‌های نقره‌ای در موی سوکی واترهاوس؛ درخشش ظریف روی صحنه": "Suki Waterhouse Brings Subtle Silver Hair Tinsel to the Stage",
+  "سوکی واترهاوس در اجرای تازه خود رشته‌های بسیار ظریف نقره‌ای را میان لایه‌های موی بلوندش پخش کرد؛ جزئیاتی کم‌حجم که زیر نور صحنه دیده می‌شود و بازگشت اکسسوری‌های درخشان مو را از حالت فانتزی پررنگ به نسخه‌ای ظریف‌تر می‌برد.": "For her latest performance, Suki Waterhouse threaded fine strands of silver tinsel through her layered blonde hair. The understated sparkle catches the stage lights and offers a more refined take on statement hair accessories.",
+  "ریسه‌های نقره‌ای سوکی واترهاوس؛ بازگشت درخشش به مو": "Suki Waterhouse Revives Hair Tinsel With a Subtle Silver Sparkle",
+  "Vogue — گزارش ریسه‌های نقره‌ای موی سوکی واترهاوس": "Vogue — Suki Waterhouse’s Silver Hair Tinsel",
+
+  "چتری‌های خیلی کوتاه؛ ترند جسور و بحث‌برانگیز پاییز": "Micro Bangs Are Fall’s Boldest—and Most Divisive—Hair Trend",
+  "چتری‌های خیلی کوتاه برگشتند؛ ترندی جسور که نگهداری‌اش از ظاهرش سخت‌تر است": "Micro Bangs Are Back—and They’re More High-Maintenance Than They Look",
+  "آن هاتاوی قرمز کلاسیک را برگرداند؛ وقتی لب، مانیکور و پدیکور دقیقاً هم‌صدا می‌شوند": "Anne Hathaway Brings Back Classic Red With Perfectly Matched Lips, Manicure, and Pedicure"
+});
