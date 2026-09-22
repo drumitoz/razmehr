@@ -7,7 +7,13 @@ let cart = JSON.parse(localStorage.getItem("razmehr-shop-cart") || "[]");
 let activeDetailId = null;
 let activeLanguage = ["fa","en","tr","ar"].includes(localStorage.getItem("razmehr-language")) ? localStorage.getItem("razmehr-language") : "fa";
 let lang = activeLanguage === "en" ? "en" : "fa";
+const USD_RATE_TOMAN = 90000;
 const numberFormatter = () => new Intl.NumberFormat({fa:"fa-IR",en:"en-US",tr:"tr-TR",ar:"ar"}[activeLanguage] || "fa-IR");
+const formatProductPrice = amountToman => {
+  if(activeLanguage === "fa") return `${new Intl.NumberFormat("fa-IR").format(amountToman)} تومان`;
+  const locale = {en:"en-US",tr:"tr-TR",ar:"ar"}[activeLanguage] || "en-US";
+  return new Intl.NumberFormat(locale,{style:"currency",currency:"USD",currencyDisplay:"symbol",minimumFractionDigits:0,maximumFractionDigits:2}).format(amountToman/USD_RATE_TOMAN);
+};
 const copy = (fa,en) => {
   if(activeLanguage === "fa") return fa;
   if(activeLanguage === "en") return en;
@@ -34,7 +40,7 @@ function renderProducts(){
   $("resultMeta").textContent = lang === "en" ? `${numberFormatter().format(list.length)} products` : `${numberFormatter().format(list.length)} محصول`;
   $("grid").innerHTML = list.length ? list.map(product => `<article class="card">
     <button type="button" class="photo" data-open="${productKey(product)}" aria-label="${copy('مشاهده توضیحات','View details for')} ${product.name[lang]}"><img src="${product.img}" alt="${product.name[lang]}" loading="lazy">${product.tag?`<span class="tag">${product.tag[lang]}</span>`:""}</button>
-    <div class="body"><div class="cat">${product.cat[lang]}</div><h2>${product.name[lang]}</h2><p class="desc">${product.desc[lang]}</p><button type="button" class="detail-btn" data-open="${productKey(product)}">${copy('توضیحات محصول','Product Details')}</button><div class="foot"><span class="price">${product.price[lang]} ${copy('تومان','tomans')}</span><button class="add" data-id="${productKey(product)}" aria-label="${copy('افزودن به سبد:','Add to cart:')} ${product.name[lang]}">+</button></div></div>
+    <div class="body"><div class="cat">${product.cat[lang]}</div><h2>${product.name[lang]}</h2><p class="desc">${product.desc[lang]}</p><button type="button" class="detail-btn" data-open="${productKey(product)}">${copy('توضیحات محصول','Product Details')}</button><div class="foot"><span class="price">${formatProductPrice(product.priceN)}</span><button class="add" data-id="${productKey(product)}" aria-label="${copy('افزودن به سبد:','Add to cart:')} ${product.name[lang]}">+</button></div></div>
   </article>`).join("") : `<div class="empty">${copy('محصولی با این عبارت پیدا نشد.','No products match your search.')}</div>`;
   document.querySelectorAll(".add").forEach(button => button.addEventListener("click",()=>addToCart(button.dataset.id)));
   document.querySelectorAll("[data-open]").forEach(button => button.addEventListener("click",()=>openProductDetails(button.dataset.open)));
@@ -52,9 +58,9 @@ function renderCart(){
   let total=0;
   $("cartItems").innerHTML = cart.length ? cart.map(item=>{
     const product=PRODUCTS.find(p=>productKey(p)===item.id);if(!product)return "";total+=product.priceN*item.qty;
-    return `<div class="cart-row"><img src="${product.img}" alt=""><div><h3>${product.name[lang]}</h3><small>${numberFormatter().format(item.qty)} × ${product.price[lang]}</small></div><button class="remove" data-id="${item.id}">${copy('حذف','Remove')}</button></div>`;
+    return `<div class="cart-row"><img src="${product.img}" alt=""><div><h3>${product.name[lang]}</h3><small>${numberFormatter().format(item.qty)} × ${formatProductPrice(product.priceN)}</small></div><button class="remove" data-id="${item.id}">${copy('حذف','Remove')}</button></div>`;
   }).join("") : `<div class="empty">${copy('سبد خرید شما خالی است.','Your cart is empty.')}</div>`;
-  $("total").textContent=`${numberFormatter().format(total)} ${copy('تومان','tomans')}`;
+  $("total").textContent=formatProductPrice(total);
   document.querySelectorAll(".remove").forEach(button=>button.addEventListener("click",()=>removeFromCart(button.dataset.id)));
 }
 function openCart(){$("overlay").classList.add("open");$("drawer").classList.add("open")}
@@ -64,7 +70,7 @@ function openProductDetails(id){
   activeDetailId=id;
   $("pdImage").src=product.img;$("pdImage").alt=product.name[lang];
   $("pdCat").textContent=product.cat[lang];$("pdTitle").textContent=product.name[lang];
-  $("pdDesc").textContent=product.desc[lang];$("pdPrice").textContent=`${product.price[lang]} ${copy('تومان','tomans')}`;
+  $("pdDesc").textContent=product.desc[lang];$("pdPrice").textContent=formatProductPrice(product.priceN);
   $("productDetailOverlay").classList.add("open");$("productDetailModal").classList.add("open");
   document.body.style.overflow="hidden";
 }
@@ -74,8 +80,9 @@ function closeProductDetails(){
 }
 function checkout(){
   if(!cart.length){showToast(copy("سبد خرید خالی است","Your cart is empty"));return}
-  const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${copy(p.name.fa,p.name.en)} — ${item.qty} ${copy('عدد','item(s)')}`}).join("\n");
-  const message=encodeURIComponent(copy(`سلام، برای سفارش محصولات رازمهر پیام می‌دهم:\n${rows}`,`Hello Razmehr, I'd like to order these products:\n${rows}`));
+  const rows=cart.map(item=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return `• ${copy(p.name.fa,p.name.en)} — ${item.qty} ${copy('عدد','item(s)')} — ${formatProductPrice(p.priceN)}`}).join("\n");
+  const total=cart.reduce((sum,item)=>{const p=PRODUCTS.find(x=>productKey(x)===item.id);return sum+(p?p.priceN*item.qty:0)},0);
+  const message=encodeURIComponent(copy(`سلام، برای سفارش محصولات رازمهر پیام می‌دهم:\n${rows}\n\nمجموع: ${formatProductPrice(total)}`,`Hello Razmehr, I'd like to order these products:\n${rows}\n\nTotal: ${formatProductPrice(total)}`));
   window.open(`https://wa.me/989367737214?text=${message}`,"_blank","noopener");
 }
 let toastTimer;

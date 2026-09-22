@@ -2398,7 +2398,8 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
    👇 این سه مقدار را با اطلاعات واقعی سالن عوض کنید
    ========================================================= */
 const CONFIG = {
-  currency: { fa: "تومان", tr: "Toman", en: "Toman" },
+  currency: { fa: "تومان", tr: "USD", en: "USD" },
+  usdRateToman: 90000,
   instagram: "razmehracademy",
   mapUrl: "https://maps.app.goo.gl/Qt7mqrzBKoj83hoM9",  // لینک گوگل‌مپ واقعی سالن
 
@@ -2691,6 +2692,20 @@ function renderFilters(){
     <button class="filter-btn ${i===0?'active':''}" data-filter="${f.key}" onclick="filterProducts('${f.key}',this)">${f.label[lang]}</button>`).join('');
 }
 
+function activeSiteLanguage(){
+  return window.RAZMEHR_I18N?.language || localStorage.getItem('razmehr-language') || 'fa';
+}
+
+function formatProductPrice(amountToman){
+  const siteLanguage = activeSiteLanguage();
+  if(siteLanguage === 'fa') return `${amountToman.toLocaleString('fa-IR')} تومان`;
+  const locale = {en:'en-US',tr:'tr-TR',ar:'ar'}[siteLanguage] || 'en-US';
+  return new Intl.NumberFormat(locale, {
+    style:'currency', currency:'USD', currencyDisplay:'symbol',
+    minimumFractionDigits:0, maximumFractionDigits:2
+  }).format(amountToman / CONFIG.usdRateToman);
+}
+
 let currentFilter = "all";
 function renderProducts(){
   const source = currentFilter==="all" ? PRODUCTS : PRODUCTS.filter(p=>p.catKey===currentFilter);
@@ -2709,7 +2724,7 @@ function renderProducts(){
           <span>${lang==='fa'?'توضیحات':lang==='tr'?'Detaylar':'Details'}</span>
         </button>
         <div class="product-foot">
-          <span class="product-price">${p.price[lang]} ${CONFIG.currency[lang]}</span>
+          <span class="product-price">${formatProductPrice(p.priceN)}</span>
           <button class="add-btn" onclick='addToCart("${id}")' title="+"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></button>
         </div>
       </div>
@@ -2865,14 +2880,14 @@ function updateCart(){
       const p = findProduct(id);
       return `<div class="cart-line">
         <img class="cart-line-img" src="${p.img}" alt="">
-        <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${p.price[lang]} ${CONFIG.currency[lang]}</div></div>
+        <div class="cart-line-info"><h5>${p.name[lang]}</h5><div class="clp">${formatProductPrice(p.priceN)}</div></div>
         <div class="cart-qty"><button onclick="changeQty('${id}',-1)">−</button><span>${lang==="fa"?q.toLocaleString('fa-IR'):q}</span><button onclick="changeQty('${id}',1)">+</button></div>
         <button class="cart-line-remove" onclick="removeItem('${id}')"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 012-2h4a2 2 0 012 2v2M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/></svg></button>
       </div>`;
     }).join('');
     document.getElementById('checkoutBtn').disabled = false;
   }
-  document.getElementById('cartTotal').textContent = `${fmtPrice(cartTotalNum())} ${CONFIG.currency[lang]}`;
+  document.getElementById('cartTotal').textContent = formatProductPrice(cartTotalNum());
 }
 
 function checkout(){
@@ -2880,9 +2895,9 @@ function checkout(){
   let msg = T.waHeader[lang] + "\n\n";
   Object.entries(cart).forEach(([id,q])=>{
     const p = findProduct(id);
-    msg += `• ${p.name[lang]} × ${q} — ${p.price[lang]} ${CONFIG.currency[lang]}\n`;
+    msg += `• ${p.name[lang]} × ${q} — ${formatProductPrice(p.priceN)}\n`;
   });
-  msg += `\n${T.waTotal[lang]}: ${fmtPrice(cartTotalNum())} ${CONFIG.currency[lang]}`;
+  msg += `\n${T.waTotal[lang]}: ${formatProductPrice(cartTotalNum())}`;
   // محصولات → خدمات (شماره خدمات) با انتخاب کانال
   openContactPicker('service', msg);
 }
@@ -3011,7 +3026,7 @@ function openProduct(key){
   }
   h += `
       <div class="pd-foot">
-        <span class="pd-price">${p.price[lang]} <small>${CONFIG.currency[lang]}</small></span>
+        <span class="pd-price">${formatProductPrice(p.priceN)}</span>
         <button class="btn btn-primary pd-add" onclick='addToCart("${id}");closeProduct();'>افزودن به سبد خرید</button>
       </div>
     </div>`;
