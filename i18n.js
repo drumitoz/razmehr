@@ -94,6 +94,9 @@
     document.documentElement.dir = currentLanguage === 'fa' || currentLanguage === 'ar' ? 'rtl' : 'ltr';
     document.body?.classList.remove('lang-fa', 'lang-en', 'lang-tr', 'lang-ar');
     document.body?.classList.add(`lang-${currentLanguage}`);
+    // Arabic shares the established RTL layout rules with Persian while
+    // retaining its own language identity for translation and controls.
+    if (currentLanguage === 'ar') document.body?.classList.add('lang-fa');
     if (options.persist !== false) localStorage.setItem(STORAGE_KEY, currentLanguage);
     applyTo(document);
     updateLanguageControls();
