@@ -1,3 +1,6 @@
+Warning: truncated output (original token count: 54048)
+Total output lines: 3267
+
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
@@ -31,8 +34,14 @@
 <link rel="apple-touch-icon" href="img/logo.png">
 <script src="feature-flags.js?v=20260914-banner-off"></script>
 <link rel="stylesheet" href="birthday-theme.css?v=20260912b">
+<link rel="stylesheet" href="language-switch.css?v=20260922a">
 <script src="birthday-theme.js?v=20260912b" defer></script>
 <script src="beauty-news-loader.js?v=20260914a" defer></script>
+<script src="translations-en.js?v=20260922a" defer></script>
+<script src="translations-en-news.js?v=20260922a" defer></script>
+<script src="translations-en-stories-1.js?v=20260922a" defer></script>
+<script src="translations-en-stories-2.js?v=20260922a" defer></script>
+<script src="i18n.js?v=20260922a" defer></script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1624,6 +1633,18 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       </div>
     </a>
 
+    <div class="language-menu" data-language-menu>
+      <button class="language-trigger" type="button" data-language-trigger aria-haspopup="true" aria-expanded="false" aria-label="انتخاب زبان">
+        <svg class="globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18M12 3a15 15 0 000 18"/></svg>
+        <span data-language-current>FA</span>
+        <svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      </button>
+      <div class="language-popover" role="radiogroup" aria-label="زبان سایت">
+        <button class="language-option active" type="button" role="radio" aria-checked="true" data-set-language="fa"><span>فارسی</span><small>FA</small></button>
+        <button class="language-option" type="button" role="radio" aria-checked="false" data-set-language="en"><span>English</span><small>EN</small></button>
+      </div>
+    </div>
+
     <nav class="nav-links" id="navLinks">
       <button class="menu-close" onclick="closeMenu()" aria-label="بستن منو">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6L6 18M6 6l12 12"/></svg>
@@ -1647,11 +1668,6 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
     </nav>
 
     <div class="nav-right">
-      <div class="lang-switch">
-        <button onclick="setLang('fa')" id="lang-fa" class="active">FA</button>
-        <button onclick="setLang('tr')" id="lang-tr">TR</button>
-        <button onclick="setLang('en')" id="lang-en">EN</button>
-      </div>
       <button class="search-btn" onclick="openSiteSearch()" aria-label="جست‌وجو در سایت">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
         <span class="search-label" data-lang="fa">جست‌وجو</span><span class="search-label" data-lang="tr">Ara</span><span class="search-label" data-lang="en">Search</span>
@@ -1712,163 +1728,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         </div>
         <div class="hero-stat">
           <div class="num" data-lang="fa">۱۰۰٪</div><div class="num" data-lang="tr">%100</div><div class="num" data-lang="en">100%</div>
-          <div class="lbl"><span data-lang="fa">استاندارد بهداشت</span><span data-lang="tr">Hijyen Standardı</span><span data-lang="en">Hygiene</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-visual reveal">
-      <svg class="hero-branch" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 80 C40 60 55 40 75 20" stroke-linecap="round"/><ellipse cx="35" cy="62" rx="5" ry="2.5" transform="rotate(-40 35 62)" fill="currentColor" stroke="none"/><ellipse cx="48" cy="50" rx="5" ry="2.5" transform="rotate(-40 48 50)" fill="currentColor" stroke="none"/><ellipse cx="61" cy="38" rx="5" ry="2.5" transform="rotate(-40 61 38)" fill="currentColor" stroke="none"/></svg>
-      <div class="hero-frame">
-        <img src="img/bagh.jpg" alt="Razmehr salon">
-      </div>
-      <div class="hero-badge">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l2.4 7.4H22l-6 4.5 2.3 7.1-6.3-4.6L5.7 21l2.3-7.1-6-4.5h7.6z"/></svg>
-        <div>
-          <div class="bt"><span data-lang="fa">کیفیت لاکچری</span><span data-lang="tr">Lüks Kalite</span><span data-lang="en">Luxury Quality</span></div>
-          <div class="bs"><span data-lang="fa">استاندارد آکادمیک</span><span data-lang="tr">Akademik Standart</span><span data-lang="en">Academic Standard</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= PILLARS ================= -->
-<section class="pillars">
-  <div class="pillars-grid">
-    <a class="pillar reveal" href="#courses" aria-label="مشاهده دوره‌های آموزشی رازمهر">
-      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-      <h3><span data-lang="fa">آموزش</span><span data-lang="tr">Eğitim</span><span data-lang="en">Education</span></h3>
-      <p>
-        <span data-lang="fa">دوره‌های تخصصی و مدرک‌دار در رنگ، لایت، کراتین و میکاپ، زیر نظر استادانِ مجرب.</span>
-        <span data-lang="tr">Renk, röfle, keratin ve makyajda sertifikalı uzman kurslar; deneyimli eğitmenler eşliğinde.</span>
-        <span data-lang="en">Certified specialist courses in color, highlights, keratin and makeup, led by expert instructors.</span>
-      </p>
-      <span class="pillar-link"><span data-lang="fa">مشاهده دوره‌ها</span><span data-lang="tr">Kursları gör</span><span data-lang="en">View courses</span><span aria-hidden="true">←</span></span>
-    </a>
-    <a class="pillar reveal" href="#services" aria-label="مشاهده خدمات تخصصی رازمهر">
-      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 2a4 4 0 00-4 4c0 1.5.8 2.8 2 3.4V22h4V9.4c1.2-.6 2-1.9 2-3.4a4 4 0 00-4-4z"/><circle cx="12" cy="6" r="1"/></svg>
-      <h3><span data-lang="fa">خدمات</span><span data-lang="tr">Hizmetler</span><span data-lang="en">Services</span></h3>
-      <p>
-        <span data-lang="fa">خدمات تخصصی مو، رنگ، کراتین و میکاپ عروس با محصولات اصل و بالاترین کیفیت.</span>
-        <span data-lang="tr">Orijinal ürünlerle uzman saç, renk, keratin ve gelin makyajı hizmetleri.</span>
-        <span data-lang="en">Expert hair, color, keratin and bridal makeup services with authentic premium products.</span>
-      </p>
-      <span class="pillar-link"><span data-lang="fa">مشاهده خدمات</span><span data-lang="tr">Hizmetleri gör</span><span data-lang="en">View services</span><span aria-hidden="true">←</span></span>
-    </a>
-    <a class="pillar reveal" href="#shop" aria-label="مشاهده فروشگاه رازمهر">
-      <svg class="pillar-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><path d="M3 6h18M16 10a4 4 0 01-8 0"/></svg>
-      <h3><span data-lang="fa">فروشگاه</span><span data-lang="tr">Mağaza</span><span data-lang="en">Boutique</span></h3>
-      <p>
-        <span data-lang="fa">محصولات حرفه‌ای مراقبت از مو و پوست، منتخب و تأییدشده توسط متخصصان رازمهر.</span>
-        <span data-lang="tr">Razmehr uzmanlarınca seçilmiş profesyonel saç ve cilt bakım ürünleri.</span>
-        <span data-lang="en">Professional hair and skin care products, curated and approved by Razmehr experts.</span>
-      </p>
-      <span class="pillar-link"><span data-lang="fa">مشاهده محصولات</span><span data-lang="tr">Ürünleri gör</span><span data-lang="en">View products</span><span aria-hidden="true">←</span></span>
-    </a>
-  </div>
-</section>
-
-<!-- ================= MASTER / ABOUT ================= -->
-<section id="master">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">بنیان‌گذار رازمهر</span><span data-lang="tr">Razmehr Kurucusu</span><span data-lang="en">Founder of Razmehr</span></div>
-      <h2><span data-lang="fa">بانوی <em>رنگ</em> ایران</span><span data-lang="tr">İran'ın <em>Renk</em> Hanımı</span><span data-lang="en">Iran's <em>Lady of Color</em></span></h2>
-    </div>
-
-    <div class="master-grid">
-      <div class="master-visual reveal">
-        <div class="master-photo">
-          <img src="img/ostad.jpg" alt="استاد فاطمه زارع">
-        </div>
-        <div class="master-title-badge">
-          <div class="mt"><span data-lang="fa">۳۰ سال</span><span data-lang="tr">30 Yıl</span><span data-lang="en">30 Years</span></div>
-          <div class="ms"><span data-lang="fa">تدریس و خدمات</span><span data-lang="tr">Eğitim & Hizmet</span><span data-lang="en">Teaching & Practice</span></div>
-        </div>
-      </div>
-
-      <div class="master-info reveal">
-        <h3 class="master-name"><span data-lang="fa">استاد فاطمه زارع</span><span data-lang="tr">Usta Fateme Zare</span><span data-lang="en">Master Fateme Zare</span></h3>
-        <p class="master-role"><span data-lang="fa">مدرس بین‌المللی رنگ و لایت، احیا و کراتین</span><span data-lang="tr">Uluslararası Renk, Röfle, Bakım & Keratin Eğitmeni</span><span data-lang="en">International Instructor — Color, Highlights, Repair & Keratin</span></p>
-
-        <p class="master-lede">
-          <span data-lang="fa">ملقب به «بانوی رنگ ایران» — با سی سال تجربه‌ی آموزشی و خدماتی، مدرس دانشگاه در رشته‌های شیمی مواد و روان‌شناسی رنگ، و محقق در حوزه‌ی لاین رنگ، شناخت مو و مواد کاربردی. مدرس متد میلاژ در ایران — علمی‌ترین متد روز دنیا.</span>
-          <span data-lang="tr">"İran'ın Renk Hanımı" olarak anılır — otuz yıllık eğitim ve hizmet tecrübesiyle, malzeme kimyası ve renk psikolojisi alanlarında üniversite öğretim üyesi, saç ve uygulama malzemeleri alanında araştırmacı.</span>
-          <span data-lang="en">Known as "Iran's Lady of Color" — thirty years of teaching and practice, a university lecturer in materials chemistry and color psychology, and a researcher in color lines, hair science and professional products.</span>
-        </p>
-
-        <div class="cred-grid">
-          <div class="cred cred-1">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 010 18a15 15 0 010-18z"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">تدریس بین‌المللی</span><span data-lang="tr">Uluslararası Eğitim</span><span data-lang="en">International Teaching</span></h5>
-              <p><span data-lang="fa">آموزش در ایتالیا، ترکیه، امارات، هند، گرجستان و عمان</span><span data-lang="tr">İtalya, Türkiye, BAE, Hindistan, Gürcistan ve Umman</span><span data-lang="en">Italy, Türkiye, UAE, India, Georgia and Oman</span></p>
-            </div>
-          </div>
-          <div class="cred cred-2">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">مدرس دانشگاه</span><span data-lang="tr">Üniversite Öğretim Üyesi</span><span data-lang="en">University Lecturer</span></h5>
-              <p><span data-lang="fa">شیمی مواد و روان‌شناسی رنگ</span><span data-lang="tr">Malzeme kimyası ve renk psikolojisi</span><span data-lang="en">Materials chemistry & color psychology</span></p>
-            </div>
-          </div>
-          <div class="cred cred-3">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">سمینار و ورکشاپ تخصصی</span><span data-lang="tr">Uzman Seminer & Atölye</span><span data-lang="en">Seminars & Workshops</span></h5>
-              <p><span data-lang="fa">برگزارکننده‌ی بزرگ‌ترین سمینارهای رنگ و لایت</span><span data-lang="tr">En büyük renk ve röfle seminerlerinin düzenleyicisi</span><span data-lang="en">Host of the largest color & highlight seminars</span></p>
-            </div>
-          </div>
-          <div class="cred cred-4">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4z"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">تاتوی مویی و کاشت رنگ</span><span data-lang="tr">Saç Tatuajı & Renk Ekimi</span><span data-lang="en">Hair Tattoo & Color Implant</span></h5>
-              <p><span data-lang="fa">مدرس در ایران و خاورمیانه</span><span data-lang="tr">İran ve Orta Doğu'da eğitmen</span><span data-lang="en">Instructor across Iran & the Middle East</span></p>
-            </div>
-          </div>
-          <div class="cred cred-5">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M9 11H5a2 2 0 00-2 2v7h6zM15 3H9v17h6zM21 8h-6v12h6z"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">متد میلاژ</span><span data-lang="tr">Milaj Metodu</span><span data-lang="en">Milaj Method</span></h5>
-              <p><span data-lang="fa">علمی‌ترین متد روز دنیا — مدرس در ایران</span><span data-lang="tr">Dünyanın en bilimsel güncel metodu</span><span data-lang="en">The world's most scientific current method</span></p>
-            </div>
-          </div>
-          <div class="cred cred-6">
-            <div class="cred-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M10 2v7.5L5 20a2 2 0 002 2h10a2 2 0 002-2l-5-10.5V2"/><path d="M8.5 2h7"/></svg></div>
-            <div class="cred-txt">
-              <h5><span data-lang="fa">پژوهش و تحقیق</span><span data-lang="tr">Araştırma</span><span data-lang="en">Research</span></h5>
-              <p><span data-lang="fa">لاین رنگ، شناخت مو و مواد کاربردی</span><span data-lang="tr">Renk hattı, saç bilimi ve ürünler</span><span data-lang="en">Color lines, hair science & products</span></p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <p style="font-size:13px;color:var(--muted);margin-bottom:10px;font-weight:500">
-            <span data-lang="fa">کشورهای محل تدریس:</span><span data-lang="tr">Eğitim verdiği ülkeler:</span><span data-lang="en">Countries taught in:</span>
-          </p>
-          <div class="countries">
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="1" height="2" x="0" fill="#009246"/><rect width="1" height="2" x="1" fill="#fff"/><rect width="1" height="2" x="2" fill="#CE2B37"/></svg></span><span data-lang="fa">ایتالیا</span><span data-lang="tr">İtalya</span><span data-lang="en">Italy</span></span>
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#E30A17"/><circle cx="1.05" cy="1" r="0.5" fill="#fff"/><circle cx="1.2" cy="1" r="0.4" fill="#E30A17"/><path d="M1.68 1 L1.86 0.9 L1.8 1.1 L1.93 0.95 L1.75 1.12 Z" fill="#fff" transform="translate(-0.02,0) scale(1.15) translate(-0.22,-0.15)"/></svg></span><span data-lang="fa">ترکیه</span><span data-lang="tr">Türkiye</span><span data-lang="en">Türkiye</span></span>
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" y="0" fill="#00732F"/><rect width="3" height="0.667" y="0.667" fill="#fff"/><rect width="3" height="0.666" y="1.334" fill="#000"/><rect width="0.75" height="2" fill="#FF0000"/></svg></span><span data-lang="fa">امارات</span><span data-lang="tr">BAE</span><span data-lang="en">UAE</span></span>
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" fill="#FF9933"/><rect width="3" height="0.667" y="0.667" fill="#fff"/><rect width="3" height="0.666" y="1.334" fill="#138808"/><circle cx="1.5" cy="1" r="0.26" fill="none" stroke="#000080" stroke-width="0.05"/><circle cx="1.5" cy="1" r="0.05" fill="#000080"/></svg></span><span data-lang="fa">هند</span><span data-lang="tr">Hindistan</span><span data-lang="en">India</span></span>
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="2" fill="#fff"/><rect x="1.25" width="0.5" height="2" fill="#FF0000"/><rect y="0.75" width="3" height="0.5" fill="#FF0000"/><g fill="#FF0000"><rect x="0.45" y="0.25" width="0.28" height="0.09"/><rect x="0.545" y="0.155" width="0.09" height="0.28"/><rect x="2.27" y="0.25" width="0.28" height="0.09"/><rect x="2.365" y="0.155" width="0.09" height="0.28"/><rect x="0.45" y="1.66" width="0.28" height="0.09"/><rect x="0.545" y="1.565" width="0.09" height="0.28"/><rect x="2.27" y="1.66" width="0.28" height="0.09"/><rect x="2.365" y="1.565" width="0.09" height="0.28"/></g></svg></span><span data-lang="fa">گرجستان</span><span data-lang="tr">Gürcistan</span><span data-lang="en">Georgia</span></span>
-            <span class="country-chip"><span class="flag"><svg viewBox="0 0 3 2"><rect width="3" height="0.667" y="0" fill="#fff"/><rect width="3" height="0.667" y="0.667" fill="#DB161B"/><rect width="3" height="0.666" y="1.334" fill="#008000"/><rect width="0.85" height="2" fill="#DB161B"/></svg></span><span data-lang="fa">عمان</span><span data-lang="tr">Umman</span><span data-lang="en">Oman</span></span>
-            <span class="country-chip chip-more"><span data-lang="fa">و کشورهای دیگر</span><span data-lang="tr">ve diğer ülkeler</span><span data-lang="en">and more</span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= EDUCATION (unified) ================= -->
-<section id="courses">
-  <div class="wrap">
-    <div class="sec-head reveal">
-      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">آکادمی رازمهر</span><span data-lang="tr">Razmehr Akademi</span><span data-lang="en">Razmehr Academy</span></div>
-      <h2><span data-lang="fa">مرکز <em>آموزش</em></span><span data-lang="tr">Eğitim <em>Merkezi</em></span><span data-lang="en">Training <em>Center</em></span></h2>
-      <p><span data-lang="fa">هنر زیبایی را حرفه‌ای بیاموزید — دوره‌های تخصصی حضوری و آنلاین زیر نظر استاد فاطمه زارع، با پشتیبانی بلندمدت.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — uzman yüz yüze ve çevrim içi kurslar, uzun süreli destekle.</span><span data-lang="en">Master the art of beauty — specialist in-person and online courses with long-term support.</span></p>
+          <div class="lbl"><span data-lang="fa">استاندارد بهداشت</span><span data-lang="tr">Hijyen Standardı</span>…4048 tokens truncated…صی حضوری و آنلاین زیر نظر استاد فاطمه زارع، با پشتیبانی بلندمدت.</span><span data-lang="tr">Güzellik sanatını profesyonelce öğrenin — uzman yüz yüze ve çevrim içi kurslar, uzun süreli destekle.</span><span data-lang="en">Master the art of beauty — specialist in-person and online courses with long-term support.</span></p>
       <a class="academy-entry" href="https://academy.razmehrbeauty.com/" aria-label="ورود به آکادمی آنلاین رازمهر">
         <span class="academy-entry-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 10.5L12 4l9 6.5"/><path d="M5 9.5V20h14V9.5"/><path d="M9 20v-6h6v6"/></svg></span>
         <span class="academy-entry-copy">
@@ -3159,13 +3019,18 @@ function closeWelcomeBanner(){
    LANGUAGE
    ========================================================= */
 function setLang(l){
+  if(l !== 'fa' && l !== 'en') l = 'fa';
+  if(window.RAZMEHR_I18N && window.RAZMEHR_I18N.language !== l){
+    window.RAZMEHR_I18N.setLanguage(l);
+    return;
+  }
   lang = l;
   const body = document.body;
   body.classList.remove('lang-fa','lang-tr','lang-en');
   body.classList.add('lang-'+l);
   document.documentElement.lang = l;
   document.documentElement.dir = (l==="fa") ? "rtl" : "ltr";
-  ['fa','tr','en'].forEach(x=>document.getElementById('lang-'+x).classList.toggle('active', x===l));
+  document.querySelectorAll('[data-set-language]').forEach(button=>button.classList.toggle('active',button.dataset.setLanguage===l));
   // re-render dynamic content in new language
   renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
   // reset filter active state visually handled by renderFilters
@@ -3209,6 +3074,10 @@ const io = new IntersectionObserver((entries)=>{
    ========================================================= */
 document.getElementById('year').textContent = new Date().getFullYear();
 renderServices(); renderFilters(); renderProducts(); updateCart(); updateSearchCopy();
+document.addEventListener('razmehr:language-change',event=>{
+  const next=event.detail?.language;
+  if(next==='fa'||next==='en') setLang(next);
+});
 document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 if(window.RAZMEHR_FEATURES?.entryBanner){
