@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-23a",
+  "version": "2026-09-24a",
   "files": [
+    "beauty-news-2026-09-24.js",
     "beauty-news-2026-09-23.js",
     "beauty-news-2026-09-21.js",
     "beauty-news-2026-09-20.js",
@@ -14,24 +15,24 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "burberry-summer-2027-floral-trench",
+    "vogue-world-milano-renaissance-beauty",
     "suki-waterhouse-silver-hair-tinsel",
     "allure-best-beauty-2026-nails"
   ],
   "latestStoryIds": [
-    "burberry-summer-2027-floral-trench",
+    "vogue-world-milano-renaissance-beauty",
     "suki-waterhouse-silver-hair-tinsel",
     "allure-best-beauty-2026-nails"
   ],
-  "latestLabel": "منتخب ۱ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲ مهر ۱۴۰۵",
   "ticker": [
-    "ترنچ گل‌دوزی‌شده بربری، چک کلاسیک را تازه کرد",
+    "رژگونه ابری و بافت‌های رنسانسی به ووگ ورلد میلان رسیدند",
     "ریسه‌های نقره‌ای سوکی واترهاوس، درخشش را به مو برگرداند",
     "برندگان ناخن Allure ۲۰۲۶ معرفی شدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱ مهر"
+    "date": "۲ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲ مهر"
   }
 }
