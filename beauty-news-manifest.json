@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-24a",
+  "version": "2026-09-25a",
   "files": [
+    "beauty-news-2026-09-25.js",
     "beauty-news-2026-09-24.js",
     "beauty-news-2026-09-23.js",
     "beauty-news-2026-09-21.js",
@@ -15,24 +16,24 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "taylor-swift-patient-zero-soft-smoky-eye",
     "vogue-world-milano-renaissance-beauty",
-    "suki-waterhouse-silver-hair-tinsel",
     "allure-best-beauty-2026-nails"
   ],
   "latestStoryIds": [
+    "taylor-swift-patient-zero-soft-smoky-eye",
     "vogue-world-milano-renaissance-beauty",
-    "suki-waterhouse-silver-hair-tinsel",
     "allure-best-beauty-2026-nails"
   ],
-  "latestLabel": "منتخب ۲ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۳ مهر ۱۴۰۵",
   "ticker": [
+    "چشم دودی نرم، خط‌چشم امضای تیلور سوئیفت را در تصویر تازه تغییر داد",
     "رژگونه ابری و بافت‌های رنسانسی به ووگ ورلد میلان رسیدند",
-    "ریسه‌های نقره‌ای سوکی واترهاوس، درخشش را به مو برگرداند",
     "برندگان ناخن Allure ۲۰۲۶ معرفی شدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲ مهر"
+    "date": "۳ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۳ مهر"
   }
 }
