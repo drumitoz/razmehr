@@ -3,6 +3,25 @@
 
   const state = window.RAZMEHR_BEAUTY_NEWS = window.RAZMEHR_BEAUTY_NEWS || {};
   state.batches = [];
+  const language = () => window.RAZMEHR_I18N?.language || 'fa';
+  const locale = () => window.RAZMEHR_NEWS_LOCALES?.[language()] || null;
+  const translate = (value) => {
+    if (language() === 'fa') return value;
+    const dictionary = window['RAZMEHR_TRANSLATIONS_' + language().toUpperCase()] || {};
+    return dictionary[value] || value;
+  };
+  const localizeStory = (story) => {
+    if (language() === 'fa') return story;
+    const translated = story.locales?.[language()] || locale()?.stories?.[story.id] || {};
+    const fields = ['tag', 'title', 'shortTitle', 'summary', 'date', 'readTime', 'alt', 'credit', 'deck', 'insight'];
+    const result = { ...story };
+    fields.forEach((field) => { result[field] = translated[field] || translate(story[field]); });
+    result.paragraphs = story.paragraphs.map((paragraph, index) => translated.paragraphs?.[index] || translate(paragraph));
+    result.sources = story.sources.map((source, index) => ({
+      ...source, name: translated.sources?.[index] || translate(source.name)
+    }));
+    return result;
+  };
 
   const escapeHtml = (value) => String(value ?? '').replace(/[&<>"']/g, (char) => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
@@ -42,7 +61,8 @@
       sources: Array.isArray(story.sources) ? story.sources.map((source) => ({
         name: String(source?.name || ''),
         url: safeSource(source?.url)
-      })).filter((source) => source.name && source.url) : []
+      })).filter((source) => source.name && source.url) : [],
+      locales: story.locales && typeof story.locales === 'object' ? story.locales : {}
     };
   };
 
@@ -58,13 +78,13 @@
       '" loading="lazy" referrerpolicy="no-referrer"><div class="' + copyClass + '"><span class="' +
       tagClass + '">' + escapeHtml(story.tag) + '</span><h3>' + escapeHtml(story.shortTitle) +
       '</h3><p>' + escapeHtml(story.summary) + '</p><div class="' + metaClass + '"><span' +
-      liveClass + '>تازه</span><span>' + escapeHtml(story.date) + '</span></div></div></a>';
+      liveClass + '>' + escapeHtml(locale()?.ui.live || 'تازه') + '</span><span>' + escapeHtml(story.date) + '</span></div></div></a>';
   };
 
   const sourceMarkup = (sources) => sources.map((source) =>
     '<a href="' + escapeHtml(source.url) + '" target="_blank" rel="noopener noreferrer">' +
     escapeHtml(source.name) + '</a>'
-  ).join('<span>،</span>');
+  ).join('<span>' + (language() === 'en' || language() === 'tr' ? ', ' : '،') + '</span>');
 
   const articleMarkup = (story) =>
     '<article class="article filterable" id="' + story.id + '" data-category="' +
@@ -75,8 +95,9 @@
     escapeHtml(story.tag) + ' · ' + escapeHtml(story.date) + '</div><h2>' +
     escapeHtml(story.title) + '</h2><p class="article-deck">' + escapeHtml(story.deck) +
     '</p>' + story.paragraphs.map((paragraph) => '<p>' + escapeHtml(paragraph) + '</p>').join('') +
-    '<div class="analysis"><strong>نگاه رازمهر</strong>' + escapeHtml(story.insight) +
-    '</div><div class="source"><span>' + (story.sources.length > 1 ? 'منابع گزارش:' : 'منبع گزارش:') +
+    '<div class="analysis"><strong>' + escapeHtml(locale()?.ui.insight || 'نگاه رازمهر') + '</strong>' +
+    escapeHtml(story.insight.replace(/^(?:نگاه رازمهر|Razmehr’s view|Razmehr’in yorumu|رؤية رازمهر)\s*:\s*/, '')) +
+    '</div><div class="source"><span>' + escapeHtml(story.sources.length > 1 ? (locale()?.ui.sources || 'منابع گزارش:') : (locale()?.ui.source || 'منبع گزارش:')) +
     '</span>' + sourceMarkup(story.sources) + '</div></div></article>';
 
   const selectStories = (ids, storyMap, fallback) => {
@@ -93,6 +114,11 @@
   };
 
   const render = (manifest, stories) => {
+    const localizedStories = stories.map(localizeStory);
+    const translatedManifest = manifest.locales?.[language()] || locale()?.manifest || {};
+    const ui = locale()?.ui || {};
+    manifest = { ...manifest, ...translatedManifest };
+    stories = localizedStories;
     const storyMap = new Map(stories.map((story) => [story.id, story]));
     const homeStories = selectStories(manifest.homeStoryIds, storyMap, stories.slice(0, 3)).slice(0, 3);
     const latestStories = selectStories(manifest.latestStoryIds, storyMap, stories.slice(0, 3)).slice(0, 3);
@@ -105,8 +131,8 @@
 
     const freshMount = document.getElementById('freshNewsMount');
     if (freshMount && latestStories.length) {
-      freshMount.innerHTML = '<div class="section-title"><h2>تازه‌ترین خبرها</h2><span>' +
-        escapeHtml(manifest.latestLabel || '') + '</span></div><section class="latest-grid" aria-label="تازه‌ترین خبرهای بیوتی نیوز">' +
+      freshMount.innerHTML = '<div class="section-title"><h2>' + escapeHtml(ui.fresh || 'تازه‌ترین خبرها') + '</h2><span>' +
+        escapeHtml(manifest.latestLabel || '') + '</span></div><section class="latest-grid" aria-label="' + escapeHtml(ui.freshAria || 'تازه‌ترین خبرهای بیوتی نیوز') + '">' +
         latestStories.map((story) => cardMarkup(story)).join('') + '</section>';
     }
 
@@ -115,13 +141,13 @@
 
     const ticker = document.querySelector('.ticker-row');
     if (ticker && Array.isArray(manifest.ticker) && manifest.ticker.length) {
-      ticker.innerHTML = '<span class="ticker-label">خبر داغ</span>' +
+      ticker.innerHTML = '<span class="ticker-label">' + escapeHtml(ui.hot || 'خبر داغ') + '</span>' +
         manifest.ticker.slice(0, 3).map((item) => '<span>' + escapeHtml(item) + '</span>').join('<i></i>');
     }
 
     const issue = document.querySelector('.issue');
     if (issue && manifest.issue) {
-      issue.innerHTML = '<span>' + escapeHtml(manifest.issue.label || 'شماره این هفته') +
+      issue.innerHTML = '<span>' + escapeHtml(manifest.issue.label || ui.issue || 'شماره این هفته') +
         '</span><strong>' + escapeHtml(manifest.issue.date || '') + '</strong><span>' +
         escapeHtml(manifest.issue.updated || '') + '</span>';
     }
@@ -181,6 +207,10 @@
       console.error('[Razmehr Beauty News]', error);
     }
   };
+
+  document.addEventListener('razmehr:language-change', () => {
+    if (state.manifest && state.stories) render(state.manifest, state.stories);
+  });
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init, { once: true });
   else init();
