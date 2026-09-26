@@ -567,15 +567,14 @@ body.lang-tr .academy-entry:hover .academy-entry-arrow{transform:translateX(3px)
 .yazd-home-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
 .yazd-home h2{font-size:clamp(32px,4.2vw,55px);line-height:1.35;margin:13px 0}
 .yazd-home p{max-width:540px;color:#565447;font-size:16px;line-height:2}
-.yazd-home .yazd-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:18px;padding:10px 23px;border-radius:30px;background:var(--sage-deep);color:white;font-weight:700}
+.yazd-home .yazd-link{align-items:center;justify-content:center;min-height:48px;margin-top:18px;padding:10px 23px;border-radius:30px;background:var(--sage-deep);color:white;font-weight:700}
 .yazd-home .yazd-link:hover{background:var(--ink)}
 .yazd-home figure{position:relative;margin:0;min-height:360px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
 .yazd-home figure img{width:100%;height:360px;object-fit:cover}
 .yazd-home figcaption{position:absolute;inset:auto 0 0;padding:45px 20px 18px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:13px}
-body.lang-ar .yazd-home [data-lang="fa"]{display:none!important}
-body.lang-ar .yazd-home [data-lang="ar"]{display:block!important}
-body.lang-ar .yazd-home a[data-lang="ar"]{display:inline-flex!important}
-body:not(.lang-ar) .yazd-home [data-lang="ar"]{display:none!important}
+body .yazd-home [data-lang]{display:none!important}
+body.lang-fa:not(.lang-ar) .yazd-home [data-lang="fa"],body.lang-en .yazd-home [data-lang="en"],body.lang-tr .yazd-home [data-lang="tr"],body.lang-ar .yazd-home [data-lang="ar"]{display:inline!important}
+body.lang-fa:not(.lang-ar) .yazd-home a.yazd-link[data-lang="fa"],body.lang-en .yazd-home a.yazd-link[data-lang="en"],body.lang-tr .yazd-home a.yazd-link[data-lang="tr"],body.lang-ar .yazd-home a.yazd-link[data-lang="ar"]{display:inline-flex!important}
 body.lang-ar .nav-links a[href="yazd-fa.html"],body.lang-ar .footer-col a[href="yazd-fa.html"]{display:none!important}
 body.lang-ar .nav-links a[href="yazd-ar.html"]{display:inline-flex!important}
 body.lang-ar .footer-col a[href="yazd-ar.html"]{display:block!important}
@@ -2157,19 +2156,6 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   </div>
 </section>
 
-<!-- ================= YAZD THROUGH TIME ================= -->
-<section class="yazd-home" id="yazd" aria-labelledby="yazd-title">
-  <div class="wrap yazd-home-inner">
-    <div>
-      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">روایت تصویری رازمهر از یزد</span><span data-lang="en">Razmehr's visual guide to Yazd</span><span data-lang="tr">Razmehr'den görsel Yezd rehberi</span><span data-lang="ar">دليل رازمهر المصوّر إلى يزد</span></div>
-      <h2 id="yazd-title"><span data-lang="fa">یزد در گذر زمان</span><span data-lang="en">Yazd Through Time</span><span data-lang="tr">Zaman İçinde Yezd</span><span data-lang="ar">يزد عبر الزمن</span></h2>
-      <p><span data-lang="fa">جاهای دیدنی یزد، از عکس‌های قدیمی تا تصویرهای جدیدتر؛ داستان سه مکان را بخوانید و ۲۸ جای دیدنی شهر و استان را کشف کنید.</span><span data-lang="en">Explore three illustrated stories with dated archive photographs, and discover 28 places across Yazd and its province.</span><span data-lang="tr">Tarihi fotoğraflarla üç görsel hikâyeyi inceleyin; Yezd ve çevresindeki 28 yeri keşfedin.</span><span data-lang="ar">اكتشف ثلاث حكايات مصوّرة بصور أرشيفية مؤرّخة، وتعرّف إلى ٢٨ موقعاً في يزد ومحافظتها.</span></p>
-      <a class="yazd-link" data-lang="fa" href="yazd-fa.html">دیدن یزد در گذر زمان</a><a class="yazd-link" data-lang="en" href="yazd-en.html">Explore Yazd</a><a class="yazd-link" data-lang="tr" href="yazd-tr.html">Yezd'i keşfet</a><a class="yazd-link" data-lang="ar" href="yazd-ar.html">اكتشف يزد</a>
-    </div>
-    <figure><img src="img/yazd/amir-current.webp" alt="نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶" loading="lazy" width="1200" height="807"><figcaption><span data-lang="fa">امیرچخماق · عکس: Tu Manling، ۲۰۱۶ · CC BY-SA 4.0</span><span data-lang="en">Amir Chakhmaq · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="tr">Emir Çakmak · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="ar">أمير جخماق · تصوير Tu Manling، ٢٠١٦ · CC BY-SA 4.0</span></figcaption></figure>
-  </div>
-</section>
-
 <!-- ================= SERVICES ================= -->
 <section id="services">
   <div class="wrap">
@@ -2208,6 +2194,19 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
     </div>
+  </div>
+</section>
+
+<!-- ================= YAZD THROUGH TIME ================= -->
+<section class="yazd-home" id="yazd" aria-labelledby="yazd-title">
+  <div class="wrap yazd-home-inner">
+    <div>
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">پیشنهاد رازمهر برای مهمانان یزد</span><span data-lang="en">A Razmehr guide for visitors to Yazd</span><span data-lang="tr">Yezd'e gelen Razmehr misafirlerine</span><span data-lang="ar">دليل رازمهر لزوّار يزد</span></div>
+      <h2 id="yazd-title"><span data-lang="fa">یزد در گذر زمان</span><span data-lang="en">Yazd Through Time</span><span data-lang="tr">Zaman İçinde Yezd</span><span data-lang="ar">يزد عبر الزمن</span></h2>
+      <p><span data-lang="fa">اگر برای دوره‌های رازمهر از شهرهای دیگر ایران یا خارج از کشور به یزد می‌آیید، این سفر را به کلاس محدود نکنید. پیش از آمدن، با گوشه‌هایی از شهر آشنا شوید و برای دیدن کوچه‌ها، باغ‌ها و بناهای ماندگارش هم وقت بگذارید.</span><span data-lang="en">Travelling to Yazd from elsewhere in Iran or abroad for a Razmehr course? Make time beyond the classroom. Get to know the city before you arrive, then wander its old lanes, gardens and remarkable buildings.</span><span data-lang="tr">Razmehr eğitimleri için İran'ın başka bir şehrinden ya da yurt dışından Yezd'e mi geliyorsunuz? Yolculuğunuzu derslerle sınırlamayın. Gelmeden şehri tanıyın; tarihi sokakları, bahçeleri ve yapıları için de zaman ayırın.</span><span data-lang="ar">إذا كنتم قادمين إلى يزد من مدينة إيرانية أخرى أو من خارج البلاد لحضور دورات رازمهر، فلا تجعلوا رحلتكم مقتصرة على الدراسة. تعرّفوا إلى المدينة قبل الوصول، واتركوا وقتاً لأزقتها القديمة وحدائقها ومبانيها الجميلة.</span></p>
+      <a class="yazd-link" data-lang="fa" href="yazd-fa.html">دیدن یزد در گذر زمان</a><a class="yazd-link" data-lang="en" href="yazd-en.html">Explore Yazd</a><a class="yazd-link" data-lang="tr" href="yazd-tr.html">Yezd'i keşfet</a><a class="yazd-link" data-lang="ar" href="yazd-ar.html">اكتشف يزد</a>
+    </div>
+    <figure><img src="img/yazd/amir-current.webp" alt="نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶" loading="lazy" width="1200" height="807"><figcaption><span data-lang="fa">امیرچخماق · عکس: Tu Manling، ۲۰۱۶ · CC BY-SA 4.0</span><span data-lang="en">Amir Chakhmaq · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="tr">Emir Çakmak · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="ar">أمير جخماق · تصوير Tu Manling، ٢٠١٦ · CC BY-SA 4.0</span></figcaption></figure>
   </div>
 </section>
 

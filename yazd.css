@@ -6,4 +6,15 @@
 .directory-section{background:#eae5d9;padding-block:70px}.directory-section h3{font-size:22px;margin:40px 0 14px}.directory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0;margin:0;list-style:none}.directory-grid li{min-width:0}.directory-grid a,.directory-item{display:flex;align-items:center;gap:12px;min-height:64px;padding:14px 17px;background:var(--paper);border:1px solid var(--line);border-radius:14px;text-decoration:none;font-weight:600}.directory-grid a:hover{border-color:var(--sage);box-shadow:0 8px 20px -18px #211f18}.num{font:15px Marcellus,serif;color:var(--sage);direction:ltr}.arrow{margin-inline-start:auto;color:var(--sage)}.closing{padding-block:65px}.closing h2{font-size:28px}.closing p{max-width:820px;color:var(--muted)}.references{font-size:13px;margin-top:25px}.references a{color:var(--sage);text-underline-offset:4px}footer{background:#24271e;color:#eee;padding:25px 0}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:16px;font-size:13px}.footer-row>span:first-child{font:24px Marcellus,serif;letter-spacing:2px}.footer-row a{color:#eee}
 @media(max-width:780px){.wrap{width:min(100% - 30px,1160px)}.head-row{min-height:68px}.back{display:none}.hero{min-height:430px}.hero-inner{padding-block:70px}.intro{font-size:16px}.pair img{height:245px}.directory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.story-foot{display:block}.source{display:inline-block;margin-top:14px;white-space:normal}}
 @media(max-width:560px){.brand{font-size:16px;letter-spacing:1px}.brand img{width:32px;height:32px}.brand small{font-size:8px}.head-actions{gap:0}.locale a{min-width:39px}.hero-inner{padding-block:65px}.section{padding-block:50px}.story-head{padding:18px 18px 7px}.pair{grid-template-columns:1fr;gap:9px;padding:0 10px}.pair img{height:245px}.story-foot{padding:20px 18px 25px}.directory-grid{grid-template-columns:1fr}.directory-section{padding-block:50px}.footer-row{flex-wrap:wrap}.footer-row>span:nth-child(2){order:3;width:100%}}
+/* Keep photo-rights details available without turning editorial copy into a production note. */
+.photo-credits{padding:0 30px 22px;color:var(--muted);font-size:12px}
+.photo-credits summary{display:inline-block;cursor:pointer;color:var(--sage);text-decoration:underline;text-underline-offset:3px}
+.photo-credits p{margin:10px 0 0;line-height:1.8}
+.photo-credits a{color:var(--sage);text-underline-offset:3px}
+.place-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.place-note{padding:22px 25px;border:1px solid var(--line);border-radius:17px;background:var(--paper);scroll-margin-top:24px}
+.place-note h3{font-size:20px;margin:0 0 7px}
+.place-note p{margin:0;color:var(--muted);line-height:1.9}
+.language-menu .language-trigger{cursor:pointer}
+@media(max-width:780px){.place-grid{grid-template-columns:1fr}.photo-credits{padding-inline:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill:hover{transform:none}}
