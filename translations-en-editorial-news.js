@@ -104,5 +104,6 @@ Object.assign(window.RAZMEHR_TRANSLATIONS_EN = window.RAZMEHR_TRANSLATIONS_EN ||
   "۲۵ شهریور ۱۴۰۵": "September 16, 2026",
   "۲۶ شهریور ۱۴۰۵": "September 17, 2026",
   "۲۷ شهریور ۱۴۰۵": "September 18, 2026",
-  "۲۸ شهریور ۱۴۰۵": "September 19, 2026"
+  "۲۸ شهریور ۱۴۰۵": "September 19, 2026",
+  "تکمیل و در حال برگزاری": "Fully Booked · Course in Progress"
 });
