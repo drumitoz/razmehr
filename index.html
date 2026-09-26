@@ -562,6 +562,25 @@ body.lang-tr .academy-entry:hover .academy-entry-arrow{transform:translateX(3px)
 @media(max-width:900px){.bn-grid{grid-template-columns:1fr 1fr}.bn-card:first-child{grid-column:1/-1;min-height:400px}}
 @media(max-width:620px){.bn-head{align-items:flex-start;flex-direction:column}.bn-all{align-self:stretch;justify-content:center}.bn-grid{grid-template-columns:1fr}.bn-card:first-child{grid-column:auto;min-height:390px}.bn-card{min-height:330px}.bn-card-copy{padding:21px}.bn-head h2{font-size:36px}}
 
+/* Yazd editorial — independent from courses and Beauty News */
+.yazd-home{background:#eae4d7;color:var(--ink)}
+.yazd-home-inner{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center}
+.yazd-home h2{font-size:clamp(32px,4.2vw,55px);line-height:1.35;margin:13px 0}
+.yazd-home p{max-width:540px;color:#565447;font-size:16px;line-height:2}
+.yazd-home .yazd-link{display:inline-flex;align-items:center;justify-content:center;min-height:48px;margin-top:18px;padding:10px 23px;border-radius:30px;background:var(--sage-deep);color:white;font-weight:700}
+.yazd-home .yazd-link:hover{background:var(--ink)}
+.yazd-home figure{position:relative;margin:0;min-height:360px;border-radius:22px;overflow:hidden;box-shadow:var(--shadow)}
+.yazd-home figure img{width:100%;height:360px;object-fit:cover}
+.yazd-home figcaption{position:absolute;inset:auto 0 0;padding:45px 20px 18px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.75));font-size:13px}
+body.lang-ar .yazd-home [data-lang="fa"]{display:none!important}
+body.lang-ar .yazd-home [data-lang="ar"]{display:block!important}
+body.lang-ar .yazd-home a[data-lang="ar"]{display:inline-flex!important}
+body:not(.lang-ar) .yazd-home [data-lang="ar"]{display:none!important}
+body.lang-ar .nav-links a[href="yazd-fa.html"],body.lang-ar .footer-col a[href="yazd-fa.html"]{display:none!important}
+body.lang-ar .nav-links a[href="yazd-ar.html"]{display:inline-flex!important}
+body.lang-ar .footer-col a[href="yazd-ar.html"]{display:block!important}
+@media(max-width:750px){.yazd-home-inner{grid-template-columns:1fr;gap:25px}.yazd-home figure,.yazd-home figure img{height:300px;min-height:300px}}
+
 /* --- next-course banner --- */
 .next-banner{
   position:relative;overflow:hidden;
@@ -1659,6 +1678,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       <a href="#master" data-lang="fa">استاد</a><a href="#master" data-lang="tr">Usta</a><a href="#master" data-lang="en">Master</a>
       <a href="#courses" data-lang="fa">آموزش</a><a href="#courses" data-lang="tr">Eğitim</a><a href="#courses" data-lang="en">Courses</a>
       <a href="beauty-news.html" data-feature="beauty-news" data-lang="fa">بیوتی نیوز</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="tr">Beauty News</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="en">Beauty News</a>
+      <a href="yazd-fa.html" data-lang="fa">یزد در گذر زمان</a><a href="yazd-tr.html" data-lang="tr">Zaman İçinde Yezd</a><a href="yazd-en.html" data-lang="en">Yazd Through Time</a><a href="yazd-ar.html" data-lang="ar">يزد عبر الزمن</a>
       <a href="#services" data-lang="fa">خدمات</a><a href="#services" data-lang="tr">Hizmetler</a><a href="#services" data-lang="en">Services</a>
       <a href="#shop" data-lang="fa">فروشگاه</a><a href="#shop" data-lang="tr">Mağaza</a><a href="#shop" data-lang="en">Shop</a>
       <a href="#contact" data-lang="fa">تماس</a><a href="#contact" data-lang="tr">İletişim</a><a href="#contact" data-lang="en">Contact</a>
@@ -2137,6 +2157,19 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
   </div>
 </section>
 
+<!-- ================= YAZD THROUGH TIME ================= -->
+<section class="yazd-home" id="yazd" aria-labelledby="yazd-title">
+  <div class="wrap yazd-home-inner">
+    <div>
+      <div class="sec-eyebrow"><span class="dot"></span><span data-lang="fa">روایت تصویری رازمهر از یزد</span><span data-lang="en">Razmehr's visual guide to Yazd</span><span data-lang="tr">Razmehr'den görsel Yezd rehberi</span><span data-lang="ar">دليل رازمهر المصوّر إلى يزد</span></div>
+      <h2 id="yazd-title"><span data-lang="fa">یزد در گذر زمان</span><span data-lang="en">Yazd Through Time</span><span data-lang="tr">Zaman İçinde Yezd</span><span data-lang="ar">يزد عبر الزمن</span></h2>
+      <p><span data-lang="fa">جاهای دیدنی یزد، از عکس‌های قدیمی تا تصویرهای جدیدتر؛ داستان سه مکان را بخوانید و ۲۸ جای دیدنی شهر و استان را کشف کنید.</span><span data-lang="en">Explore three illustrated stories with dated archive photographs, and discover 28 places across Yazd and its province.</span><span data-lang="tr">Tarihi fotoğraflarla üç görsel hikâyeyi inceleyin; Yezd ve çevresindeki 28 yeri keşfedin.</span><span data-lang="ar">اكتشف ثلاث حكايات مصوّرة بصور أرشيفية مؤرّخة، وتعرّف إلى ٢٨ موقعاً في يزد ومحافظتها.</span></p>
+      <a class="yazd-link" data-lang="fa" href="yazd-fa.html">دیدن یزد در گذر زمان</a><a class="yazd-link" data-lang="en" href="yazd-en.html">Explore Yazd</a><a class="yazd-link" data-lang="tr" href="yazd-tr.html">Yezd'i keşfet</a><a class="yazd-link" data-lang="ar" href="yazd-ar.html">اكتشف يزد</a>
+    </div>
+    <figure><img src="img/yazd/amir-current.webp" alt="نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶" loading="lazy" width="1200" height="807"><figcaption><span data-lang="fa">امیرچخماق · عکس: Tu Manling، ۲۰۱۶ · CC BY-SA 4.0</span><span data-lang="en">Amir Chakhmaq · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="tr">Emir Çakmak · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="ar">أمير جخماق · تصوير Tu Manling، ٢٠١٦ · CC BY-SA 4.0</span></figcaption></figure>
+  </div>
+</section>
+
 <!-- ================= SERVICES ================= -->
 <section id="services">
   <div class="wrap">
@@ -2363,6 +2396,7 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
         <h5><span data-lang="fa">دسترسی سریع</span><span data-lang="tr">Hızlı Erişim</span><span data-lang="en">Quick Links</span></h5>
         <a href="#courses" data-lang="fa">دوره‌های آموزشی</a><a href="#courses" data-lang="tr">Eğitimler</a><a href="#courses" data-lang="en">Courses</a>
         <a href="beauty-news.html" data-feature="beauty-news" data-lang="fa">بیوتی نیوز</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="tr">Beauty News</a><a href="beauty-news.html" data-feature="beauty-news" data-lang="en">Beauty News</a>
+        <a href="yazd-fa.html" data-lang="fa">یزد در گذر زمان</a><a href="yazd-tr.html" data-lang="tr">Zaman İçinde Yezd</a><a href="yazd-en.html" data-lang="en">Yazd Through Time</a><a href="yazd-ar.html" data-lang="ar">يزد عبر الزمن</a>
         <a href="#services" data-lang="fa">خدمات سالن</a><a href="#services" data-lang="tr">Hizmetler</a><a href="#services" data-lang="en">Services</a>
         <a href="#shop" data-lang="fa">فروشگاه</a><a href="#shop" data-lang="tr">Mağaza</a><a href="#shop" data-lang="en">Shop</a>
         <a href="#contact" data-lang="fa">تماس با ما</a><a href="#contact" data-lang="tr">İletişim</a><a href="#contact" data-lang="en">Contact</a>
@@ -2772,6 +2806,7 @@ const SEARCH_COPY = {
 const SEARCH_SECTIONS = [
   {kind:"section",key:"home",img:"img/bagh.jpg",title:{fa:"عمارت زیبایی رازمهر",tr:"Razmehr Güzellik Konağı",en:"Razmehr Beauty Garden"},desc:{fa:"سالن، آکادمی، خدمات و فروشگاه رازمهر در یزد",tr:"Yazd'da salon, akademi ve mağaza",en:"Salon, academy, services and shop in Yazd"}},
   {kind:"section",key:"beauty-news",url:"beauty-news.html",feature:"beautyNews",img:"img/mikap4.jpg",title:{fa:"بیوتی نیوز رازمهر",tr:"Razmehr Beauty News",en:"Razmehr Beauty News"},desc:{fa:"خبرهای مد، زیبایی، ترندهای مو و سلبریتی‌ها",tr:"Moda, güzellik, saç trendleri ve ünlü haberleri",en:"Fashion, beauty, hair trends and celebrity news"}},
+  {kind:"section",key:"yazd",url:"yazd-fa.html",img:"img/yazd/amir-current.webp",title:{fa:"یزد در گذر زمان",tr:"Zaman İçinde Yezd",en:"Yazd Through Time"},desc:{fa:"جاهای دیدنی یزد، عکس قدیمی و جدید و تاریخچه بناها",tr:"Yezd'in tarihi yerleri ve arşiv fotoğrafları",en:"Yazd landmarks, archive photographs and history"}},
   {kind:"course",key:"courses",img:"img/vidrang.jpg",title:{fa:"دوره مدرسی رنگ و لایت",tr:"Renk ve Röfle Eğitmenlik Kursu",en:"Color & Highlights Instructor Course"},desc:{fa:"دوره حضوری، ثبت‌نام و ورود به آکادمی آنلاین",tr:"Yüz yüze eğitim ve online akademi",en:"In-person training and online academy"}},
   {kind:"course",key:"courses",img:"img/vidkeratin.jpg",title:{fa:"آموزش صفر تا صد رنگ و لایت",tr:"Baştan Sona Renk ve Röfle",en:"Complete Color & Highlights Training"},desc:{fa:"دوره تخصصی حضوری با پشتیبانی",tr:"Destekli uzmanlık eğitimi",en:"Specialist in-person course with support"}},
   {kind:"course",key:"courses",img:"img/vidrang.jpg",title:{fa:"دوره آنلاین کاشت رنگ",tr:"Çevrim İçi Renk Eğitimi",en:"Online Color Placement Course"},desc:{fa:"رنگساژ کل مو با ۱ تا ۵ گرم رنگ و آموزش تکنیک فولیاژ",tr:"Az miktarda ürünle tonlama ve folyo tekniği",en:"Low-product hair toning and foilyage technique"}},
@@ -2789,7 +2824,8 @@ function normalizeSearchText(value){
 function getSiteSearchEntries(){
   const services = SERVICES.map((s,i)=>({kind:"service",key:String(i),img:SERVICE_THUMBS[s.img] || 'img/service-flower.webp',title:s.title,desc:s.desc}));
   const products = PRODUCTS.map(p=>({kind:"product",key:p.img.split('/').pop().replace('.jpg',''),img:p.img,title:p.name,desc:{fa:`${p.cat.fa} — ${p.desc.fa}`,tr:`${p.cat.tr} — ${p.desc.tr}`,en:`${p.cat.en} — ${p.desc.en}`}}));
-  const sections = SEARCH_SECTIONS.filter(entry=>!entry.feature || (window.RAZMEHR_FEATURES && window.RAZMEHR_FEATURES[entry.feature]));
+  const sections = SEARCH_SECTIONS.filter(entry=>!entry.feature || (window.RAZMEHR_FEATURES && window.RAZMEHR_FEATURES[entry.feature]))
+    .map(entry=>entry.key==='yazd' ? {...entry,url:`yazd-${['fa','en','tr','ar'].includes(lang)?lang:'fa'}.html`} : entry);
   return [...services,...products,...sections];
 }
 function updateSearchCopy(){
@@ -2833,6 +2869,11 @@ function closeSiteSearch(){
 }
 function selectSiteSearch(kind,key){
   closeSiteSearch();
+  if(key==='yazd'){
+    const selected = window.RAZMEHR_I18N?.language || lang;
+    window.location.href = `yazd-${['fa','en','tr','ar'].includes(selected)?selected:'fa'}.html`;
+    return;
+  }
   const direct = SEARCH_SECTIONS.find(entry=>entry.key===key && entry.url);
   if(direct){ window.location.href=direct.url; return; }
   if(kind==='service'){
