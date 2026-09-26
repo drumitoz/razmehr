@@ -2206,9 +2206,26 @@ body.lang-en .wa-float,body.lang-tr .wa-float{right:30px}
       <p><span data-lang="fa">اگر برای دوره‌های رازمهر از شهرهای دیگر ایران یا خارج از کشور به یزد می‌آیید، این سفر را به کلاس محدود نکنید. پیش از آمدن، با گوشه‌هایی از شهر آشنا شوید و برای دیدن کوچه‌ها، باغ‌ها و بناهای ماندگارش هم وقت بگذارید.</span><span data-lang="en">Travelling to Yazd from elsewhere in Iran or abroad for a Razmehr course? Make time beyond the classroom. Get to know the city before you arrive, then wander its old lanes, gardens and remarkable buildings.</span><span data-lang="tr">Razmehr eğitimleri için İran'ın başka bir şehrinden ya da yurt dışından Yezd'e mi geliyorsunuz? Yolculuğunuzu derslerle sınırlamayın. Gelmeden şehri tanıyın; tarihi sokakları, bahçeleri ve yapıları için de zaman ayırın.</span><span data-lang="ar">إذا كنتم قادمين إلى يزد من مدينة إيرانية أخرى أو من خارج البلاد لحضور دورات رازمهر، فلا تجعلوا رحلتكم مقتصرة على الدراسة. تعرّفوا إلى المدينة قبل الوصول، واتركوا وقتاً لأزقتها القديمة وحدائقها ومبانيها الجميلة.</span></p>
       <a class="yazd-link" data-lang="fa" href="yazd-fa.html">دیدن یزد در گذر زمان</a><a class="yazd-link" data-lang="en" href="yazd-en.html">Explore Yazd</a><a class="yazd-link" data-lang="tr" href="yazd-tr.html">Yezd'i keşfet</a><a class="yazd-link" data-lang="ar" href="yazd-ar.html">اكتشف يزد</a>
     </div>
-    <figure><img src="img/yazd/amir-current.webp" alt="نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶" loading="lazy" width="1200" height="807"><figcaption><span data-lang="fa">امیرچخماق · عکس: Tu Manling، ۲۰۱۶ · CC BY-SA 4.0</span><span data-lang="en">Amir Chakhmaq · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="tr">Emir Çakmak · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="ar">أمير جخماق · تصوير Tu Manling، ٢٠١٦ · CC BY-SA 4.0</span></figcaption></figure>
+    <figure><img src="img/yazd/amir-current.webp" alt="نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶" data-yazd-image loading="lazy" width="1200" height="807"><figcaption><span data-lang="fa">امیرچخماق · عکس: Tu Manling، ۲۰۱۶ · CC BY-SA 4.0</span><span data-lang="en">Amir Chakhmaq · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="tr">Emir Çakmak · Tu Manling, 2016 · CC BY-SA 4.0</span><span data-lang="ar">أمير جخماق · تصوير Tu Manling، ٢٠١٦ · CC BY-SA 4.0</span></figcaption></figure>
   </div>
 </section>
+
+<script>
+(() => {
+  const descriptions = {
+    fa: 'نمای مجموعه امیرچخماق یزد در عکس سال ۲۰۱۶',
+    en: 'Amir Chakhmaq Complex in Yazd, photographed in 2016',
+    tr: 'Yezd Emir Çakmak Külliyesi, 2016 tarihli fotoğraf',
+    ar: 'مجمع أمير جخماق في يزد، صورة من عام ٢٠١٦'
+  };
+  const update = language => {
+    const image = document.querySelector('[data-yazd-image]');
+    if (image) image.alt = descriptions[language] || descriptions.fa;
+  };
+  document.addEventListener('razmehr:language-change', event => update(event.detail.language));
+  document.addEventListener('DOMContentLoaded', () => update(window.RAZMEHR_I18N?.language || 'fa'), {once:true});
+})();
+</script>
 
 <!-- ================= GLOBAL SITE SEARCH ================= -->
 <div class="search-overlay" id="searchOverlay" onclick="closeSiteSearch()"></div>
