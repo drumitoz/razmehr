@@ -671,5 +671,6 @@ Object.assign(window.RAZMEHR_TRANSLATIONS_EN, {
   "برای رزرو نوبت، ثبت‌نام در دوره‌ها یا مشاوره، از طریق راه‌های زیر با ما در ارتباط باشید. پاسخگوی شما هستیم.": "Contact us to book an appointment, enroll in a course or request a consultation. Our team is ready to help.",
   "ولومایزر یک مکمل حرفه‌ای رنگ است که پیش از رنگ‌کاری به ترکیب رنگ افزوده می‌شود و کیفیت، شفافیت و ماندگاری نتیجه را بالا می‌برد. همچنین در تکنیک کاشت رنگ کاربرد دارد.": "VoluM@izer is a professional color additive blended into the formula before application to improve clarity, depth and longevity. It is also used in the Color Implant technique.",
   "سلام رازمهر عزیز 🌿\nمی‌خواهم ویدیوی آموزشی «${t}» را تهیه کنم. لطفاً راهنمایی کنید.": "Hello Razmehr 🌿\nI'd like to purchase the “${t}” video lesson. Please guide me.",
-  "سلام رازمهر عزیز 🌿\nمی‌خواهم برای دوره «${t}» ثبت‌نام کنم. لطفاً راهنمایی کنید.": "Hello Razmehr 🌿\nI'd like to enroll in the “${t}” course. Please guide me."
+  "سلام رازمهر عزیز 🌿\nمی‌خواهم برای دوره «${t}» ثبت‌نام کنم. لطفاً راهنمایی کنید.": "Hello Razmehr 🌿\nI'd like to enroll in the “${t}” course. Please guide me.",
+  "تکمیل و در حال برگزاری": "Fully Booked · Course in Progress"
 });

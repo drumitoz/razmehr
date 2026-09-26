@@ -837,6 +837,7 @@
     "Küresel Moda · 1 Eylül 2016",
     "Alix Earle'ün Bomba Gibi Sarısı Yeni Sonbahar Saç Rengi Trendi",
     "Suki Waterhouse'un Gümüş Telleri Saçlara Parlaklığı Geri Getiriyor",
+    "Kontenjan Doldu · Eğitim Devam Ediyor",
   ];
 
   if (keys.length !== values.length) {
