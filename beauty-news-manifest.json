@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-26a",
+  "version": "2026-09-27a",
   "files": [
+    "beauty-news-2026-09-27.js",
     "beauty-news-2026-09-26.js",
     "beauty-news-2026-09-25.js",
     "beauty-news-2026-09-24.js",
@@ -17,24 +18,65 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails",
-    "taylor-swift-patient-zero-soft-smoky-eye",
     "vogue-world-milano-renaissance-beauty"
   ],
   "latestStoryIds": [
+    "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails",
-    "taylor-swift-patient-zero-soft-smoky-eye",
     "vogue-world-milano-renaissance-beauty"
   ],
-  "latestLabel": "منتخب ۴ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۵ مهر ۱۴۰۵",
   "ticker": [
-    "مانیکور تاوپ هیلی بیبر، خنثی‌های پاییزی را از نود کلاسیک جلوتر برد",
-    "چشم دودی نرم، خط‌چشم امضای تیلور سوئیفت را در تصویر تازه تغییر داد",
+    "چشم‌های دودی و رنگ‌های زنده در نمایش بهار ۲۰۲۷ گوچی دیده شدند",
+    "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد",
     "رژگونه ابری و بافت‌های رنسانسی به ووگ ورلد میلان رسیدند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۴ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۴ مهر"
+    "date": "۵ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۵ مهر"
+  },
+  "locales": {
+    "en": {
+      "latestLabel": "Editor’s picks · 27 September 2026",
+      "ticker": [
+        "Smoky eyes and vivid color stood out at Gucci’s spring 2027 show",
+        "Hailey Bieber’s taupe manicure adds depth to fall neutrals",
+        "Cloud blush and Renaissance textures came to Vogue World Milano"
+      ],
+      "issue": {
+        "label": "This week’s issue",
+        "date": "27 September 2026",
+        "updated": "Updated 27 September"
+      }
+    },
+    "tr": {
+      "latestLabel": "Editörün seçtikleri · 27 Eylül 2026",
+      "ticker": [
+        "Gucci’nin 2027 ilkbahar defilesinde dumanlı gözler ve canlı renkler öne çıktı",
+        "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor",
+        "Bulut gibi allık ve Rönesans dokuları Vogue World Milano’da görüldü"
+      ],
+      "issue": {
+        "label": "Bu haftanın sayısı",
+        "date": "27 Eylül 2026",
+        "updated": "Güncelleme: 27 Eylül"
+      }
+    },
+    "ar": {
+      "latestLabel": "اختيارات التحرير · ٢٧ سبتمبر ٢٠٢٦",
+      "ticker": [
+        "العيون الدخانية والألوان الزاهية تتصدر عرض غوتشي لربيع ٢٠٢٧",
+        "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية",
+        "أحمر خدود ضبابي وتسريحات مستوحاة من عصر النهضة في فوغ وورلد ميلانو"
+      ],
+      "issue": {
+        "label": "عدد هذا الأسبوع",
+        "date": "٢٧ سبتمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٧ سبتمبر"
+      }
+    }
   }
 }
