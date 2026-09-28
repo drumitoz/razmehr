@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-27a",
+  "version": "2026-09-28a",
   "files": [
+    "beauty-news-2026-09-28.js",
     "beauty-news-2026-09-27.js",
     "beauty-news-2026-09-26.js",
     "beauty-news-2026-09-25.js",
@@ -18,64 +19,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "teyana-taylor-braided-space-buns-vmas-2026",
     "gucci-primavera-ss27-bold-eye-makeup",
-    "hailey-bieber-taupe-fall-nails",
-    "vogue-world-milano-renaissance-beauty"
+    "hailey-bieber-taupe-fall-nails"
   ],
   "latestStoryIds": [
+    "teyana-taylor-braided-space-buns-vmas-2026",
     "gucci-primavera-ss27-bold-eye-makeup",
-    "hailey-bieber-taupe-fall-nails",
-    "vogue-world-milano-renaissance-beauty"
+    "hailey-bieber-taupe-fall-nails"
   ],
-  "latestLabel": "منتخب ۵ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۶ مهر ۱۴۰۵",
   "ticker": [
+    "اسپیس‌بان‌های بافته تیانا تیلور در فرش قرمز VMA خبرساز شدند",
     "چشم‌های دودی و رنگ‌های زنده در نمایش بهار ۲۰۲۷ گوچی دیده شدند",
-    "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد",
-    "رژگونه ابری و بافت‌های رنسانسی به ووگ ورلد میلان رسیدند"
+    "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۵ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۵ مهر"
+    "date": "۶ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۶ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 27 September 2026",
+      "latestLabel": "Editor’s picks · 28 September 2026",
       "ticker": [
+        "Teyana Taylor’s braided space buns made a sculptural statement at the VMAs",
         "Smoky eyes and vivid color stood out at Gucci’s spring 2027 show",
-        "Hailey Bieber’s taupe manicure adds depth to fall neutrals",
-        "Cloud blush and Renaissance textures came to Vogue World Milano"
+        "Hailey Bieber’s taupe manicure adds depth to fall neutrals"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "27 September 2026",
-        "updated": "Updated 27 September"
+        "date": "28 September 2026",
+        "updated": "Updated 28 September"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 27 Eylül 2026",
+      "latestLabel": "Editörün seçtikleri · 28 Eylül 2026",
       "ticker": [
+        "Teyana Taylor’ın örgülü uzay topuzları VMA kırmızı halısında heykelsi bir etki yarattı",
         "Gucci’nin 2027 ilkbahar defilesinde dumanlı gözler ve canlı renkler öne çıktı",
-        "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor",
-        "Bulut gibi allık ve Rönesans dokuları Vogue World Milano’da görüldü"
+        "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "27 Eylül 2026",
-        "updated": "Güncelleme: 27 Eylül"
+        "date": "28 Eylül 2026",
+        "updated": "Güncelleme: 28 Eylül"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٧ سبتمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٨ سبتمبر ٢٠٢٦",
       "ticker": [
+        "كعكتا تيانا تايلور المضفرتان تصنعان إطلالة نحتية على سجادة VMA",
         "العيون الدخانية والألوان الزاهية تتصدر عرض غوتشي لربيع ٢٠٢٧",
-        "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية",
-        "أحمر خدود ضبابي وتسريحات مستوحاة من عصر النهضة في فوغ وورلد ميلانو"
+        "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٧ سبتمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٧ سبتمبر"
+        "date": "٢٨ سبتمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٨ سبتمبر"
       }
     }
   }
