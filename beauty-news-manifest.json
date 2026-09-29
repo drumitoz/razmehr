@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-28a",
+  "version": "2026-09-29a",
   "files": [
+    "beauty-news-2026-09-29.js",
     "beauty-news-2026-09-28.js",
     "beauty-news-2026-09-27.js",
     "beauty-news-2026-09-26.js",
@@ -19,64 +20,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "teyana-taylor-braided-space-buns-vmas-2026",
+    "ella-bright-dark-chocolate-hair-vmas-2026",
     "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails"
   ],
   "latestStoryIds": [
-    "teyana-taylor-braided-space-buns-vmas-2026",
+    "ella-bright-dark-chocolate-hair-vmas-2026",
     "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails"
   ],
-  "latestLabel": "منتخب ۶ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۷ مهر ۱۴۰۵",
   "ticker": [
-    "اسپیس‌بان‌های بافته تیانا تیلور در فرش قرمز VMA خبرساز شدند",
+    "الا برایت در VMA با رنگ موی قهوه‌ای شکلاتی تیره دیده شد",
     "چشم‌های دودی و رنگ‌های زنده در نمایش بهار ۲۰۲۷ گوچی دیده شدند",
     "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۶ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۶ مهر"
+    "date": "۷ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۷ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 28 September 2026",
+      "latestLabel": "Editor’s picks · 29 September 2026",
       "ticker": [
-        "Teyana Taylor’s braided space buns made a sculptural statement at the VMAs",
+        "Ella Bright debuted deep chocolate brown hair at the VMAs",
         "Smoky eyes and vivid color stood out at Gucci’s spring 2027 show",
         "Hailey Bieber’s taupe manicure adds depth to fall neutrals"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "28 September 2026",
-        "updated": "Updated 28 September"
+        "date": "29 September 2026",
+        "updated": "Updated 29 September"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 28 Eylül 2026",
+      "latestLabel": "Editörün seçtikleri · 29 Eylül 2026",
       "ticker": [
-        "Teyana Taylor’ın örgülü uzay topuzları VMA kırmızı halısında heykelsi bir etki yarattı",
+        "Ella Bright, VMA’da koyu çikolata kahvesi saçlarıyla göründü",
         "Gucci’nin 2027 ilkbahar defilesinde dumanlı gözler ve canlı renkler öne çıktı",
         "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "28 Eylül 2026",
-        "updated": "Güncelleme: 28 Eylül"
+        "date": "29 Eylül 2026",
+        "updated": "Güncelleme: 29 Eylül"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٨ سبتمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٩ سبتمبر ٢٠٢٦",
       "ticker": [
-        "كعكتا تيانا تايلور المضفرتان تصنعان إطلالة نحتية على سجادة VMA",
+        "ظهرت إيلا برايت بشعر بني شوكولاتي داكن في حفل VMA",
         "العيون الدخانية والألوان الزاهية تتصدر عرض غوتشي لربيع ٢٠٢٧",
         "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٨ سبتمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٨ سبتمبر"
+        "date": "٢٩ سبتمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٩ سبتمبر"
       }
     }
   }
