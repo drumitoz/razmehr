@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-29a",
+  "version": "2026-09-30a",
   "files": [
+    "beauty-news-2026-09-30.js",
     "beauty-news-2026-09-29.js",
     "beauty-news-2026-09-28.js",
     "beauty-news-2026-09-27.js",
@@ -20,64 +21,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "dior-spring-2027-silver-surfer-beauty",
     "ella-bright-dark-chocolate-hair-vmas-2026",
-    "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails"
   ],
   "latestStoryIds": [
+    "dior-spring-2027-silver-surfer-beauty",
     "ella-bright-dark-chocolate-hair-vmas-2026",
-    "gucci-primavera-ss27-bold-eye-makeup",
     "hailey-bieber-taupe-fall-nails"
   ],
-  "latestLabel": "منتخب ۷ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۸ مهر ۱۴۰۵",
   "ticker": [
+    "خط چشم نقره‌ای و موج‌های ساحلی در نمایش بهار ۲۰۲۷ دیور دیده شدند",
     "الا برایت در VMA با رنگ موی قهوه‌ای شکلاتی تیره دیده شد",
-    "چشم‌های دودی و رنگ‌های زنده در نمایش بهار ۲۰۲۷ گوچی دیده شدند",
     "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۷ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۷ مهر"
+    "date": "۸ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۸ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 29 September 2026",
+      "latestLabel": "Editor’s picks · 30 September 2026",
       "ticker": [
+        "Silver liner and loose surf waves shaped Dior’s spring 2027 beauty look",
         "Ella Bright debuted deep chocolate brown hair at the VMAs",
-        "Smoky eyes and vivid color stood out at Gucci’s spring 2027 show",
         "Hailey Bieber’s taupe manicure adds depth to fall neutrals"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "29 September 2026",
-        "updated": "Updated 29 September"
+        "date": "30 September 2026",
+        "updated": "Updated 30 September"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 29 Eylül 2026",
+      "latestLabel": "Editörün seçtikleri · 30 Eylül 2026",
       "ticker": [
+        "Dior’un 2027 ilkbahar güzelliğini gümüş eyeliner ve serbest plaj dalgaları belirledi",
         "Ella Bright, VMA’da koyu çikolata kahvesi saçlarıyla göründü",
-        "Gucci’nin 2027 ilkbahar defilesinde dumanlı gözler ve canlı renkler öne çıktı",
         "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "29 Eylül 2026",
-        "updated": "Güncelleme: 29 Eylül"
+        "date": "30 Eylül 2026",
+        "updated": "Güncelleme: 30 Eylül"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٩ سبتمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٣٠ سبتمبر ٢٠٢٦",
       "ticker": [
+        "خط العين الفضي والتموجات الشاطئية يرسمان جمال ديور لربيع ٢٠٢٧",
         "ظهرت إيلا برايت بشعر بني شوكولاتي داكن في حفل VMA",
-        "العيون الدخانية والألوان الزاهية تتصدر عرض غوتشي لربيع ٢٠٢٧",
         "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٩ سبتمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٩ سبتمبر"
+        "date": "٣٠ سبتمبر ٢٠٢٦",
+        "updated": "تحديث: ٣٠ سبتمبر"
       }
     }
   }
