@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-09-30a",
+  "version": "2026-10-01a",
   "files": [
+    "beauty-news-2026-10-01.js",
     "beauty-news-2026-09-30.js",
     "beauty-news-2026-09-29.js",
     "beauty-news-2026-09-28.js",
@@ -21,64 +22,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "anne-hathaway-cherry-noir-nails-verity-premiere",
     "dior-spring-2027-silver-surfer-beauty",
-    "ella-bright-dark-chocolate-hair-vmas-2026",
-    "hailey-bieber-taupe-fall-nails"
+    "ella-bright-dark-chocolate-hair-vmas-2026"
   ],
   "latestStoryIds": [
+    "anne-hathaway-cherry-noir-nails-verity-premiere",
     "dior-spring-2027-silver-surfer-beauty",
-    "ella-bright-dark-chocolate-hair-vmas-2026",
-    "hailey-bieber-taupe-fall-nails"
+    "ella-bright-dark-chocolate-hair-vmas-2026"
   ],
-  "latestLabel": "منتخب ۸ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۹ مهر ۱۴۰۵",
   "ticker": [
+    "مانیکور چری نوآر ان هاتاوی، شرابی تیره را به انتخابی پاییزی تبدیل کرد",
     "خط چشم نقره‌ای و موج‌های ساحلی در نمایش بهار ۲۰۲۷ دیور دیده شدند",
-    "الا برایت در VMA با رنگ موی قهوه‌ای شکلاتی تیره دیده شد",
-    "مانیکور تاوپ هیلی بیبر به رنگ‌های خنثی پاییز عمق داد"
+    "الا برایت در VMA با رنگ موی قهوه‌ای شکلاتی تیره دیده شد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۸ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۸ مهر"
+    "date": "۹ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۹ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 30 September 2026",
+      "latestLabel": "Editor’s picks · 1 October 2026",
       "ticker": [
+        "Anne Hathaway’s cherry-noir manicure turns deep burgundy into a fall statement",
         "Silver liner and loose surf waves shaped Dior’s spring 2027 beauty look",
-        "Ella Bright debuted deep chocolate brown hair at the VMAs",
-        "Hailey Bieber’s taupe manicure adds depth to fall neutrals"
+        "Ella Bright debuted deep chocolate brown hair at the VMAs"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "30 September 2026",
-        "updated": "Updated 30 September"
+        "date": "1 October 2026",
+        "updated": "Updated 1 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 30 Eylül 2026",
+      "latestLabel": "Editörün seçtikleri · 1 Ekim 2026",
       "ticker": [
+        "Anne Hathaway’in cherry-noir manikürü koyu bordoyu sonbaharın güçlü seçimine dönüştürüyor",
         "Dior’un 2027 ilkbahar güzelliğini gümüş eyeliner ve serbest plaj dalgaları belirledi",
-        "Ella Bright, VMA’da koyu çikolata kahvesi saçlarıyla göründü",
-        "Hailey Bieber’ın taupe manikürü sonbaharın nötr tonlarına derinlik katıyor"
+        "Ella Bright, VMA’da koyu çikolata kahvesi saçlarıyla göründü"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "30 Eylül 2026",
-        "updated": "Güncelleme: 30 Eylül"
+        "date": "1 Ekim 2026",
+        "updated": "Güncelleme: 1 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٣٠ سبتمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١ أكتوبر ٢٠٢٦",
       "ticker": [
+        "مانيكير تشيري نوار لآن هاثاواي يحول العنابي الداكن إلى اختيار خريفي لافت",
         "خط العين الفضي والتموجات الشاطئية يرسمان جمال ديور لربيع ٢٠٢٧",
-        "ظهرت إيلا برايت بشعر بني شوكولاتي داكن في حفل VMA",
-        "مانيكير هيلي بيبر بلون التوب يضيف عمقاً إلى ألوان الخريف الحيادية"
+        "ظهرت إيلا برايت بشعر بني شوكولاتي داكن في حفل VMA"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٣٠ سبتمبر ٢٠٢٦",
-        "updated": "تحديث: ٣٠ سبتمبر"
+        "date": "١ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١ أكتوبر"
       }
     }
   }
