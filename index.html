@@ -2517,7 +2517,7 @@ const SERVICE_THUMBS = {
 /* عکس‌های واقعی موجود برای اسلاید کوچک هر خدمت. فقط تصویر بعدی هنگام نمایش
    دریافت می‌شود تا صفحه با وجود تعداد زیاد نمونه‌کارها سبک بماند. */
 const SERVICE_SLIDE_COUNTS = {
-  arus:4, rang:35, keratin:3, kutahi:2, mikap:4, shinion:1,
+  arus:6, rang:44, keratin:4, kutahi:2, mikap:5, shinion:1,
   baft:7, nakhon:6, pedikur:0, mozhe:6, daem:8, tatoo:3, eslah:0
 };
 const SERVICE_SLIDE_SKIPS = { rang:new Set([5]) };
@@ -3113,14 +3113,14 @@ function closeProduct(){
 
 /* ═══════════════════════════════════════════════════════════
    GALLERY — نمونه‌کارهای هر خدمت
-   برای هر خدمت ۱۵ جای عکس و برای رنگ و لایت ۳۵ جای عکس رزرو شده است:
+   برای هر خدمت ۱۵ جای عکس و برای رنگ و لایت ۴۴ جای عکس رزرو شده است:
    img/<کد>1.jpg تا img/<کد>15.jpg
    عکسی که وجود نداشته باشد، خانه‌اش کاملاً نامرئی می‌شود.
    کدها: arus, rang, keratin, kutahi, mikap, shinion, baft,
          nakhon, pedikur, mozhe, daem, tatoo, eslah
    ═══════════════════════════════════════════════════════════ */
 const GAL_SLOTS = 15;
-const GAL_SERVICE_SLOTS = { rang: 35 };
+const GAL_SERVICE_SLOTS = { rang: 44 };
 let lbList = [], lbIndex = 0;
 
 function openGallery(i){
