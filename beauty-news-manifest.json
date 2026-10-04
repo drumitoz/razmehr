@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-03a",
+  "version": "2026-10-04a",
   "files": [
+    "beauty-news-2026-10-04.js",
     "beauty-news-2026-10-03.js",
     "beauty-news-2026-10-01.js",
     "beauty-news-2026-09-30.js",
@@ -23,64 +24,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "rihanna-inde-colored-waterline-paris-fashion-week",
     "sarah-jessica-parker-ribbon-braid-gray-blending",
-    "anne-hathaway-cherry-noir-nails-verity-premiere",
-    "dior-spring-2027-silver-surfer-beauty"
+    "anne-hathaway-cherry-noir-nails-verity-premiere"
   ],
   "latestStoryIds": [
+    "rihanna-inde-colored-waterline-paris-fashion-week",
     "sarah-jessica-parker-ribbon-braid-gray-blending",
-    "anne-hathaway-cherry-noir-nails-verity-premiere",
-    "dior-spring-2027-silver-surfer-beauty"
+    "anne-hathaway-cherry-noir-nails-verity-premiere"
   ],
-  "latestLabel": "منتخب ۱۱ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۲ مهر ۱۴۰۵",
   "ticker": [
+    "خط قرمز ریانا و آبی ایندی ناوارته، رنگ را به خط پایین چشم برگرداندند",
     "بافت روبان‌دوزی‌شده سارا جسیکا پارکر، تارهای خاکستری طبیعی را به بخشی از طراحی رنگ تبدیل کرد",
-    "مانیکور چری نوآر ان هاتاوی، شرابی تیره را به انتخابی پاییزی تبدیل کرد",
-    "خط چشم نقره‌ای و موج‌های ساحلی در نمایش بهار ۲۰۲۷ دیور دیده شدند"
+    "مانیکور چری نوآر ان هاتاوی، شرابی تیره را به انتخابی پاییزی تبدیل کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۱ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۱ مهر"
+    "date": "۱۲ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۲ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 3 October 2026",
+      "latestLabel": "Editor’s picks · 4 October 2026",
       "ticker": [
+        "Rihanna’s red and Inde Navarrette’s blue bring color back below the eye",
         "Sarah Jessica Parker’s ribbon braid turns natural silver into part of the color design",
-        "Anne Hathaway’s cherry-noir manicure turns deep burgundy into a fall statement",
-        "Silver liner and loose surf waves shaped Dior’s spring 2027 beauty look"
+        "Anne Hathaway’s cherry-noir manicure turns deep burgundy into a fall statement"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "3 October 2026",
-        "updated": "Updated 3 October"
+        "date": "4 October 2026",
+        "updated": "Updated 4 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 3 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 4 Ekim 2026",
       "ticker": [
+        "Rihanna’nın kırmızısı ve Inde Navarrette’in mavisi rengi yeniden göz altına taşıyor",
         "Sarah Jessica Parker’ın kurdeleli örgüsü doğal gri telleri renk tasarımının parçasına dönüştürüyor",
-        "Anne Hathaway’in cherry-noir manikürü koyu bordoyu sonbaharın güçlü seçimine dönüştürüyor",
-        "Dior’un 2027 ilkbahar güzelliğini gümüş eyeliner ve serbest plaj dalgaları belirledi"
+        "Anne Hathaway’in cherry-noir manikürü koyu bordoyu sonbaharın güçlü seçimine dönüştürüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "3 Ekim 2026",
-        "updated": "Güncelleme: 3 Ekim"
+        "date": "4 Ekim 2026",
+        "updated": "Güncelleme: 4 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٣ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٤ أكتوبر ٢٠٢٦",
       "ticker": [
+        "أحمر ريهانا وأزرق إندي نافاريت يعيدان اللون إلى أسفل العين",
         "ضفيرة سارة جيسيكا باركر المزينة بالشريط تجعل الفضي الطبيعي جزءاً من تصميم اللون",
-        "مانيكير تشيري نوار لآن هاثاواي يحول العنابي الداكن إلى اختيار خريفي لافت",
-        "خط العين الفضي والتموجات الشاطئية يرسمان جمال ديور لربيع ٢٠٢٧"
+        "مانيكير تشيري نوار لآن هاثاواي يحول العنابي الداكن إلى اختيار خريفي لافت"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٣ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٣ أكتوبر"
+        "date": "٤ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٤ أكتوبر"
       }
     }
   }
