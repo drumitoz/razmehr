@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-04a",
+  "version": "2026-10-05a",
   "files": [
+    "beauty-news-2026-10-05.js",
     "beauty-news-2026-10-04.js",
     "beauty-news-2026-10-03.js",
     "beauty-news-2026-10-01.js",
@@ -24,64 +25,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "cynthia-erivo-jewel-croc-french-nails",
     "rihanna-inde-colored-waterline-paris-fashion-week",
-    "sarah-jessica-parker-ribbon-braid-gray-blending",
-    "anne-hathaway-cherry-noir-nails-verity-premiere"
+    "sarah-jessica-parker-ribbon-braid-gray-blending"
   ],
   "latestStoryIds": [
+    "cynthia-erivo-jewel-croc-french-nails",
     "rihanna-inde-colored-waterline-paris-fashion-week",
-    "sarah-jessica-parker-ribbon-braid-gray-blending",
-    "anne-hathaway-cherry-noir-nails-verity-premiere"
+    "sarah-jessica-parker-ribbon-braid-gray-blending"
   ],
-  "latestLabel": "منتخب ۱۲ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۳ مهر ۱۴۰۵",
   "ticker": [
+    "فرنچ کروک سینتیا اریوو، پنج رنگ جواهری را در یک طراحی منسجم کنار هم نشاند",
     "خط قرمز ریانا و آبی ایندی ناوارته، رنگ را به خط پایین چشم برگرداندند",
-    "بافت روبان‌دوزی‌شده سارا جسیکا پارکر، تارهای خاکستری طبیعی را به بخشی از طراحی رنگ تبدیل کرد",
-    "مانیکور چری نوآر ان هاتاوی، شرابی تیره را به انتخابی پاییزی تبدیل کرد"
+    "بافت روبان‌دوزی‌شده سارا جسیکا پارکر، تارهای خاکستری طبیعی را به بخشی از طراحی رنگ تبدیل کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۲ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۲ مهر"
+    "date": "۱۳ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۳ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 4 October 2026",
+      "latestLabel": "Editor’s picks · 5 October 2026",
       "ticker": [
+        "Cynthia Erivo’s croc French manicure unites five jewel tones in one precise design",
         "Rihanna’s red and Inde Navarrette’s blue bring color back below the eye",
-        "Sarah Jessica Parker’s ribbon braid turns natural silver into part of the color design",
-        "Anne Hathaway’s cherry-noir manicure turns deep burgundy into a fall statement"
+        "Sarah Jessica Parker’s ribbon braid turns natural silver into part of the color design"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "4 October 2026",
-        "updated": "Updated 4 October"
+        "date": "5 October 2026",
+        "updated": "Updated 5 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 4 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 5 Ekim 2026",
       "ticker": [
+        "Cynthia Erivo’nun kroko French manikürü beş mücevher tonunu tek bir düzenli tasarımda buluşturuyor",
         "Rihanna’nın kırmızısı ve Inde Navarrette’in mavisi rengi yeniden göz altına taşıyor",
-        "Sarah Jessica Parker’ın kurdeleli örgüsü doğal gri telleri renk tasarımının parçasına dönüştürüyor",
-        "Anne Hathaway’in cherry-noir manikürü koyu bordoyu sonbaharın güçlü seçimine dönüştürüyor"
+        "Sarah Jessica Parker’ın kurdeleli örgüsü doğal gri telleri renk tasarımının parçasına dönüştürüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "4 Ekim 2026",
-        "updated": "Güncelleme: 4 Ekim"
+        "date": "5 Ekim 2026",
+        "updated": "Güncelleme: 5 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٤ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٥ أكتوبر ٢٠٢٦",
       "ticker": [
+        "مانيكير سينثيا إريفو الفرنسي بنقشة التمساح يجمع خمس درجات جوهرية في تصميم متماسك",
         "أحمر ريهانا وأزرق إندي نافاريت يعيدان اللون إلى أسفل العين",
-        "ضفيرة سارة جيسيكا باركر المزينة بالشريط تجعل الفضي الطبيعي جزءاً من تصميم اللون",
-        "مانيكير تشيري نوار لآن هاثاواي يحول العنابي الداكن إلى اختيار خريفي لافت"
+        "ضفيرة سارة جيسيكا باركر المزينة بالشريط تجعل الفضي الطبيعي جزءاً من تصميم اللون"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٤ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٤ أكتوبر"
+        "date": "٥ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٥ أكتوبر"
       }
     }
   }
