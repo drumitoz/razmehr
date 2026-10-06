@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-05a",
+  "version": "2026-10-06a",
   "files": [
+    "beauty-news-2026-10-06.js",
     "beauty-news-2026-10-05.js",
     "beauty-news-2026-10-04.js",
     "beauty-news-2026-10-03.js",
@@ -25,64 +26,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "gigi-hadid-zigzag-headband-paris",
     "cynthia-erivo-jewel-croc-french-nails",
-    "rihanna-inde-colored-waterline-paris-fashion-week",
-    "sarah-jessica-parker-ribbon-braid-gray-blending"
+    "rihanna-inde-colored-waterline-paris-fashion-week"
   ],
   "latestStoryIds": [
+    "gigi-hadid-zigzag-headband-paris",
     "cynthia-erivo-jewel-croc-french-nails",
-    "rihanna-inde-colored-waterline-paris-fashion-week",
-    "sarah-jessica-parker-ribbon-braid-gray-blending"
+    "rihanna-inde-colored-waterline-paris-fashion-week"
   ],
-  "latestLabel": "منتخب ۱۳ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۴ مهر ۱۴۰۵",
   "ticker": [
+    "هدبند زیگزاگ جیجی حدید، اکسسوری ساده دهه ۹۰ را دوباره به استایل روزمره برگرداند",
     "فرنچ کروک سینتیا اریوو، پنج رنگ جواهری را در یک طراحی منسجم کنار هم نشاند",
-    "خط قرمز ریانا و آبی ایندی ناوارته، رنگ را به خط پایین چشم برگرداندند",
-    "بافت روبان‌دوزی‌شده سارا جسیکا پارکر، تارهای خاکستری طبیعی را به بخشی از طراحی رنگ تبدیل کرد"
+    "خط قرمز ریانا و آبی ایندی ناوارته، رنگ را به خط پایین چشم برگرداندند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۳ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۳ مهر"
+    "date": "۱۴ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۴ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 5 October 2026",
+      "latestLabel": "Editor’s picks · 6 October 2026",
       "ticker": [
+        "Gigi Hadid’s zig-zag headband brings a simple 1990s accessory back into everyday styling",
         "Cynthia Erivo’s croc French manicure unites five jewel tones in one precise design",
-        "Rihanna’s red and Inde Navarrette’s blue bring color back below the eye",
-        "Sarah Jessica Parker’s ribbon braid turns natural silver into part of the color design"
+        "Rihanna’s red and Inde Navarrette’s blue bring color back below the eye"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "5 October 2026",
-        "updated": "Updated 5 October"
+        "date": "6 October 2026",
+        "updated": "Updated 6 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 5 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 6 Ekim 2026",
       "ticker": [
+        "Gigi Hadid’in zikzak tacı sade bir 1990’lar aksesuarını günlük stile geri taşıyor",
         "Cynthia Erivo’nun kroko French manikürü beş mücevher tonunu tek bir düzenli tasarımda buluşturuyor",
-        "Rihanna’nın kırmızısı ve Inde Navarrette’in mavisi rengi yeniden göz altına taşıyor",
-        "Sarah Jessica Parker’ın kurdeleli örgüsü doğal gri telleri renk tasarımının parçasına dönüştürüyor"
+        "Rihanna’nın kırmızısı ve Inde Navarrette’in mavisi rengi yeniden göz altına taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "5 Ekim 2026",
-        "updated": "Güncelleme: 5 Ekim"
+        "date": "6 Ekim 2026",
+        "updated": "Güncelleme: 6 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٥ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٦ أكتوبر ٢٠٢٦",
       "ticker": [
+        "عصابة جيجي حديد المتعرجة تعيد إكسسواراً بسيطاً من التسعينيات إلى الإطلالات اليومية",
         "مانيكير سينثيا إريفو الفرنسي بنقشة التمساح يجمع خمس درجات جوهرية في تصميم متماسك",
-        "أحمر ريهانا وأزرق إندي نافاريت يعيدان اللون إلى أسفل العين",
-        "ضفيرة سارة جيسيكا باركر المزينة بالشريط تجعل الفضي الطبيعي جزءاً من تصميم اللون"
+        "أحمر ريهانا وأزرق إندي نافاريت يعيدان اللون إلى أسفل العين"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٥ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٥ أكتوبر"
+        "date": "٦ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٦ أكتوبر"
       }
     }
   }
