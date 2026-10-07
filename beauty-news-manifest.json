@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-06a",
+  "version": "2026-10-07a",
   "files": [
+    "beauty-news-2026-10-07.js",
     "beauty-news-2026-10-06.js",
     "beauty-news-2026-10-05.js",
     "beauty-news-2026-10-04.js",
@@ -26,64 +27,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "chanel-spring-2027-sculptural-buns",
     "gigi-hadid-zigzag-headband-paris",
-    "cynthia-erivo-jewel-croc-french-nails",
-    "rihanna-inde-colored-waterline-paris-fashion-week"
+    "cynthia-erivo-jewel-croc-french-nails"
   ],
   "latestStoryIds": [
+    "chanel-spring-2027-sculptural-buns",
     "gigi-hadid-zigzag-headband-paris",
-    "cynthia-erivo-jewel-croc-french-nails",
-    "rihanna-inde-colored-waterline-paris-fashion-week"
+    "cynthia-erivo-jewel-croc-french-nails"
   ],
-  "latestLabel": "منتخب ۱۴ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۵ مهر ۱۴۰۵",
   "ticker": [
+    "شنل با ۵۷ برداشت از شینیون، موی کلاسیک را به فرمی مجسمه‌وار برای بهار ۲۰۲۷ تبدیل کرد",
     "هدبند زیگزاگ جیجی حدید، اکسسوری ساده دهه ۹۰ را دوباره به استایل روزمره برگرداند",
-    "فرنچ کروک سینتیا اریوو، پنج رنگ جواهری را در یک طراحی منسجم کنار هم نشاند",
-    "خط قرمز ریانا و آبی ایندی ناوارته، رنگ را به خط پایین چشم برگرداندند"
+    "فرنچ کروک سینتیا اریوو، پنج رنگ جواهری را در یک طراحی منسجم کنار هم نشاند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۴ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۴ مهر"
+    "date": "۱۵ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۵ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 6 October 2026",
+      "latestLabel": "Editor’s picks · 7 October 2026",
       "ticker": [
+        "CHANEL’s 57 bun interpretations turn a classic hairstyle into sculpture for spring 2027",
         "Gigi Hadid’s zig-zag headband brings a simple 1990s accessory back into everyday styling",
-        "Cynthia Erivo’s croc French manicure unites five jewel tones in one precise design",
-        "Rihanna’s red and Inde Navarrette’s blue bring color back below the eye"
+        "Cynthia Erivo’s croc French manicure unites five jewel tones in one precise design"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "6 October 2026",
-        "updated": "Updated 6 October"
+        "date": "7 October 2026",
+        "updated": "Updated 7 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 6 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 7 Ekim 2026",
       "ticker": [
+        "CHANEL’in 57 topuz yorumu klasik saç modelini 2027 ilkbaharı için heykele dönüştürüyor",
         "Gigi Hadid’in zikzak tacı sade bir 1990’lar aksesuarını günlük stile geri taşıyor",
-        "Cynthia Erivo’nun kroko French manikürü beş mücevher tonunu tek bir düzenli tasarımda buluşturuyor",
-        "Rihanna’nın kırmızısı ve Inde Navarrette’in mavisi rengi yeniden göz altına taşıyor"
+        "Cynthia Erivo’nun kroko French manikürü beş mücevher tonunu tek bir düzenli tasarımda buluşturuyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "6 Ekim 2026",
-        "updated": "Güncelleme: 6 Ekim"
+        "date": "7 Ekim 2026",
+        "updated": "Güncelleme: 7 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٦ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٧ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تحوّل تفسيرات CHANEL الـ٥٧ للكعكة تسريحة كلاسيكية إلى شكل نحتي لربيع ٢٠٢٧",
         "عصابة جيجي حديد المتعرجة تعيد إكسسواراً بسيطاً من التسعينيات إلى الإطلالات اليومية",
-        "مانيكير سينثيا إريفو الفرنسي بنقشة التمساح يجمع خمس درجات جوهرية في تصميم متماسك",
-        "أحمر ريهانا وأزرق إندي نافاريت يعيدان اللون إلى أسفل العين"
+        "مانيكير سينثيا إريفو الفرنسي بنقشة التمساح يجمع خمس درجات جوهرية في تصميم متماسك"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٦ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٦ أكتوبر"
+        "date": "٧ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٧ أكتوبر"
       }
     }
   }
