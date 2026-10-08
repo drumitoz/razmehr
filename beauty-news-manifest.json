@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-07a",
+  "version": "2026-10-08a",
   "files": [
+    "beauty-news-2026-10-08.js",
     "beauty-news-2026-10-07.js",
     "beauty-news-2026-10-06.js",
     "beauty-news-2026-10-05.js",
@@ -27,64 +28,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "billie-eilish-strawberry-blonde-bob",
     "chanel-spring-2027-sculptural-buns",
-    "gigi-hadid-zigzag-headband-paris",
-    "cynthia-erivo-jewel-croc-french-nails"
+    "gigi-hadid-zigzag-headband-paris"
   ],
   "latestStoryIds": [
+    "billie-eilish-strawberry-blonde-bob",
     "chanel-spring-2027-sculptural-buns",
-    "gigi-hadid-zigzag-headband-paris",
-    "cynthia-erivo-jewel-croc-french-nails"
+    "gigi-hadid-zigzag-headband-paris"
   ],
-  "latestLabel": "منتخب ۱۵ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۶ مهر ۱۴۰۵",
   "ticker": [
+    "بیلی آیلیش با باب تا روی شانه و بلوند توت‌فرنگی، رنگی گرم و روشن‌تر را برای پاییز نشان داد",
     "شنل با ۵۷ برداشت از شینیون، موی کلاسیک را به فرمی مجسمه‌وار برای بهار ۲۰۲۷ تبدیل کرد",
-    "هدبند زیگزاگ جیجی حدید، اکسسوری ساده دهه ۹۰ را دوباره به استایل روزمره برگرداند",
-    "فرنچ کروک سینتیا اریوو، پنج رنگ جواهری را در یک طراحی منسجم کنار هم نشاند"
+    "هدبند زیگزاگ جیجی حدید، اکسسوری ساده دهه ۹۰ را دوباره به استایل روزمره برگرداند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۵ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۵ مهر"
+    "date": "۱۶ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۶ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 7 October 2026",
+      "latestLabel": "Editor’s picks · 8 October 2026",
       "ticker": [
+        "Billie Eilish’s shoulder-length strawberry-blonde bob brings a warmer, brighter colour into autumn",
         "CHANEL’s 57 bun interpretations turn a classic hairstyle into sculpture for spring 2027",
-        "Gigi Hadid’s zig-zag headband brings a simple 1990s accessory back into everyday styling",
-        "Cynthia Erivo’s croc French manicure unites five jewel tones in one precise design"
+        "Gigi Hadid’s zig-zag headband brings a simple 1990s accessory back into everyday styling"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "7 October 2026",
-        "updated": "Updated 7 October"
+        "date": "8 October 2026",
+        "updated": "Updated 8 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 7 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 8 Ekim 2026",
       "ticker": [
+        "Billie Eilish’in omuz boyundaki çilek sarısı bobu sonbahara daha sıcak ve aydınlık bir renk taşıyor",
         "CHANEL’in 57 topuz yorumu klasik saç modelini 2027 ilkbaharı için heykele dönüştürüyor",
-        "Gigi Hadid’in zikzak tacı sade bir 1990’lar aksesuarını günlük stile geri taşıyor",
-        "Cynthia Erivo’nun kroko French manikürü beş mücevher tonunu tek bir düzenli tasarımda buluşturuyor"
+        "Gigi Hadid’in zikzak tacı sade bir 1990’lar aksesuarını günlük stile geri taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "7 Ekim 2026",
-        "updated": "Güncelleme: 7 Ekim"
+        "date": "8 Ekim 2026",
+        "updated": "Güncelleme: 8 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٧ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٨ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تقدم قصة بوب بيلي آيليش حتى الكتفين بلونها الأشقر الفراولي درجة أكثر دفئاً وإشراقاً للخريف",
         "تحوّل تفسيرات CHANEL الـ٥٧ للكعكة تسريحة كلاسيكية إلى شكل نحتي لربيع ٢٠٢٧",
-        "عصابة جيجي حديد المتعرجة تعيد إكسسواراً بسيطاً من التسعينيات إلى الإطلالات اليومية",
-        "مانيكير سينثيا إريفو الفرنسي بنقشة التمساح يجمع خمس درجات جوهرية في تصميم متماسك"
+        "عصابة جيجي حديد المتعرجة تعيد إكسسواراً بسيطاً من التسعينيات إلى الإطلالات اليومية"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٧ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٧ أكتوبر"
+        "date": "٨ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٨ أكتوبر"
       }
     }
   }
