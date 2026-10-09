@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-08a",
+  "version": "2026-10-09a",
   "files": [
+    "beauty-news-2026-10-09.js",
     "beauty-news-2026-10-08.js",
     "beauty-news-2026-10-07.js",
     "beauty-news-2026-10-06.js",
@@ -28,64 +29,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "billie-eilish-strawberry-blonde-bob",
-    "chanel-spring-2027-sculptural-buns",
-    "gigi-hadid-zigzag-headband-paris"
+    "bold-lipstick-comeback-2026",
+    "florence-pugh-baby-bangs-2026",
+    "billie-eilish-strawberry-blonde-bob"
   ],
   "latestStoryIds": [
-    "billie-eilish-strawberry-blonde-bob",
-    "chanel-spring-2027-sculptural-buns",
-    "gigi-hadid-zigzag-headband-paris"
+    "bold-lipstick-comeback-2026",
+    "florence-pugh-baby-bangs-2026",
+    "billie-eilish-strawberry-blonde-bob"
   ],
-  "latestLabel": "منتخب ۱۶ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۷ مهر ۱۴۰۵",
   "ticker": [
-    "بیلی آیلیش با باب تا روی شانه و بلوند توت‌فرنگی، رنگی گرم و روشن‌تر را برای پاییز نشان داد",
-    "شنل با ۵۷ برداشت از شینیون، موی کلاسیک را به فرمی مجسمه‌وار برای بهار ۲۰۲۷ تبدیل کرد",
-    "هدبند زیگزاگ جیجی حدید، اکسسوری ساده دهه ۹۰ را دوباره به استایل روزمره برگرداند"
+    "رژلب‌های پررنگ با رنگ کامل و بافت مخملی، پس از دوره تینت‌های محو دوباره در مرکز آرایش قرار گرفته‌اند",
+    "میکروچتری فلورنس پیو در کنار شینیون حلقه‌ای، موج چتری‌های کوتاه را گرافیکی‌تر کرد",
+    "بیلی آیلیش با باب تا روی شانه و بلوند توت‌فرنگی، رنگی گرم و روشن‌تر را برای پاییز نشان داد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۶ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۶ مهر"
+    "date": "۱۷ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۷ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 8 October 2026",
+      "latestLabel": "Editor’s picks · 9 October 2026",
       "ticker": [
-        "Billie Eilish’s shoulder-length strawberry-blonde bob brings a warmer, brighter colour into autumn",
-        "CHANEL’s 57 bun interpretations turn a classic hairstyle into sculpture for spring 2027",
-        "Gigi Hadid’s zig-zag headband brings a simple 1990s accessory back into everyday styling"
+        "Bold lipstick is returning to the centre of makeup with full pigment and more velvety texture",
+        "Florence Pugh’s baby bangs and looped updo give the short-fringe revival a graphic edge",
+        "Billie Eilish’s shoulder-length strawberry-blonde bob brings a warmer, brighter colour into autumn"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "8 October 2026",
-        "updated": "Updated 8 October"
+        "date": "9 October 2026",
+        "updated": "Updated 9 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 8 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 9 Ekim 2026",
       "ticker": [
-        "Billie Eilish’in omuz boyundaki çilek sarısı bobu sonbahara daha sıcak ve aydınlık bir renk taşıyor",
-        "CHANEL’in 57 topuz yorumu klasik saç modelini 2027 ilkbaharı için heykele dönüştürüyor",
-        "Gigi Hadid’in zikzak tacı sade bir 1990’lar aksesuarını günlük stile geri taşıyor"
+        "Belirgin ruj, yoğun pigmenti ve daha kadifemsi dokusuyla yeniden makyajın merkezine yerleşiyor",
+        "Florence Pugh’un mikro perçemi ve halkalı topuzu kısa perçem dönüşüne grafik bir yön veriyor",
+        "Billie Eilish’in omuz boyundaki çilek sarısı bobu sonbahara daha sıcak ve aydınlık bir renk taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "8 Ekim 2026",
-        "updated": "Güncelleme: 8 Ekim"
+        "date": "9 Ekim 2026",
+        "updated": "Güncelleme: 9 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٨ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٩ أكتوبر ٢٠٢٦",
       "ticker": [
-        "تقدم قصة بوب بيلي آيليش حتى الكتفين بلونها الأشقر الفراولي درجة أكثر دفئاً وإشراقاً للخريف",
-        "تحوّل تفسيرات CHANEL الـ٥٧ للكعكة تسريحة كلاسيكية إلى شكل نحتي لربيع ٢٠٢٧",
-        "عصابة جيجي حديد المتعرجة تعيد إكسسواراً بسيطاً من التسعينيات إلى الإطلالات اليومية"
+        "يعود أحمر الشفاه القوي إلى مركز المكياج بلون مشبع وملمس أكثر مخملية",
+        "تمنح غرة فلورنس بيو القصيرة وتسريحتها الحلقية عودة الغرات القصيرة طابعاً هندسياً",
+        "تقدم قصة بوب بيلي آيليش حتى الكتفين بلونها الأشقر الفراولي درجة أكثر دفئاً وإشراقاً للخريف"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٨ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٨ أكتوبر"
+        "date": "٩ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٩ أكتوبر"
       }
     }
   }
