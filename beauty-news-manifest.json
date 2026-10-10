@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-09a",
+  "version": "2026-10-10a",
   "files": [
+    "beauty-news-2026-10-10.js",
     "beauty-news-2026-10-09.js",
     "beauty-news-2026-10-08.js",
     "beauty-news-2026-10-07.js",
@@ -29,64 +30,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "miu-miu-imperfect-red-manicure-2027",
     "bold-lipstick-comeback-2026",
-    "florence-pugh-baby-bangs-2026",
-    "billie-eilish-strawberry-blonde-bob"
+    "florence-pugh-baby-bangs-2026"
   ],
   "latestStoryIds": [
+    "miu-miu-imperfect-red-manicure-2027",
     "bold-lipstick-comeback-2026",
-    "florence-pugh-baby-bangs-2026",
-    "billie-eilish-strawberry-blonde-bob"
+    "florence-pugh-baby-bangs-2026"
   ],
-  "latestLabel": "منتخب ۱۷ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۸ مهر ۱۴۰۵",
   "ticker": [
+    "مانیکور قرمز میو میو با عبور عمدی لاک از مرز ناخن، کمال‌گرایی رایج در زیبایی را به چالش کشید",
     "رژلب‌های پررنگ با رنگ کامل و بافت مخملی، پس از دوره تینت‌های محو دوباره در مرکز آرایش قرار گرفته‌اند",
-    "میکروچتری فلورنس پیو در کنار شینیون حلقه‌ای، موج چتری‌های کوتاه را گرافیکی‌تر کرد",
-    "بیلی آیلیش با باب تا روی شانه و بلوند توت‌فرنگی، رنگی گرم و روشن‌تر را برای پاییز نشان داد"
+    "میکروچتری فلورنس پیو در کنار شینیون حلقه‌ای، موج چتری‌های کوتاه را گرافیکی‌تر کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۷ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۷ مهر"
+    "date": "۱۸ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۸ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 9 October 2026",
+      "latestLabel": "Editor’s picks · 10 October 2026",
       "ticker": [
+        "Miu Miu’s deliberately smudged red polish challenges the perfectionism of immaculate manicures",
         "Bold lipstick is returning to the centre of makeup with full pigment and more velvety texture",
-        "Florence Pugh’s baby bangs and looped updo give the short-fringe revival a graphic edge",
-        "Billie Eilish’s shoulder-length strawberry-blonde bob brings a warmer, brighter colour into autumn"
+        "Florence Pugh’s baby bangs and looped updo give the short-fringe revival a graphic edge"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "9 October 2026",
-        "updated": "Updated 9 October"
+        "date": "10 October 2026",
+        "updated": "Updated 10 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 9 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 10 Ekim 2026",
       "ticker": [
+        "Miu Miu’nun bilerek taşırılmış kırmızı ojesi kusursuz manikür baskısına meydan okuyor",
         "Belirgin ruj, yoğun pigmenti ve daha kadifemsi dokusuyla yeniden makyajın merkezine yerleşiyor",
-        "Florence Pugh’un mikro perçemi ve halkalı topuzu kısa perçem dönüşüne grafik bir yön veriyor",
-        "Billie Eilish’in omuz boyundaki çilek sarısı bobu sonbahara daha sıcak ve aydınlık bir renk taşıyor"
+        "Florence Pugh’un mikro perçemi ve halkalı topuzu kısa perçem dönüşüne grafik bir yön veriyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "9 Ekim 2026",
-        "updated": "Güncelleme: 9 Ekim"
+        "date": "10 Ekim 2026",
+        "updated": "Güncelleme: 10 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٩ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٠ أكتوبر ٢٠٢٦",
       "ticker": [
+        "يتحدى طلاء ميو ميو الأحمر المتجاوز لحدود الظفر عمداً هوس المانيكير الخالي من العيوب",
         "يعود أحمر الشفاه القوي إلى مركز المكياج بلون مشبع وملمس أكثر مخملية",
-        "تمنح غرة فلورنس بيو القصيرة وتسريحتها الحلقية عودة الغرات القصيرة طابعاً هندسياً",
-        "تقدم قصة بوب بيلي آيليش حتى الكتفين بلونها الأشقر الفراولي درجة أكثر دفئاً وإشراقاً للخريف"
+        "تمنح غرة فلورنس بيو القصيرة وتسريحتها الحلقية عودة الغرات القصيرة طابعاً هندسياً"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٩ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٩ أكتوبر"
+        "date": "١٠ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١٠ أكتوبر"
       }
     }
   }
