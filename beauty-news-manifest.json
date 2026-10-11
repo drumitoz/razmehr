@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-10a",
+  "version": "2026-10-11a",
   "files": [
+    "beauty-news-2026-10-11.js",
     "beauty-news-2026-10-10.js",
     "beauty-news-2026-10-09.js",
     "beauty-news-2026-10-08.js",
@@ -30,64 +31,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "miu-miu-imperfect-red-manicure-2027",
+    "velvet-nails-autumn-2026",
     "bold-lipstick-comeback-2026",
     "florence-pugh-baby-bangs-2026"
   ],
   "latestStoryIds": [
-    "miu-miu-imperfect-red-manicure-2027",
+    "velvet-nails-autumn-2026",
     "bold-lipstick-comeback-2026",
     "florence-pugh-baby-bangs-2026"
   ],
-  "latestLabel": "منتخب ۱۸ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۱۹ مهر ۱۴۰۵",
   "ticker": [
-    "مانیکور قرمز میو میو با عبور عمدی لاک از مرز ناخن، کمال‌گرایی رایج در زیبایی را به چالش کشید",
+    "ناخن‌های مخملی با درخشش مغناطیسی نرم، از ایده پارچه‌ای ران‌وی به نسخه‌ای کوتاه و پوشیدنی رسیده‌اند",
     "رژلب‌های پررنگ با رنگ کامل و بافت مخملی، پس از دوره تینت‌های محو دوباره در مرکز آرایش قرار گرفته‌اند",
-    "میکروچتری فلورنس پیو در کنار شینیون حلقه‌ای، موج چتری‌های کوتاه را گرافیکی‌تر کرد"
+    "چتری کوتاه و تکه‌ای فلورنس پیو، فرم پیکسی را با بافتی سبک‌تر و قابل‌تغییر تازه کرده است"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۸ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۸ مهر"
+    "date": "۱۹ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۹ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 10 October 2026",
+      "latestLabel": "Editor’s picks · 11 October 2026",
       "ticker": [
-        "Miu Miu’s deliberately smudged red polish challenges the perfectionism of immaculate manicures",
+        "Velvet nails translate a fabric-covered runway idea into a short, wearable manicure with a soft magnetic glow",
         "Bold lipstick is returning to the centre of makeup with full pigment and more velvety texture",
-        "Florence Pugh’s baby bangs and looped updo give the short-fringe revival a graphic edge"
+        "Florence Pugh’s short, piecey fringe refreshes the pixie cut with a lighter, more adaptable finish"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "10 October 2026",
-        "updated": "Updated 10 October"
+        "date": "11 October 2026",
+        "updated": "Updated 11 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 10 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 11 Ekim 2026",
       "ticker": [
-        "Miu Miu’nun bilerek taşırılmış kırmızı ojesi kusursuz manikür baskısına meydan okuyor",
+        "Kadife tırnaklar kumaş kaplı podyum fikrini yumuşak manyetik ışıltılı, kısa ve kullanılabilir bir maniküre dönüştürüyor",
         "Belirgin ruj, yoğun pigmenti ve daha kadifemsi dokusuyla yeniden makyajın merkezine yerleşiyor",
-        "Florence Pugh’un mikro perçemi ve halkalı topuzu kısa perçem dönüşüne grafik bir yön veriyor"
+        "Florence Pugh’nun kısa ve parçalı kakülü, pixie kesimi daha hafif ve değişken bir bitişle yeniliyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "10 Ekim 2026",
-        "updated": "Güncelleme: 10 Ekim"
+        "date": "11 Ekim 2026",
+        "updated": "Güncelleme: 11 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٠ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١١ أكتوبر ٢٠٢٦",
       "ticker": [
-        "يتحدى طلاء ميو ميو الأحمر المتجاوز لحدود الظفر عمداً هوس المانيكير الخالي من العيوب",
+        "تحول الأظافر المخملية فكرة المنصة المغطاة بالقماش إلى مانيكير قصير وعملي بوهج مغناطيسي ناعم",
         "يعود أحمر الشفاه القوي إلى مركز المكياج بلون مشبع وملمس أكثر مخملية",
-        "تمنح غرة فلورنس بيو القصيرة وتسريحتها الحلقية عودة الغرات القصيرة طابعاً هندسياً"
+        "تجدد الغرة القصيرة والمتفرقة لدى Florence Pugh قصة البيكسي بلمسة أخف وأكثر قابلية للتغيير"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٠ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١٠ أكتوبر"
+        "date": "١١ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١١ أكتوبر"
       }
     }
   }
