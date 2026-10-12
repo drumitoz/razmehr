@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-11a",
+  "version": "2026-10-12a",
   "files": [
+    "beauty-news-2026-10-12.js",
     "beauty-news-2026-10-11.js",
     "beauty-news-2026-10-10.js",
     "beauty-news-2026-10-09.js",
@@ -31,64 +32,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "cashmere-makeup-soft-focus-autumn-2026",
     "velvet-nails-autumn-2026",
-    "bold-lipstick-comeback-2026",
     "florence-pugh-baby-bangs-2026"
   ],
   "latestStoryIds": [
+    "cashmere-makeup-soft-focus-autumn-2026",
     "velvet-nails-autumn-2026",
-    "bold-lipstick-comeback-2026",
     "florence-pugh-baby-bangs-2026"
   ],
-  "latestLabel": "منتخب ۱۹ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲۰ مهر ۱۴۰۵",
   "ticker": [
+    "آرایش کشمیری با پوست نرم و محوشده، سایه‌های خنثی و رژگونه آرام‌تر به پاییز رسیده است",
     "ناخن‌های مخملی با درخشش مغناطیسی نرم، از ایده پارچه‌ای ران‌وی به نسخه‌ای کوتاه و پوشیدنی رسیده‌اند",
-    "رژلب‌های پررنگ با رنگ کامل و بافت مخملی، پس از دوره تینت‌های محو دوباره در مرکز آرایش قرار گرفته‌اند",
     "چتری کوتاه و تکه‌ای فلورنس پیو، فرم پیکسی را با بافتی سبک‌تر و قابل‌تغییر تازه کرده است"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۹ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۹ مهر"
+    "date": "۲۰ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۰ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 11 October 2026",
+      "latestLabel": "Editor’s picks · 12 October 2026",
       "ticker": [
+        "Cashmere makeup brings softly blurred skin, neutral shadow and quieter cheek colour into autumn",
         "Velvet nails translate a fabric-covered runway idea into a short, wearable manicure with a soft magnetic glow",
-        "Bold lipstick is returning to the centre of makeup with full pigment and more velvety texture",
         "Florence Pugh’s short, piecey fringe refreshes the pixie cut with a lighter, more adaptable finish"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "11 October 2026",
-        "updated": "Updated 11 October"
+        "date": "12 October 2026",
+        "updated": "Updated 12 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 11 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 12 Ekim 2026",
       "ticker": [
+        "Kaşmir makyaj yumuşakça bulanıklaştırılmış teni, nötr farı ve daha sakin yanak rengini sonbahara taşıyor",
         "Kadife tırnaklar kumaş kaplı podyum fikrini yumuşak manyetik ışıltılı, kısa ve kullanılabilir bir maniküre dönüştürüyor",
-        "Belirgin ruj, yoğun pigmenti ve daha kadifemsi dokusuyla yeniden makyajın merkezine yerleşiyor",
         "Florence Pugh’nun kısa ve parçalı kakülü, pixie kesimi daha hafif ve değişken bir bitişle yeniliyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "11 Ekim 2026",
-        "updated": "Güncelleme: 11 Ekim"
+        "date": "12 Ekim 2026",
+        "updated": "Güncelleme: 12 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١١ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٢ أكتوبر ٢٠٢٦",
       "ticker": [
+        "يجلب مكياج الكشمير بشرة مموهة بنعومة وظلالاً محايدة ولون خدود أكثر هدوءاً إلى الخريف",
         "تحول الأظافر المخملية فكرة المنصة المغطاة بالقماش إلى مانيكير قصير وعملي بوهج مغناطيسي ناعم",
-        "يعود أحمر الشفاه القوي إلى مركز المكياج بلون مشبع وملمس أكثر مخملية",
         "تجدد الغرة القصيرة والمتفرقة لدى Florence Pugh قصة البيكسي بلمسة أخف وأكثر قابلية للتغيير"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١١ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١١ أكتوبر"
+        "date": "١٢ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١٢ أكتوبر"
       }
     }
   }
