@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-12a",
+  "version": "2026-10-13a",
   "files": [
+    "beauty-news-2026-10-13.js",
     "beauty-news-2026-10-12.js",
     "beauty-news-2026-10-11.js",
     "beauty-news-2026-10-10.js",
@@ -32,64 +33,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "amal-clooney-modern-old-hollywood-2026",
     "cashmere-makeup-soft-focus-autumn-2026",
-    "velvet-nails-autumn-2026",
-    "florence-pugh-baby-bangs-2026"
+    "velvet-nails-autumn-2026"
   ],
   "latestStoryIds": [
+    "amal-clooney-modern-old-hollywood-2026",
     "cashmere-makeup-soft-focus-autumn-2026",
-    "velvet-nails-autumn-2026",
-    "florence-pugh-baby-bangs-2026"
+    "velvet-nails-autumn-2026"
   ],
-  "latestLabel": "منتخب ۲۰ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲۱ مهر ۱۴۰۵",
   "ticker": [
+    "امل کلونی با لایه‌های آزاد، موج‌های نرم و آرایش طلایی کنترل‌شده، هالیوود کلاسیک را امروزی کرد",
     "آرایش کشمیری با پوست نرم و محوشده، سایه‌های خنثی و رژگونه آرام‌تر به پاییز رسیده است",
-    "ناخن‌های مخملی با درخشش مغناطیسی نرم، از ایده پارچه‌ای ران‌وی به نسخه‌ای کوتاه و پوشیدنی رسیده‌اند",
-    "چتری کوتاه و تکه‌ای فلورنس پیو، فرم پیکسی را با بافتی سبک‌تر و قابل‌تغییر تازه کرده است"
+    "ناخن‌های مخملی با درخشش مغناطیسی نرم، از ایده پارچه‌ای ران‌وی به نسخه‌ای کوتاه و پوشیدنی رسیده‌اند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۰ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۰ مهر"
+    "date": "۲۱ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۱ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 12 October 2026",
+      "latestLabel": "Editor’s picks · 13 October 2026",
       "ticker": [
+        "Amal Clooney modernises Old Hollywood with airy layers, relaxed waves and controlled golden light",
         "Cashmere makeup brings softly blurred skin, neutral shadow and quieter cheek colour into autumn",
-        "Velvet nails translate a fabric-covered runway idea into a short, wearable manicure with a soft magnetic glow",
-        "Florence Pugh’s short, piecey fringe refreshes the pixie cut with a lighter, more adaptable finish"
+        "Velvet nails translate a fabric-covered runway idea into a short, wearable manicure with a soft magnetic glow"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "12 October 2026",
-        "updated": "Updated 12 October"
+        "date": "13 October 2026",
+        "updated": "Updated 13 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 12 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 13 Ekim 2026",
       "ticker": [
+        "Amal Clooney havadar katlar, rahat dalgalar ve kontrollü altın ışıkla Eski Hollywood’u yeniliyor",
         "Kaşmir makyaj yumuşakça bulanıklaştırılmış teni, nötr farı ve daha sakin yanak rengini sonbahara taşıyor",
-        "Kadife tırnaklar kumaş kaplı podyum fikrini yumuşak manyetik ışıltılı, kısa ve kullanılabilir bir maniküre dönüştürüyor",
-        "Florence Pugh’nun kısa ve parçalı kakülü, pixie kesimi daha hafif ve değişken bir bitişle yeniliyor"
+        "Kadife tırnaklar kumaş kaplı podyum fikrini yumuşak manyetik ışıltılı, kısa ve kullanılabilir bir maniküre dönüştürüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "12 Ekim 2026",
-        "updated": "Güncelleme: 12 Ekim"
+        "date": "13 Ekim 2026",
+        "updated": "Güncelleme: 13 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٢ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٣ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تجدد Amal Clooney هوليوود القديمة بطبقات خفيفة وتموجات مرتخية وإضاءة ذهبية مضبوطة",
         "يجلب مكياج الكشمير بشرة مموهة بنعومة وظلالاً محايدة ولون خدود أكثر هدوءاً إلى الخريف",
-        "تحول الأظافر المخملية فكرة المنصة المغطاة بالقماش إلى مانيكير قصير وعملي بوهج مغناطيسي ناعم",
-        "تجدد الغرة القصيرة والمتفرقة لدى Florence Pugh قصة البيكسي بلمسة أخف وأكثر قابلية للتغيير"
+        "تحول الأظافر المخملية فكرة المنصة المغطاة بالقماش إلى مانيكير قصير وعملي بوهج مغناطيسي ناعم"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٢ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١٢ أكتوبر"
+        "date": "١٣ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١٣ أكتوبر"
       }
     }
   }
