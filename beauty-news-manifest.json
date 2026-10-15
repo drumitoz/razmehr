@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-13a",
+  "version": "2026-10-15a",
   "files": [
+    "beauty-news-2026-10-15.js",
     "beauty-news-2026-10-13.js",
     "beauty-news-2026-10-12.js",
     "beauty-news-2026-10-11.js",
@@ -33,64 +34,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "victoria-beckham-honey-ombre-2026",
     "amal-clooney-modern-old-hollywood-2026",
-    "cashmere-makeup-soft-focus-autumn-2026",
-    "velvet-nails-autumn-2026"
+    "cashmere-makeup-soft-focus-autumn-2026"
   ],
   "latestStoryIds": [
+    "victoria-beckham-honey-ombre-2026",
     "amal-clooney-modern-old-hollywood-2026",
-    "cashmere-makeup-soft-focus-autumn-2026",
-    "velvet-nails-autumn-2026"
+    "cashmere-makeup-soft-focus-autumn-2026"
   ],
-  "latestLabel": "منتخب ۲۱ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲۳ مهر ۱۴۰۵",
   "ticker": [
+    "ویکتوریا بکام امبره عسلی را با ریشه قهوه‌ای عمیق، میانه چندبعدی و نوک‌های گرم به پاییز برگرداند",
     "امل کلونی با لایه‌های آزاد، موج‌های نرم و آرایش طلایی کنترل‌شده، هالیوود کلاسیک را امروزی کرد",
-    "آرایش کشمیری با پوست نرم و محوشده، سایه‌های خنثی و رژگونه آرام‌تر به پاییز رسیده است",
-    "ناخن‌های مخملی با درخشش مغناطیسی نرم، از ایده پارچه‌ای ران‌وی به نسخه‌ای کوتاه و پوشیدنی رسیده‌اند"
+    "آرایش کشمیری با پوست نرم و محوشده، سایه‌های خنثی و رژگونه آرام‌تر به پاییز رسیده است"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۱ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۱ مهر"
+    "date": "۲۳ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۳ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 13 October 2026",
+      "latestLabel": "Editor’s picks · 15 October 2026",
       "ticker": [
+        "Victoria Beckham brings honey ombré into autumn with deep brunette roots, dimensional mid-lengths and warm ends",
         "Amal Clooney modernises Old Hollywood with airy layers, relaxed waves and controlled golden light",
-        "Cashmere makeup brings softly blurred skin, neutral shadow and quieter cheek colour into autumn",
-        "Velvet nails translate a fabric-covered runway idea into a short, wearable manicure with a soft magnetic glow"
+        "Cashmere makeup brings softly blurred skin, neutral shadow and quieter cheek colour into autumn"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "13 October 2026",
-        "updated": "Updated 13 October"
+        "date": "15 October 2026",
+        "updated": "Updated 15 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 13 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 15 Ekim 2026",
       "ticker": [
+        "Victoria Beckham koyu kahverengi dipler, çok boyutlu orta uzunluklar ve sıcak uçlarla bal ombreyi sonbahara taşıyor",
         "Amal Clooney havadar katlar, rahat dalgalar ve kontrollü altın ışıkla Eski Hollywood’u yeniliyor",
-        "Kaşmir makyaj yumuşakça bulanıklaştırılmış teni, nötr farı ve daha sakin yanak rengini sonbahara taşıyor",
-        "Kadife tırnaklar kumaş kaplı podyum fikrini yumuşak manyetik ışıltılı, kısa ve kullanılabilir bir maniküre dönüştürüyor"
+        "Kaşmir makyaj yumuşakça bulanıklaştırılmış teni, nötr farı ve daha sakin yanak rengini sonbahara taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "13 Ekim 2026",
-        "updated": "Güncelleme: 13 Ekim"
+        "date": "15 Ekim 2026",
+        "updated": "Güncelleme: 15 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٣ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٥ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تعيد Victoria Beckham أومبري العسل إلى الخريف بجذور بنية عميقة ومنتصف متعدد الأبعاد وأطراف دافئة",
         "تجدد Amal Clooney هوليوود القديمة بطبقات خفيفة وتموجات مرتخية وإضاءة ذهبية مضبوطة",
-        "يجلب مكياج الكشمير بشرة مموهة بنعومة وظلالاً محايدة ولون خدود أكثر هدوءاً إلى الخريف",
-        "تحول الأظافر المخملية فكرة المنصة المغطاة بالقماش إلى مانيكير قصير وعملي بوهج مغناطيسي ناعم"
+        "يجلب مكياج الكشمير بشرة مموهة بنعومة وظلالاً محايدة ولون خدود أكثر هدوءاً إلى الخريف"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٣ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١٣ أكتوبر"
+        "date": "١٥ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١٥ أكتوبر"
       }
     }
   }
