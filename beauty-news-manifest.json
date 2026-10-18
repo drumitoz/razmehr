@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-17a",
+  "version": "2026-10-18a",
   "files": [
+    "beauty-news-2026-10-18.js",
     "beauty-news-2026-10-17.js",
     "beauty-news-2026-10-16.js",
     "beauty-news-2026-10-15.js",
@@ -36,64 +37,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "hailey-bieber-jet-black-nails-academy-gala-2026",
     "horizontal-french-manicure-sienna-spiro-2026",
-    "winter-2026-precision-cuts-deep-hair-colors",
-    "victoria-beckham-honey-ombre-2026"
+    "winter-2026-precision-cuts-deep-hair-colors"
   ],
   "latestStoryIds": [
+    "hailey-bieber-jet-black-nails-academy-gala-2026",
     "horizontal-french-manicure-sienna-spiro-2026",
-    "winter-2026-precision-cuts-deep-hair-colors",
-    "victoria-beckham-honey-ombre-2026"
+    "winter-2026-precision-cuts-deep-hair-colors"
   ],
-  "latestLabel": "منتخب ۲۵ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲۶ مهر ۱۴۰۵",
   "ticker": [
+    "هیلی بیبر در گالای موزه آکادمی، ناخن‌های بادامی مشکی و براق را مقابل صورتی روشن قرار داد",
     "فرنچ افقی با خطی صاف و گرافیکی، قوس کلاسیک را روی ناخن‌های سی‌ینا اسپایرو به‌روز می‌کند",
-    "زمستان ۲۰۲۶ مو را به سمت باب‌های دقیق، پیکسی‌های صیقلی و رنگ‌های عمیق گیلاسی و شاه‌بلوطی می‌برد",
-    "ویکتوریا بکام امبره عسلی را با ریشه قهوه‌ای عمیق، میانه چندبعدی و نوک‌های گرم به پاییز برگرداند"
+    "زمستان ۲۰۲۶ مو را به سمت باب‌های دقیق، پیکسی‌های صیقلی و رنگ‌های عمیق گیلاسی و شاه‌بلوطی می‌برد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۵ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۵ مهر"
+    "date": "۲۶ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۶ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 17 October 2026",
+      "latestLabel": "Editor’s picks · 18 October 2026",
       "ticker": [
+        "Hailey Bieber sets glossy black almond nails against pale pink at the Academy Museum Gala",
         "Horizontal French tips update the classic curve with a crisp graphic line on Sienna Spiro’s nails",
-        "Winter 2026 hair moves toward precise bobs, polished pixies and deeper black-cherry and chestnut colour",
-        "Victoria Beckham brings honey ombré into autumn with deep brunette roots, dimensional mid-lengths and warm ends"
+        "Winter 2026 hair moves toward precise bobs, polished pixies and deeper black-cherry and chestnut colour"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "17 October 2026",
-        "updated": "Updated 17 October"
+        "date": "18 October 2026",
+        "updated": "Updated 18 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 17 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 18 Ekim 2026",
       "ticker": [
+        "Hailey Bieber, Academy Museum Gala’da parlak siyah badem tırnakları açık pembe ile karşılaştırıyor",
         "Yatay French uçlar Sienna Spiro’nun tırnaklarında klasik kavsi net ve grafik bir çizgiyle güncelliyor",
-        "2026 kışında saçlar net boblara, cilalı pixielere ve daha derin siyah kiraz ile kestane tonlarına yöneliyor",
-        "Victoria Beckham koyu kahverengi dipler, çok boyutlu orta uzunluklar ve sıcak uçlarla bal ombreyi sonbahara taşıyor"
+        "2026 kışında saçlar net boblara, cilalı pixielere ve daha derin siyah kiraz ile kestane tonlarına yöneliyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "17 Ekim 2026",
-        "updated": "Güncelleme: 17 Ekim"
+        "date": "18 Ekim 2026",
+        "updated": "Güncelleme: 18 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٧ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٨ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تقابل هايلي بيبر أظافرها اللوزية السوداء اللامعة بالوردي الفاتح في حفل متحف الأكاديمية",
         "تحدّث أطراف الفرنش الأفقية القوس الكلاسيكي بخط واضح وغرافيكي على أظافر سيينا سبايرو",
-        "يتجه شعر شتاء ٢٠٢٦ إلى بوب دقيق وبيكسي مصقول ودرجات أعمق من الكرزي الأسود والكستنائي",
-        "تعيد Victoria Beckham أومبري العسل إلى الخريف بجذور بنية عميقة ومنتصف متعدد الأبعاد وأطراف دافئة"
+        "يتجه شعر شتاء ٢٠٢٦ إلى بوب دقيق وبيكسي مصقول ودرجات أعمق من الكرزي الأسود والكستنائي"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٧ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١٧ أكتوبر"
+        "date": "١٨ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ١٨ أكتوبر"
       }
     }
   }
