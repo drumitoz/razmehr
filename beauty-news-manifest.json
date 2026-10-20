@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-19a",
+  "version": "2026-10-20a",
   "files": [
+    "beauty-news-2026-10-20.js",
     "beauty-news-2026-10-19.js",
     "beauty-news-2026-10-18.js",
     "beauty-news-2026-10-17.js",
@@ -38,64 +39,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "hunter-schafer-brunette-microbob-elle-2026",
     "kim-kardashian-retro-bouffant-academy-gala-2026",
-    "hailey-bieber-jet-black-nails-academy-gala-2026",
     "winter-2026-precision-cuts-deep-hair-colors"
   ],
   "latestStoryIds": [
+    "hunter-schafer-brunette-microbob-elle-2026",
     "kim-kardashian-retro-bouffant-academy-gala-2026",
-    "hailey-bieber-jet-black-nails-academy-gala-2026",
     "winter-2026-precision-cuts-deep-hair-colors"
   ],
-  "latestLabel": "منتخب ۲۷ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲۸ مهر ۱۴۰۵",
   "ticker": [
+    "هانتر شفر (Hunter Schafer) در پرونده تازه ال، میکروباب قهوه‌ای موج‌دار را به‌عنوان یک تغییر موقت و قابل‌آزمون ارائه کرد",
     "کیم کارداشیان با شینیون بوفان گرد و صیقلی، حجم ساختاریافته هالیوودی را به فرش قرمز برگرداند",
-    "هیلی بیبر در گالای موزه آکادمی، ناخن‌های بادامی مشکی و براق را مقابل صورتی روشن قرار داد",
     "زمستان ۲۰۲۶ مو را به سمت باب‌های دقیق، پیکسی‌های صیقلی و رنگ‌های عمیق گیلاسی و شاه‌بلوطی می‌برد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۷ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۷ مهر"
+    "date": "۲۸ مهر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۸ مهر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 19 October 2026",
+      "latestLabel": "Editor’s picks · 20 October 2026",
       "ticker": [
+        "Hunter Schafer presents a softly waved brunette microbob as a temporary, testable transformation in her new ELLE profile",
         "Kim Kardashian brings structured Hollywood volume back to the red carpet with a smooth rounded bouffant",
-        "Hailey Bieber sets glossy black almond nails against pale pink at the Academy Museum Gala",
         "Winter 2026 hair moves toward precise bobs, polished pixies and deeper black-cherry and chestnut colour"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "19 October 2026",
-        "updated": "Updated 19 October"
+        "date": "20 October 2026",
+        "updated": "Updated 20 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 19 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 20 Ekim 2026",
       "ticker": [
+        "Hunter Schafer, yeni ELLE profilinde yumuşak dalgalı kahverengi mikro bob’u geçici ve denenebilir bir dönüşüm olarak sunuyor",
         "Kim Kardashian pürüzsüz ve yuvarlak bouffantıyla yapılandırılmış Hollywood hacmini kırmızı halıya geri getiriyor",
-        "Hailey Bieber, Academy Museum Gala’da parlak siyah badem tırnakları açık pembe ile karşılaştırıyor",
         "2026 kışında saçlar net boblara, cilalı pixielere ve daha derin siyah kiraz ile kestane tonlarına yöneliyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "19 Ekim 2026",
-        "updated": "Güncelleme: 19 Ekim"
+        "date": "20 Ekim 2026",
+        "updated": "Güncelleme: 20 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٩ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٠ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تقدم هانتر شيفر في ملفها الجديد لدى ELLE ميكرو بوب بنياً مموّجاً برفق كتغيير مؤقت يمكن اختباره",
         "تعيد كيم كارداشيان الحجم الهوليوودي المنظم إلى السجادة الحمراء بتسريحة بوفان مستديرة ومصقولة",
-        "تقابل هايلي بيبر أظافرها اللوزية السوداء اللامعة بالوردي الفاتح في حفل متحف الأكاديمية",
         "يتجه شعر شتاء ٢٠٢٦ إلى بوب دقيق وبيكسي مصقول ودرجات أعمق من الكرزي الأسود والكستنائي"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٩ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ١٩ أكتوبر"
+        "date": "٢٠ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٢٠ أكتوبر"
       }
     }
   }
