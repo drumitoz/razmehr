@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-22a",
+  "version": "2026-10-24a",
   "files": [
+    "beauty-news-2026-10-24.js",
     "beauty-news-2026-10-22.js",
     "beauty-news-2026-10-21.js",
     "beauty-news-2026-10-20.js",
@@ -41,64 +42,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "olivia-colman-quiet-silver-gray-blending-2026",
+    "ariana-grande-flipped-brunette-bob-2026",
     "minimal-spider-accent-nails-halloween-2026",
-    "hunter-schafer-brunette-microbob-elle-2026"
+    "olivia-colman-quiet-silver-gray-blending-2026"
   ],
   "latestStoryIds": [
-    "olivia-colman-quiet-silver-gray-blending-2026",
+    "ariana-grande-flipped-brunette-bob-2026",
     "minimal-spider-accent-nails-halloween-2026",
-    "hunter-schafer-brunette-microbob-elle-2026"
+    "olivia-colman-quiet-silver-gray-blending-2026"
   ],
-  "latestLabel": "منتخب ۳۰ مهر ۱۴۰۵",
+  "latestLabel": "منتخب ۲ آبان ۱۴۰۵",
   "ticker": [
-    "اولیویا کلمن (Olivia Colman) با ترکیب نقره‌ای چندتن، رشد موی خاکستری را به بخشی از عمق و حرکت مو تبدیل کرد",
+    "آریانا گرانده (Ariana Grande) دم‌اسبی امضایی خود را با یک باب قهوه‌ای براق و نوک‌های برگشته عوض کرد",
     "مانیکور عنکبوتی هالووین ۲۰۲۶ به‌جای طرح‌های شلوغ، روی یک ناخن تأکیدی و جزئیات ظریف تمرکز دارد",
-    "هانتر شفر (Hunter Schafer) در پرونده تازه ال، میکروباب قهوه‌ای موج‌دار را به‌عنوان یک تغییر موقت و قابل‌آزمون ارائه کرد"
+    "اولیویا کلمن (Olivia Colman) با ترکیب نقره‌ای چندتن، رشد موی خاکستری را به بخشی از عمق و حرکت مو تبدیل کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۳۰ مهر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۳۰ مهر"
+    "date": "۲ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 22 October 2026",
+      "latestLabel": "Editor’s picks · 24 October 2026",
       "ticker": [
-        "Olivia Colman turns grey grow-out into depth and movement with a multi-tone quiet silver blend",
+        "Ariana Grande replaces her signature ponytail with a glossy brunette bob and softly flipped ends",
         "Halloween 2026 spider nails replace busy sets with one accent nail and finely controlled detail",
-        "Hunter Schafer presents a softly waved brunette microbob as a temporary, testable transformation in her new ELLE profile"
+        "Olivia Colman turns grey grow-out into depth and movement with a multi-tone quiet silver blend"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "22 October 2026",
-        "updated": "Updated 22 October"
+        "date": "24 October 2026",
+        "updated": "Updated 24 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 22 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 24 Ekim 2026",
       "ticker": [
-        "Olivia Colman, çok tonlu sakin gümüş geçişiyle beyaz çıkışını saçın derinliği ve hareketine dönüştürüyor",
+        "Ariana Grande, imza atkuyruğunu parlak kahverengi ve uçları dışa dönen bir bob’la değiştiriyor",
         "Halloween 2026 örümcek manikürü yoğun tasarımların yerine tek vurgu tırnağını ve ince detayları koyuyor",
-        "Hunter Schafer, yeni ELLE profilinde yumuşak dalgalı kahverengi mikro bob’u geçici ve denenebilir bir dönüşüm olarak sunuyor"
+        "Olivia Colman, çok tonlu sakin gümüş geçişiyle beyaz çıkışını saçın derinliği ve hareketine dönüştürüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "22 Ekim 2026",
-        "updated": "Güncelleme: 22 Ekim"
+        "date": "24 Ekim 2026",
+        "updated": "Güncelleme: 24 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٢ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٤ أكتوبر ٢٠٢٦",
       "ticker": [
-        "تحول أوليفيا كولمان نمو الشيب إلى عمق وحركة عبر مزج فضي هادئ متعدد الدرجات",
+        "تستبدل أريانا غراندي ذيل حصانها الشهير ببوب بني لامع ذي أطراف ملتفة برفق إلى الخارج",
         "يستبدل مانيكير العنكبوت لهالوين ٢٠٢٦ التصاميم المزدحمة بظفر بارز واحد وتفاصيل دقيقة",
-        "تقدم هانتر شيفر في ملفها الجديد لدى ELLE ميكرو بوب بنياً مموّجاً برفق كتغيير مؤقت يمكن اختباره"
+        "تحول أوليفيا كولمان نمو الشيب إلى عمق وحركة عبر مزج فضي هادئ متعدد الدرجات"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٢ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٢٢ أكتوبر"
+        "date": "٢٤ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٢٤ أكتوبر"
       }
     }
   }
