@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-24a",
+  "version": "2026-10-25a",
   "files": [
+    "beauty-news-2026-10-25.js",
     "beauty-news-2026-10-24.js",
     "beauty-news-2026-10-22.js",
     "beauty-news-2026-10-21.js",
@@ -42,64 +43,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "mochi-skin-satin-glow-revival-2026",
     "ariana-grande-flipped-brunette-bob-2026",
-    "minimal-spider-accent-nails-halloween-2026",
-    "olivia-colman-quiet-silver-gray-blending-2026"
+    "minimal-spider-accent-nails-halloween-2026"
   ],
   "latestStoryIds": [
+    "mochi-skin-satin-glow-revival-2026",
     "ariana-grande-flipped-brunette-bob-2026",
-    "minimal-spider-accent-nails-halloween-2026",
-    "olivia-colman-quiet-silver-gray-blending-2026"
+    "minimal-spider-accent-nails-halloween-2026"
   ],
-  "latestLabel": "منتخب ۲ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۳ آبان ۱۴۰۵",
   "ticker": [
+    "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است",
     "آریانا گرانده (Ariana Grande) دم‌اسبی امضایی خود را با یک باب قهوه‌ای براق و نوک‌های برگشته عوض کرد",
-    "مانیکور عنکبوتی هالووین ۲۰۲۶ به‌جای طرح‌های شلوغ، روی یک ناخن تأکیدی و جزئیات ظریف تمرکز دارد",
-    "اولیویا کلمن (Olivia Colman) با ترکیب نقره‌ای چندتن، رشد موی خاکستری را به بخشی از عمق و حرکت مو تبدیل کرد"
+    "مانیکور عنکبوتی هالووین ۲۰۲۶ به‌جای طرح‌های شلوغ، روی یک ناخن تأکیدی و جزئیات ظریف تمرکز دارد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲ آبان"
+    "date": "۳ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۳ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 24 October 2026",
+      "latestLabel": "Editor’s picks · 25 October 2026",
       "ticker": [
+        "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture",
         "Ariana Grande replaces her signature ponytail with a glossy brunette bob and softly flipped ends",
-        "Halloween 2026 spider nails replace busy sets with one accent nail and finely controlled detail",
-        "Olivia Colman turns grey grow-out into depth and movement with a multi-tone quiet silver blend"
+        "Halloween 2026 spider nails replace busy sets with one accent nail and finely controlled detail"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "24 October 2026",
-        "updated": "Updated 24 October"
+        "date": "25 October 2026",
+        "updated": "Updated 25 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 24 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 25 Ekim 2026",
       "ticker": [
+        "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor",
         "Ariana Grande, imza atkuyruğunu parlak kahverengi ve uçları dışa dönen bir bob’la değiştiriyor",
-        "Halloween 2026 örümcek manikürü yoğun tasarımların yerine tek vurgu tırnağını ve ince detayları koyuyor",
-        "Olivia Colman, çok tonlu sakin gümüş geçişiyle beyaz çıkışını saçın derinliği ve hareketine dönüştürüyor"
+        "Halloween 2026 örümcek manikürü yoğun tasarımların yerine tek vurgu tırnağını ve ince detayları koyuyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "24 Ekim 2026",
-        "updated": "Güncelleme: 24 Ekim"
+        "date": "25 Ekim 2026",
+        "updated": "Güncelleme: 25 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٤ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٥ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً",
         "تستبدل أريانا غراندي ذيل حصانها الشهير ببوب بني لامع ذي أطراف ملتفة برفق إلى الخارج",
-        "يستبدل مانيكير العنكبوت لهالوين ٢٠٢٦ التصاميم المزدحمة بظفر بارز واحد وتفاصيل دقيقة",
-        "تحول أوليفيا كولمان نمو الشيب إلى عمق وحركة عبر مزج فضي هادئ متعدد الدرجات"
+        "يستبدل مانيكير العنكبوت لهالوين ٢٠٢٦ التصاميم المزدحمة بظفر بارز واحد وتفاصيل دقيقة"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٤ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٢٤ أكتوبر"
+        "date": "٢٥ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٢٥ أكتوبر"
       }
     }
   }
