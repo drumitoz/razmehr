@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-25a",
+  "version": "2026-10-28a",
   "files": [
+    "beauty-news-2026-10-28.js",
     "beauty-news-2026-10-25.js",
     "beauty-news-2026-10-24.js",
     "beauty-news-2026-10-22.js",
@@ -43,64 +44,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "lisa-flared-nails-thai-fon-lep-2026",
     "mochi-skin-satin-glow-revival-2026",
-    "ariana-grande-flipped-brunette-bob-2026",
-    "minimal-spider-accent-nails-halloween-2026"
+    "ariana-grande-flipped-brunette-bob-2026"
   ],
   "latestStoryIds": [
+    "lisa-flared-nails-thai-fon-lep-2026",
     "mochi-skin-satin-glow-revival-2026",
-    "ariana-grande-flipped-brunette-bob-2026",
-    "minimal-spider-accent-nails-halloween-2026"
+    "ariana-grande-flipped-brunette-bob-2026"
   ],
-  "latestLabel": "منتخب ۳ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۶ آبان ۱۴۰۵",
   "ticker": [
+    "مانیکور فلر لیسا (Lisa) با نوک‌های برگشته، زرشکی کروم و گل‌های سفید به رقص سنتی فُن لِب تایلند اشاره می‌کند",
     "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است",
-    "آریانا گرانده (Ariana Grande) دم‌اسبی امضایی خود را با یک باب قهوه‌ای براق و نوک‌های برگشته عوض کرد",
-    "مانیکور عنکبوتی هالووین ۲۰۲۶ به‌جای طرح‌های شلوغ، روی یک ناخن تأکیدی و جزئیات ظریف تمرکز دارد"
+    "آریانا گرانده (Ariana Grande) دم‌اسبی امضایی خود را با یک باب قهوه‌ای براق و نوک‌های برگشته عوض کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۳ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۳ آبان"
+    "date": "۶ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۶ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 25 October 2026",
+      "latestLabel": "Editor’s picks · 28 October 2026",
       "ticker": [
+        "Lisa’s flared manicure pairs upturned oxblood chrome tips and white flowers with a reference to Thailand’s traditional Fon Lep dance",
         "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture",
-        "Ariana Grande replaces her signature ponytail with a glossy brunette bob and softly flipped ends",
-        "Halloween 2026 spider nails replace busy sets with one accent nail and finely controlled detail"
+        "Ariana Grande replaces her signature ponytail with a glossy brunette bob and softly flipped ends"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "25 October 2026",
-        "updated": "Updated 25 October"
+        "date": "28 October 2026",
+        "updated": "Updated 28 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 25 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 28 Ekim 2026",
       "ticker": [
+        "Lisa’nın flare manikürü yukarı kıvrılan bordo krom uçları ve beyaz çiçekleri Tayland’ın geleneksel Fon Lep dansına bağlıyor",
         "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor",
-        "Ariana Grande, imza atkuyruğunu parlak kahverengi ve uçları dışa dönen bir bob’la değiştiriyor",
-        "Halloween 2026 örümcek manikürü yoğun tasarımların yerine tek vurgu tırnağını ve ince detayları koyuyor"
+        "Ariana Grande, imza atkuyruğunu parlak kahverengi ve uçları dışa dönen bir bob’la değiştiriyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "25 Ekim 2026",
-        "updated": "Güncelleme: 25 Ekim"
+        "date": "28 Ekim 2026",
+        "updated": "Güncelleme: 28 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٥ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٨ أكتوبر ٢٠٢٦",
       "ticker": [
+        "يربط مانيكير ليسا المتسع أطرافه الخمرية المرتفعة وزهوره البيضاء برقصة فون ليب التقليدية في تايلاند",
         "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً",
-        "تستبدل أريانا غراندي ذيل حصانها الشهير ببوب بني لامع ذي أطراف ملتفة برفق إلى الخارج",
-        "يستبدل مانيكير العنكبوت لهالوين ٢٠٢٦ التصاميم المزدحمة بظفر بارز واحد وتفاصيل دقيقة"
+        "تستبدل أريانا غراندي ذيل حصانها الشهير ببوب بني لامع ذي أطراف ملتفة برفق إلى الخارج"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٥ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٢٥ أكتوبر"
+        "date": "٢٨ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٢٨ أكتوبر"
       }
     }
   }
