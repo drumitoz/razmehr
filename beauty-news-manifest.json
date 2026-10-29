@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-28a",
+  "version": "2026-10-29a",
   "files": [
+    "beauty-news-2026-10-29.js",
     "beauty-news-2026-10-28.js",
     "beauty-news-2026-10-25.js",
     "beauty-news-2026-10-24.js",
@@ -44,64 +45,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "jennifer-lawrence-mes-haircare-launch-2026",
     "lisa-flared-nails-thai-fon-lep-2026",
-    "mochi-skin-satin-glow-revival-2026",
-    "ariana-grande-flipped-brunette-bob-2026"
+    "mochi-skin-satin-glow-revival-2026"
   ],
   "latestStoryIds": [
+    "jennifer-lawrence-mes-haircare-launch-2026",
     "lisa-flared-nails-thai-fon-lep-2026",
-    "mochi-skin-satin-glow-revival-2026",
-    "ariana-grande-flipped-brunette-bob-2026"
+    "mochi-skin-satin-glow-revival-2026"
   ],
-  "latestLabel": "منتخب ۶ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۷ آبان ۱۴۰۵",
   "ticker": [
+    "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد",
     "مانیکور فلر لیسا (Lisa) با نوک‌های برگشته، زرشکی کروم و گل‌های سفید به رقص سنتی فُن لِب تایلند اشاره می‌کند",
-    "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است",
-    "آریانا گرانده (Ariana Grande) دم‌اسبی امضایی خود را با یک باب قهوه‌ای براق و نوک‌های برگشته عوض کرد"
+    "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۶ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۶ آبان"
+    "date": "۷ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۷ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 28 October 2026",
+      "latestLabel": "Editor’s picks · 29 October 2026",
       "ticker": [
+        "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products",
         "Lisa’s flared manicure pairs upturned oxblood chrome tips and white flowers with a reference to Thailand’s traditional Fon Lep dance",
-        "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture",
-        "Ariana Grande replaces her signature ponytail with a glossy brunette bob and softly flipped ends"
+        "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "28 October 2026",
-        "updated": "Updated 28 October"
+        "date": "29 October 2026",
+        "updated": "Updated 29 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 28 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 29 Ekim 2026",
       "ticker": [
+        "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü",
         "Lisa’nın flare manikürü yukarı kıvrılan bordo krom uçları ve beyaz çiçekleri Tayland’ın geleneksel Fon Lep dansına bağlıyor",
-        "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor",
-        "Ariana Grande, imza atkuyruğunu parlak kahverengi ve uçları dışa dönen bir bob’la değiştiriyor"
+        "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "28 Ekim 2026",
-        "updated": "Güncelleme: 28 Ekim"
+        "date": "29 Ekim 2026",
+        "updated": "Güncelleme: 29 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٨ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٩ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام",
         "يربط مانيكير ليسا المتسع أطرافه الخمرية المرتفعة وزهوره البيضاء برقصة فون ليب التقليدية في تايلاند",
-        "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً",
-        "تستبدل أريانا غراندي ذيل حصانها الشهير ببوب بني لامع ذي أطراف ملتفة برفق إلى الخارج"
+        "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٨ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٢٨ أكتوبر"
+        "date": "٢٩ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٢٩ أكتوبر"
       }
     }
   }
