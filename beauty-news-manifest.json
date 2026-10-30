@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-29a",
+  "version": "2026-10-30a",
   "files": [
+    "beauty-news-2026-10-30.js",
     "beauty-news-2026-10-29.js",
     "beauty-news-2026-10-28.js",
     "beauty-news-2026-10-25.js",
@@ -45,64 +46,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "brown-metallic-nails-fall-2026",
     "jennifer-lawrence-mes-haircare-launch-2026",
-    "lisa-flared-nails-thai-fon-lep-2026",
     "mochi-skin-satin-glow-revival-2026"
   ],
   "latestStoryIds": [
+    "brown-metallic-nails-fall-2026",
     "jennifer-lawrence-mes-haircare-launch-2026",
-    "lisa-flared-nails-thai-fon-lep-2026",
     "mochi-skin-satin-glow-revival-2026"
   ],
-  "latestLabel": "منتخب ۷ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۸ آبان ۱۴۰۵",
   "ticker": [
+    "قهوه‌ای متالیک با طیفی از اسپرسوی کروم تا مس و شکلات صدفی، رنگ خنثی پاییز را به مانیکوری نورگیر تبدیل می‌کند",
     "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد",
-    "مانیکور فلر لیسا (Lisa) با نوک‌های برگشته، زرشکی کروم و گل‌های سفید به رقص سنتی فُن لِب تایلند اشاره می‌کند",
     "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۷ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۷ آبان"
+    "date": "۸ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۸ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 29 October 2026",
+      "latestLabel": "Editor’s picks · 30 October 2026",
       "ticker": [
+        "From chrome espresso to copper and pearly chocolate, brown metallic turns an autumn neutral into a light-catching manicure",
         "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products",
-        "Lisa’s flared manicure pairs upturned oxblood chrome tips and white flowers with a reference to Thailand’s traditional Fon Lep dance",
         "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "29 October 2026",
-        "updated": "Updated 29 October"
+        "date": "30 October 2026",
+        "updated": "Updated 30 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 29 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 30 Ekim 2026",
       "ticker": [
+        "Krom espressodan bakır ve sedefli çikolataya uzanan kahverengi metalik, sonbahar nötrünü ışığı yakalayan bir maniküre dönüştürüyor",
         "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü",
-        "Lisa’nın flare manikürü yukarı kıvrılan bordo krom uçları ve beyaz çiçekleri Tayland’ın geleneksel Fon Lep dansına bağlıyor",
         "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "29 Ekim 2026",
-        "updated": "Güncelleme: 29 Ekim"
+        "date": "30 Ekim 2026",
+        "updated": "Güncelleme: 30 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٩ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٣٠ أكتوبر ٢٠٢٦",
       "ticker": [
+        "من إسبريسو الكروم إلى النحاس والشوكولاتة اللؤلؤية، يحوّل البني المعدني اللون الخريفي المحايد إلى مانيكير يلتقط الضوء",
         "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام",
-        "يربط مانيكير ليسا المتسع أطرافه الخمرية المرتفعة وزهوره البيضاء برقصة فون ليب التقليدية في تايلاند",
         "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٩ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٢٩ أكتوبر"
+        "date": "٣٠ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٣٠ أكتوبر"
       }
     }
   }
