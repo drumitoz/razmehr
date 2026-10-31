@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-30a",
+  "version": "2026-10-31a",
   "files": [
+    "beauty-news-2026-10-31.js",
     "beauty-news-2026-10-30.js",
     "beauty-news-2026-10-29.js",
     "beauty-news-2026-10-28.js",
@@ -46,64 +47,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "sarah-pidgeon-blurred-rosewood-lip-2026",
     "brown-metallic-nails-fall-2026",
-    "jennifer-lawrence-mes-haircare-launch-2026",
-    "mochi-skin-satin-glow-revival-2026"
+    "jennifer-lawrence-mes-haircare-launch-2026"
   ],
   "latestStoryIds": [
+    "sarah-pidgeon-blurred-rosewood-lip-2026",
     "brown-metallic-nails-fall-2026",
-    "jennifer-lawrence-mes-haircare-launch-2026",
-    "mochi-skin-satin-glow-revival-2026"
+    "jennifer-lawrence-mes-haircare-launch-2026"
   ],
-  "latestLabel": "منتخب ۸ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۹ آبان ۱۴۰۵",
   "ticker": [
+    "لب رز‌وود محو سارا پیجن (Sarah Pidgeon) با لبه‌های پخش‌شده، مرکز کمی تیره‌تر و درخشش ساتنی، ترند لب محو ۲۰۲۶ را تازه می‌کند",
     "قهوه‌ای متالیک با طیفی از اسپرسوی کروم تا مس و شکلات صدفی، رنگ خنثی پاییز را به مانیکوری نورگیر تبدیل می‌کند",
-    "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد",
-    "موچی‌اسکین با درخشش ساتنی و بافت طبیعی‌تر دوباره در مرکز توجه تحریریه‌های زیبایی قرار گرفته است"
+    "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۸ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۸ آبان"
+    "date": "۹ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۹ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 30 October 2026",
+      "latestLabel": "Editor’s picks · 31 October 2026",
       "ticker": [
+        "Sarah Pidgeon’s blurred rosewood lip uses diffused edges, a slightly deeper centre and satin shine to refresh 2026’s soft-focus lip trend",
         "From chrome espresso to copper and pearly chocolate, brown metallic turns an autumn neutral into a light-catching manicure",
-        "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products",
-        "Mochi skin returns to beauty-editorial focus with satin luminosity and more visible natural texture"
+        "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "30 October 2026",
-        "updated": "Updated 30 October"
+        "date": "31 October 2026",
+        "updated": "Updated 31 October"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 30 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 31 Ekim 2026",
       "ticker": [
+        "Sarah Pidgeon’ın dağıtılmış kenarlı, merkezi hafif koyu ve saten ışıltılı gül ağacı dudağı, 2026’nın yumuşak odaklı dudak trendini yeniliyor",
         "Krom espressodan bakır ve sedefli çikolataya uzanan kahverengi metalik, sonbahar nötrünü ışığı yakalayan bir maniküre dönüştürüyor",
-        "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü",
-        "Mochi skin, saten ışıltı ve daha görünür doğal dokuyla güzellik yayınlarının odağına geri dönüyor"
+        "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "30 Ekim 2026",
-        "updated": "Güncelleme: 30 Ekim"
+        "date": "31 Ekim 2026",
+        "updated": "Güncelleme: 31 Ekim"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٣٠ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٣١ أكتوبر ٢٠٢٦",
       "ticker": [
+        "تجدد شفاه سارة بيدجون بلون خشب الورد وحواف مموهة ووسط أغمق قليلاً ولمعة ساتانية صيحة الشفاه الناعمة في ٢٠٢٦",
         "من إسبريسو الكروم إلى النحاس والشوكولاتة اللؤلؤية، يحوّل البني المعدني اللون الخريفي المحايد إلى مانيكير يلتقط الضوء",
-        "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام",
-        "تعود بشرة الموتشي إلى اهتمام صحافة الجمال بإشراقة ساتانية وملمس طبيعي أكثر وضوحاً"
+        "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٣٠ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٣٠ أكتوبر"
+        "date": "٣١ أكتوبر ٢٠٢٦",
+        "updated": "تحديث: ٣١ أكتوبر"
       }
     }
   }
