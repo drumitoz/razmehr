@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-10-31a",
+  "version": "2026-11-01a",
   "files": [
+    "beauty-news-2026-11-01.js",
     "beauty-news-2026-10-31.js",
     "beauty-news-2026-10-30.js",
     "beauty-news-2026-10-29.js",
@@ -47,64 +48,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "elle-fanning-pink-chiffon-nails-2026",
     "sarah-pidgeon-blurred-rosewood-lip-2026",
-    "brown-metallic-nails-fall-2026",
     "jennifer-lawrence-mes-haircare-launch-2026"
   ],
   "latestStoryIds": [
+    "elle-fanning-pink-chiffon-nails-2026",
     "sarah-pidgeon-blurred-rosewood-lip-2026",
-    "brown-metallic-nails-fall-2026",
     "jennifer-lawrence-mes-haircare-launch-2026"
   ],
-  "latestLabel": "منتخب ۹ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۱۰ آبان ۱۴۰۵",
   "ticker": [
+    "مانیکور «شیفون صورتی» ال فانینگ (Elle Fanning) با پایه نیمه‌شفاف و کروم مرواریدی، نسخه‌ای سبک‌تر از درخشش آینه‌ای می‌سازد",
     "لب رز‌وود محو سارا پیجن (Sarah Pidgeon) با لبه‌های پخش‌شده، مرکز کمی تیره‌تر و درخشش ساتنی، ترند لب محو ۲۰۲۶ را تازه می‌کند",
-    "قهوه‌ای متالیک با طیفی از اسپرسوی کروم تا مس و شکلات صدفی، رنگ خنثی پاییز را به مانیکوری نورگیر تبدیل می‌کند",
     "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۹ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۹ آبان"
+    "date": "۱۰ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۰ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 31 October 2026",
+      "latestLabel": "Editor’s picks · 1 November 2026",
       "ticker": [
+        "Elle Fanning’s ‘pink chiffon’ manicure pairs a sheer base with pearl chrome for a lighter alternative to mirror shine",
         "Sarah Pidgeon’s blurred rosewood lip uses diffused edges, a slightly deeper centre and satin shine to refresh 2026’s soft-focus lip trend",
-        "From chrome espresso to copper and pearly chocolate, brown metallic turns an autumn neutral into a light-catching manicure",
         "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "31 October 2026",
-        "updated": "Updated 31 October"
+        "date": "1 November 2026",
+        "updated": "Updated 1 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 31 Ekim 2026",
+      "latestLabel": "Editörün seçtikleri · 1 Kasım 2026",
       "ticker": [
+        "Elle Fanning’ın ‘pembe şifon’ manikürü, ayna parlaklığına daha hafif bir alternatif için şeffaf tabanı inci kromla buluşturuyor",
         "Sarah Pidgeon’ın dağıtılmış kenarlı, merkezi hafif koyu ve saten ışıltılı gül ağacı dudağı, 2026’nın yumuşak odaklı dudak trendini yeniliyor",
-        "Krom espressodan bakır ve sedefli çikolataya uzanan kahverengi metalik, sonbahar nötrünü ışığı yakalayan bir maniküre dönüştürüyor",
         "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "31 Ekim 2026",
-        "updated": "Güncelleme: 31 Ekim"
+        "date": "1 Kasım 2026",
+        "updated": "Güncelleme: 1 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٣١ أكتوبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١ نوفمبر ٢٠٢٦",
       "ticker": [
+        "يجمع مانيكير «الشيفون الوردي» لإيل فانينغ بين قاعدة شفافة وكروم لؤلؤي ليقدم بديلاً أخف من اللمعان المرآتي",
         "تجدد شفاه سارة بيدجون بلون خشب الورد وحواف مموهة ووسط أغمق قليلاً ولمعة ساتانية صيحة الشفاه الناعمة في ٢٠٢٦",
-        "من إسبريسو الكروم إلى النحاس والشوكولاتة اللؤلؤية، يحوّل البني المعدني اللون الخريفي المحايد إلى مانيكير يلتقط الضوء",
         "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٣١ أكتوبر ٢٠٢٦",
-        "updated": "تحديث: ٣١ أكتوبر"
+        "date": "١ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١ نوفمبر"
       }
     }
   }
