@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-01a",
+  "version": "2026-11-03a",
   "files": [
+    "beauty-news-2026-11-03.js",
     "beauty-news-2026-11-01.js",
     "beauty-news-2026-10-31.js",
     "beauty-news-2026-10-30.js",
@@ -48,64 +49,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "cfda-awards-2026-winners",
     "elle-fanning-pink-chiffon-nails-2026",
-    "sarah-pidgeon-blurred-rosewood-lip-2026",
-    "jennifer-lawrence-mes-haircare-launch-2026"
+    "sarah-pidgeon-blurred-rosewood-lip-2026"
   ],
   "latestStoryIds": [
+    "cfda-awards-2026-winners",
     "elle-fanning-pink-chiffon-nails-2026",
-    "sarah-pidgeon-blurred-rosewood-lip-2026",
-    "jennifer-lawrence-mes-haircare-launch-2026"
+    "sarah-pidgeon-blurred-rosewood-lip-2026"
   ],
-  "latestLabel": "منتخب ۱۰ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۱۲ آبان ۱۴۰۵",
   "ticker": [
+    "ریچل اسکات (Rachel Scott) برای دیوتیما برنده جایزه طراح مد زنانه آمریکا در CFDA ۲۰۲۶ شد",
     "مانیکور «شیفون صورتی» ال فانینگ (Elle Fanning) با پایه نیمه‌شفاف و کروم مرواریدی، نسخه‌ای سبک‌تر از درخشش آینه‌ای می‌سازد",
-    "لب رز‌وود محو سارا پیجن (Sarah Pidgeon) با لبه‌های پخش‌شده، مرکز کمی تیره‌تر و درخشش ساتنی، ترند لب محو ۲۰۲۶ را تازه می‌کند",
-    "جنیفر لارنس (Jennifer Lawrence) برند مراقبت موی mes° را با سه محصول چندکاره و همکاری زیست‌مهندس جاسمینا آگانوویچ راه‌اندازی کرد"
+    "لب رز‌وود محو سارا پیجن (Sarah Pidgeon) با لبه‌های پخش‌شده، مرکز کمی تیره‌تر و درخشش ساتنی، ترند لب محو ۲۰۲۶ را تازه می‌کند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۰ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۰ آبان"
+    "date": "۱۲ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۲ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 1 November 2026",
+      "latestLabel": "Editor’s picks · 3 November 2026",
       "ticker": [
+        "Rachel Scott wins American Womenswear Designer of the Year for Diotima at the 2026 CFDA Awards",
         "Elle Fanning’s ‘pink chiffon’ manicure pairs a sheer base with pearl chrome for a lighter alternative to mirror shine",
-        "Sarah Pidgeon’s blurred rosewood lip uses diffused edges, a slightly deeper centre and satin shine to refresh 2026’s soft-focus lip trend",
-        "Jennifer Lawrence launches hair-care brand mes° with bioengineer Jasmina Aganovic and three multitasking debut products"
+        "Sarah Pidgeon’s blurred rosewood lip uses diffused edges, a slightly deeper centre and satin shine to refresh 2026’s soft-focus lip trend"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "1 November 2026",
-        "updated": "Updated 1 November"
+        "date": "3 November 2026",
+        "updated": "Updated 3 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 1 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 3 Kasım 2026",
       "ticker": [
+        "Rachel Scott, 2026 CFDA Ödülleri’nde Diotima ile Yılın Amerikalı Kadın Giyim Tasarımcısı seçildi",
         "Elle Fanning’ın ‘pembe şifon’ manikürü, ayna parlaklığına daha hafif bir alternatif için şeffaf tabanı inci kromla buluşturuyor",
-        "Sarah Pidgeon’ın dağıtılmış kenarlı, merkezi hafif koyu ve saten ışıltılı gül ağacı dudağı, 2026’nın yumuşak odaklı dudak trendini yeniliyor",
-        "Jennifer Lawrence, biyomühendis Jasmina Aganovic ile mes° saç bakım markasını ve üç çok işlevli ürünü piyasaya sürdü"
+        "Sarah Pidgeon’ın dağıtılmış kenarlı, merkezi hafif koyu ve saten ışıltılı gül ağacı dudağı, 2026’nın yumuşak odaklı dudak trendini yeniliyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "1 Kasım 2026",
-        "updated": "Güncelleme: 1 Kasım"
+        "date": "3 Kasım 2026",
+        "updated": "Güncelleme: 3 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٣ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تفوز رايتشل سكوت عن ديوتيما بجائزة مصممة الأزياء النسائية الأميركية في حفل CFDA لعام ٢٠٢٦",
         "يجمع مانيكير «الشيفون الوردي» لإيل فانينغ بين قاعدة شفافة وكروم لؤلؤي ليقدم بديلاً أخف من اللمعان المرآتي",
-        "تجدد شفاه سارة بيدجون بلون خشب الورد وحواف مموهة ووسط أغمق قليلاً ولمعة ساتانية صيحة الشفاه الناعمة في ٢٠٢٦",
-        "تطلق جينيفر لورنس علامة العناية بالشعر mes° مع المهندسة الحيوية ياسمينا أغانوفيتش وثلاثة منتجات متعددة الاستخدام"
+        "تجدد شفاه سارة بيدجون بلون خشب الورد وحواف مموهة ووسط أغمق قليلاً ولمعة ساتانية صيحة الشفاه الناعمة في ٢٠٢٦"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١ نوفمبر"
+        "date": "٣ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٣ نوفمبر"
       }
     }
   }
