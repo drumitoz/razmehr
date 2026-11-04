@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-03a",
+  "version": "2026-11-04a",
   "files": [
+    "beauty-news-2026-11-04.js",
     "beauty-news-2026-11-03.js",
     "beauty-news-2026-11-01.js",
     "beauty-news-2026-10-31.js",
@@ -49,65 +50,66 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "pamela-anderson-sculpted-platinum-bob-2026",
     "cfda-awards-2026-winners",
-    "elle-fanning-pink-chiffon-nails-2026",
-    "sarah-pidgeon-blurred-rosewood-lip-2026"
+    "elle-fanning-pink-chiffon-nails-2026"
   ],
   "latestStoryIds": [
+    "pamela-anderson-sculpted-platinum-bob-2026",
     "cfda-awards-2026-winners",
-    "elle-fanning-pink-chiffon-nails-2026",
-    "sarah-pidgeon-blurred-rosewood-lip-2026"
+    "elle-fanning-pink-chiffon-nails-2026"
   ],
-  "latestLabel": "منتخب ۱۲ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۱۳ آبان ۱۴۰۵",
   "ticker": [
+    "باب پلاتینی پاملا اندرسون (Pamela Anderson) با فرهای رو به عقب، گلم هالیوود کلاسیک را در CFDA ۲۰۲۶ به‌روز کرد",
     "ریچل اسکات (Rachel Scott) برای دیوتیما برنده جایزه طراح مد زنانه آمریکا در CFDA ۲۰۲۶ شد",
-    "مانیکور «شیفون صورتی» ال فانینگ (Elle Fanning) با پایه نیمه‌شفاف و کروم مرواریدی، نسخه‌ای سبک‌تر از درخشش آینه‌ای می‌سازد",
-    "لب رز‌وود محو سارا پیجن (Sarah Pidgeon) با لبه‌های پخش‌شده، مرکز کمی تیره‌تر و درخشش ساتنی، ترند لب محو ۲۰۲۶ را تازه می‌کند"
+    "مانیکور «شیفون صورتی» ال فانینگ (Elle Fanning) با پایه نیمه‌شفاف و کروم مرواریدی، نسخه‌ای سبک‌تر از درخشش آینه‌ای می‌سازد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۲ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۲ آبان"
+    "date": "۱۳ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۳ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 3 November 2026",
+      "latestLabel": "Editor’s picks · 4 November 2026",
       "ticker": [
+        "Pamela Anderson updates classic Hollywood glamour with a swept-back, sculpted platinum bob at the 2026 CFDA Awards",
         "Rachel Scott wins American Womenswear Designer of the Year for Diotima at the 2026 CFDA Awards",
-        "Elle Fanning’s ‘pink chiffon’ manicure pairs a sheer base with pearl chrome for a lighter alternative to mirror shine",
-        "Sarah Pidgeon’s blurred rosewood lip uses diffused edges, a slightly deeper centre and satin shine to refresh 2026’s soft-focus lip trend"
+        "Elle Fanning’s ‘pink chiffon’ manicure pairs a sheer base with pearl chrome for a lighter alternative to mirror shine"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "3 November 2026",
-        "updated": "Updated 3 November"
+        "date": "4 November 2026",
+        "updated": "Updated 4 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 3 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 4 Kasım 2026",
       "ticker": [
+        "Pamela Anderson, geriye yönlendirilmiş ve şekillendirilmiş platin bobuyla 2026 CFDA Ödülleri’nde klasik Hollywood ışıltısını güncelliyor",
         "Rachel Scott, 2026 CFDA Ödülleri’nde Diotima ile Yılın Amerikalı Kadın Giyim Tasarımcısı seçildi",
-        "Elle Fanning’ın ‘pembe şifon’ manikürü, ayna parlaklığına daha hafif bir alternatif için şeffaf tabanı inci kromla buluşturuyor",
-        "Sarah Pidgeon’ın dağıtılmış kenarlı, merkezi hafif koyu ve saten ışıltılı gül ağacı dudağı, 2026’nın yumuşak odaklı dudak trendini yeniliyor"
+        "Elle Fanning’ın ‘pembe şifon’ manikürü, ayna parlaklığına daha hafif bir alternatif için şeffaf tabanı inci kromla buluşturuyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "3 Kasım 2026",
-        "updated": "Güncelleme: 3 Kasım"
+        "date": "4 Kasım 2026",
+        "updated": "Güncelleme: 4 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٣ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٤ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تجدد باميلا أندرسون بوبها البلاتيني المنحوت والمسحوب إلى الخلف لتقدم بريق هوليوود الكلاسيكي بروح معاصرة في جوائز CFDA لعام ٢٠٢٦",
         "تفوز رايتشل سكوت عن ديوتيما بجائزة مصممة الأزياء النسائية الأميركية في حفل CFDA لعام ٢٠٢٦",
-        "يجمع مانيكير «الشيفون الوردي» لإيل فانينغ بين قاعدة شفافة وكروم لؤلؤي ليقدم بديلاً أخف من اللمعان المرآتي",
-        "تجدد شفاه سارة بيدجون بلون خشب الورد وحواف مموهة ووسط أغمق قليلاً ولمعة ساتانية صيحة الشفاه الناعمة في ٢٠٢٦"
+        "يجمع مانيكير «الشيفون الوردي» لإيل فانينغ بين قاعدة شفافة وكروم لؤلؤي ليقدم بديلا أخف من اللمعان المرآتي"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٣ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٣ نوفمبر"
+        "date": "٤ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٤ نوفمبر"
       }
     }
   }
 }
+
