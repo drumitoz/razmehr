@@ -3,16 +3,19 @@
 
   const liveOverrides = {
     en: {
-      "۳۱۲ نفر خریداری کرده‌اند": "312 people have purchased this course",
-      "در حال برگزاری": "Course in Progress"
+      "۳۶۴ نفر خریداری کرده‌اند": "364 people have purchased this course",
+      "در حال برگزاری": "Course in Progress",
+      "پایان یافته": "Course Completed"
     },
     tr: {
-      "۳۱۲ نفر خریداری کرده‌اند": "312 kişi bu eğitimi satın aldı",
-      "در حال برگزاری": "Eğitim Devam Ediyor"
+      "۳۶۴ نفر خریداری کرده‌اند": "364 kişi bu eğitimi satın aldı",
+      "در حال برگزاری": "Eğitim Devam Ediyor",
+      "پایان یافته": "Eğitim Tamamlandı"
     },
     ar: {
-      "۳۱۲ نفر خریداری کرده‌اند": "اشترى هذه الدورة 312 شخصًا",
-      "در حال برگزاری": "الدورة جارية الآن"
+      "۳۶۴ نفر خریداری کرده‌اند": "اشترى هذه الدورة 364 شخصًا",
+      "در حال برگزاری": "الدورة جارية الآن",
+      "پایان یافته": "انتهت الدورة"
     }
   };
 
