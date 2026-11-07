@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-05a",
+  "version": "2026-11-07a",
   "files": [
+    "beauty-news-2026-11-07.js",
     "beauty-news-2026-11-05.js",
     "beauty-news-2026-11-04.js",
     "beauty-news-2026-11-03.js",
@@ -51,66 +52,65 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "olive-green-nails-winter-2026",
-    "pamela-anderson-sculpted-platinum-bob-2026",
-    "cfda-awards-2026-winners"
+    "martine-rose-balenciaga-creative-director-2026",
+    "nicole-kidman-wispy-fringe-sydney-2026",
+    "olive-green-nails-winter-2026"
   ],
   "latestStoryIds": [
-    "olive-green-nails-winter-2026",
-    "pamela-anderson-sculpted-platinum-bob-2026",
-    "cfda-awards-2026-winners"
+    "martine-rose-balenciaga-creative-director-2026",
+    "nicole-kidman-wispy-fringe-sydney-2026",
+    "olive-green-nails-winter-2026"
   ],
-  "latestLabel": "منتخب ۱۴ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۱۶ آبان ۱۴۰۵",
   "ticker": [
-    "سبز زیتونی با رشد توجه آنلاین و تأیید هم‌زمان متخصصان، میان خنثی‌های تازه مانیکور زمستانی قرار می‌گیرد",
-    "باب پلاتینی پاملا اندرسون (Pamela Anderson) با فرهای رو به عقب، گلم هالیوود کلاسیک را در CFDA ۲۰۲۶ به‌روز کرد",
-    "ریچل اسکات (Rachel Scott) برای دیوتیما برنده جایزه طراح مد زنانه آمریکا در CFDA ۲۰۲۶ شد"
+    "مارتین رز (Martine Rose) از ۱۶ نوامبر هدایت خلاق بالنسیاگا را بر عهده می‌گیرد",
+    "چتری بلند و سبک نیکول کیدمن (Nicole Kidman) در نمایش تاریخی شنل، میان مدل کامل و پرده‌ای حرکت می‌کند",
+    "سبز زیتونی با رشد توجه آنلاین و تأیید هم‌زمان متخصصان، میان خنثی‌های تازه مانیکور زمستانی قرار می‌گیرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۴ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۴ آبان"
+    "date": "۱۶ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۶ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 5 November 2026",
+      "latestLabel": "Editor’s picks · 7 November 2026",
       "ticker": [
-        "Rising online interest and simultaneous expert support place olive green among winter’s new manicure neutrals",
-        "Pamela Anderson updates classic Hollywood glamour with a swept-back, sculpted platinum bob at the 2026 CFDA Awards",
-        "Rachel Scott wins American Womenswear Designer of the Year for Diotima at the 2026 CFDA Awards"
+        "Martine Rose takes creative charge of Balenciaga on 16 November",
+        "Nicole Kidman’s long, airy fringe at Chanel’s historic Sydney show moves between full and curtain-bang styling",
+        "Rising online interest and simultaneous expert support place olive green among winter’s new manicure neutrals"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "5 November 2026",
-        "updated": "Updated 5 November"
+        "date": "7 November 2026",
+        "updated": "Updated 7 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 5 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 7 Kasım 2026",
       "ticker": [
-        "Yükselen çevrim içi ilgi ve eş zamanlı uzman desteği, zeytin yeşilini kışın yeni manikür nötrleri arasına taşıyor",
-        "Pamela Anderson, geriye yönlendirilmiş ve şekillendirilmiş platin bobuyla 2026 CFDA Ödülleri’nde klasik Hollywood ışıltısını güncelliyor",
-        "Rachel Scott, 2026 CFDA Ödülleri’nde Diotima ile Yılın Amerikalı Kadın Giyim Tasarımcısı seçildi"
+        "Martine Rose, 16 Kasım’da Balenciaga’nın yaratıcı yönetimini devralıyor",
+        "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki uzun ve hafif perçemi, tam ve perde model arasında şekilleniyor",
+        "Yükselen çevrim içi ilgi ve eş zamanlı uzman desteği, zeytin yeşilini kışın yeni manikür nötrleri arasına taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "5 Kasım 2026",
-        "updated": "Güncelleme: 5 Kasım"
+        "date": "7 Kasım 2026",
+        "updated": "Güncelleme: 7 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٥ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٧ نوفمبر ٢٠٢٦",
       "ticker": [
-        "يضع ارتفاع الاهتمام الرقمي وتأييد الخبراء المتزامن الأخضر الزيتوني بين ألوان المانيكير الحيادية الجديدة للشتاء",
-        "تجدد باميلا أندرسون بوبها البلاتيني المنحوت والمسحوب إلى الخلف لتقدم بريق هوليوود الكلاسيكي بروح معاصرة في جوائز CFDA لعام ٢٠٢٦",
-        "تفوز رايتشل سكوت عن ديوتيما بجائزة مصممة الأزياء النسائية الأميركية في حفل CFDA لعام ٢٠٢٦"
+        "تتولى مارتين روز القيادة الإبداعية لبالنسياغا في ١٦ نوفمبر",
+        "تتحرك غرة نيكول كيدمان الطويلة والخفيفة في عرض شانيل التاريخي بسيدني بين التنسيق الكامل وغرة الستارة",
+        "يضع ارتفاع الاهتمام الرقمي وتأييد الخبراء المتزامن الأخضر الزيتوني بين ألوان المانيكير الحيادية الجديدة للشتاء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٥ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٥ نوفمبر"
+        "date": "٧ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٧ نوفمبر"
       }
     }
   }
 }
-
