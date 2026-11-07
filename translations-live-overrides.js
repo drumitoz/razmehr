@@ -19,16 +19,9 @@
     }
   };
 
-  window.RAZMEHR_TRANSLATIONS_EN = Object.assign(
-    window.RAZMEHR_TRANSLATIONS_EN || {},
-    liveOverrides.en
-  );
-  window.RAZMEHR_TRANSLATIONS_TR = Object.assign(
-    window.RAZMEHR_TRANSLATIONS_TR || {},
-    liveOverrides.tr
-  );
-  window.RAZMEHR_TRANSLATIONS_AR = Object.assign(
-    window.RAZMEHR_TRANSLATIONS_AR || {},
-    liveOverrides.ar
-  );
+  window.RAZMEHR_APPLY_LIVE_TRANSLATIONS = (language) => {
+    const key = 'RAZMEHR_TRANSLATIONS_' + language.toUpperCase();
+    if (window[key]) Object.assign(window[key], liveOverrides[language] || {});
+  };
+  ['en', 'tr', 'ar'].forEach(window.RAZMEHR_APPLY_LIVE_TRANSLATIONS);
 })();

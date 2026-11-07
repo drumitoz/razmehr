@@ -3,6 +3,7 @@
 
   const state = window.RAZMEHR_BEAUTY_NEWS = window.RAZMEHR_BEAUTY_NEWS || {};
   state.batches = [];
+  const homeOnly = !document.getElementById('freshArticlesMount');
   const language = () => window.RAZMEHR_I18N?.language || 'fa';
   const locale = () => window.RAZMEHR_NEWS_LOCALES?.[language()] || null;
   const translate = (value) => {
@@ -153,7 +154,7 @@
     }
 
     applyActiveFilter();
-    if (location.hash) {
+    if (!homeOnly && location.hash) {
       requestAnimationFrame(() => document.getElementById(location.hash.slice(1))?.scrollIntoView());
     }
     document.dispatchEvent(new CustomEvent('razmehr:beauty-news-ready', {
@@ -165,15 +166,21 @@
     const script = document.createElement('script');
     script.src = file + '?v=' + encodeURIComponent(version);
     script.async = false;
-    script.onload = resolve;
-    script.onerror = () => reject(new Error('بارگذاری فایل خبر ناموفق بود: ' + file));
+    const fail = () => {
+      clearTimeout(timer);
+      script.remove();
+      reject(new Error('بارگذاری فایل خبر ناموفق بود: ' + file));
+    };
+    const timer = setTimeout(fail, 20000);
+    script.onload = () => { clearTimeout(timer); resolve(); };
+    script.onerror = fail;
     document.head.appendChild(script);
   });
 
   const init = async () => {
     if (window.RAZMEHR_FEATURES?.beautyNews === false) return;
     try {
-      const response = await fetch('beauty-news-manifest.json?t=' + Date.now(), {
+      const response = await fetch('beauty-news-manifest.json', {
         cache: 'no-store',
         credentials: 'same-origin'
       });
@@ -184,8 +191,34 @@
       }
       const files = manifest.files.filter((file) => /^beauty-news-\d{4}-\d{2}-\d{2}\.js$/.test(file));
       if (files.length !== manifest.files.length) throw new Error('نام فایل خبر معتبر نیست');
+      // Only card summaries are needed on the homepage, never the article archive.
+      const wanted = Array.isArray(manifest.homeStoryIds) ? manifest.homeStoryIds.slice(0, 3) : [];
+      const summaries = (Array.isArray(manifest.homeStories) ? manifest.homeStories : [])
+        .map(normalizeStory).filter(Boolean);
+      if (homeOnly && wanted.length === 3 && manifest.homeStoriesVersion === manifest.version &&
+          wanted.every(id => summaries.some(story => story.id === id))) {
+        state.manifest = manifest;
+        state.stories = summaries.filter(story => wanted.includes(story.id));
+        render(manifest, state.stories);
+        return;
+      }
       state.batches = [];
-      for (const file of files) await loadScript(file, manifest.version || Date.now());
+      if (homeOnly) {
+        // Compatibility with older publishers: stop as soon as the selected cards
+        // are found. An outdated summary must never hide newly published stories.
+        for (const file of files) {
+          await loadScript(file, manifest.version || Date.now());
+          const available = state.batches.flatMap(batch => batch.stories || []);
+          if (wanted.length ? wanted.every(id => available.some(story => story.id === id)) : available.length >= 3) break;
+        }
+      } else {
+        // The full articles load only after the visitor opens the news page.
+        // Limit concurrency instead of making 48 serial network round trips.
+        let next = 0;
+        await Promise.all(Array.from({ length: Math.min(4, files.length) }, async () => {
+          while (next < files.length) await loadScript(files[next++], manifest.version || Date.now());
+        }));
+      }
       const batches = new Map(state.batches.map((batch) => [batch.file, batch]));
       const seen = new Set();
       const stories = [];
@@ -201,8 +234,8 @@
       });
       if (!stories.length) throw new Error('هیچ خبر معتبری بارگذاری نشد');
       state.manifest = manifest;
-      state.stories = stories;
-      render(manifest, stories);
+      state.stories = homeOnly ? selectStories(wanted, new Map(stories.map(story => [story.id, story])), stories.slice(0, 3)) : stories;
+      render(manifest, state.stories);
     } catch (error) {
       console.error('[Razmehr Beauty News]', error);
     }

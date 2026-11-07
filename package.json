@@ -1,0 +1,11 @@
+{
+  "name": "razmehr-static-site",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/performance-loading.test.cjs",
+    "news:home": "node scripts/build-news-home.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

@@ -112,5 +112,119 @@
         "updated": "تحديث: ٧ نوفمبر"
       }
     }
-  }
+  },
+  "homeStories": [
+    {
+      "id": "martine-rose-balenciaga-creative-director-2026",
+      "category": "fashion global-event designer-news",
+      "tag": "خبر جهانی مد",
+      "title": "مارتین رز (Martine Rose) مدیر خلاق بالنسیاگا شد",
+      "shortTitle": "مارتین رز در رأس بالنسیاگا",
+      "summary": "کرینگ، مارتین رز را مدیر خلاق بالنسیاگا معرفی کرد؛ طراح بریتانیایی از ۱۶ نوامبر هدایت خلاق خانه مد پاریسی را بر عهده می‌گیرد.",
+      "date": "۱۵ آبان ۱۴۰۵",
+      "image": "img/beauty-news-martine-rose-balenciaga-creative-director-2026.jpg",
+      "alt": "پرتره سیاه‌وسفید مارتین رز با موهای فر و لبخند رو به دوربین",
+      "locales": {
+        "en": {
+          "tag": "Global fashion news",
+          "title": "Martine Rose appointed creative director of Balenciaga",
+          "shortTitle": "Martine Rose takes Balenciaga’s helm",
+          "summary": "Kering has named Martine Rose creative director of Balenciaga; the British designer will take charge of the Paris house’s creative direction on 16 November.",
+          "date": "6 November 2026",
+          "alt": "Black-and-white portrait of Martine Rose with curly hair, smiling at the camera"
+        },
+        "tr": {
+          "tag": "Küresel moda haberi",
+          "title": "Martine Rose, Balenciaga’nın kreatif direktörü oldu",
+          "shortTitle": "Balenciaga’nın başında Martine Rose",
+          "summary": "Kering, Martine Rose’u Balenciaga’nın kreatif direktörü olarak atadı; Britanyalı tasarımcı Paris merkezli moda evinin yaratıcı yönetimini 16 Kasım’da devralacak.",
+          "date": "6 Kasım 2026",
+          "alt": "Kıvırcık saçlarıyla kameraya gülümseyen Martine Rose’un siyah-beyaz portresi"
+        },
+        "ar": {
+          "tag": "خبر أزياء عالمي",
+          "title": "تعيين مارتين روز مديرة إبداعية لبالنسياغا",
+          "shortTitle": "مارتين روز تقود بالنسياغا",
+          "summary": "عيّنت كيرينغ مارتين روز مديرة إبداعية لبالنسياغا، على أن تتولى المصممة البريطانية القيادة الإبداعية للدار الباريسية في ١٦ نوفمبر.",
+          "date": "٦ نوفمبر ٢٠٢٦",
+          "alt": "صورة أبيض وأسود لمارتين روز بشعر مجعد وهي تبتسم للكاميرا"
+        }
+      }
+    },
+    {
+      "id": "nicole-kidman-wispy-fringe-sydney-2026",
+      "category": "hair celebrity-beauty global-event",
+      "tag": "موی سلبریتی",
+      "title": "چتری نرم نیکول کیدمن (Nicole Kidman) در شب تاریخی شنل",
+      "shortTitle": "چتری تازه نیکول کیدمن",
+      "summary": "نیکول کیدمن در نخستین نمایش رسمی شنل در استرالیا با چتری بلند و سبک ظاهر شد؛ مدلی که میان چتری کامل و پرده‌ای جابه‌جا می‌شود.",
+      "date": "۱۵ آبان ۱۴۰۵",
+      "image": "img/beauty-news-nicole-kidman-wispy-fringe-sydney-2026.jpg",
+      "alt": "نمای نزدیک نیکول کیدمن با موهای بلوند بلند و چتری نازک تا روی ابروها",
+      "locales": {
+        "en": {
+          "tag": "Celebrity hair",
+          "title": "Nicole Kidman’s soft fringe at Chanel’s historic Sydney show",
+          "shortTitle": "Nicole Kidman’s fresh fringe",
+          "summary": "Nicole Kidman appeared at Chanel’s first official Australian runway with long, airy bangs that can shift between a full fringe and a curtain shape.",
+          "date": "6 November 2026",
+          "alt": "Close portrait of Nicole Kidman with long blonde hair and wispy bangs grazing her brows"
+        },
+        "tr": {
+          "tag": "Ünlü saçı",
+          "title": "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki yumuşak perçemi",
+          "shortTitle": "Nicole Kidman’ın yeni perçemi",
+          "summary": "Nicole Kidman, Chanel’in Avustralya’daki ilk resmî defilesine tam perçem ile perde perçem arasında şekillenebilen uzun ve hafif bir kesimle katıldı.",
+          "date": "6 Kasım 2026",
+          "alt": "Uzun sarı saçları ve kaşlarına değen ince perçemiyle Nicole Kidman’ın yakın portresi"
+        },
+        "ar": {
+          "tag": "شعر المشاهير",
+          "title": "غرة نيكول كيدمان الناعمة في عرض شانيل التاريخي بسيدني",
+          "shortTitle": "غرة نيكول كيدمان الجديدة",
+          "summary": "ظهرت نيكول كيدمان في أول عرض رسمي لشانيل بأستراليا بغرة طويلة وخفيفة يمكن تنسيقها كاملة أو مفتوحة كالستارة.",
+          "date": "٦ نوفمبر ٢٠٢٦",
+          "alt": "صورة قريبة لنيكول كيدمان بشعر أشقر طويل وغرة خفيفة تلامس حاجبيها"
+        }
+      }
+    },
+    {
+      "id": "olive-green-nails-winter-2026",
+      "category": "nails beauty-trend color",
+      "tag": "ترند ناخن",
+      "title": "مانیکور زیتونی؛ سبز خاکی میان خنثی و رنگ شاخص",
+      "shortTitle": "بازگشت مانیکور زیتونی",
+      "summary": "سبز زیتونی با رشد توجه آنلاین و حضور هم‌زمان در گزارش‌های تخصصی نوامبر، از یک رنگ فصلی به خنثی تازه مانیکور زمستانی نزدیک می‌شود.",
+      "date": "۱۳ آبان ۱۴۰۵",
+      "image": "img/beauty-news-olive-green-nails-winter-2026.jpg",
+      "alt": "نمای نزدیک ناخن‌های بیضی کوتاه با لاک سبز زیتونی یکدست و براق",
+      "locales": {
+        "en": {
+          "tag": "Nail trend",
+          "title": "Olive manicures: the earthy green between neutral and statement",
+          "shortTitle": "The return of olive manicures",
+          "summary": "With rising online interest and simultaneous placement in specialist November reports, olive green is moving from a seasonal shade toward a new winter manicure neutral.",
+          "date": "4 November 2026",
+          "alt": "Close view of short oval nails painted in a solid glossy olive green"
+        },
+        "tr": {
+          "tag": "Tırnak trendi",
+          "title": "Zeytin yeşili manikür: nötr ile iddialı renk arasındaki toprak tonu",
+          "shortTitle": "Zeytin yeşili manikürün dönüşü",
+          "summary": "Çevrim içi ilginin yükselmesi ve kasım ayındaki uzman raporlarında aynı anda öne çıkması, zeytin yeşilini mevsimlik bir tondan yeni bir kış manikürü nötrüne taşıyor.",
+          "date": "4 Kasım 2026",
+          "alt": "Tek renk parlak zeytin yeşiline boyanmış kısa oval tırnakların yakın görünümü"
+        },
+        "ar": {
+          "tag": "صيحة أظافر",
+          "title": "مانيكير الزيتوني: الأخضر الترابي بين الحيادي واللون اللافت",
+          "shortTitle": "عودة المانيكير الزيتوني",
+          "summary": "مع ارتفاع الاهتمام الرقمي وظهوره المتزامن في تقارير نوفمبر المتخصصة، ينتقل الأخضر الزيتوني من لون موسمي إلى حيادي جديد لمانيكير الشتاء.",
+          "date": "٤ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لأظافر قصيرة بيضاوية مطلية بأخضر زيتوني موحد ولامع"
+        }
+      }
+    }
+  ],
+  "homeStoriesVersion": "2026-11-07a"
 }

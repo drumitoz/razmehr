@@ -8,6 +8,76 @@
   const translatableAttributes = ['alt', 'aria-label', 'placeholder', 'title', 'content'];
   let currentLanguage = 'fa';
   let applying = false;
+  let selection = 0;
+  const loadedLanguages = new Set(['fa']);
+  const scripts = new Map();
+  const version = '20261107-perf1';
+  const languageNames = { fa: 'فارسی', en: 'English', tr: 'Türkçe', ar: 'العربية' };
+  const messages = {
+    fa: ['در حال بارگیری زبان', 'زبان بارگیری نشد؛ دوباره انتخاب کنید.'],
+    en: ['Loading language', 'Could not load this language. Please select it again.'],
+    tr: ['Dil yükleniyor', 'Dil yüklenemedi. Lütfen yeniden seçin.'],
+    ar: ['جارٍ تحميل اللغة', 'تعذر تحميل اللغة. يُرجى اختيارها مرة أخرى.']
+  };
+
+  function loadScript(file) {
+    if (scripts.has(file)) return scripts.get(file);
+    const promise = new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = file + '?v=' + version;
+      script.async = false;
+      const fail = () => {
+        clearTimeout(timer);
+        script.remove();
+        scripts.delete(file);
+        reject(new Error('Language resource unavailable: ' + file));
+      };
+      const timer = setTimeout(fail, 20000);
+      script.onload = () => { clearTimeout(timer); resolve(); };
+      script.onerror = fail;
+      document.head.appendChild(script);
+    });
+    scripts.set(file, promise);
+    return promise;
+  }
+
+  async function ensureLanguage(language) {
+    if (loadedLanguages.has(language)) return;
+    await loadScript('translations-' + language + '.js');
+    if (!Object.keys(window['RAZMEHR_TRANSLATIONS_' + language.toUpperCase()] || {}).length) {
+      scripts.delete('translations-' + language + '.js');
+      throw new Error('Translation dictionary is empty: ' + language);
+    }
+    // The large English editorial dictionaries belong only to the news page.
+    if (language === 'en' && document.getElementById('freshArticlesMount')) {
+      await Promise.all(['news', 'stories-1', 'stories-2', 'editorial-news']
+        .map(part => loadScript('translations-en-' + part + '.js')));
+    }
+    if (document.getElementById('freshArticlesMount') || document.querySelector('.beauty-news-home')) {
+      await loadScript('beauty-news-locales-' + language + '.js');
+    }
+    // Apply shared, tiny editorial corrections after every base dictionary.
+    await loadScript('translations-live-overrides.js');
+    window.RAZMEHR_APPLY_LIVE_TRANSLATIONS?.(language);
+    loadedLanguages.add(language);
+  }
+
+  function status(text, busy) {
+    let node = document.getElementById('language-status');
+    if (!node) {
+      node = document.createElement('div');
+      node.id = 'language-status';
+      node.className = 'language-status';
+      node.setAttribute('role', 'status');
+      node.setAttribute('aria-live', 'polite');
+      document.body.appendChild(node);
+    }
+    node.textContent = text;
+    node.hidden = !text;
+    document.querySelectorAll('[data-language-trigger]').forEach(button => {
+      button.setAttribute('aria-busy', String(busy));
+    });
+  }
 
   function dictionary() {
     const dictionaries = {
@@ -34,7 +104,7 @@
       return;
     }
     const key = original.trim();
-    const translated = dictionary()[key];
+    const translated = dictionary()[key] || key;
     if (translated && node.nodeValue !== preserveWhitespace(original, translated)) {
       node.nodeValue = preserveWhitespace(original, translated);
     }
@@ -88,8 +158,21 @@
     document.querySelectorAll('[data-language-trigger]').forEach((button) => button.setAttribute('aria-expanded', 'false'));
   }
 
-  function setLanguage(language, options = {}) {
-    currentLanguage = supported.has(language) ? language : 'fa';
+  async function setLanguage(language, options = {}) {
+    const targetLanguage = supported.has(language) ? language : 'fa';
+    const request = ++selection;
+    if (!loadedLanguages.has(targetLanguage)) {
+      status(messages[currentLanguage][0] + ' · ' + languageNames[targetLanguage], true);
+      try {
+        await ensureLanguage(targetLanguage);
+      } catch (error) {
+        if (request === selection) status(messages[currentLanguage][1], false);
+        console.warn('[Razmehr language]', error);
+        return currentLanguage;
+      }
+    }
+    if (request !== selection) return currentLanguage;
+    currentLanguage = targetLanguage;
     document.documentElement.lang = currentLanguage;
     document.documentElement.dir = currentLanguage === 'fa' || currentLanguage === 'ar' ? 'rtl' : 'ltr';
     document.body?.classList.remove('lang-fa', 'lang-en', 'lang-tr', 'lang-ar');
@@ -97,7 +180,10 @@
     // Arabic shares the established RTL layout rules with Persian while
     // retaining its own language identity for translation and controls.
     if (currentLanguage === 'ar') document.body?.classList.add('lang-fa');
-    if (options.persist !== false) localStorage.setItem(STORAGE_KEY, currentLanguage);
+    if (options.persist !== false) {
+      try { localStorage.setItem(STORAGE_KEY, currentLanguage); } catch (_) { /* Private browsing. */ }
+    }
+    status('', false);
     applyTo(document);
     updateLanguageControls();
     document.dispatchEvent(new CustomEvent('razmehr:language-change', { detail: { language: currentLanguage } }));
@@ -113,7 +199,8 @@
   }
 
   function initialize() {
-    currentLanguage = supported.has(localStorage.getItem(STORAGE_KEY)) ? localStorage.getItem(STORAGE_KEY) : 'fa';
+    let preferred = 'fa';
+    try { preferred = localStorage.getItem(STORAGE_KEY) || 'fa'; } catch (_) { /* Use Persian. */ }
     document.addEventListener('click', (event) => {
       const trigger = event.target.closest('[data-language-trigger]');
       if (trigger) {
@@ -125,8 +212,7 @@
       const choice = event.target.closest('[data-set-language]');
       if (choice) {
         event.preventDefault();
-        if (typeof window.setLang === 'function' && window.setLang !== setLanguage) window.setLang(choice.dataset.setLanguage);
-        else setLanguage(choice.dataset.setLanguage);
+        setLanguage(choice.dataset.setLanguage);
         return;
       }
       document.querySelectorAll('[data-language-menu]').forEach((menu) => menu.classList.remove('open'));
@@ -143,7 +229,7 @@
       mutations.forEach((mutation) => mutation.addedNodes.forEach((node) => applyTo(node)));
     });
     observer.observe(document.documentElement, { childList: true, subtree: true });
-    setLanguage(currentLanguage, { persist: false });
+    setLanguage(preferred, { persist: false });
   }
 
   window.RAZMEHR_I18N = {

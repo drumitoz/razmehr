@@ -158,12 +158,13 @@ def build(lang):
 <html lang="{lang}" dir="{direction}">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="fonts/fonts.css?v=20261107">
 <title>{e(t['title'])}</title><meta name="description" content="{e(t['description'])}">
 <meta name="robots" content="index,follow,max-image-preview:large"><link rel="canonical" href="{url}">
 {links}
 <meta property="og:type" content="article"><meta property="og:locale" content="{lang}"><meta property="og:title" content="{e(t['title'])}"><meta property="og:description" content="{e(t['description'])}"><meta property="og:url" content="{url}"><meta property="og:image" content="https://razmehrbeauty.com/img/yazd/amir-current.webp"><meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#5f6b42"><link rel="icon" href="img/logo.png"><link rel="stylesheet" href="language-switch.css?v=20260922a"><link rel="stylesheet" href="yazd.css?v=20260926b">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">{json.dumps(structured,ensure_ascii=False).replace('<','\\u003c')}</script>
 </head><body>
 <a class="skip" href="#main">{e(t['stories'])}</a>
