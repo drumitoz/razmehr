@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-07a",
+  "version": "2026-11-08a",
   "files": [
+    "beauty-news-2026-11-08.js",
     "beauty-news-2026-11-07.js",
     "beauty-news-2026-11-05.js",
     "beauty-news-2026-11-04.js",
@@ -52,68 +53,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "met-gala-extraordinary-everyday-fashion-2027",
     "martine-rose-balenciaga-creative-director-2026",
-    "nicole-kidman-wispy-fringe-sydney-2026",
-    "olive-green-nails-winter-2026"
+    "nicole-kidman-wispy-fringe-sydney-2026"
   ],
   "latestStoryIds": [
+    "met-gala-extraordinary-everyday-fashion-2027",
     "martine-rose-balenciaga-creative-director-2026",
-    "nicole-kidman-wispy-fringe-sydney-2026",
-    "olive-green-nails-winter-2026"
+    "nicole-kidman-wispy-fringe-sydney-2026"
   ],
-  "latestLabel": "منتخب ۱۶ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۱۷ آبان ۱۴۰۵",
   "ticker": [
+    "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد",
     "مارتین رز (Martine Rose) از ۱۶ نوامبر هدایت خلاق بالنسیاگا را بر عهده می‌گیرد",
-    "چتری بلند و سبک نیکول کیدمن (Nicole Kidman) در نمایش تاریخی شنل، میان مدل کامل و پرده‌ای حرکت می‌کند",
-    "سبز زیتونی با رشد توجه آنلاین و تأیید هم‌زمان متخصصان، میان خنثی‌های تازه مانیکور زمستانی قرار می‌گیرد"
+    "چتری بلند و سبک نیکول کیدمن (Nicole Kidman) در نمایش تاریخی شنل، میان مدل کامل و پرده‌ای حرکت می‌کند"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۶ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۶ آبان"
+    "date": "۱۷ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۱۷ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 7 November 2026",
+      "latestLabel": "Editor’s picks · 8 November 2026",
       "ticker": [
+        "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage",
         "Martine Rose takes creative charge of Balenciaga on 16 November",
-        "Nicole Kidman’s long, airy fringe at Chanel’s historic Sydney show moves between full and curtain-bang styling",
-        "Rising online interest and simultaneous expert support place olive green among winter’s new manicure neutrals"
+        "Nicole Kidman’s long, airy fringe at Chanel’s historic Sydney show moves between full and curtain-bang styling"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "7 November 2026",
-        "updated": "Updated 7 November"
+        "date": "8 November 2026",
+        "updated": "Updated 8 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 7 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 8 Kasım 2026",
       "ticker": [
+        "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor",
         "Martine Rose, 16 Kasım’da Balenciaga’nın yaratıcı yönetimini devralıyor",
-        "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki uzun ve hafif perçemi, tam ve perde model arasında şekilleniyor",
-        "Yükselen çevrim içi ilgi ve eş zamanlı uzman desteği, zeytin yeşilini kışın yeni manikür nötrleri arasına taşıyor"
+        "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki uzun ve hafif perçemi, tam ve perde model arasında şekilleniyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "7 Kasım 2026",
-        "updated": "Güncelleme: 7 Kasım"
+        "date": "8 Kasım 2026",
+        "updated": "Güncelleme: 8 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٧ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٨ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء",
         "تتولى مارتين روز القيادة الإبداعية لبالنسياغا في ١٦ نوفمبر",
-        "تتحرك غرة نيكول كيدمان الطويلة والخفيفة في عرض شانيل التاريخي بسيدني بين التنسيق الكامل وغرة الستارة",
-        "يضع ارتفاع الاهتمام الرقمي وتأييد الخبراء المتزامن الأخضر الزيتوني بين ألوان المانيكير الحيادية الجديدة للشتاء"
+        "تتحرك غرة نيكول كيدمان الطويلة والخفيفة في عرض شانيل التاريخي بسيدني بين التنسيق الكامل وغرة الستارة"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٧ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٧ نوفمبر"
+        "date": "٨ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٨ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "met-gala-extraordinary-everyday-fashion-2027",
+      "category": "fashion global-event exhibition",
+      "tag": "رویداد جهانی مد",
+      "title": "مت گالا ۲۰۲۷ لباس‌های روزمره را به مرکز صحنه می‌برد",
+      "shortTitle": "تم روزمره مت گالا ۲۰۲۷",
+      "summary": "مؤسسه لباس مت برای نمایشگاه بهار ۲۰۲۷ سراغ جین، تی‌شرت، کاپشن پفی و مواد معمولی می‌رود تا نشان دهد طراحی چگونه امر روزمره را به مد خلاق تبدیل می‌کند.",
+      "date": "۱۴ آبان ۱۴۰۵",
+      "image": "img/beauty-news-met-extraordinary-2027.jpg",
+      "alt": "گرافیک رسمی سیاه‌وسفید نمایشگاه با نشان XO و عنوان extraORDINARY",
+      "locales": {
+        "en": {
+          "tag": "Global fashion event",
+          "title": "The 2027 Met Gala puts everyday clothes at centre stage",
+          "shortTitle": "The Met Gala’s everyday theme",
+          "summary": "The Met’s Costume Institute will build its spring 2027 exhibition around jeans, T-shirts, puffers and ordinary materials, examining how design turns the familiar into inventive fashion.",
+          "date": "5 November 2026",
+          "alt": "Official black-and-white exhibition graphic with an XO mark and the title extraORDINARY"
+        },
+        "tr": {
+          "tag": "Küresel moda etkinliği",
+          "title": "2027 Met Gala, gündelik kıyafetleri sahnenin merkezine taşıyor",
+          "shortTitle": "Met Gala’nın gündelik teması",
+          "summary": "Met Kostüm Enstitüsü, 2027 ilkbahar sergisini kotlar, tişörtler, şişme montlar ve sıradan malzemeler üzerine kurarak tasarımın tanıdık olanı nasıl yaratıcı modaya dönüştürdüğünü inceleyecek.",
+          "date": "5 Kasım 2026",
+          "alt": "XO işareti ve extraORDINARY başlığını taşıyan resmî siyah-beyaz sergi grafiği"
+        },
+        "ar": {
+          "tag": "حدث أزياء عالمي",
+          "title": "ميت غالا ٢٠٢٧ يضع الملابس اليومية في قلب المشهد",
+          "shortTitle": "ثيمة ميت غالا اليومية",
+          "summary": "يبني معهد الأزياء في متحف المتروبوليتان معرض ربيع ٢٠٢٧ على الجينز والقمصان والمعاطف المنفوخة والمواد العادية، لبحث كيف يحول التصميم المألوف إلى أزياء مبتكرة.",
+          "date": "٥ نوفمبر ٢٠٢٦",
+          "alt": "الهوية الرسمية بالأبيض والأسود للمعرض مع علامة XO وعنوان extraORDINARY"
+        }
+      }
+    },
     {
       "id": "martine-rose-balenciaga-creative-director-2026",
       "category": "fashion global-event designer-news",
@@ -187,44 +225,7 @@
           "alt": "صورة قريبة لنيكول كيدمان بشعر أشقر طويل وغرة خفيفة تلامس حاجبيها"
         }
       }
-    },
-    {
-      "id": "olive-green-nails-winter-2026",
-      "category": "nails beauty-trend color",
-      "tag": "ترند ناخن",
-      "title": "مانیکور زیتونی؛ سبز خاکی میان خنثی و رنگ شاخص",
-      "shortTitle": "بازگشت مانیکور زیتونی",
-      "summary": "سبز زیتونی با رشد توجه آنلاین و حضور هم‌زمان در گزارش‌های تخصصی نوامبر، از یک رنگ فصلی به خنثی تازه مانیکور زمستانی نزدیک می‌شود.",
-      "date": "۱۳ آبان ۱۴۰۵",
-      "image": "img/beauty-news-olive-green-nails-winter-2026.jpg",
-      "alt": "نمای نزدیک ناخن‌های بیضی کوتاه با لاک سبز زیتونی یکدست و براق",
-      "locales": {
-        "en": {
-          "tag": "Nail trend",
-          "title": "Olive manicures: the earthy green between neutral and statement",
-          "shortTitle": "The return of olive manicures",
-          "summary": "With rising online interest and simultaneous placement in specialist November reports, olive green is moving from a seasonal shade toward a new winter manicure neutral.",
-          "date": "4 November 2026",
-          "alt": "Close view of short oval nails painted in a solid glossy olive green"
-        },
-        "tr": {
-          "tag": "Tırnak trendi",
-          "title": "Zeytin yeşili manikür: nötr ile iddialı renk arasındaki toprak tonu",
-          "shortTitle": "Zeytin yeşili manikürün dönüşü",
-          "summary": "Çevrim içi ilginin yükselmesi ve kasım ayındaki uzman raporlarında aynı anda öne çıkması, zeytin yeşilini mevsimlik bir tondan yeni bir kış manikürü nötrüne taşıyor.",
-          "date": "4 Kasım 2026",
-          "alt": "Tek renk parlak zeytin yeşiline boyanmış kısa oval tırnakların yakın görünümü"
-        },
-        "ar": {
-          "tag": "صيحة أظافر",
-          "title": "مانيكير الزيتوني: الأخضر الترابي بين الحيادي واللون اللافت",
-          "shortTitle": "عودة المانيكير الزيتوني",
-          "summary": "مع ارتفاع الاهتمام الرقمي وظهوره المتزامن في تقارير نوفمبر المتخصصة، ينتقل الأخضر الزيتوني من لون موسمي إلى حيادي جديد لمانيكير الشتاء.",
-          "date": "٤ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لأظافر قصيرة بيضاوية مطلية بأخضر زيتوني موحد ولامع"
-        }
-      }
     }
   ],
-  "homeStoriesVersion": "2026-11-07a"
+  "homeStoriesVersion": "2026-11-08a"
 }
