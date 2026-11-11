@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-08a",
+  "version": "2026-11-11a",
   "files": [
+    "beauty-news-2026-11-11.js",
     "beauty-news-2026-11-08.js",
     "beauty-news-2026-11-07.js",
     "beauty-news-2026-11-05.js",
@@ -53,68 +54,142 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "met-gala-extraordinary-everyday-fashion-2027",
-    "martine-rose-balenciaga-creative-director-2026",
-    "nicole-kidman-wispy-fringe-sydney-2026"
+    "maybelline-reimagines-tagline-2026",
+    "bella-hadid-icy-blonde-look-2026",
+    "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
-    "met-gala-extraordinary-everyday-fashion-2027",
-    "martine-rose-balenciaga-creative-director-2026",
-    "nicole-kidman-wispy-fringe-sydney-2026"
+    "maybelline-reimagines-tagline-2026",
+    "bella-hadid-icy-blonde-look-2026",
+    "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۱۷ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۰ آبان ۱۴۰۵",
   "ticker": [
-    "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد",
-    "مارتین رز (Martine Rose) از ۱۶ نوامبر هدایت خلاق بالنسیاگا را بر عهده می‌گیرد",
-    "چتری بلند و سبک نیکول کیدمن (Nicole Kidman) در نمایش تاریخی شنل، میان مدل کامل و پرده‌ای حرکت می‌کند"
+    "میبلین نیویورک پس از ۳۵ سال شعار مشهورش را با زبانی فراگیرتر و مایلی سایرس بازنویسی کرد",
+    "بلا حدید با ظاهر بلوند یخی و باب تا سرشانه دیده شد؛ دائمی‌بودن تغییر هنوز تأیید نشده است",
+    "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۱۷ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۱۷ آبان"
+    "date": "۲۰ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۰ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 8 November 2026",
+      "latestLabel": "Editor’s picks · 11 November 2026",
       "ticker": [
-        "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage",
-        "Martine Rose takes creative charge of Balenciaga on 16 November",
-        "Nicole Kidman’s long, airy fringe at Chanel’s historic Sydney show moves between full and curtain-bang styling"
+        "Maybelline rewrites its famous 35-year tagline with more inclusive language and Miley Cyrus",
+        "Bella Hadid appears with an icy-blonde, shoulder-length bob; the change’s permanence remains unconfirmed",
+        "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "8 November 2026",
-        "updated": "Updated 8 November"
+        "date": "11 November 2026",
+        "updated": "Updated 11 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 8 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 11 Kasım 2026",
       "ticker": [
-        "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor",
-        "Martine Rose, 16 Kasım’da Balenciaga’nın yaratıcı yönetimini devralıyor",
-        "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki uzun ve hafif perçemi, tam ve perde model arasında şekilleniyor"
+        "Maybelline, 35 yıllık ünlü sloganını daha kapsayıcı bir dille ve Miley Cyrus ile yeniden yazdı",
+        "Bella Hadid buz sarısı, omuz hizasında bir bobla göründü; değişimin kalıcılığı henüz doğrulanmadı",
+        "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "8 Kasım 2026",
-        "updated": "Güncelleme: 8 Kasım"
+        "date": "11 Kasım 2026",
+        "updated": "Güncelleme: 11 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٨ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١١ نوفمبر ٢٠٢٦",
       "ticker": [
-        "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء",
-        "تتولى مارتين روز القيادة الإبداعية لبالنسياغا في ١٦ نوفمبر",
-        "تتحرك غرة نيكول كيدمان الطويلة والخفيفة في عرض شانيل التاريخي بسيدني بين التنسيق الكامل وغرة الستارة"
+        "تعيد مايبيلين صياغة شعارها الشهير بعد ٣٥ عاما بلغة أكثر شمولا وبمشاركة مايلي سايرس",
+        "تظهر بيلا حديد ببوب أشقر جليدي يصل إلى الكتفين؛ ولم يتأكد بعد إن كان التغيير دائما",
+        "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٨ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٨ نوفمبر"
+        "date": "١١ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١١ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "maybelline-reimagines-tagline-2026",
+      "category": "makeup beauty-industry brand-news",
+      "tag": "خبر صنعت میکاپ",
+      "title": "میبلین پس از ۳۵ سال شعار مشهورش را بازنویسی کرد",
+      "shortTitle": "شعار تازه میبلین پس از ۳۵ سال",
+      "summary": "میبلین نیویورک نسخه دائمی تازه‌ای از شعار مشهور «Maybe she’s born with it» معرفی کرده؛ «she» جای خود را به «we» داده و مایلی سایرس چهره آغاز این فصل است.",
+      "date": "۱۹ آبان ۱۴۰۵",
+      "image": "img/beauty-news-maybelline-tagline-2026.jpg",
+      "alt": "سه محصول میبلین شامل ریمل، کانسیلر و رژ مایع روی پس‌زمینه پیکسلی صورتی و مشکی",
+      "locales": {
+        "en": {
+          "tag": "Makeup industry news",
+          "title": "Maybelline rewrites its famous tagline after 35 years",
+          "shortTitle": "Maybelline’s new 35-year tagline",
+          "summary": "Maybelline New York has introduced a permanent update to “Maybe she’s born with it”: “she” becomes “we,” with Miley Cyrus opening the campaign’s new chapter.",
+          "date": "10 November 2026",
+          "alt": "Three Maybelline products—mascara, concealer and liquid lip colour—against a pink-and-black pixelated background"
+        },
+        "tr": {
+          "tag": "Makyaj sektörü haberi",
+          "title": "Maybelline, ünlü sloganını 35 yıl sonra yeniden yazdı",
+          "shortTitle": "Maybelline’in 35 yıl sonraki sloganı",
+          "summary": "Maybelline New York, “Maybe she’s born with it” sloganını kalıcı olarak yeniledi; “she” yerini “we”ye bırakırken yeni kampanyanın ilk yüzü Miley Cyrus oldu.",
+          "date": "10 Kasım 2026",
+          "alt": "Pembe ve siyah pikselli fonda maskara, kapatıcı ve likit dudak ürününden oluşan üç Maybelline ürünü"
+        },
+        "ar": {
+          "tag": "خبر صناعة المكياج",
+          "title": "مايبيلين تعيد صياغة شعارها الشهير بعد ٣٥ عاما",
+          "shortTitle": "شعار مايبيلين الجديد بعد ٣٥ عاما",
+          "summary": "قدمت Maybelline New York تحديثا دائما لعبارة “Maybe she’s born with it”، فحلت “we” مكان “she” وتتصدر مايلي سايرس بداية الحملة الجديدة.",
+          "date": "١٠ نوفمبر ٢٠٢٦",
+          "alt": "ثلاثة منتجات من مايبيلين تشمل ماسكارا وكونسيلر ولون شفاه سائل على خلفية وردية وسوداء مكسلة"
+        }
+      }
+    },
+    {
+      "id": "bella-hadid-icy-blonde-look-2026",
+      "category": "hair celebrity-beauty color",
+      "tag": "رنگ موی سلبریتی",
+      "title": "ظاهر پلاتینی تازه بلا حدید؛ دائمی‌بودن رنگ هنوز تأیید نشده",
+      "shortTitle": "پلاتینی تازه بلا حدید",
+      "summary": "بلا حدید در تصاویر تازه یک بازی هاکی با باب تا سرشانه و بلوند یخی دیده می‌شود؛ ظاهر تازه واقعی است، اما هنوز معلوم نیست رنگ دائمی باشد یا کلاه‌گیس.",
+      "date": "۱۹ آبان ۱۴۰۵",
+      "image": "img/beauty-news-bella-hadid-icy-blonde-2026.jpg",
+      "alt": "نمای نزدیک بلا حدید با موهای بلوند پلاتینی تا سرشانه زیر کلاه تیم هاکی",
+      "locales": {
+        "en": {
+          "tag": "Celebrity hair colour",
+          "title": "Bella Hadid’s new platinum look is real—but permanence is unconfirmed",
+          "shortTitle": "Bella Hadid’s icy platinum look",
+          "summary": "Bella Hadid appears at a hockey game with an icy-blonde, shoulder-length bob. The look is visible in fresh photographs, but it remains unclear whether it is permanent colour or a wig.",
+          "date": "10 November 2026",
+          "alt": "Close view of Bella Hadid with shoulder-length platinum-blonde hair beneath a hockey team cap"
+        },
+        "tr": {
+          "tag": "Ünlü saç rengi",
+          "title": "Bella Hadid’in yeni platin görünümü gerçek; kalıcılığı henüz doğrulanmadı",
+          "shortTitle": "Bella Hadid’in buz platin görünümü",
+          "summary": "Bella Hadid, bir hokey maçındaki yeni fotoğraflarda omuz hizasında buz sarısı bir bobla görülüyor; ancak bunun kalıcı boya mı yoksa peruk mu olduğu henüz bilinmiyor.",
+          "date": "10 Kasım 2026",
+          "alt": "Hokey takımı şapkasının altında omuz hizasında platin sarı saçlarıyla Bella Hadid’in yakın görünümü"
+        },
+        "ar": {
+          "tag": "لون شعر المشاهير",
+          "title": "إطلالة بيلا حديد البلاتينية الجديدة حقيقية لكن دوامها غير مؤكد",
+          "shortTitle": "إطلالة بيلا حديد البلاتينية الباردة",
+          "summary": "ظهرت بيلا حديد في صور جديدة من مباراة هوكي ببوب أشقر جليدي يصل إلى الكتفين، لكن لم يتضح بعد إن كان لونا دائما أم شعرا مستعارا.",
+          "date": "١٠ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لبيلا حديد بشعر أشقر بلاتيني يصل إلى الكتفين تحت قبعة فريق هوكي"
+        }
+      }
+    },
     {
       "id": "met-gala-extraordinary-everyday-fashion-2027",
       "category": "fashion global-event exhibition",
@@ -151,81 +226,8 @@
           "alt": "الهوية الرسمية بالأبيض والأسود للمعرض مع علامة XO وعنوان extraORDINARY"
         }
       }
-    },
-    {
-      "id": "martine-rose-balenciaga-creative-director-2026",
-      "category": "fashion global-event designer-news",
-      "tag": "خبر جهانی مد",
-      "title": "مارتین رز (Martine Rose) مدیر خلاق بالنسیاگا شد",
-      "shortTitle": "مارتین رز در رأس بالنسیاگا",
-      "summary": "کرینگ، مارتین رز را مدیر خلاق بالنسیاگا معرفی کرد؛ طراح بریتانیایی از ۱۶ نوامبر هدایت خلاق خانه مد پاریسی را بر عهده می‌گیرد.",
-      "date": "۱۵ آبان ۱۴۰۵",
-      "image": "img/beauty-news-martine-rose-balenciaga-creative-director-2026.jpg",
-      "alt": "پرتره سیاه‌وسفید مارتین رز با موهای فر و لبخند رو به دوربین",
-      "locales": {
-        "en": {
-          "tag": "Global fashion news",
-          "title": "Martine Rose appointed creative director of Balenciaga",
-          "shortTitle": "Martine Rose takes Balenciaga’s helm",
-          "summary": "Kering has named Martine Rose creative director of Balenciaga; the British designer will take charge of the Paris house’s creative direction on 16 November.",
-          "date": "6 November 2026",
-          "alt": "Black-and-white portrait of Martine Rose with curly hair, smiling at the camera"
-        },
-        "tr": {
-          "tag": "Küresel moda haberi",
-          "title": "Martine Rose, Balenciaga’nın kreatif direktörü oldu",
-          "shortTitle": "Balenciaga’nın başında Martine Rose",
-          "summary": "Kering, Martine Rose’u Balenciaga’nın kreatif direktörü olarak atadı; Britanyalı tasarımcı Paris merkezli moda evinin yaratıcı yönetimini 16 Kasım’da devralacak.",
-          "date": "6 Kasım 2026",
-          "alt": "Kıvırcık saçlarıyla kameraya gülümseyen Martine Rose’un siyah-beyaz portresi"
-        },
-        "ar": {
-          "tag": "خبر أزياء عالمي",
-          "title": "تعيين مارتين روز مديرة إبداعية لبالنسياغا",
-          "shortTitle": "مارتين روز تقود بالنسياغا",
-          "summary": "عيّنت كيرينغ مارتين روز مديرة إبداعية لبالنسياغا، على أن تتولى المصممة البريطانية القيادة الإبداعية للدار الباريسية في ١٦ نوفمبر.",
-          "date": "٦ نوفمبر ٢٠٢٦",
-          "alt": "صورة أبيض وأسود لمارتين روز بشعر مجعد وهي تبتسم للكاميرا"
-        }
-      }
-    },
-    {
-      "id": "nicole-kidman-wispy-fringe-sydney-2026",
-      "category": "hair celebrity-beauty global-event",
-      "tag": "موی سلبریتی",
-      "title": "چتری نرم نیکول کیدمن (Nicole Kidman) در شب تاریخی شنل",
-      "shortTitle": "چتری تازه نیکول کیدمن",
-      "summary": "نیکول کیدمن در نخستین نمایش رسمی شنل در استرالیا با چتری بلند و سبک ظاهر شد؛ مدلی که میان چتری کامل و پرده‌ای جابه‌جا می‌شود.",
-      "date": "۱۵ آبان ۱۴۰۵",
-      "image": "img/beauty-news-nicole-kidman-wispy-fringe-sydney-2026.jpg",
-      "alt": "نمای نزدیک نیکول کیدمن با موهای بلوند بلند و چتری نازک تا روی ابروها",
-      "locales": {
-        "en": {
-          "tag": "Celebrity hair",
-          "title": "Nicole Kidman’s soft fringe at Chanel’s historic Sydney show",
-          "shortTitle": "Nicole Kidman’s fresh fringe",
-          "summary": "Nicole Kidman appeared at Chanel’s first official Australian runway with long, airy bangs that can shift between a full fringe and a curtain shape.",
-          "date": "6 November 2026",
-          "alt": "Close portrait of Nicole Kidman with long blonde hair and wispy bangs grazing her brows"
-        },
-        "tr": {
-          "tag": "Ünlü saçı",
-          "title": "Nicole Kidman’ın Chanel’in tarihî Sidney defilesindeki yumuşak perçemi",
-          "shortTitle": "Nicole Kidman’ın yeni perçemi",
-          "summary": "Nicole Kidman, Chanel’in Avustralya’daki ilk resmî defilesine tam perçem ile perde perçem arasında şekillenebilen uzun ve hafif bir kesimle katıldı.",
-          "date": "6 Kasım 2026",
-          "alt": "Uzun sarı saçları ve kaşlarına değen ince perçemiyle Nicole Kidman’ın yakın portresi"
-        },
-        "ar": {
-          "tag": "شعر المشاهير",
-          "title": "غرة نيكول كيدمان الناعمة في عرض شانيل التاريخي بسيدني",
-          "shortTitle": "غرة نيكول كيدمان الجديدة",
-          "summary": "ظهرت نيكول كيدمان في أول عرض رسمي لشانيل بأستراليا بغرة طويلة وخفيفة يمكن تنسيقها كاملة أو مفتوحة كالستارة.",
-          "date": "٦ نوفمبر ٢٠٢٦",
-          "alt": "صورة قريبة لنيكول كيدمان بشعر أشقر طويل وغرة خفيفة تلامس حاجبيها"
-        }
-      }
     }
   ],
-  "homeStoriesVersion": "2026-11-08a"
+  "homeStoriesVersion": "2026-11-11a"
 }
+
