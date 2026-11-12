@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-11a",
+  "version": "2026-11-12a",
   "files": [
+    "beauty-news-2026-11-12.js",
     "beauty-news-2026-11-11.js",
     "beauty-news-2026-11-08.js",
     "beauty-news-2026-11-07.js",
@@ -54,68 +55,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "fantasia-pointed-pixie-2026",
     "maybelline-reimagines-tagline-2026",
-    "bella-hadid-icy-blonde-look-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "fantasia-pointed-pixie-2026",
     "maybelline-reimagines-tagline-2026",
-    "bella-hadid-icy-blonde-look-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۰ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۱ آبان ۱۴۰۵",
   "ticker": [
+    "فانتازیا بارینو پیکسی امضای خود را با چتری نامتقارن نوک‌تیز و کناره‌های کوتاه هندسی‌تر کرد",
     "میبلین نیویورک پس از ۳۵ سال شعار مشهورش را با زبانی فراگیرتر و مایلی سایرس بازنویسی کرد",
-    "بلا حدید با ظاهر بلوند یخی و باب تا سرشانه دیده شد؛ دائمی‌بودن تغییر هنوز تأیید نشده است",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۰ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۰ آبان"
+    "date": "۲۱ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۱ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 11 November 2026",
+      "latestLabel": "Editor’s picks · 12 November 2026",
       "ticker": [
+        "Fantasia sharpens her signature pixie with a pointed asymmetrical fringe and closely cut sides",
         "Maybelline rewrites its famous 35-year tagline with more inclusive language and Miley Cyrus",
-        "Bella Hadid appears with an icy-blonde, shoulder-length bob; the change’s permanence remains unconfirmed",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "11 November 2026",
-        "updated": "Updated 11 November"
+        "date": "12 November 2026",
+        "updated": "Updated 12 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 11 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 12 Kasım 2026",
       "ticker": [
+        "Fantasia, imza pixie kesimini sivri asimetrik perçem ve çok kısa yanlarla daha geometrik hale getirdi",
         "Maybelline, 35 yıllık ünlü sloganını daha kapsayıcı bir dille ve Miley Cyrus ile yeniden yazdı",
-        "Bella Hadid buz sarısı, omuz hizasında bir bobla göründü; değişimin kalıcılığı henüz doğrulanmadı",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "11 Kasım 2026",
-        "updated": "Güncelleme: 11 Kasım"
+        "date": "12 Kasım 2026",
+        "updated": "Güncelleme: 12 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١١ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٢ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تجدد فانتازيا قصة البيكسي المميزة لها بغرة غير متماثلة مدببة وجانبين شديدي القصر",
         "تعيد مايبيلين صياغة شعارها الشهير بعد ٣٥ عاما بلغة أكثر شمولا وبمشاركة مايلي سايرس",
-        "تظهر بيلا حديد ببوب أشقر جليدي يصل إلى الكتفين؛ ولم يتأكد بعد إن كان التغيير دائما",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١١ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١١ نوفمبر"
+        "date": "١٢ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٢ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "fantasia-pointed-pixie-2026",
+      "category": "hair celebrity-beauty haircut",
+      "tag": "مدل موی سلبریتی",
+      "title": "پیکسی نوک‌تیز فانتازیا؛ فرم کلاسیک، هندسی‌تر شد",
+      "shortTitle": "پیکسی هندسی فانتازیا",
+      "summary": "فانتازیا بارینو در مراسم تازه فیلمش، پیکسی مشکی همیشگی خود را با چتری نامتقارن نوک‌تیز و کناره‌های بسیار کوتاه به فرمی دقیق‌تر و هندسی‌تر برد.",
+      "date": "۲۰ آبان ۱۴۰۵",
+      "image": "img/beauty-news-fantasia-pointed-pixie-2026.jpg",
+      "alt": "نمای نزدیک فانتازیا بارینو با پیکسی مشکی براق و چتری نامتقارن نوک‌تیز",
+      "locales": {
+        "en": {
+          "tag": "Celebrity hair",
+          "title": "Fantasia gives her classic pixie a sharper geometric point",
+          "shortTitle": "Fantasia’s geometric pixie",
+          "summary": "Fantasia Barrino refreshed her signature black pixie at her film premiere with a pointed asymmetrical fringe and closely cut sides that sharpen the familiar shape.",
+          "date": "11 November 2026",
+          "alt": "Close-up of Fantasia Barrino with a glossy black pixie and pointed asymmetrical fringe"
+        },
+        "tr": {
+          "tag": "Ünlü saçı",
+          "title": "Fantasia, klasik pixie kesimine sivri ve geometrik bir yön verdi",
+          "shortTitle": "Fantasia’nın geometrik pixie’si",
+          "summary": "Fantasia Barrino, film galasında imza görünümü olan siyah pixie kesimini sivri uçlu asimetrik perçem ve çok kısa yanlarla daha keskin bir forma taşıdı.",
+          "date": "11 Kasım 2026",
+          "alt": "Parlak siyah pixie kesimi ve sivri uçlu asimetrik perçemiyle Fantasia Barrino’nun yakın planı"
+        },
+        "ar": {
+          "tag": "شعر المشاهير",
+          "title": "فانتازيا تمنح قصة البيكسي الكلاسيكية طرفا هندسيا أكثر حدة",
+          "shortTitle": "بيكسي فانتازيا الهندسية",
+          "summary": "جددت فانتازيا بارينو قصة البيكسي السوداء المميزة لها في عرض فيلمها، بغرة غير متماثلة مدببة وجانبين شديدي القصر يمنحان الشكل المألوف دقة أكبر.",
+          "date": "١١ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لفانتازيا بارينو بقصة بيكسي سوداء لامعة وغرة غير متماثلة مدببة"
+        }
+      }
+    },
     {
       "id": "maybelline-reimagines-tagline-2026",
       "category": "makeup beauty-industry brand-news",
@@ -150,43 +188,6 @@
           "summary": "قدمت Maybelline New York تحديثا دائما لعبارة “Maybe she’s born with it”، فحلت “we” مكان “she” وتتصدر مايلي سايرس بداية الحملة الجديدة.",
           "date": "١٠ نوفمبر ٢٠٢٦",
           "alt": "ثلاثة منتجات من مايبيلين تشمل ماسكارا وكونسيلر ولون شفاه سائل على خلفية وردية وسوداء مكسلة"
-        }
-      }
-    },
-    {
-      "id": "bella-hadid-icy-blonde-look-2026",
-      "category": "hair celebrity-beauty color",
-      "tag": "رنگ موی سلبریتی",
-      "title": "ظاهر پلاتینی تازه بلا حدید؛ دائمی‌بودن رنگ هنوز تأیید نشده",
-      "shortTitle": "پلاتینی تازه بلا حدید",
-      "summary": "بلا حدید در تصاویر تازه یک بازی هاکی با باب تا سرشانه و بلوند یخی دیده می‌شود؛ ظاهر تازه واقعی است، اما هنوز معلوم نیست رنگ دائمی باشد یا کلاه‌گیس.",
-      "date": "۱۹ آبان ۱۴۰۵",
-      "image": "img/beauty-news-bella-hadid-icy-blonde-2026.jpg",
-      "alt": "نمای نزدیک بلا حدید با موهای بلوند پلاتینی تا سرشانه زیر کلاه تیم هاکی",
-      "locales": {
-        "en": {
-          "tag": "Celebrity hair colour",
-          "title": "Bella Hadid’s new platinum look is real—but permanence is unconfirmed",
-          "shortTitle": "Bella Hadid’s icy platinum look",
-          "summary": "Bella Hadid appears at a hockey game with an icy-blonde, shoulder-length bob. The look is visible in fresh photographs, but it remains unclear whether it is permanent colour or a wig.",
-          "date": "10 November 2026",
-          "alt": "Close view of Bella Hadid with shoulder-length platinum-blonde hair beneath a hockey team cap"
-        },
-        "tr": {
-          "tag": "Ünlü saç rengi",
-          "title": "Bella Hadid’in yeni platin görünümü gerçek; kalıcılığı henüz doğrulanmadı",
-          "shortTitle": "Bella Hadid’in buz platin görünümü",
-          "summary": "Bella Hadid, bir hokey maçındaki yeni fotoğraflarda omuz hizasında buz sarısı bir bobla görülüyor; ancak bunun kalıcı boya mı yoksa peruk mu olduğu henüz bilinmiyor.",
-          "date": "10 Kasım 2026",
-          "alt": "Hokey takımı şapkasının altında omuz hizasında platin sarı saçlarıyla Bella Hadid’in yakın görünümü"
-        },
-        "ar": {
-          "tag": "لون شعر المشاهير",
-          "title": "إطلالة بيلا حديد البلاتينية الجديدة حقيقية لكن دوامها غير مؤكد",
-          "shortTitle": "إطلالة بيلا حديد البلاتينية الباردة",
-          "summary": "ظهرت بيلا حديد في صور جديدة من مباراة هوكي ببوب أشقر جليدي يصل إلى الكتفين، لكن لم يتضح بعد إن كان لونا دائما أم شعرا مستعارا.",
-          "date": "١٠ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لبيلا حديد بشعر أشقر بلاتيني يصل إلى الكتفين تحت قبعة فريق هوكي"
         }
       }
     },
@@ -228,6 +229,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-11a"
+  "homeStoriesVersion": "2026-11-12a"
 }
-
