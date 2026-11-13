@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-12a",
+  "version": "2026-11-13a",
   "files": [
+    "beauty-news-2026-11-13.js",
     "beauty-news-2026-11-12.js",
     "beauty-news-2026-11-11.js",
     "beauty-news-2026-11-08.js",
@@ -55,68 +56,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "textured-winter-nails-2026",
     "fantasia-pointed-pixie-2026",
-    "maybelline-reimagines-tagline-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "textured-winter-nails-2026",
     "fantasia-pointed-pixie-2026",
-    "maybelline-reimagines-tagline-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۱ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۲ آبان ۱۴۰۵",
   "ticker": [
+    "ناخن‌های بافت‌دار زمستان ۲۰۲۶ با کت‌آی مخملی، کروم یخی و سطح‌های الهام‌گرفته از پارچه و سنگ پیش می‌روند",
     "فانتازیا بارینو پیکسی امضای خود را با چتری نامتقارن نوک‌تیز و کناره‌های کوتاه هندسی‌تر کرد",
-    "میبلین نیویورک پس از ۳۵ سال شعار مشهورش را با زبانی فراگیرتر و مایلی سایرس بازنویسی کرد",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۱ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۱ آبان"
+    "date": "۲۲ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۲ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 12 November 2026",
+      "latestLabel": "Editor’s picks · 13 November 2026",
       "ticker": [
+        "Winter 2026’s textured nails put velvet cat-eye, icy chrome and fabric- and stone-inspired finishes in focus",
         "Fantasia sharpens her signature pixie with a pointed asymmetrical fringe and closely cut sides",
-        "Maybelline rewrites its famous 35-year tagline with more inclusive language and Miley Cyrus",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "12 November 2026",
-        "updated": "Updated 12 November"
+        "date": "13 November 2026",
+        "updated": "Updated 13 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 12 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 13 Kasım 2026",
       "ticker": [
+        "2026 kışının dokulu tırnakları kadifemsi cat-eye, buzlu krom ve kumaş ile taştan ilham alan yüzeyleri öne çıkarıyor",
         "Fantasia, imza pixie kesimini sivri asimetrik perçem ve çok kısa yanlarla daha geometrik hale getirdi",
-        "Maybelline, 35 yıllık ünlü sloganını daha kapsayıcı bir dille ve Miley Cyrus ile yeniden yazdı",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "12 Kasım 2026",
-        "updated": "Güncelleme: 12 Kasım"
+        "date": "13 Kasım 2026",
+        "updated": "Güncelleme: 13 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٢ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٣ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تضع أظافر شتاء ٢٠٢٦ ذات الملمس عين القطة المخملية والكروم الجليدي والأسطح المستوحاة من القماش والحجر في الواجهة",
         "تجدد فانتازيا قصة البيكسي المميزة لها بغرة غير متماثلة مدببة وجانبين شديدي القصر",
-        "تعيد مايبيلين صياغة شعارها الشهير بعد ٣٥ عاما بلغة أكثر شمولا وبمشاركة مايلي سايرس",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٢ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٢ نوفمبر"
+        "date": "١٣ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٣ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "textured-winter-nails-2026",
+      "category": "nails trend winter",
+      "tag": "ترند ناخن",
+      "title": "ناخن‌های بافت‌دار؛ زمستان ۲۰۲۶ روی سطح بازی می‌کند",
+      "shortTitle": "ناخن‌های بافت‌دار زمستانی",
+      "summary": "ترندهای تازه ناخن زمستان ۲۰۲۶ از رنگِ تنها عبور کرده‌اند؛ افکت مخملی کت‌آی، کروم یخی و بافت‌های الهام‌گرفته از سنگ و پارچه، سطح ناخن را به نقطه اصلی طراحی تبدیل می‌کنند.",
+      "date": "۲۱ آبان ۱۴۰۵",
+      "image": "img/beauty-news-textured-winter-nails-2026.jpg",
+      "alt": "نمای نزدیک مانیکور کت‌آی قهوه‌ای خاکستری با تقسیم براق و مخملی روی ناخن‌های کوتاه",
+      "locales": {
+        "en": {
+          "tag": "Nail trend",
+          "title": "Textured nails make surface the focus for winter 2026",
+          "shortTitle": "Winter’s textured nails",
+          "summary": "Winter 2026 nail trends are moving beyond colour alone: velvet cat-eye effects, icy chrome and finishes inspired by stones and fabrics make the nail surface the design’s main event.",
+          "date": "12 November 2026",
+          "alt": "Close-up of short taupe-brown cat-eye nails divided into glossy and velvet-like finishes"
+        },
+        "tr": {
+          "tag": "Tırnak trendi",
+          "title": "Dokulu tırnaklar 2026 kışında yüzeyi odağa taşıyor",
+          "shortTitle": "Kışın dokulu tırnakları",
+          "summary": "2026 kışının tırnak trendleri yalnızca renkle yetinmiyor; kadifemsi cat-eye efektleri, buzlu krom ve taşlarla kumaşlardan ilham alan bitişler tırnak yüzeyini tasarımın merkezine taşıyor.",
+          "date": "12 Kasım 2026",
+          "alt": "Kısa boz kahverengi cat-eye tırnaklarda parlak ve kadifemsi yüzeylerin yakın planı"
+        },
+        "ar": {
+          "tag": "صيحة أظافر",
+          "title": "الأظافر ذات الملمس تجعل السطح محور شتاء ٢٠٢٦",
+          "shortTitle": "أظافر الشتاء ذات الملمس",
+          "summary": "تتجاوز صيحات أظافر شتاء ٢٠٢٦ اللون وحده؛ فتجعل تأثيرات عين القطة المخملية والكروم الجليدي واللمسات المستوحاة من الأحجار والأقمشة سطح الظفر بطل التصميم.",
+          "date": "١٢ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لأظافر قصيرة بلون بني رمادي وتأثير عين القطة مقسوم بين لمعان وملمس مخملي"
+        }
+      }
+    },
     {
       "id": "fantasia-pointed-pixie-2026",
       "category": "hair celebrity-beauty haircut",
@@ -151,43 +189,6 @@
           "summary": "جددت فانتازيا بارينو قصة البيكسي السوداء المميزة لها في عرض فيلمها، بغرة غير متماثلة مدببة وجانبين شديدي القصر يمنحان الشكل المألوف دقة أكبر.",
           "date": "١١ نوفمبر ٢٠٢٦",
           "alt": "لقطة قريبة لفانتازيا بارينو بقصة بيكسي سوداء لامعة وغرة غير متماثلة مدببة"
-        }
-      }
-    },
-    {
-      "id": "maybelline-reimagines-tagline-2026",
-      "category": "makeup beauty-industry brand-news",
-      "tag": "خبر صنعت میکاپ",
-      "title": "میبلین پس از ۳۵ سال شعار مشهورش را بازنویسی کرد",
-      "shortTitle": "شعار تازه میبلین پس از ۳۵ سال",
-      "summary": "میبلین نیویورک نسخه دائمی تازه‌ای از شعار مشهور «Maybe she’s born with it» معرفی کرده؛ «she» جای خود را به «we» داده و مایلی سایرس چهره آغاز این فصل است.",
-      "date": "۱۹ آبان ۱۴۰۵",
-      "image": "img/beauty-news-maybelline-tagline-2026.jpg",
-      "alt": "سه محصول میبلین شامل ریمل، کانسیلر و رژ مایع روی پس‌زمینه پیکسلی صورتی و مشکی",
-      "locales": {
-        "en": {
-          "tag": "Makeup industry news",
-          "title": "Maybelline rewrites its famous tagline after 35 years",
-          "shortTitle": "Maybelline’s new 35-year tagline",
-          "summary": "Maybelline New York has introduced a permanent update to “Maybe she’s born with it”: “she” becomes “we,” with Miley Cyrus opening the campaign’s new chapter.",
-          "date": "10 November 2026",
-          "alt": "Three Maybelline products—mascara, concealer and liquid lip colour—against a pink-and-black pixelated background"
-        },
-        "tr": {
-          "tag": "Makyaj sektörü haberi",
-          "title": "Maybelline, ünlü sloganını 35 yıl sonra yeniden yazdı",
-          "shortTitle": "Maybelline’in 35 yıl sonraki sloganı",
-          "summary": "Maybelline New York, “Maybe she’s born with it” sloganını kalıcı olarak yeniledi; “she” yerini “we”ye bırakırken yeni kampanyanın ilk yüzü Miley Cyrus oldu.",
-          "date": "10 Kasım 2026",
-          "alt": "Pembe ve siyah pikselli fonda maskara, kapatıcı ve likit dudak ürününden oluşan üç Maybelline ürünü"
-        },
-        "ar": {
-          "tag": "خبر صناعة المكياج",
-          "title": "مايبيلين تعيد صياغة شعارها الشهير بعد ٣٥ عاما",
-          "shortTitle": "شعار مايبيلين الجديد بعد ٣٥ عاما",
-          "summary": "قدمت Maybelline New York تحديثا دائما لعبارة “Maybe she’s born with it”، فحلت “we” مكان “she” وتتصدر مايلي سايرس بداية الحملة الجديدة.",
-          "date": "١٠ نوفمبر ٢٠٢٦",
-          "alt": "ثلاثة منتجات من مايبيلين تشمل ماسكارا وكونسيلر ولون شفاه سائل على خلفية وردية وسوداء مكسلة"
         }
       }
     },
@@ -229,5 +230,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-12a"
+  "homeStoriesVersion": "2026-11-13a"
 }
