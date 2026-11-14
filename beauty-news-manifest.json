@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-13a",
+  "version": "2026-11-14a",
   "files": [
+    "beauty-news-2026-11-14.js",
     "beauty-news-2026-11-13.js",
     "beauty-news-2026-11-12.js",
     "beauty-news-2026-11-11.js",
@@ -56,68 +57,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "hunter-schafer-blade-runner-eye-makeup-2026",
     "textured-winter-nails-2026",
-    "fantasia-pointed-pixie-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "hunter-schafer-blade-runner-eye-makeup-2026",
     "textured-winter-nails-2026",
-    "fantasia-pointed-pixie-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۲ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۳ آبان ۱۴۰۵",
   "ticker": [
+    "هانتر شیفر سایه دودی-فلزی را از دو چشم روی پل بینی پیوسته کرد و آرایش پریس را به فرش قرمز ۲۰۲۶ آورد",
     "ناخن‌های بافت‌دار زمستان ۲۰۲۶ با کت‌آی مخملی، کروم یخی و سطح‌های الهام‌گرفته از پارچه و سنگ پیش می‌روند",
-    "فانتازیا بارینو پیکسی امضای خود را با چتری نامتقارن نوک‌تیز و کناره‌های کوتاه هندسی‌تر کرد",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۲ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۲ آبان"
+    "date": "۲۳ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۳ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 13 November 2026",
+      "latestLabel": "Editor’s picks · 14 November 2026",
       "ticker": [
+        "Hunter Schafer connects smoky metallic shadow across both eyes and the bridge of her nose in a modern Pris tribute",
         "Winter 2026’s textured nails put velvet cat-eye, icy chrome and fabric- and stone-inspired finishes in focus",
-        "Fantasia sharpens her signature pixie with a pointed asymmetrical fringe and closely cut sides",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "13 November 2026",
-        "updated": "Updated 13 November"
+        "date": "14 November 2026",
+        "updated": "Updated 14 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 13 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 14 Kasım 2026",
       "ticker": [
+        "Hunter Schafer, modern Pris yorumunda dumanlı metalik farı iki gözün üzerinden burun köprüsünde birleştiriyor",
         "2026 kışının dokulu tırnakları kadifemsi cat-eye, buzlu krom ve kumaş ile taştan ilham alan yüzeyleri öne çıkarıyor",
-        "Fantasia, imza pixie kesimini sivri asimetrik perçem ve çok kısa yanlarla daha geometrik hale getirdi",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "13 Kasım 2026",
-        "updated": "Güncelleme: 13 Kasım"
+        "date": "14 Kasım 2026",
+        "updated": "Güncelleme: 14 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٣ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٤ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تصل هانتر شيفر الظل الدخاني المعدني بين العينين وعبر جسر الأنف في تحية حديثة لمكياج بريس",
         "تضع أظافر شتاء ٢٠٢٦ ذات الملمس عين القطة المخملية والكروم الجليدي والأسطح المستوحاة من القماش والحجر في الواجهة",
-        "تجدد فانتازيا قصة البيكسي المميزة لها بغرة غير متماثلة مدببة وجانبين شديدي القصر",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٣ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٣ نوفمبر"
+        "date": "١٤ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٤ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "hunter-schafer-blade-runner-eye-makeup-2026",
+      "category": "makeup celebrity-beauty red-carpet",
+      "tag": "میکاپ سلبریتی",
+      "title": "سایه گرافیکی هانتر شیفر از پل بینی گذشت",
+      "shortTitle": "چشم‌های گرافیکی هانتر شیفر",
+      "summary": "هانتر شیفر در افتتاحیه لس‌آنجلس «بلید رانر ۲۰۹۹» سایه دودی-فلزی را از دو چشم روی پل بینی پیوسته کرد؛ برداشتی مدرن از آرایش نمادین پریس در فیلم اصلی.",
+      "date": "۲۱ آبان ۱۴۰۵",
+      "image": "img/beauty-news-hunter-schafer-blade-runner-makeup-2026.jpg",
+      "alt": "نمای نزدیک هانتر شیفر با سایه دودی فلزی کشیده از شقیقه‌ها تا روی پل بینی",
+      "locales": {
+        "en": {
+          "tag": "Celebrity makeup",
+          "title": "Hunter Schafer’s graphic eye shadow crosses the bridge of the nose",
+          "shortTitle": "Hunter Schafer’s graphic eyes",
+          "summary": "At the Los Angeles premiere of Blade Runner 2099, Hunter Schafer connected smoky metallic shadow across both eyes and the bridge of her nose—a modern take on Pris’s iconic makeup in the original film.",
+          "date": "12 November 2026",
+          "alt": "Close-up of Hunter Schafer with metallic smoky shadow extending from the temples across the bridge of her nose"
+        },
+        "tr": {
+          "tag": "Ünlü makyajı",
+          "title": "Hunter Schafer’ın grafik farı burun köprüsünü geçti",
+          "shortTitle": "Hunter Schafer’ın grafik gözleri",
+          "summary": "Hunter Schafer, Blade Runner 2099’un Los Angeles galasında dumanlı metalik farı iki gözün üzerinden burun köprüsünde birleştirdi; görünüm, orijinal filmdeki Pris makyajının modern bir yorumu.",
+          "date": "12 Kasım 2026",
+          "alt": "Şakaklardan burun köprüsüne uzanan metalik dumanlı farıyla Hunter Schafer’ın yakın planı"
+        },
+        "ar": {
+          "tag": "مكياج المشاهير",
+          "title": "ظل عيني هانتر شيفر الهندسي يعبر جسر الأنف",
+          "shortTitle": "عينا هانتر شيفر الهندسيتان",
+          "summary": "وصلت هانتر شيفر الظل الدخاني المعدني بين العينين وعبر جسر الأنف في العرض الأول لمسلسل Blade Runner 2099 في لوس أنجلوس، في قراءة حديثة لمكياج بريس الشهير في الفيلم الأصلي.",
+          "date": "١٢ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لهانتر شيفر بظل دخاني معدني يمتد من الصدغين عبر جسر الأنف"
+        }
+      }
+    },
     {
       "id": "textured-winter-nails-2026",
       "category": "nails trend winter",
@@ -152,43 +190,6 @@
           "summary": "تتجاوز صيحات أظافر شتاء ٢٠٢٦ اللون وحده؛ فتجعل تأثيرات عين القطة المخملية والكروم الجليدي واللمسات المستوحاة من الأحجار والأقمشة سطح الظفر بطل التصميم.",
           "date": "١٢ نوفمبر ٢٠٢٦",
           "alt": "لقطة قريبة لأظافر قصيرة بلون بني رمادي وتأثير عين القطة مقسوم بين لمعان وملمس مخملي"
-        }
-      }
-    },
-    {
-      "id": "fantasia-pointed-pixie-2026",
-      "category": "hair celebrity-beauty haircut",
-      "tag": "مدل موی سلبریتی",
-      "title": "پیکسی نوک‌تیز فانتازیا؛ فرم کلاسیک، هندسی‌تر شد",
-      "shortTitle": "پیکسی هندسی فانتازیا",
-      "summary": "فانتازیا بارینو در مراسم تازه فیلمش، پیکسی مشکی همیشگی خود را با چتری نامتقارن نوک‌تیز و کناره‌های بسیار کوتاه به فرمی دقیق‌تر و هندسی‌تر برد.",
-      "date": "۲۰ آبان ۱۴۰۵",
-      "image": "img/beauty-news-fantasia-pointed-pixie-2026.jpg",
-      "alt": "نمای نزدیک فانتازیا بارینو با پیکسی مشکی براق و چتری نامتقارن نوک‌تیز",
-      "locales": {
-        "en": {
-          "tag": "Celebrity hair",
-          "title": "Fantasia gives her classic pixie a sharper geometric point",
-          "shortTitle": "Fantasia’s geometric pixie",
-          "summary": "Fantasia Barrino refreshed her signature black pixie at her film premiere with a pointed asymmetrical fringe and closely cut sides that sharpen the familiar shape.",
-          "date": "11 November 2026",
-          "alt": "Close-up of Fantasia Barrino with a glossy black pixie and pointed asymmetrical fringe"
-        },
-        "tr": {
-          "tag": "Ünlü saçı",
-          "title": "Fantasia, klasik pixie kesimine sivri ve geometrik bir yön verdi",
-          "shortTitle": "Fantasia’nın geometrik pixie’si",
-          "summary": "Fantasia Barrino, film galasında imza görünümü olan siyah pixie kesimini sivri uçlu asimetrik perçem ve çok kısa yanlarla daha keskin bir forma taşıdı.",
-          "date": "11 Kasım 2026",
-          "alt": "Parlak siyah pixie kesimi ve sivri uçlu asimetrik perçemiyle Fantasia Barrino’nun yakın planı"
-        },
-        "ar": {
-          "tag": "شعر المشاهير",
-          "title": "فانتازيا تمنح قصة البيكسي الكلاسيكية طرفا هندسيا أكثر حدة",
-          "shortTitle": "بيكسي فانتازيا الهندسية",
-          "summary": "جددت فانتازيا بارينو قصة البيكسي السوداء المميزة لها في عرض فيلمها، بغرة غير متماثلة مدببة وجانبين شديدي القصر يمنحان الشكل المألوف دقة أكبر.",
-          "date": "١١ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لفانتازيا بارينو بقصة بيكسي سوداء لامعة وغرة غير متماثلة مدببة"
         }
       }
     },
@@ -230,5 +231,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-13a"
+  "homeStoriesVersion": "2026-11-14a"
 }
