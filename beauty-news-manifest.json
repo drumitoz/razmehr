@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-14a",
+  "version": "2026-11-15a",
   "files": [
+    "beauty-news-2026-11-15.js",
     "beauty-news-2026-11-14.js",
     "beauty-news-2026-11-13.js",
     "beauty-news-2026-11-12.js",
@@ -57,102 +58,102 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "hunter-schafer-blade-runner-eye-makeup-2026",
+    "florence-pugh-sculptural-shoulders-2026",
     "textured-winter-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
-    "hunter-schafer-blade-runner-eye-makeup-2026",
+    "florence-pugh-sculptural-shoulders-2026",
     "textured-winter-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۳ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۴ آبان ۱۴۰۵",
   "ticker": [
-    "هانتر شیفر سایه دودی-فلزی را از دو چشم روی پل بینی پیوسته کرد و آرایش پریس را به فرش قرمز ۲۰۲۶ آورد",
+    "فلورنس پیو با شانه‌های مجسمه‌ای، لب شرابی و موی جمعِ نامرتب ارجاع ویکتوریایی را به استایل امروز آورد",
     "ناخن‌های بافت‌دار زمستان ۲۰۲۶ با کت‌آی مخملی، کروم یخی و سطح‌های الهام‌گرفته از پارچه و سنگ پیش می‌روند",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۳ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۳ آبان"
+    "date": "۲۴ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۴ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 14 November 2026",
+      "latestLabel": "Editor’s picks · 15 November 2026",
       "ticker": [
-        "Hunter Schafer connects smoky metallic shadow across both eyes and the bridge of her nose in a modern Pris tribute",
+        "Florence Pugh pairs sculptural shoulders with a wine lip and undone updo for a modern Victorian statement",
         "Winter 2026’s textured nails put velvet cat-eye, icy chrome and fabric- and stone-inspired finishes in focus",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "14 November 2026",
-        "updated": "Updated 14 November"
+        "date": "15 November 2026",
+        "updated": "Updated 15 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 14 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 15 Kasım 2026",
       "ticker": [
-        "Hunter Schafer, modern Pris yorumunda dumanlı metalik farı iki gözün üzerinden burun köprüsünde birleştiriyor",
+        "Florence Pugh, heykelsi omuzları şarap tonlu dudak ve gevşek topuzla birleştirerek Viktoryen referansı güncelledi",
         "2026 kışının dokulu tırnakları kadifemsi cat-eye, buzlu krom ve kumaş ile taştan ilham alan yüzeyleri öne çıkarıyor",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "14 Kasım 2026",
-        "updated": "Güncelleme: 14 Kasım"
+        "date": "15 Kasım 2026",
+        "updated": "Güncelleme: 15 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٤ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٥ نوفمبر ٢٠٢٦",
       "ticker": [
-        "تصل هانتر شيفر الظل الدخاني المعدني بين العينين وعبر جسر الأنف في تحية حديثة لمكياج بريس",
+        "تجمع فلورنس بيو الأكتاف المنحوتة مع شفاه نبيذية وتسريحة رخوة لتحديث المرجع الفيكتوري",
         "تضع أظافر شتاء ٢٠٢٦ ذات الملمس عين القطة المخملية والكروم الجليدي والأسطح المستوحاة من القماش والحجر في الواجهة",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٤ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٤ نوفمبر"
+        "date": "١٥ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٥ نوفمبر"
       }
     }
   },
   "homeStories": [
     {
-      "id": "hunter-schafer-blade-runner-eye-makeup-2026",
-      "category": "makeup celebrity-beauty red-carpet",
-      "tag": "میکاپ سلبریتی",
-      "title": "سایه گرافیکی هانتر شیفر از پل بینی گذشت",
-      "shortTitle": "چشم‌های گرافیکی هانتر شیفر",
-      "summary": "هانتر شیفر در افتتاحیه لس‌آنجلس «بلید رانر ۲۰۹۹» سایه دودی-فلزی را از دو چشم روی پل بینی پیوسته کرد؛ برداشتی مدرن از آرایش نمادین پریس در فیلم اصلی.",
-      "date": "۲۱ آبان ۱۴۰۵",
-      "image": "img/beauty-news-hunter-schafer-blade-runner-makeup-2026.jpg",
-      "alt": "نمای نزدیک هانتر شیفر با سایه دودی فلزی کشیده از شقیقه‌ها تا روی پل بینی",
+      "id": "florence-pugh-sculptural-shoulders-2026",
+      "category": "celebrity-style fashion makeup hair red-carpet",
+      "tag": "استایل سلبریتی",
+      "title": "شانه‌های مجسمه‌ای فلورنس پیو؛ تاریخ در یک فرم تازه",
+      "shortTitle": "شانه‌های مجسمه‌ای فلورنس پیو",
+      "summary": "فلورنس پیو در رویداد تازه «شرق عدن»، کت ساتن مشکی با شانه‌های اغراق‌شده را با لب شرابی و موی جمعِ نامرتب همراه کرد؛ ترکیبی که ارجاع ویکتوریایی را به زبان امروز ترجمه می‌کند.",
+      "date": "۲۲ آبان ۱۴۰۵",
+      "image": "img/beauty-news-florence-pugh-sculptural-shoulders-2026.jpg",
+      "alt": "فلورنس پیو با کت ساتن مشکی یقه‌بلند و شانه‌های بسیار بزرگ مجسمه‌ای",
       "locales": {
         "en": {
-          "tag": "Celebrity makeup",
-          "title": "Hunter Schafer’s graphic eye shadow crosses the bridge of the nose",
-          "shortTitle": "Hunter Schafer’s graphic eyes",
-          "summary": "At the Los Angeles premiere of Blade Runner 2099, Hunter Schafer connected smoky metallic shadow across both eyes and the bridge of her nose—a modern take on Pris’s iconic makeup in the original film.",
-          "date": "12 November 2026",
-          "alt": "Close-up of Hunter Schafer with metallic smoky shadow extending from the temples across the bridge of her nose"
+          "tag": "Celebrity style",
+          "title": "Florence Pugh turns historical shoulders into modern sculpture",
+          "shortTitle": "Florence Pugh’s sculptural shoulders",
+          "summary": "At a new East of Eden event, Florence Pugh paired a black satin jacket with exaggerated shoulders, a wine-red lip and an undone updo—translating a Victorian reference into a contemporary statement.",
+          "date": "13 November 2026",
+          "alt": "Florence Pugh in a high-neck black satin jacket with dramatically sculpted oversized shoulders"
         },
         "tr": {
-          "tag": "Ünlü makyajı",
-          "title": "Hunter Schafer’ın grafik farı burun köprüsünü geçti",
-          "shortTitle": "Hunter Schafer’ın grafik gözleri",
-          "summary": "Hunter Schafer, Blade Runner 2099’un Los Angeles galasında dumanlı metalik farı iki gözün üzerinden burun köprüsünde birleştirdi; görünüm, orijinal filmdeki Pris makyajının modern bir yorumu.",
-          "date": "12 Kasım 2026",
-          "alt": "Şakaklardan burun köprüsüne uzanan metalik dumanlı farıyla Hunter Schafer’ın yakın planı"
+          "tag": "Ünlü stili",
+          "title": "Florence Pugh tarihî omuzları modern bir heykele dönüştürdü",
+          "shortTitle": "Florence Pugh’ın heykelsi omuzları",
+          "summary": "Florence Pugh, yeni East of Eden etkinliğinde abartılı omuzlu siyah saten ceketi şarap tonlu dudak ve dağınık topuzla birleştirerek Viktoryen referansı güncel bir ifadeye çevirdi.",
+          "date": "13 Kasım 2026",
+          "alt": "Yüksek yakalı siyah saten ceketi ve son derece büyük heykelsi omuzlarıyla Florence Pugh"
         },
         "ar": {
-          "tag": "مكياج المشاهير",
-          "title": "ظل عيني هانتر شيفر الهندسي يعبر جسر الأنف",
-          "shortTitle": "عينا هانتر شيفر الهندسيتان",
-          "summary": "وصلت هانتر شيفر الظل الدخاني المعدني بين العينين وعبر جسر الأنف في العرض الأول لمسلسل Blade Runner 2099 في لوس أنجلوس، في قراءة حديثة لمكياج بريس الشهير في الفيلم الأصلي.",
-          "date": "١٢ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لهانتر شيفر بظل دخاني معدني يمتد من الصدغين عبر جسر الأنف"
+          "tag": "إطلالة المشاهير",
+          "title": "فلورنس بيو تحول الأكتاف التاريخية إلى منحوتة حديثة",
+          "shortTitle": "أكتاف فلورنس بيو المنحوتة",
+          "summary": "جمعت فلورنس بيو في فعالية East of Eden الجديدة بين سترة ساتان سوداء ذات أكتاف ضخمة وشفاه بلون النبيذي وتسريحة مرفوعة غير متكلفة، فحولت المرجع الفيكتوري إلى إطلالة معاصرة.",
+          "date": "١٣ نوفمبر ٢٠٢٦",
+          "alt": "فلورنس بيو بسترة ساتان سوداء عالية الياقة وأكتاف ضخمة منحوتة"
         }
       }
     },
@@ -231,5 +232,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-14a"
+  "homeStoriesVersion": "2026-11-15a"
 }
