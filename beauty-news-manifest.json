@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-15a",
+  "version": "2026-11-16a",
   "files": [
+    "beauty-news-2026-11-16.js",
     "beauty-news-2026-11-15.js",
     "beauty-news-2026-11-14.js",
     "beauty-news-2026-11-13.js",
@@ -58,68 +59,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "long-layered-bob-2026",
     "florence-pugh-sculptural-shoulders-2026",
-    "textured-winter-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "long-layered-bob-2026",
     "florence-pugh-sculptural-shoulders-2026",
-    "textured-winter-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۴ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۵ آبان ۱۴۰۵",
   "ticker": [
+    "باب بلند و لایه‌دار، مرحله رشد مو را با طول نزدیک ترقوه و حرکت نرم به یک مدل مستقل تبدیل می‌کند",
     "فلورنس پیو با شانه‌های مجسمه‌ای، لب شرابی و موی جمعِ نامرتب ارجاع ویکتوریایی را به استایل امروز آورد",
-    "ناخن‌های بافت‌دار زمستان ۲۰۲۶ با کت‌آی مخملی، کروم یخی و سطح‌های الهام‌گرفته از پارچه و سنگ پیش می‌روند",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۴ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۴ آبان"
+    "date": "۲۵ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۵ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 15 November 2026",
+      "latestLabel": "Editor’s picks · 16 November 2026",
       "ticker": [
+        "The long, layered bob turns the grow-out phase into a deliberate cut with a collarbone length and soft movement",
         "Florence Pugh pairs sculptural shoulders with a wine lip and undone updo for a modern Victorian statement",
-        "Winter 2026’s textured nails put velvet cat-eye, icy chrome and fabric- and stone-inspired finishes in focus",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "15 November 2026",
-        "updated": "Updated 15 November"
+        "date": "16 November 2026",
+        "updated": "Updated 16 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 15 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 16 Kasım 2026",
       "ticker": [
+        "Uzun ve katlı bob, köprücük kemiğine yaklaşan boyu ve yumuşak hareketiyle uzama dönemini bilinçli bir kesime dönüştürüyor",
         "Florence Pugh, heykelsi omuzları şarap tonlu dudak ve gevşek topuzla birleştirerek Viktoryen referansı güncelledi",
-        "2026 kışının dokulu tırnakları kadifemsi cat-eye, buzlu krom ve kumaş ile taştan ilham alan yüzeyleri öne çıkarıyor",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "15 Kasım 2026",
-        "updated": "Güncelleme: 15 Kasım"
+        "date": "16 Kasım 2026",
+        "updated": "Güncelleme: 16 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٥ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٦ نوفمبر ٢٠٢٦",
       "ticker": [
+        "يحول البوب الطويل المتدرج مرحلة نمو الشعر إلى قصة مقصودة بطول قريب من الترقوة وحركة ناعمة",
         "تجمع فلورنس بيو الأكتاف المنحوتة مع شفاه نبيذية وتسريحة رخوة لتحديث المرجع الفيكتوري",
-        "تضع أظافر شتاء ٢٠٢٦ ذات الملمس عين القطة المخملية والكروم الجليدي والأسطح المستوحاة من القماش والحجر في الواجهة",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٥ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٥ نوفمبر"
+        "date": "١٦ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٦ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "long-layered-bob-2026",
+      "category": "hair haircut bob trend",
+      "tag": "ترند مو",
+      "title": "باب بلندِ لایه‌دار؛ راه تازه برای عبور از مرحله رشد مو",
+      "shortTitle": "باب بلند و لایه‌دار",
+      "summary": "بابی که تا سرشانه می‌رسد و با لایه‌های نرم حرکت می‌گیرد، به انتخاب تازه فصل تبدیل شده است؛ مدلی که هم فرم کوتاه را حفظ می‌کند و هم برای رشد دادن مو انعطاف بیشتری دارد.",
+      "date": "۲۴ آبان ۱۴۰۵",
+      "image": "img/beauty-news-long-layered-bob-2026.jpg",
+      "alt": "جیمی شورون با باب قهوه‌ای بلند و لایه‌دار تا روی شانه و فرق میانی",
+      "locales": {
+        "en": {
+          "tag": "Hair trend",
+          "title": "The long, layered bob turns the grow-out phase into a haircut",
+          "shortTitle": "The long, layered bob",
+          "summary": "A shoulder-skimming bob shaped with soft layers is emerging as a practical seasonal choice: it keeps the definition of a short cut while offering more freedom for anyone growing their hair.",
+          "date": "15 November 2026",
+          "alt": "Jamie Chevron wearing a centre-parted, shoulder-length brown bob with soft layers"
+        },
+        "tr": {
+          "tag": "Saç trendi",
+          "title": "Uzun ve katlı bob, uzama dönemini başlı başına bir kesime dönüştürüyor",
+          "shortTitle": "Uzun ve katlı bob",
+          "summary": "Omuzlara yaklaşan ve yumuşak katlarla hareket kazanan bob, sezonun kullanışlı seçeneklerinden biri oluyor; kısa kesimin belirginliğini korurken saçını uzatanlara daha fazla özgürlük sağlıyor.",
+          "date": "15 Kasım 2026",
+          "alt": "Ortadan ayrılmış, omuz hizasında yumuşak katlı kahverengi bobuyla Jamie Chevron"
+        },
+        "ar": {
+          "tag": "صيحة شعر",
+          "title": "البوب الطويل المتدرج يحول مرحلة نمو الشعر إلى قصة مقصودة",
+          "shortTitle": "البوب الطويل المتدرج",
+          "summary": "يبرز البوب الملامس للكتفين والمصاغ بطبقات ناعمة كخيار عملي للموسم؛ فهو يحافظ على وضوح القصة القصيرة ويمنح من تطيل شعرها مرونة أكبر.",
+          "date": "١٥ نوفمبر ٢٠٢٦",
+          "alt": "جيمي شيفرون بشعر بني مفروق من المنتصف وقصة بوب بطول الكتفين وطبقات ناعمة"
+        }
+      }
+    },
     {
       "id": "florence-pugh-sculptural-shoulders-2026",
       "category": "celebrity-style fashion makeup hair red-carpet",
@@ -154,43 +192,6 @@
           "summary": "جمعت فلورنس بيو في فعالية East of Eden الجديدة بين سترة ساتان سوداء ذات أكتاف ضخمة وشفاه بلون النبيذي وتسريحة مرفوعة غير متكلفة، فحولت المرجع الفيكتوري إلى إطلالة معاصرة.",
           "date": "١٣ نوفمبر ٢٠٢٦",
           "alt": "فلورنس بيو بسترة ساتان سوداء عالية الياقة وأكتاف ضخمة منحوتة"
-        }
-      }
-    },
-    {
-      "id": "textured-winter-nails-2026",
-      "category": "nails trend winter",
-      "tag": "ترند ناخن",
-      "title": "ناخن‌های بافت‌دار؛ زمستان ۲۰۲۶ روی سطح بازی می‌کند",
-      "shortTitle": "ناخن‌های بافت‌دار زمستانی",
-      "summary": "ترندهای تازه ناخن زمستان ۲۰۲۶ از رنگِ تنها عبور کرده‌اند؛ افکت مخملی کت‌آی، کروم یخی و بافت‌های الهام‌گرفته از سنگ و پارچه، سطح ناخن را به نقطه اصلی طراحی تبدیل می‌کنند.",
-      "date": "۲۱ آبان ۱۴۰۵",
-      "image": "img/beauty-news-textured-winter-nails-2026.jpg",
-      "alt": "نمای نزدیک مانیکور کت‌آی قهوه‌ای خاکستری با تقسیم براق و مخملی روی ناخن‌های کوتاه",
-      "locales": {
-        "en": {
-          "tag": "Nail trend",
-          "title": "Textured nails make surface the focus for winter 2026",
-          "shortTitle": "Winter’s textured nails",
-          "summary": "Winter 2026 nail trends are moving beyond colour alone: velvet cat-eye effects, icy chrome and finishes inspired by stones and fabrics make the nail surface the design’s main event.",
-          "date": "12 November 2026",
-          "alt": "Close-up of short taupe-brown cat-eye nails divided into glossy and velvet-like finishes"
-        },
-        "tr": {
-          "tag": "Tırnak trendi",
-          "title": "Dokulu tırnaklar 2026 kışında yüzeyi odağa taşıyor",
-          "shortTitle": "Kışın dokulu tırnakları",
-          "summary": "2026 kışının tırnak trendleri yalnızca renkle yetinmiyor; kadifemsi cat-eye efektleri, buzlu krom ve taşlarla kumaşlardan ilham alan bitişler tırnak yüzeyini tasarımın merkezine taşıyor.",
-          "date": "12 Kasım 2026",
-          "alt": "Kısa boz kahverengi cat-eye tırnaklarda parlak ve kadifemsi yüzeylerin yakın planı"
-        },
-        "ar": {
-          "tag": "صيحة أظافر",
-          "title": "الأظافر ذات الملمس تجعل السطح محور شتاء ٢٠٢٦",
-          "shortTitle": "أظافر الشتاء ذات الملمس",
-          "summary": "تتجاوز صيحات أظافر شتاء ٢٠٢٦ اللون وحده؛ فتجعل تأثيرات عين القطة المخملية والكروم الجليدي واللمسات المستوحاة من الأحجار والأقمشة سطح الظفر بطل التصميم.",
-          "date": "١٢ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لأظافر قصيرة بلون بني رمادي وتأثير عين القطة مقسوم بين لمعان وملمس مخملي"
         }
       }
     },
@@ -232,5 +233,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-15a"
+  "homeStoriesVersion": "2026-11-16a"
 }
