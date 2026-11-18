@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-17a",
+  "version": "2026-11-18a",
   "files": [
+    "beauty-news-2026-11-18.js",
     "beauty-news-2026-11-17.js",
     "beauty-news-2026-11-16.js",
     "beauty-news-2026-11-15.js",
@@ -60,102 +61,102 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "annasophia-robb-periwinkle-liner-2026",
+    "catherine-earthshot-half-up-hair-2026",
     "long-layered-bob-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
-    "annasophia-robb-periwinkle-liner-2026",
+    "catherine-earthshot-half-up-hair-2026",
     "long-layered-bob-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۶ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۷ آبان ۱۴۰۵",
   "ticker": [
-    "آناسوفیا راب فصل جوایز را با خط چشم محو آبی-یاسی، مژه‌های مشکی و لب صورتی آغاز کرد",
+    "کاترین در شب جوایز Earthshot، موج‌های بلند خود را با دو پیچ نرم در یک مدل نیمه‌باز و رسمی جمع کرد",
     "باب بلند و لایه‌دار، مرحله رشد مو را با طول نزدیک ترقوه و حرکت نرم به یک مدل مستقل تبدیل می‌کند",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۶ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۶ آبان"
+    "date": "۲۷ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۷ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 17 November 2026",
+      "latestLabel": "Editor’s picks · 18 November 2026",
       "ticker": [
-        "AnnaSophia Robb opens awards season with blurred blue-lilac liner, black lashes and a soft pink lip",
+        "Catherine gathers her long waves into a softly twisted half-up style for the Earthshot Prize Awards Night",
         "The long, layered bob turns the grow-out phase into a deliberate cut with a collarbone length and soft movement",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "17 November 2026",
-        "updated": "Updated 17 November"
+        "date": "18 November 2026",
+        "updated": "Updated 18 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 17 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 18 Kasım 2026",
       "ticker": [
-        "AnnaSophia Robb ödül sezonunu dağıtılmış mavi-lila eyeliner, siyah kirpikler ve yumuşak pembe dudakla açtı",
+        "Catherine, Earthshot Ödül Gecesi için uzun dalgalarını yumuşak burgulu yarım toplu bir modelde birleştirdi",
         "Uzun ve katlı bob, köprücük kemiğine yaklaşan boyu ve yumuşak hareketiyle uzama dönemini bilinçli bir kesime dönüştürüyor",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "17 Kasım 2026",
-        "updated": "Güncelleme: 17 Kasım"
+        "date": "18 Kasım 2026",
+        "updated": "Güncelleme: 18 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٧ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٨ نوفمبر ٢٠٢٦",
       "ticker": [
-        "تفتتح آناسوفيا روب موسم الجوائز بخط عيون أزرق بنفسجي مموه ورموش سوداء وشفاه وردية ناعمة",
+        "تجمع كاثرين تموجاتها الطويلة في تسريحة نصف مرفوعة بلفات ناعمة خلال ليلة جوائز Earthshot",
         "يحول البوب الطويل المتدرج مرحلة نمو الشعر إلى قصة مقصودة بطول قريب من الترقوة وحركة ناعمة",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٧ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٧ نوفمبر"
+        "date": "١٨ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٨ نوفمبر"
       }
     }
   },
   "homeStories": [
     {
-      "id": "annasophia-robb-periwinkle-liner-2026",
-      "category": "celebrity-beauty makeup eyeliner red-carpet",
-      "tag": "میکاپ سلبریتی",
-      "title": "خط چشم یاسی آناسوفیا راب؛ رنگ آرام در آغاز فصل جوایز",
-      "shortTitle": "خط چشم یاسی آناسوفیا راب",
-      "summary": "آناسوفیا راب (AnnaSophia Robb) در جوایز گاورنرز ۲۰۲۶، خط چشم محو آبی-یاسی را با مژه‌های مشکی، پوست شفاف و لب صورتی همراه کرد؛ یک نقطه رنگی ظریف به‌جای آرایش سنگین فرش قرمز.",
-      "date": "۲۵ آبان ۱۴۰۵",
-      "image": "img/beauty-news-annasophia-robb-periwinkle-liner-2026.jpg",
-      "alt": "نمای نزدیک آرایش چشم آناسوفیا راب با خط سایه محو یاسی، مژه‌های مشکی و پوست درخشان",
+      "id": "catherine-earthshot-half-up-hair-2026",
+      "category": "celebrity-beauty hair hairstyle global-event",
+      "tag": "موی سلبریتی",
+      "title": "نیمه‌باز موج‌دار کاترین؛ رسمی، نرم و بدون پیچیدگی",
+      "shortTitle": "موی نیمه‌باز کاترین در Earthshot",
+      "summary": "کاترین، شاهدخت ولز (Catherine, Princess of Wales) در مراسم Earthshot ۲۰۲۶، موج‌های بلند خود را با دو پیچ نرم در دو سوی سر جمع کرد؛ مدلی رسمی که بافت و حرکت مو را پنهان نمی‌کند.",
+      "date": "۲۶ آبان ۱۴۰۵",
+      "image": "img/beauty-news-catherine-earthshot-half-up-hair-2026.jpg",
+      "alt": "نمای نیم‌رخ کاترین، شاهدخت ولز با موی قهوه‌ای موج‌دار و مدل نیمه‌باز پیچ‌خورده در مراسم Earthshot ۲۰۲۶",
       "locales": {
         "en": {
-          "tag": "Celebrity makeup",
-          "title": "AnnaSophia Robb opens awards season with a soft periwinkle liner",
-          "shortTitle": "AnnaSophia Robb’s periwinkle liner",
-          "summary": "At the 2026 Governors Awards, AnnaSophia Robb paired a blurred blue-lilac liner with black lashes, luminous skin and a pink lip—using one restrained accent of colour instead of heavy red-carpet makeup.",
-          "date": "16 November 2026",
-          "alt": "Close-up of AnnaSophia Robb’s eye makeup with blurred periwinkle liner, black lashes and luminous skin"
+          "tag": "Celebrity hair",
+          "title": "Catherine’s softly twisted half-up hair balances polish and movement",
+          "shortTitle": "Catherine’s Earthshot half-up hair",
+          "summary": "At the 2026 Earthshot Prize, Catherine, Princess of Wales, gathered her long waves with two softly twisted side sections—a formal style that kept the hair’s texture and movement visible.",
+          "date": "17 November 2026",
+          "alt": "Side view of Catherine, Princess of Wales, with long brown waves and a softly twisted half-up hairstyle at the 2026 Earthshot Prize"
         },
         "tr": {
-          "tag": "Ünlü makyajı",
-          "title": "AnnaSophia Robb ödül sezonunu yumuşak periwinkle eyeliner ile açtı",
-          "shortTitle": "AnnaSophia Robb’ın lila-mavi eyeliner’ı",
-          "summary": "AnnaSophia Robb, 2026 Governors Awards’da dağıtılmış mavi-lila eyeliner’ı siyah kirpikler, aydınlık ten ve pembe dudakla birleştirerek ağır kırmızı halı makyajı yerine ölçülü bir renk vurgusu kullandı.",
-          "date": "16 Kasım 2026",
-          "alt": "Dağıtılmış lila-mavi eyeliner, siyah kirpikler ve aydınlık tenle AnnaSophia Robb’ın göz makyajının yakın planı"
+          "tag": "Ünlü saçı",
+          "title": "Catherine’ın yumuşak burgulu yarım toplu saçı zarafetle hareketi dengeliyor",
+          "shortTitle": "Catherine’ın Earthshot saç modeli",
+          "summary": "Galler Prensesi Catherine, 2026 Earthshot Ödülleri’nde uzun dalgalarını iki yumuşak yan burgu ile yarım topladı; saçın dokusunu ve hareketini görünür bırakan resmî bir model seçti.",
+          "date": "17 Kasım 2026",
+          "alt": "2026 Earthshot Ödülleri’nde uzun kahverengi dalgaları ve yumuşak burgulu yarım toplu saçıyla Galler Prensesi Catherine’ın yandan görünümü"
         },
         "ar": {
-          "tag": "مكياج المشاهير",
-          "title": "آناسوفيا روب تفتتح موسم الجوائز بخط عيون بيريوينكل ناعم",
-          "shortTitle": "خط عيون آناسوفيا روب البنفسجي المزرق",
-          "summary": "جمعت آناسوفيا روب في حفل Governors Awards لعام ٢٠٢٦ بين خط عيون أزرق بنفسجي مموه ورموش سوداء وبشرة مضيئة وشفاه وردية، مكتفية بلمسة لون هادئة بدلا من مكياج السجادة الحمراء الثقيل.",
-          "date": "١٦ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لمكياج عيني آناسوفيا روب بخط بيريوينكل مموه ورموش سوداء وبشرة مضيئة"
+          "tag": "شعر المشاهير",
+          "title": "تسريحة كاثرين نصف المرفوعة بلفات ناعمة توازن بين الأناقة والحركة",
+          "shortTitle": "تسريحة كاثرين في Earthshot",
+          "summary": "جمعت كاثرين، أميرة ويلز، تموجات شعرها الطويل في حفل Earthshot لعام ٢٠٢٦ بقسمين جانبيين ملتفين برفق، فحافظت التسريحة الرسمية على وضوح الملمس والحركة.",
+          "date": "١٧ نوفمبر ٢٠٢٦",
+          "alt": "منظر جانبي لكاثرين أميرة ويلز بشعر بني طويل مموج وتسريحة نصف مرفوعة ملتفة برفق في حفل Earthshot ٢٠٢٦"
         }
       }
     },
@@ -234,5 +235,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-17a"
+  "homeStoriesVersion": "2026-11-18a"
 }
