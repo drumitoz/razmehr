@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-18a",
+  "version": "2026-11-19a",
   "files": [
+    "beauty-news-2026-11-19.js",
     "beauty-news-2026-11-18.js",
     "beauty-news-2026-11-17.js",
     "beauty-news-2026-11-16.js",
@@ -61,64 +62,64 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "hailey-bieber-blue-jelly-nails-2026",
     "catherine-earthshot-half-up-hair-2026",
-    "long-layered-bob-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "hailey-bieber-blue-jelly-nails-2026",
     "catherine-earthshot-half-up-hair-2026",
-    "long-layered-bob-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۷ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۲۸ آبان ۱۴۰۵",
   "ticker": [
+    "هیلی بیبر با مانیکور آبی روشن و ژله‌ای، پالت تیره ناخن‌های پاییز و زمستان را کنار زد",
     "کاترین در شب جوایز Earthshot، موج‌های بلند خود را با دو پیچ نرم در یک مدل نیمه‌باز و رسمی جمع کرد",
-    "باب بلند و لایه‌دار، مرحله رشد مو را با طول نزدیک ترقوه و حرکت نرم به یک مدل مستقل تبدیل می‌کند",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۷ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۷ آبان"
+    "date": "۲۸ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۲۸ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 18 November 2026",
+      "latestLabel": "Editor’s picks · 19 November 2026",
       "ticker": [
+        "Hailey Bieber swaps the season’s dark nail palette for a bright, translucent blue jelly manicure",
         "Catherine gathers her long waves into a softly twisted half-up style for the Earthshot Prize Awards Night",
-        "The long, layered bob turns the grow-out phase into a deliberate cut with a collarbone length and soft movement",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "18 November 2026",
-        "updated": "Updated 18 November"
+        "date": "19 November 2026",
+        "updated": "Updated 19 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 18 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 19 Kasım 2026",
       "ticker": [
+        "Hailey Bieber sezonun koyu tırnak paletini parlak ve yarı şeffaf mavi jöle manikürle değiştirdi",
         "Catherine, Earthshot Ödül Gecesi için uzun dalgalarını yumuşak burgulu yarım toplu bir modelde birleştirdi",
-        "Uzun ve katlı bob, köprücük kemiğine yaklaşan boyu ve yumuşak hareketiyle uzama dönemini bilinçli bir kesime dönüştürüyor",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "18 Kasım 2026",
-        "updated": "Güncelleme: 18 Kasım"
+        "date": "19 Kasım 2026",
+        "updated": "Güncelleme: 19 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٨ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ١٩ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تستبدل هايلي بيبر لوحة الأظافر الداكنة للموسم بطلاء أزرق هلامي مشرق وشبه شفاف",
         "تجمع كاثرين تموجاتها الطويلة في تسريحة نصف مرفوعة بلفات ناعمة خلال ليلة جوائز Earthshot",
-        "يحول البوب الطويل المتدرج مرحلة نمو الشعر إلى قصة مقصودة بطول قريب من الترقوة وحركة ناعمة",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٨ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٨ نوفمبر"
+        "date": "١٩ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ١٩ نوفمبر"
       }
     }
   },
@@ -161,39 +162,39 @@
       }
     },
     {
-      "id": "long-layered-bob-2026",
-      "category": "hair haircut bob trend",
-      "tag": "ترند مو",
-      "title": "باب بلندِ لایه‌دار؛ راه تازه برای عبور از مرحله رشد مو",
-      "shortTitle": "باب بلند و لایه‌دار",
-      "summary": "بابی که تا سرشانه می‌رسد و با لایه‌های نرم حرکت می‌گیرد، به انتخاب تازه فصل تبدیل شده است؛ مدلی که هم فرم کوتاه را حفظ می‌کند و هم برای رشد دادن مو انعطاف بیشتری دارد.",
-      "date": "۲۴ آبان ۱۴۰۵",
-      "image": "img/beauty-news-long-layered-bob-2026.jpg",
-      "alt": "جیمی شورون با باب قهوه‌ای بلند و لایه‌دار تا روی شانه و فرق میانی",
+      "id": "hailey-bieber-blue-jelly-nails-2026",
+      "category": "celebrity-beauty nails manicure seasonal-trend",
+      "tag": "ناخن سلبریتی",
+      "title": "مانیکور آبی ژله‌ای هیلی بیبر؛ رنگ روشن وسط فصل تیره",
+      "shortTitle": "ناخن آبی ژله‌ای هیلی بیبر",
+      "summary": "هیلی بیبر (Hailey Bieber) در جوایز Beauty Inc ۲۰۲۶، ناخن‌های بادامی بلند را با آبی روشن، نیمه‌شفاف و براق پوشاند؛ انتخابی خنک و غیرمنتظره میان رنگ‌های تیره پاییز و زمستان.",
+      "date": "۲۷ آبان ۱۴۰۵",
+      "image": "img/beauty-news-hailey-bieber-blue-jelly-nails-2026.jpg",
+      "alt": "نمای نزدیک دست‌های هیلی بیبر با ناخن‌های بادامی بلند و لاک آبی روشن ژله‌ای هنگام نگه‌داشتن جایزه Beauty Inc",
       "locales": {
         "en": {
-          "tag": "Hair trend",
-          "title": "The long, layered bob turns the grow-out phase into a haircut",
-          "shortTitle": "The long, layered bob",
-          "summary": "A shoulder-skimming bob shaped with soft layers is emerging as a practical seasonal choice: it keeps the definition of a short cut while offering more freedom for anyone growing their hair.",
-          "date": "15 November 2026",
-          "alt": "Jamie Chevron wearing a centre-parted, shoulder-length brown bob with soft layers"
+          "tag": "Celebrity nails",
+          "title": "Hailey Bieber brings bright blue jelly nails into the dark-colour season",
+          "shortTitle": "Hailey Bieber’s blue jelly nails",
+          "summary": "At the 2026 Beauty Inc Awards, Hailey Bieber covered long almond nails in a bright, translucent blue with a glassy finish—an unexpected cool accent among autumn and winter’s darker shades.",
+          "date": "18 November 2026",
+          "alt": "Close view of Hailey Bieber’s hands with long almond-shaped nails in bright blue jelly polish while holding a Beauty Inc award"
         },
         "tr": {
-          "tag": "Saç trendi",
-          "title": "Uzun ve katlı bob, uzama dönemini başlı başına bir kesime dönüştürüyor",
-          "shortTitle": "Uzun ve katlı bob",
-          "summary": "Omuzlara yaklaşan ve yumuşak katlarla hareket kazanan bob, sezonun kullanışlı seçeneklerinden biri oluyor; kısa kesimin belirginliğini korurken saçını uzatanlara daha fazla özgürlük sağlıyor.",
-          "date": "15 Kasım 2026",
-          "alt": "Ortadan ayrılmış, omuz hizasında yumuşak katlı kahverengi bobuyla Jamie Chevron"
+          "tag": "Ünlü tırnağı",
+          "title": "Hailey Bieber parlak mavi jöle tırnakları koyu renkler sezonuna taşıdı",
+          "shortTitle": "Hailey Bieber’ın mavi jöle tırnakları",
+          "summary": "Hailey Bieber, 2026 Beauty Inc Ödülleri’nde uzun badem tırnaklarını parlak, yarı şeffaf mavi ve cam gibi bir bitişle tamamladı; sonbahar ve kışın koyu tonları arasında beklenmedik, serin bir vurgu yarattı.",
+          "date": "18 Kasım 2026",
+          "alt": "Beauty Inc ödülünü tutarken parlak mavi jöle ojeli uzun badem tırnaklarıyla Hailey Bieber’ın ellerinin yakın görünümü"
         },
         "ar": {
-          "tag": "صيحة شعر",
-          "title": "البوب الطويل المتدرج يحول مرحلة نمو الشعر إلى قصة مقصودة",
-          "shortTitle": "البوب الطويل المتدرج",
-          "summary": "يبرز البوب الملامس للكتفين والمصاغ بطبقات ناعمة كخيار عملي للموسم؛ فهو يحافظ على وضوح القصة القصيرة ويمنح من تطيل شعرها مرونة أكبر.",
-          "date": "١٥ نوفمبر ٢٠٢٦",
-          "alt": "جيمي شيفرون بشعر بني مفروق من المنتصف وقصة بوب بطول الكتفين وطبقات ناعمة"
+          "tag": "أظافر المشاهير",
+          "title": "هايلي بيبر تنقل الأظافر الزرقاء الهلامية إلى موسم الألوان الداكنة",
+          "shortTitle": "أظافر هايلي بيبر الزرقاء الهلامية",
+          "summary": "غطت هايلي بيبر أظافرها اللوزية الطويلة في حفل Beauty Inc لعام ٢٠٢٦ بأزرق مشرق شبه شفاف ولمعة زجاجية، لتصنع لمسة باردة وغير متوقعة وسط درجات الخريف والشتاء الداكنة.",
+          "date": "١٨ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة ليدي هايلي بيبر بأظافر لوزية طويلة وطلاء أزرق هلامي مشرق أثناء حمل جائزة Beauty Inc"
         }
       }
     },
@@ -235,5 +236,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-18a"
+  "homeStoriesVersion": "2026-11-19a"
 }
