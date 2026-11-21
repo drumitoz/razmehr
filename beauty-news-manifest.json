@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-19a",
+  "version": "2026-11-21a",
   "files": [
+    "beauty-news-2026-11-21.js",
     "beauty-news-2026-11-19.js",
     "beauty-news-2026-11-18.js",
     "beauty-news-2026-11-17.js",
@@ -62,102 +63,102 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "taylor-swift-cma-bob-three-ways-2026",
     "hailey-bieber-blue-jelly-nails-2026",
-    "catherine-earthshot-half-up-hair-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "taylor-swift-cma-bob-three-ways-2026",
     "hailey-bieber-blue-jelly-nails-2026",
-    "catherine-earthshot-half-up-hair-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۲۸ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۳۰ آبان ۱۴۰۵",
   "ticker": [
+    "تیلور سویفت در جوایز CMA یک باب بلند را به فرنچ‌توییست، فرهای پرحجم و نوک‌های برگشته تبدیل کرد",
     "هیلی بیبر با مانیکور آبی روشن و ژله‌ای، پالت تیره ناخن‌های پاییز و زمستان را کنار زد",
-    "کاترین در شب جوایز Earthshot، موج‌های بلند خود را با دو پیچ نرم در یک مدل نیمه‌باز و رسمی جمع کرد",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۲۸ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۲۸ آبان"
+    "date": "۳۰ آبان ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۳۰ آبان"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 19 November 2026",
+      "latestLabel": "Editor’s picks · 21 November 2026",
       "ticker": [
+        "Taylor Swift takes one long bob through a French twist, buoyant curls and flipped ends at the CMA Awards",
         "Hailey Bieber swaps the season’s dark nail palette for a bright, translucent blue jelly manicure",
-        "Catherine gathers her long waves into a softly twisted half-up style for the Earthshot Prize Awards Night",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "19 November 2026",
-        "updated": "Updated 19 November"
+        "date": "21 November 2026",
+        "updated": "Updated 21 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 19 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 21 Kasım 2026",
       "ticker": [
+        "Taylor Swift CMA Ödülleri’nde tek bir uzun bob’u Fransız topuzuna, hacimli buklelere ve dışa kıvrılan uçlara taşıdı",
         "Hailey Bieber sezonun koyu tırnak paletini parlak ve yarı şeffaf mavi jöle manikürle değiştirdi",
-        "Catherine, Earthshot Ödül Gecesi için uzun dalgalarını yumuşak burgulu yarım toplu bir modelde birleştirdi",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "19 Kasım 2026",
-        "updated": "Güncelleme: 19 Kasım"
+        "date": "21 Kasım 2026",
+        "updated": "Güncelleme: 21 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ١٩ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢١ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تنقل تايلور سويفت قصة بوب طويلة واحدة بين لفة فرنسية وتموجات ممتلئة وأطراف مقلوبة في جوائز CMA",
         "تستبدل هايلي بيبر لوحة الأظافر الداكنة للموسم بطلاء أزرق هلامي مشرق وشبه شفاف",
-        "تجمع كاثرين تموجاتها الطويلة في تسريحة نصف مرفوعة بلفات ناعمة خلال ليلة جوائز Earthshot",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "١٩ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ١٩ نوفمبر"
+        "date": "٢١ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٢١ نوفمبر"
       }
     }
   },
   "homeStories": [
     {
-      "id": "catherine-earthshot-half-up-hair-2026",
-      "category": "celebrity-beauty hair hairstyle global-event",
+      "id": "taylor-swift-cma-bob-three-ways-2026",
+      "category": "celebrity-beauty hair bob hairstyle global-event",
       "tag": "موی سلبریتی",
-      "title": "نیمه‌باز موج‌دار کاترین؛ رسمی، نرم و بدون پیچیدگی",
-      "shortTitle": "موی نیمه‌باز کاترین در Earthshot",
-      "summary": "کاترین، شاهدخت ولز (Catherine, Princess of Wales) در مراسم Earthshot ۲۰۲۶، موج‌های بلند خود را با دو پیچ نرم در دو سوی سر جمع کرد؛ مدلی رسمی که بافت و حرکت مو را پنهان نمی‌کند.",
-      "date": "۲۶ آبان ۱۴۰۵",
-      "image": "img/beauty-news-catherine-earthshot-half-up-hair-2026.jpg",
-      "alt": "نمای نیم‌رخ کاترین، شاهدخت ولز با موی قهوه‌ای موج‌دار و مدل نیمه‌باز پیچ‌خورده در مراسم Earthshot ۲۰۲۶",
+      "title": "سه حالت برای یک باب؛ تیلور سویفت در CMA ۲۰۲۶",
+      "shortTitle": "سه مدل باب تیلور سویفت در CMA",
+      "summary": "تیلور سویفت (Taylor Swift) در شصتمین جوایز CMA، باب بلند خود را طی یک شب به فرنچ‌توییست، فرهای پرحجم و حالت صاف با نوک‌های برگشته تبدیل کرد؛ سه اجرای متفاوت بدون تغییر کوتاهی یا رنگ.",
+      "date": "۲۷ آبان ۱۴۰۵",
+      "image": "img/beauty-news-taylor-swift-cma-bob-three-ways-2026.jpg",
+      "alt": "نمای نزدیک تیلور سویفت با باب صاف، نوک‌های کمی برگشته و چتری، پشت تریبون جوایز CMA ۲۰۲۶",
       "locales": {
         "en": {
           "tag": "Celebrity hair",
-          "title": "Catherine’s softly twisted half-up hair balances polish and movement",
-          "shortTitle": "Catherine’s Earthshot half-up hair",
-          "summary": "At the 2026 Earthshot Prize, Catherine, Princess of Wales, gathered her long waves with two softly twisted side sections—a formal style that kept the hair’s texture and movement visible.",
-          "date": "17 November 2026",
-          "alt": "Side view of Catherine, Princess of Wales, with long brown waves and a softly twisted half-up hairstyle at the 2026 Earthshot Prize"
+          "title": "One bob, three moods: Taylor Swift at the 2026 CMAs",
+          "shortTitle": "Taylor Swift’s three-way CMA bob",
+          "summary": "At the 60th CMA Awards, Taylor Swift took one long bob through a French twist, buoyant curls and a smoother finish with flipped ends—three distinct styles without changing the cut or colour.",
+          "date": "18 November 2026",
+          "alt": "Close view of Taylor Swift at the 2026 CMA Awards podium with a smooth bob, softly flipped ends and fringe"
         },
         "tr": {
           "tag": "Ünlü saçı",
-          "title": "Catherine’ın yumuşak burgulu yarım toplu saçı zarafetle hareketi dengeliyor",
-          "shortTitle": "Catherine’ın Earthshot saç modeli",
-          "summary": "Galler Prensesi Catherine, 2026 Earthshot Ödülleri’nde uzun dalgalarını iki yumuşak yan burgu ile yarım topladı; saçın dokusunu ve hareketini görünür bırakan resmî bir model seçti.",
-          "date": "17 Kasım 2026",
-          "alt": "2026 Earthshot Ödülleri’nde uzun kahverengi dalgaları ve yumuşak burgulu yarım toplu saçıyla Galler Prensesi Catherine’ın yandan görünümü"
+          "title": "Tek bob, üç farklı ifade: Taylor Swift 2026 CMA’de",
+          "shortTitle": "Taylor Swift’in üç CMA bob’u",
+          "summary": "Taylor Swift, 60. CMA Ödülleri’nde tek bir uzun bob’u Fransız topuzuna, hacimli buklelere ve dışa kıvrılan uçlu daha düz bir görünüme taşıdı; kesim ya da rengi değiştirmeden üç ayrı model sundu.",
+          "date": "18 Kasım 2026",
+          "alt": "2026 CMA Ödülleri kürsüsünde düz bob’u, hafifçe dışa kıvrılan uçları ve perçemiyle Taylor Swift’in yakın görünümü"
         },
         "ar": {
           "tag": "شعر المشاهير",
-          "title": "تسريحة كاثرين نصف المرفوعة بلفات ناعمة توازن بين الأناقة والحركة",
-          "shortTitle": "تسريحة كاثرين في Earthshot",
-          "summary": "جمعت كاثرين، أميرة ويلز، تموجات شعرها الطويل في حفل Earthshot لعام ٢٠٢٦ بقسمين جانبيين ملتفين برفق، فحافظت التسريحة الرسمية على وضوح الملمس والحركة.",
-          "date": "١٧ نوفمبر ٢٠٢٦",
-          "alt": "منظر جانبي لكاثرين أميرة ويلز بشعر بني طويل مموج وتسريحة نصف مرفوعة ملتفة برفق في حفل Earthshot ٢٠٢٦"
+          "title": "قصة بوب واحدة بثلاث إطلالات: تايلور سويفت في CMA ٢٠٢٦",
+          "shortTitle": "ثلاث تسريحات بوب لتايلور سويفت",
+          "summary": "قدمت تايلور سويفت في الدورة الستين من جوائز CMA ثلاث صيغ لقصة البوب الطويلة نفسها: لفة فرنسية، وتموجات ممتلئة، وتسريحة أكثر نعومة بأطراف مقلوبة إلى الخارج، من دون تغيير القصّة أو اللون.",
+          "date": "١٨ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لتايلور سويفت عند منصة جوائز CMA ٢٠٢٦ بقصة بوب ناعمة وأطراف مقلوبة برفق وغرة"
         }
       }
     },
@@ -236,5 +237,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-19a"
+  "homeStoriesVersion": "2026-11-21a"
 }
