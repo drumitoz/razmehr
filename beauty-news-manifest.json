@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-21a",
+  "version": "2026-11-25a",
   "files": [
+    "beauty-news-2026-11-25.js",
     "beauty-news-2026-11-21.js",
     "beauty-news-2026-11-19.js",
     "beauty-news-2026-11-18.js",
@@ -63,102 +64,102 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
-    "taylor-swift-cma-bob-three-ways-2026",
+    "millennial-pouf-hair-comeback-2026",
     "hailey-bieber-blue-jelly-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
-    "taylor-swift-cma-bob-three-ways-2026",
+    "millennial-pouf-hair-comeback-2026",
     "hailey-bieber-blue-jelly-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۳۰ آبان ۱۴۰۵",
+  "latestLabel": "منتخب ۴ آذر ۱۴۰۵",
   "ticker": [
-    "تیلور سویفت در جوایز CMA یک باب بلند را به فرنچ‌توییست، فرهای پرحجم و نوک‌های برگشته تبدیل کرد",
+    "پف جلوی مو با حجم نرم‌تر و تکیه بر بافت طبیعی، در موج تازه ترندهای Y2K به سال ۲۰۲۶ برگشته است",
     "هیلی بیبر با مانیکور آبی روشن و ژله‌ای، پالت تیره ناخن‌های پاییز و زمستان را کنار زد",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۳۰ آبان ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۳۰ آبان"
+    "date": "۴ آذر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۴ آذر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 21 November 2026",
+      "latestLabel": "Editor’s picks · 25 November 2026",
       "ticker": [
-        "Taylor Swift takes one long bob through a French twist, buoyant curls and flipped ends at the CMA Awards",
+        "The front pouf returns in 2026 with softer lift, natural texture and hidden pinning",
         "Hailey Bieber swaps the season’s dark nail palette for a bright, translucent blue jelly manicure",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "21 November 2026",
-        "updated": "Updated 21 November"
+        "date": "25 November 2026",
+        "updated": "Updated 25 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 21 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 25 Kasım 2026",
       "ticker": [
-        "Taylor Swift CMA Ödülleri’nde tek bir uzun bob’u Fransız topuzuna, hacimli buklelere ve dışa kıvrılan uçlara taşıdı",
+        "Ön kabarıklık 2026’da daha yumuşak yükseklik, doğal doku ve gizli tokalarla geri dönüyor",
         "Hailey Bieber sezonun koyu tırnak paletini parlak ve yarı şeffaf mavi jöle manikürle değiştirdi",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "21 Kasım 2026",
-        "updated": "Güncelleme: 21 Kasım"
+        "date": "25 Kasım 2026",
+        "updated": "Güncelleme: 25 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢١ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٥ نوفمبر ٢٠٢٦",
       "ticker": [
-        "تنقل تايلور سويفت قصة بوب طويلة واحدة بين لفة فرنسية وتموجات ممتلئة وأطراف مقلوبة في جوائز CMA",
+        "تعود رفعة مقدمة الشعر في ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية",
         "تستبدل هايلي بيبر لوحة الأظافر الداكنة للموسم بطلاء أزرق هلامي مشرق وشبه شفاف",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢١ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٢١ نوفمبر"
+        "date": "٢٥ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٥ نوفمبر"
       }
     }
   },
   "homeStories": [
     {
-      "id": "taylor-swift-cma-bob-three-ways-2026",
-      "category": "celebrity-beauty hair bob hairstyle global-event",
-      "tag": "موی سلبریتی",
-      "title": "سه حالت برای یک باب؛ تیلور سویفت در CMA ۲۰۲۶",
-      "shortTitle": "سه مدل باب تیلور سویفت در CMA",
-      "summary": "تیلور سویفت (Taylor Swift) در شصتمین جوایز CMA، باب بلند خود را طی یک شب به فرنچ‌توییست، فرهای پرحجم و حالت صاف با نوک‌های برگشته تبدیل کرد؛ سه اجرای متفاوت بدون تغییر کوتاهی یا رنگ.",
-      "date": "۲۷ آبان ۱۴۰۵",
-      "image": "img/beauty-news-taylor-swift-cma-bob-three-ways-2026.jpg",
-      "alt": "نمای نزدیک تیلور سویفت با باب صاف، نوک‌های کمی برگشته و چتری، پشت تریبون جوایز CMA ۲۰۲۶",
+      "id": "millennial-pouf-hair-comeback-2026",
+      "category": "hair hairstyle trend y2k volume",
+      "tag": "ترند مو",
+      "title": "بازگشت پف جلوی مو؛ نسخه نرم‌تر ترند Y2K",
+      "shortTitle": "بازگشت پف جلوی مو",
+      "summary": "مدل پف جلوی مو با حجم نرم‌تر، بافت طبیعی و سنجاق‌کاری پنهان به چرخه ترندهای ۲۰۲۶ برگشته است؛ بازگشتی که به‌جای فرم خشک دهه ۲۰۰۰، حرکت و تناسب با جنس مو را برجسته می‌کند.",
+      "date": "۳ آذر ۱۴۰۵",
+      "image": "img/beauty-news-millennial-pouf-2026.jpg",
+      "alt": "نمای نزدیک امی رسوم با موهای فر پرحجم و بخش جلویی جمع‌شده و برجسته",
       "locales": {
         "en": {
-          "tag": "Celebrity hair",
-          "title": "One bob, three moods: Taylor Swift at the 2026 CMAs",
-          "shortTitle": "Taylor Swift’s three-way CMA bob",
-          "summary": "At the 60th CMA Awards, Taylor Swift took one long bob through a French twist, buoyant curls and a smoother finish with flipped ends—three distinct styles without changing the cut or colour.",
-          "date": "18 November 2026",
-          "alt": "Close view of Taylor Swift at the 2026 CMA Awards podium with a smooth bob, softly flipped ends and fringe"
+          "tag": "Hair trend",
+          "title": "The front pouf returns in a softer Y2K revival",
+          "shortTitle": "The front pouf returns",
+          "summary": "The front pouf is cycling back into 2026 with softer lift, natural texture and concealed pinning—a revival that favours movement and a tailored approach to each hair type over the rigid shape of the 2000s.",
+          "date": "24 November 2026",
+          "alt": "Close view of Emmy Rossum with voluminous curls and a lifted, pinned-back front section"
         },
         "tr": {
-          "tag": "Ünlü saçı",
-          "title": "Tek bob, üç farklı ifade: Taylor Swift 2026 CMA’de",
-          "shortTitle": "Taylor Swift’in üç CMA bob’u",
-          "summary": "Taylor Swift, 60. CMA Ödülleri’nde tek bir uzun bob’u Fransız topuzuna, hacimli buklelere ve dışa kıvrılan uçlu daha düz bir görünüme taşıdı; kesim ya da rengi değiştirmeden üç ayrı model sundu.",
-          "date": "18 Kasım 2026",
-          "alt": "2026 CMA Ödülleri kürsüsünde düz bob’u, hafifçe dışa kıvrılan uçları ve perçemiyle Taylor Swift’in yakın görünümü"
+          "tag": "Saç trendi",
+          "title": "Ön kabarıklık daha yumuşak bir Y2K yorumuyla geri dönüyor",
+          "shortTitle": "Ön kabarıklık geri döndü",
+          "summary": "Ön kabarıklık, 2026’da daha yumuşak yükseklik, doğal doku ve gizli tokalarla yeniden öne çıkıyor; bu kez 2000’lerin sert formu yerine hareket ve saç tipine uyum belirleyici.",
+          "date": "24 Kasım 2026",
+          "alt": "Hacimli bukleleri ve önde yükseltilip geriye sabitlenmiş saç bölümüyle Emmy Rossum’un yakın görünümü"
         },
         "ar": {
-          "tag": "شعر المشاهير",
-          "title": "قصة بوب واحدة بثلاث إطلالات: تايلور سويفت في CMA ٢٠٢٦",
-          "shortTitle": "ثلاث تسريحات بوب لتايلور سويفت",
-          "summary": "قدمت تايلور سويفت في الدورة الستين من جوائز CMA ثلاث صيغ لقصة البوب الطويلة نفسها: لفة فرنسية، وتموجات ممتلئة، وتسريحة أكثر نعومة بأطراف مقلوبة إلى الخارج، من دون تغيير القصّة أو اللون.",
-          "date": "١٨ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لتايلور سويفت عند منصة جوائز CMA ٢٠٢٦ بقصة بوب ناعمة وأطراف مقلوبة برفق وغرة"
+          "tag": "صيحة شعر",
+          "title": "عودة رفعة مقدمة الشعر بنسخة أكثر نعومة من أسلوب Y2K",
+          "shortTitle": "عودة رفعة مقدمة الشعر",
+          "summary": "تعود رفعة مقدمة الشعر إلى صيحات ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية؛ عودة تفضل الحركة والتكيف مع نوع الشعر على الشكل الجامد الذي طبع الألفينيات.",
+          "date": "٢٤ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لإيمي روسوم بشعر مجعد كثيف وقسم أمامي مرفوع ومثبت إلى الخلف"
         }
       }
     },
@@ -237,5 +238,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-21a"
+  "homeStoriesVersion": "2026-11-25a"
 }
