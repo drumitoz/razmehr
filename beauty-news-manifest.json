@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-25a",
+  "version": "2026-11-26a",
   "files": [
+    "beauty-news-2026-11-26.js",
     "beauty-news-2026-11-25.js",
     "beauty-news-2026-11-21.js",
     "beauty-news-2026-11-19.js",
@@ -64,68 +65,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "olivia-colman-dark-brunette-premiere-2026",
     "millennial-pouf-hair-comeback-2026",
-    "hailey-bieber-blue-jelly-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "olivia-colman-dark-brunette-premiere-2026",
     "millennial-pouf-hair-comeback-2026",
-    "hailey-bieber-blue-jelly-nails-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۴ آذر ۱۴۰۵",
+  "latestLabel": "منتخب ۵ آذر ۱۴۰۵",
   "ticker": [
+    "اولیویا کلمن ظاهر نقره‌ای ماه گذشته را با قهوه‌ای بسیار تیره و رگه‌های سرد عوض کرد",
     "پف جلوی مو با حجم نرم‌تر و تکیه بر بافت طبیعی، در موج تازه ترندهای Y2K به سال ۲۰۲۶ برگشته است",
-    "هیلی بیبر با مانیکور آبی روشن و ژله‌ای، پالت تیره ناخن‌های پاییز و زمستان را کنار زد",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۴ آذر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۴ آذر"
+    "date": "۵ آذر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۵ آذر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 25 November 2026",
+      "latestLabel": "Editor’s picks · 26 November 2026",
       "ticker": [
+        "Olivia Colman replaces last month’s silver look with an intensely dark brunette and cool silver threads",
         "The front pouf returns in 2026 with softer lift, natural texture and hidden pinning",
-        "Hailey Bieber swaps the season’s dark nail palette for a bright, translucent blue jelly manicure",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "25 November 2026",
-        "updated": "Updated 25 November"
+        "date": "26 November 2026",
+        "updated": "Updated 26 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 25 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 26 Kasım 2026",
       "ticker": [
+        "Olivia Colman geçen ayki gümüş görünümünü yoğun koyu kahve ve soğuk gümüş tellerle değiştirdi",
         "Ön kabarıklık 2026’da daha yumuşak yükseklik, doğal doku ve gizli tokalarla geri dönüyor",
-        "Hailey Bieber sezonun koyu tırnak paletini parlak ve yarı şeffaf mavi jöle manikürle değiştirdi",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "25 Kasım 2026",
-        "updated": "Güncelleme: 25 Kasım"
+        "date": "26 Kasım 2026",
+        "updated": "Güncelleme: 26 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٥ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٦ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تستبدل أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وخصلات فضية باردة",
         "تعود رفعة مقدمة الشعر في ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية",
-        "تستبدل هايلي بيبر لوحة الأظافر الداكنة للموسم بطلاء أزرق هلامي مشرق وشبه شفاف",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٥ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٥ نوفمبر"
+        "date": "٢٦ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٦ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "olivia-colman-dark-brunette-premiere-2026",
+      "category": "celebrity hair color global-event",
+      "tag": "رنگ موی سلبریتی",
+      "title": "اولیویا کلمن از نقره‌ای به قهوه‌ای بسیار تیره رسید",
+      "shortTitle": "رنگ تیره تازه اولیویا کلمن",
+      "summary": "اولیویا کلمن (Olivia Colman) در نخستین نمایش لندن «Only Murders in London»، ظاهر نقره‌ای ماه گذشته را با قهوه‌ای بسیار تیره و سرد عوض کرد؛ رنگی که زیر نور، رگه‌های دودی و نقره‌ای آن همچنان دیده می‌شود.",
+      "date": "۴ آذر ۱۴۰۵",
+      "image": "img/beauty-news-olivia-colman-dark-brunette-2026.jpg",
+      "alt": "نمای نزدیک اولیویا کلمن با موی قهوه‌ای بسیار تیره، رگه‌های نقره‌ای و مدل جمع نرم در نخستین نمایش لندن",
+      "locales": {
+        "en": {
+          "tag": "Celebrity hair colour",
+          "title": "Olivia Colman moves from silver to an intensely dark brunette",
+          "shortTitle": "Olivia Colman’s new dark brunette",
+          "summary": "At the London premiere of Only Murders in London, Olivia Colman replaced last month’s silver look with an intensely dark, cool brunette that still reveals smoky and silver threads under the light.",
+          "date": "25 November 2026",
+          "alt": "Close view of Olivia Colman at the London premiere with intensely dark brunette hair, silver threads and a softly pinned updo"
+        },
+        "tr": {
+          "tag": "Ünlü saç rengi",
+          "title": "Olivia Colman gümüşten yoğun koyu kahveye geçti",
+          "shortTitle": "Olivia Colman’ın yeni koyu kahvesi",
+          "summary": "Olivia Colman, Only Murders in London’ın Londra prömiyerinde geçen ayki gümüş görünümünü yoğun, soğuk bir koyu kahveyle değiştirdi; ışıkta dumanlı ve gümüş teller hâlâ seçiliyor.",
+          "date": "25 Kasım 2026",
+          "alt": "Londra prömiyerinde yoğun koyu kahve saçı, gümüş telleri ve yumuşak toplu modeliyle Olivia Colman’ın yakın görünümü"
+        },
+        "ar": {
+          "tag": "لون شعر المشاهير",
+          "title": "أوليفيا كولمان تنتقل من الفضي إلى البني الداكن جداً",
+          "shortTitle": "البني الداكن الجديد لأوليفيا كولمان",
+          "summary": "استبدلت أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وبارد في العرض اللندني الأول لمسلسل Only Murders in London، مع بقاء خصلات دخانية وفضية ظاهرة تحت الضوء.",
+          "date": "٢٥ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لأوليفيا كولمان في العرض اللندني بشعر بني داكن جداً وخصلات فضية وتسريحة مرفوعة بنعومة"
+        }
+      }
+    },
     {
       "id": "millennial-pouf-hair-comeback-2026",
       "category": "hair hairstyle trend y2k volume",
@@ -160,43 +198,6 @@
           "summary": "تعود رفعة مقدمة الشعر إلى صيحات ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية؛ عودة تفضل الحركة والتكيف مع نوع الشعر على الشكل الجامد الذي طبع الألفينيات.",
           "date": "٢٤ نوفمبر ٢٠٢٦",
           "alt": "لقطة قريبة لإيمي روسوم بشعر مجعد كثيف وقسم أمامي مرفوع ومثبت إلى الخلف"
-        }
-      }
-    },
-    {
-      "id": "hailey-bieber-blue-jelly-nails-2026",
-      "category": "celebrity-beauty nails manicure seasonal-trend",
-      "tag": "ناخن سلبریتی",
-      "title": "مانیکور آبی ژله‌ای هیلی بیبر؛ رنگ روشن وسط فصل تیره",
-      "shortTitle": "ناخن آبی ژله‌ای هیلی بیبر",
-      "summary": "هیلی بیبر (Hailey Bieber) در جوایز Beauty Inc ۲۰۲۶، ناخن‌های بادامی بلند را با آبی روشن، نیمه‌شفاف و براق پوشاند؛ انتخابی خنک و غیرمنتظره میان رنگ‌های تیره پاییز و زمستان.",
-      "date": "۲۷ آبان ۱۴۰۵",
-      "image": "img/beauty-news-hailey-bieber-blue-jelly-nails-2026.jpg",
-      "alt": "نمای نزدیک دست‌های هیلی بیبر با ناخن‌های بادامی بلند و لاک آبی روشن ژله‌ای هنگام نگه‌داشتن جایزه Beauty Inc",
-      "locales": {
-        "en": {
-          "tag": "Celebrity nails",
-          "title": "Hailey Bieber brings bright blue jelly nails into the dark-colour season",
-          "shortTitle": "Hailey Bieber’s blue jelly nails",
-          "summary": "At the 2026 Beauty Inc Awards, Hailey Bieber covered long almond nails in a bright, translucent blue with a glassy finish—an unexpected cool accent among autumn and winter’s darker shades.",
-          "date": "18 November 2026",
-          "alt": "Close view of Hailey Bieber’s hands with long almond-shaped nails in bright blue jelly polish while holding a Beauty Inc award"
-        },
-        "tr": {
-          "tag": "Ünlü tırnağı",
-          "title": "Hailey Bieber parlak mavi jöle tırnakları koyu renkler sezonuna taşıdı",
-          "shortTitle": "Hailey Bieber’ın mavi jöle tırnakları",
-          "summary": "Hailey Bieber, 2026 Beauty Inc Ödülleri’nde uzun badem tırnaklarını parlak, yarı şeffaf mavi ve cam gibi bir bitişle tamamladı; sonbahar ve kışın koyu tonları arasında beklenmedik, serin bir vurgu yarattı.",
-          "date": "18 Kasım 2026",
-          "alt": "Beauty Inc ödülünü tutarken parlak mavi jöle ojeli uzun badem tırnaklarıyla Hailey Bieber’ın ellerinin yakın görünümü"
-        },
-        "ar": {
-          "tag": "أظافر المشاهير",
-          "title": "هايلي بيبر تنقل الأظافر الزرقاء الهلامية إلى موسم الألوان الداكنة",
-          "shortTitle": "أظافر هايلي بيبر الزرقاء الهلامية",
-          "summary": "غطت هايلي بيبر أظافرها اللوزية الطويلة في حفل Beauty Inc لعام ٢٠٢٦ بأزرق مشرق شبه شفاف ولمعة زجاجية، لتصنع لمسة باردة وغير متوقعة وسط درجات الخريف والشتاء الداكنة.",
-          "date": "١٨ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة ليدي هايلي بيبر بأظافر لوزية طويلة وطلاء أزرق هلامي مشرق أثناء حمل جائزة Beauty Inc"
         }
       }
     },
@@ -238,5 +239,5 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-25a"
+  "homeStoriesVersion": "2026-11-26a"
 }
