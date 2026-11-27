@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-26a",
+  "version": "2026-11-27a",
   "files": [
+    "beauty-news-2026-11-27.js",
     "beauty-news-2026-11-26.js",
     "beauty-news-2026-11-25.js",
     "beauty-news-2026-11-21.js",
@@ -65,68 +66,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "kipetaka-koroba-pinwheel-braids-2026",
     "olivia-colman-dark-brunette-premiere-2026",
-    "millennial-pouf-hair-comeback-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
   "latestStoryIds": [
+    "kipetaka-koroba-pinwheel-braids-2026",
     "olivia-colman-dark-brunette-premiere-2026",
-    "millennial-pouf-hair-comeback-2026",
     "met-gala-extraordinary-everyday-fashion-2027"
   ],
-  "latestLabel": "منتخب ۵ آذر ۱۴۰۵",
+  "latestLabel": "منتخب ۶ آذر ۱۴۰۵",
   "ticker": [
+    "کیپتاکا و کُروبا با رشد جست‌وجو و اجرای هندسی تازه، موج جدید بافت‌های چرخ‌دنده‌ای را شکل داده‌اند",
     "اولیویا کلمن ظاهر نقره‌ای ماه گذشته را با قهوه‌ای بسیار تیره و رگه‌های سرد عوض کرد",
-    "پف جلوی مو با حجم نرم‌تر و تکیه بر بافت طبیعی، در موج تازه ترندهای Y2K به سال ۲۰۲۶ برگشته است",
     "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۵ آذر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۵ آذر"
+    "date": "۶ آذر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۶ آذر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 26 November 2026",
+      "latestLabel": "Editor’s picks · 27 November 2026",
       "ticker": [
+        "Kipetaka and Koroba are shaping a new pinwheel-braid wave through rising searches and fresh geometric styling",
         "Olivia Colman replaces last month’s silver look with an intensely dark brunette and cool silver threads",
-        "The front pouf returns in 2026 with softer lift, natural texture and hidden pinning",
         "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "26 November 2026",
-        "updated": "Updated 26 November"
+        "date": "27 November 2026",
+        "updated": "Updated 27 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 26 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 27 Kasım 2026",
       "ticker": [
+        "Kipetaka ve Koroba, artan aramalar ve yeni geometrik yorumlarla çark örgülerinde yeni bir dalga yaratıyor",
         "Olivia Colman geçen ayki gümüş görünümünü yoğun koyu kahve ve soğuk gümüş tellerle değiştirdi",
-        "Ön kabarıklık 2026’da daha yumuşak yükseklik, doğal doku ve gizli tokalarla geri dönüyor",
         "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "26 Kasım 2026",
-        "updated": "Güncelleme: 26 Kasım"
+        "date": "27 Kasım 2026",
+        "updated": "Güncelleme: 27 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٦ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٧ نوفمبر ٢٠٢٦",
       "ticker": [
+        "تصنع كيبيتاكا وكوروبا موجة جديدة من الضفائر الدوّارة مع نمو البحث والتصفيفات الهندسية الحديثة",
         "تستبدل أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وخصلات فضية باردة",
-        "تعود رفعة مقدمة الشعر في ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية",
         "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٦ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٦ نوفمبر"
+        "date": "٢٧ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٧ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "kipetaka-koroba-pinwheel-braids-2026",
+      "category": "hair braids protective-style cultural-trend",
+      "tag": "ترند بافت مو",
+      "title": "کیپتاکا و کُروبا؛ موج تازه بافت‌های چرخ‌دنده‌ای",
+      "shortTitle": "موج تازه بافت‌های چرخ‌دنده‌ای",
+      "summary": "بافت‌های چرخ‌دنده‌ای دوباره اوج گرفته‌اند؛ مدلی که پیچش‌های کیپتاکا (Kipetaka) از ماداگاسکار و خطوط تاج‌مانند کُروبا (Koroba) از سنت یوروبا را در اجراهای امروزی برجسته می‌کند.",
+      "date": "۵ آذر ۱۴۰۵",
+      "image": "img/beauty-news-kipetaka-pinwheel-braids-2026.jpg",
+      "alt": "نمای نزدیک بافت‌های چرخ‌دنده‌ای مشکی در امتداد پیشانی و فرق سر",
+      "locales": {
+        "en": {
+          "tag": "Braided hair trend",
+          "title": "Kipetaka and Koroba: the new rise of pinwheel braids",
+          "shortTitle": "The new rise of pinwheel braids",
+          "summary": "Pinwheel braids are rising again, bringing the flat swirls of Madagascar’s Kipetaka and the crown-like lines of Yoruba Koroba into sharper focus across contemporary styling.",
+          "date": "26 November 2026",
+          "alt": "Close view of black pinwheel braids arranged across the forehead and centre part"
+        },
+        "tr": {
+          "tag": "Örgü saç trendi",
+          "title": "Kipetaka ve Koroba: çark örgülerinin yeni yükselişi",
+          "shortTitle": "Çark örgülerinin yeni yükselişi",
+          "summary": "Çark biçimli örgüler yeniden yükseliyor; Madagaskar’ın Kipetaka sarmallarını ve Yoruba geleneğindeki Koroba’nın taç benzeri çizgilerini güncel yorumlarda daha görünür kılıyor.",
+          "date": "26 Kasım 2026",
+          "alt": "Alın ve orta ayrım boyunca yerleştirilmiş siyah çark örgülerinin yakın görünümü"
+        },
+        "ar": {
+          "tag": "صيحة ضفائر",
+          "title": "كيبيتاكا وكوروبا: صعود جديد للضفائر الدوّارة",
+          "shortTitle": "الصعود الجديد للضفائر الدوّارة",
+          "summary": "تعود الضفائر الدوّارة إلى الواجهة، فتبرز لفائف كيبيتاكا من مدغشقر وخطوط كوروبا الشبيهة بالتاج في تقاليد اليوروبا ضمن تصفيفات معاصرة.",
+          "date": "٢٦ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لضفائر سوداء دوّارة موزعة على الجبهة وفرق الشعر"
+        }
+      }
+    },
     {
       "id": "olivia-colman-dark-brunette-premiere-2026",
       "category": "celebrity hair color global-event",
@@ -161,43 +199,6 @@
           "summary": "استبدلت أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وبارد في العرض اللندني الأول لمسلسل Only Murders in London، مع بقاء خصلات دخانية وفضية ظاهرة تحت الضوء.",
           "date": "٢٥ نوفمبر ٢٠٢٦",
           "alt": "لقطة قريبة لأوليفيا كولمان في العرض اللندني بشعر بني داكن جداً وخصلات فضية وتسريحة مرفوعة بنعومة"
-        }
-      }
-    },
-    {
-      "id": "millennial-pouf-hair-comeback-2026",
-      "category": "hair hairstyle trend y2k volume",
-      "tag": "ترند مو",
-      "title": "بازگشت پف جلوی مو؛ نسخه نرم‌تر ترند Y2K",
-      "shortTitle": "بازگشت پف جلوی مو",
-      "summary": "مدل پف جلوی مو با حجم نرم‌تر، بافت طبیعی و سنجاق‌کاری پنهان به چرخه ترندهای ۲۰۲۶ برگشته است؛ بازگشتی که به‌جای فرم خشک دهه ۲۰۰۰، حرکت و تناسب با جنس مو را برجسته می‌کند.",
-      "date": "۳ آذر ۱۴۰۵",
-      "image": "img/beauty-news-millennial-pouf-2026.jpg",
-      "alt": "نمای نزدیک امی رسوم با موهای فر پرحجم و بخش جلویی جمع‌شده و برجسته",
-      "locales": {
-        "en": {
-          "tag": "Hair trend",
-          "title": "The front pouf returns in a softer Y2K revival",
-          "shortTitle": "The front pouf returns",
-          "summary": "The front pouf is cycling back into 2026 with softer lift, natural texture and concealed pinning—a revival that favours movement and a tailored approach to each hair type over the rigid shape of the 2000s.",
-          "date": "24 November 2026",
-          "alt": "Close view of Emmy Rossum with voluminous curls and a lifted, pinned-back front section"
-        },
-        "tr": {
-          "tag": "Saç trendi",
-          "title": "Ön kabarıklık daha yumuşak bir Y2K yorumuyla geri dönüyor",
-          "shortTitle": "Ön kabarıklık geri döndü",
-          "summary": "Ön kabarıklık, 2026’da daha yumuşak yükseklik, doğal doku ve gizli tokalarla yeniden öne çıkıyor; bu kez 2000’lerin sert formu yerine hareket ve saç tipine uyum belirleyici.",
-          "date": "24 Kasım 2026",
-          "alt": "Hacimli bukleleri ve önde yükseltilip geriye sabitlenmiş saç bölümüyle Emmy Rossum’un yakın görünümü"
-        },
-        "ar": {
-          "tag": "صيحة شعر",
-          "title": "عودة رفعة مقدمة الشعر بنسخة أكثر نعومة من أسلوب Y2K",
-          "shortTitle": "عودة رفعة مقدمة الشعر",
-          "summary": "تعود رفعة مقدمة الشعر إلى صيحات ٢٠٢٦ بحجم أكثر نعومة وملمس طبيعي ودبابيس مخفية؛ عودة تفضل الحركة والتكيف مع نوع الشعر على الشكل الجامد الذي طبع الألفينيات.",
-          "date": "٢٤ نوفمبر ٢٠٢٦",
-          "alt": "لقطة قريبة لإيمي روسوم بشعر مجعد كثيف وقسم أمامي مرفوع ومثبت إلى الخلف"
         }
       }
     },
@@ -239,5 +240,6 @@
       }
     }
   ],
-  "homeStoriesVersion": "2026-11-26a"
+  "homeStoriesVersion": "2026-11-27a"
 }
+
