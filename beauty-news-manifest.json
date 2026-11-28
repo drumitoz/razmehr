@@ -1,7 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-27a",
+  "version": "2026-11-28a",
   "files": [
+    "beauty-news-2026-11-28.js",
     "beauty-news-2026-11-27.js",
     "beauty-news-2026-11-26.js",
     "beauty-news-2026-11-25.js",
@@ -66,68 +67,105 @@
     "beauty-news-2026-09-10.js"
   ],
   "homeStoryIds": [
+    "mcqueen-pre-fall-studio-2027",
     "kipetaka-koroba-pinwheel-braids-2026",
-    "olivia-colman-dark-brunette-premiere-2026",
-    "met-gala-extraordinary-everyday-fashion-2027"
+    "olivia-colman-dark-brunette-premiere-2026"
   ],
   "latestStoryIds": [
+    "mcqueen-pre-fall-studio-2027",
     "kipetaka-koroba-pinwheel-braids-2026",
-    "olivia-colman-dark-brunette-premiere-2026",
-    "met-gala-extraordinary-everyday-fashion-2027"
+    "olivia-colman-dark-brunette-premiere-2026"
   ],
-  "latestLabel": "منتخب ۶ آذر ۱۴۰۵",
+  "latestLabel": "منتخب ۷ آذر ۱۴۰۵",
   "ticker": [
+    "تیم استودیوی مک‌کوئین پیش‌پاییز ۲۰۲۷ را با خیاطی تیز، گل‌های فلزی و بازی با ظاهر مواد ساخته است",
     "کیپتاکا و کُروبا با رشد جست‌وجو و اجرای هندسی تازه، موج جدید بافت‌های چرخ‌دنده‌ای را شکل داده‌اند",
-    "اولیویا کلمن ظاهر نقره‌ای ماه گذشته را با قهوه‌ای بسیار تیره و رگه‌های سرد عوض کرد",
-    "مت گالا ۲۰۲۷ با موضوع «فوق‌العاده» لباس‌ها و مواد روزمره را به مرکز نمایشگاه مؤسسه لباس می‌آورد"
+    "اولیویا کلمن ظاهر نقره‌ای ماه گذشته را با قهوه‌ای بسیار تیره و رگه‌های سرد عوض کرد"
   ],
   "issue": {
     "label": "شماره این هفته",
-    "date": "۶ آذر ۱۴۰۵",
-    "updated": "به‌روزرسانی: ۶ آذر"
+    "date": "۷ آذر ۱۴۰۵",
+    "updated": "به‌روزرسانی: ۷ آذر"
   },
   "locales": {
     "en": {
-      "latestLabel": "Editor’s picks · 27 November 2026",
+      "latestLabel": "Editor’s picks · 28 November 2026",
       "ticker": [
+        "McQueen’s studio team shapes Pre-Fall 2027 through sharp tailoring, metallic flowers and material misdirection",
         "Kipetaka and Koroba are shaping a new pinwheel-braid wave through rising searches and fresh geometric styling",
-        "Olivia Colman replaces last month’s silver look with an intensely dark brunette and cool silver threads",
-        "The 2027 Met Gala’s “extraORDINARY” theme brings everyday clothes and materials to the Costume Institute’s centre stage"
+        "Olivia Colman replaces last month’s silver look with an intensely dark brunette and cool silver threads"
       ],
       "issue": {
         "label": "This week’s issue",
-        "date": "27 November 2026",
-        "updated": "Updated 27 November"
+        "date": "28 November 2026",
+        "updated": "Updated 28 November"
       }
     },
     "tr": {
-      "latestLabel": "Editörün seçtikleri · 27 Kasım 2026",
+      "latestLabel": "Editörün seçtikleri · 28 Kasım 2026",
       "ticker": [
+        "McQueen stüdyo ekibi Pre-Fall 2027’yi keskin terzilik, metalik çiçekler ve malzeme oyunlarıyla kurdu",
         "Kipetaka ve Koroba, artan aramalar ve yeni geometrik yorumlarla çark örgülerinde yeni bir dalga yaratıyor",
-        "Olivia Colman geçen ayki gümüş görünümünü yoğun koyu kahve ve soğuk gümüş tellerle değiştirdi",
-        "2027 Met Gala’nın “extraORDINARY” teması, gündelik kıyafet ve malzemeleri Kostüm Enstitüsü’nün merkezine taşıyor"
+        "Olivia Colman geçen ayki gümüş görünümünü yoğun koyu kahve ve soğuk gümüş tellerle değiştirdi"
       ],
       "issue": {
         "label": "Bu haftanın sayısı",
-        "date": "27 Kasım 2026",
-        "updated": "Güncelleme: 27 Kasım"
+        "date": "28 Kasım 2026",
+        "updated": "Güncelleme: 28 Kasım"
       }
     },
     "ar": {
-      "latestLabel": "اختيارات التحرير · ٢٧ نوفمبر ٢٠٢٦",
+      "latestLabel": "اختيارات التحرير · ٢٨ نوفمبر ٢٠٢٦",
       "ticker": [
+        "يصوغ فريق استوديو ماكوين مجموعة ما قبل خريف ٢٠٢٧ بخياطة حادة وزهور معدنية وخدع في مظهر الخامات",
         "تصنع كيبيتاكا وكوروبا موجة جديدة من الضفائر الدوّارة مع نمو البحث والتصفيفات الهندسية الحديثة",
-        "تستبدل أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وخصلات فضية باردة",
-        "تضع ثيمة ميت غالا ٢٠٢٧ «extraORDINARY» الملابس والمواد اليومية في قلب معرض معهد الأزياء"
+        "تستبدل أوليفيا كولمان إطلالتها الفضية الشهر الماضي ببني داكن جداً وخصلات فضية باردة"
       ],
       "issue": {
         "label": "عدد هذا الأسبوع",
-        "date": "٢٧ نوفمبر ٢٠٢٦",
-        "updated": "تحديث: ٢٧ نوفمبر"
+        "date": "٢٨ نوفمبر ٢٠٢٦",
+        "updated": "تحديث: ٢٨ نوفمبر"
       }
     }
   },
   "homeStories": [
+    {
+      "id": "mcqueen-pre-fall-studio-2027",
+      "category": "fashion global-event collection tailoring",
+      "tag": "مجموعه جهانی مد",
+      "title": "مک‌کوئین در دوره گذار؛ پیش‌پاییز ۲۰۲۷ با گل‌های فلزی",
+      "shortTitle": "پیش‌پاییز ۲۰۲۷ مک‌کوئین",
+      "summary": "مک‌کوئین (McQueen) مجموعه پیش‌پاییز ۲۰۲۷ را با طراحی جمعی استودیو، خیاطی تیز، گل‌های شیپوری فلزی و بازی‌های فریبنده با جنس پارچه معرفی کرد؛ مجموعه‌ای که زبان خانه را در فاصله میان دو مدیر خلاق نگه می‌دارد.",
+      "date": "۶ آذر ۱۴۰۵",
+      "image": "img/beauty-news-mcqueen-pre-fall-2027.jpg",
+      "alt": "نمای بسته مدل مک‌کوئین با کت مشکی کاملاً پوشیده و گل‌دوزی فلزی برجسته",
+      "locales": {
+        "en": {
+          "tag": "Global fashion collection",
+          "title": "McQueen in transition: Pre-Fall 2027 blooms in metal",
+          "shortTitle": "McQueen Pre-Fall 2027",
+          "summary": "McQueen unveiled Pre-Fall 2027 through a collective studio effort, combining sharp tailoring, metallic calla lilies and deceptive material treatments in a collection that carries the house language between creative directors.",
+          "date": "27 November 2026",
+          "alt": "Close view of a McQueen model in a fully covered black suit with prominent metallic floral embroidery"
+        },
+        "tr": {
+          "tag": "Küresel moda koleksiyonu",
+          "title": "Geçiş döneminde McQueen: Pre-Fall 2027 metal çiçeklerle açıyor",
+          "shortTitle": "McQueen Pre-Fall 2027",
+          "summary": "McQueen, Pre-Fall 2027 koleksiyonunu stüdyo ekibinin ortak çalışmasıyla tanıttı; keskin terzilik, metalik kala zambakları ve malzemeyi yanıltıcı biçimde dönüştüren işlemler, yaratıcı direktörler arasındaki dönemde evin dilini taşıyor.",
+          "date": "27 Kasım 2026",
+          "alt": "Tamamen kapalı siyah takım ve belirgin metalik çiçek işlemesiyle McQueen modelinin yakın görünümü"
+        },
+        "ar": {
+          "tag": "مجموعة أزياء عالمية",
+          "title": "ماكوين في مرحلة انتقالية: ما قبل خريف ٢٠٢٧ يزهر بالمعدن",
+          "shortTitle": "ماكوين ما قبل خريف ٢٠٢٧",
+          "summary": "قدمت ماكوين مجموعة ما قبل خريف ٢٠٢٧ بعمل جماعي من فريق الاستوديو، جامعاً بين الخياطة الحادة وزنابق الكالا المعدنية ومعالجات توهم العين بخامات مختلفة، لتحمل لغة الدار بين مديرين إبداعيين.",
+          "date": "٢٧ نوفمبر ٢٠٢٦",
+          "alt": "لقطة قريبة لعارض ماكوين ببدلة سوداء محتشمة بالكامل وتطريز زهري معدني بارز"
+        }
+      }
+    },
     {
       "id": "kipetaka-koroba-pinwheel-braids-2026",
       "category": "hair braids protective-style cultural-trend",
@@ -201,45 +239,8 @@
           "alt": "لقطة قريبة لأوليفيا كولمان في العرض اللندني بشعر بني داكن جداً وخصلات فضية وتسريحة مرفوعة بنعومة"
         }
       }
-    },
-    {
-      "id": "met-gala-extraordinary-everyday-fashion-2027",
-      "category": "fashion global-event exhibition",
-      "tag": "رویداد جهانی مد",
-      "title": "مت گالا ۲۰۲۷ لباس‌های روزمره را به مرکز صحنه می‌برد",
-      "shortTitle": "تم روزمره مت گالا ۲۰۲۷",
-      "summary": "مؤسسه لباس مت برای نمایشگاه بهار ۲۰۲۷ سراغ جین، تی‌شرت، کاپشن پفی و مواد معمولی می‌رود تا نشان دهد طراحی چگونه امر روزمره را به مد خلاق تبدیل می‌کند.",
-      "date": "۱۴ آبان ۱۴۰۵",
-      "image": "img/beauty-news-met-extraordinary-2027.jpg",
-      "alt": "گرافیک رسمی سیاه‌وسفید نمایشگاه با نشان XO و عنوان extraORDINARY",
-      "locales": {
-        "en": {
-          "tag": "Global fashion event",
-          "title": "The 2027 Met Gala puts everyday clothes at centre stage",
-          "shortTitle": "The Met Gala’s everyday theme",
-          "summary": "The Met’s Costume Institute will build its spring 2027 exhibition around jeans, T-shirts, puffers and ordinary materials, examining how design turns the familiar into inventive fashion.",
-          "date": "5 November 2026",
-          "alt": "Official black-and-white exhibition graphic with an XO mark and the title extraORDINARY"
-        },
-        "tr": {
-          "tag": "Küresel moda etkinliği",
-          "title": "2027 Met Gala, gündelik kıyafetleri sahnenin merkezine taşıyor",
-          "shortTitle": "Met Gala’nın gündelik teması",
-          "summary": "Met Kostüm Enstitüsü, 2027 ilkbahar sergisini kotlar, tişörtler, şişme montlar ve sıradan malzemeler üzerine kurarak tasarımın tanıdık olanı nasıl yaratıcı modaya dönüştürdüğünü inceleyecek.",
-          "date": "5 Kasım 2026",
-          "alt": "XO işareti ve extraORDINARY başlığını taşıyan resmî siyah-beyaz sergi grafiği"
-        },
-        "ar": {
-          "tag": "حدث أزياء عالمي",
-          "title": "ميت غالا ٢٠٢٧ يضع الملابس اليومية في قلب المشهد",
-          "shortTitle": "ثيمة ميت غالا اليومية",
-          "summary": "يبني معهد الأزياء في متحف المتروبوليتان معرض ربيع ٢٠٢٧ على الجينز والقمصان والمعاطف المنفوخة والمواد العادية، لبحث كيف يحول التصميم المألوف إلى أزياء مبتكرة.",
-          "date": "٥ نوفمبر ٢٠٢٦",
-          "alt": "الهوية الرسمية بالأبيض والأسود للمعرض مع علامة XO وعنوان extraORDINARY"
-        }
-      }
     }
   ],
-  "homeStoriesVersion": "2026-11-27a"
+  "homeStoriesVersion": "2026-11-28a"
 }
 
